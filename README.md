@@ -1,6 +1,7 @@
 # App Academy Jump Start Course
 
 Welcome to the Jump Start course!
+(You can find this URL again at: http://tinyurl.com/aa-jump-start)
 
 The morning course is taught by:
 
