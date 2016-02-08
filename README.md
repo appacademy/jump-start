@@ -29,7 +29,7 @@ Get started by going to your day's work:
 #### Problem Sets
 
 If you're done with the main curriculum, you can start working through the problem sets:
-##### [Problem set 1](./problem-sets/problem-set-1.md)
+##### [Problem set 1](./problem-sets/problem-set-1.rb)
 
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
