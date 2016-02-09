@@ -1,25 +1,5 @@
-
 #Write a function that takes in a number and sums all the numbers up to that number
-def sum_to(n)
-  sum = 0
-  i = 1
-  while i <= n
-    sum += i
-    i += 1
-  end
-  sum
-end
 
-# Test - these should all print out true!
-puts "\nSum To:\n" + "*" * 15 + "\n"
-puts sum_to(5) == 15
-puts sum_to(3) == 6
-puts sum_to(1) == 1
-puts sum_to(0) == 0
-
-# *********************************************
-
-#Write the sum_to function again using a range and each
 def sum_to_shorter(n)
   sum = 0
   (0..n).each do |num|
@@ -62,24 +42,6 @@ puts time_conversion(90) == "01:30"
 puts time_conversion(10) == "00:10"
 puts time_conversion(5) == "00:05"
 puts time_conversion(0) == "00:00"
-
-# *********************************************
-
-#Write a function that print out all the elements in an array using each
-def print_array(arr)
-  arr.each do |el|
-    puts el
-  end
-end
-
-# Tests if the output is what you expect you're good to go!
-puts "\nPrint Array with Each:\n" + "*" * 15 + "\n"
-numbers = [1,2,3,4,5]
-puts "You should see 1 2 3 4 5 after this:\n"
-print_array(numbers)
-words = ["You ", "are ", "great!"]
-puts "You should see a message: \n"
-print_array(words)
 
 # *********************************************
 
@@ -137,32 +99,6 @@ puts has_multiple_of_three?([1]) == false
 puts has_multiple_of_three?([3]) == true
 puts has_multiple_of_three?([1,2,4,5,7,8]) == false
 puts has_multiple_of_three?([1,2,4,5,6,7,12]) == true
-
-
-# *********************************************
-
-#If you didn't use enumerable any? in has_multiple_of_three? write is again using any?
-
-# *********************************************
-
-#Write a boolean function that returns true is all the elements in an array are multiples of 5.
-def multiples_of_five?(nums)
-  nums.all? do |num|
-    num % 5 == 0
-  end
-end
-
-#Tests -- Get these all true
-puts "\nMultiples of five:\n" + "*" * 15 + "\n"
-puts multiples_of_five?([1]) == false
-puts multiples_of_five?([5]) == true
-puts multiples_of_five?([1,5]) == false
-puts multiples_of_five?([5,10]) == true
-puts multiples_of_five?([5,10,11]) == false
-
-# *********************************************
-
-#If you didn't use enumerable all? in multiples of five rewrite it
 
 # *********************************************
 

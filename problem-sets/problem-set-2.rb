@@ -1,5 +1,5 @@
 
-#Write a function that takes in a number and sums all the numbers up to that number
+# Write a function that takes in a number and sums all the numbers up to that number
 def sum_to(n)
 end
 
@@ -12,20 +12,7 @@ puts sum_to(0) == 0
 
 # *********************************************
 
-#Write the sum_to function again using a range and each
-def sum_to_shorter(n)
-end
-
-# Test - you know the drill!
-puts "\nSum To (with range and each):\n" + "*" * 15 + "\n"
-puts sum_to(5) == 15
-puts sum_to(3) == 6
-puts sum_to(1) == 1
-puts sum_to(0) == 0
-
-# *********************************************
-
-#Write a function that takes in an amount of minutes and returns a time string formatted HH:MM
+# Write a function that takes in an amount of minutes and returns a time string formatted HH:MM
 def time_conversion(mins)
 end
 
@@ -33,28 +20,14 @@ end
 puts "\nTime Conversion:\n" + "*" * 15 + "\n"
 puts time_conversion(30) == "00:30"
 puts time_conversion(60) == "01:00"
-puts time_conversion(90) == "01:90"
+puts time_conversion(90) == "01:30"
+puts time_conversion(120) == "02:00"
 puts time_conversion(10) == "00:10"
 puts time_conversion(5) == "00:05"
 puts time_conversion(0) == "00:00"
 
 # *********************************************
-
-#Write a function that print out all the elements in an array using each
-def print_array(arr)
-end
-
-# Tests if the output is what you expect you're good to go!
-puts "\nPrint Array with Each:\n" + "*" * 15 + "\n"
-numbers = [1,2,3,4,5]
-puts "You should see 1 2 3 4 5 after this:\n"
-print_array(numbers)
-words = ["You", "are", "great!"]
-puts "You should see a message: \n"
-print_array(words)
-
-# *********************************************
-#Write a function that takes an array of pairs and returns the pair that sum to the largest number
+# Write a function that takes an array of pairs and returns the pair with the greatest sum
 def largest_pair(pairs)
 end
 
@@ -67,22 +40,22 @@ puts largest_pair([[-4,0],[-2,-1],[-3,2]]) == [-3,2]
 
 # *********************************************
 
-#Write a function that returns a phrase with each word capitalized
-def capitalize(phrase)
+# Write a function that returns a phrase with each word (separated by spaces) capitalized.
+def capitalize_each_word(phrase)
 end
 
 #Get these to true!!
 puts "\nCapitalize:\n" + "*" * 15 + "\n"
-puts capitalize("abc") == "Abc"
-puts capitalize("lets go dubs") == "Lets Go Dubs"
-puts capitalize("CODE IS LIFE") == "CODE IS LIFE"
+puts capitalize_each_word("abc") == "Abc"
+puts capitalize_each_word("lets go dubs") == "Lets Go Dubs"
+puts capitalize_each_word("CODE IS LIFE") == "CODE IS LIFE"
 dont_change_this = "do not mutate me"
-capitalize(dont_change_this)
+capitalize_each_word(dont_change_this)
 puts dont_change_this == "do not mutate me"
 
 # *********************************************
 
-#Write a boolean function that returns true is an array of numbers has any multiples of 3
+# Write a boolean function that returns true if an array of numbers has any multiples of 3.
 def has_multiple_of_three?(nums)
 end
 
@@ -99,26 +72,7 @@ puts has_multiple_of_three?([1,2,4,5,6,7,12]) == true
 
 # *********************************************
 
-#Write a boolean function that returns true is all the elements in an array are multiples of 5.
-def multiples_of_five?(nums)
-end
-
-#Tests -- Get these all true
-puts "\nMultiples of five:\n" + "*" * 15 + "\n"
-puts multiples_of_five?([1]) == false
-puts multiples_of_five?([5]) == true
-puts multiples_of_five?([1,5]) == false
-puts multiples_of_five?([5,10]) == true
-puts multiples_of_five?([5,10,11]) == false
-
-# *********************************************
-
-#If you didn't use enumerable all? in multiples of five rewrite it
-
-# *********************************************
-
-#Write a function that take an array of numbers and returns the number of even
-#numbers and the number of odd numbers. Assume no zeros.
+# Write a function that take an array of numbers and returns a hash of the number of even numbers and of odd numbers.
 
 def evens_and_odds(nums)
 end
@@ -132,23 +86,23 @@ puts evens_and_odds([1,2,3]) == {'even' => 1, 'odd' => 2}
 
 # *********************************************
 
-#Write a function that takes in a word and returns the counts of each letter in that word
+# Write a function that takes in a word and returns the counts of each letter in that word.
 
 def letter_counts(word)
 end
 
-#Tests must become true
+# Tests must all print true
 puts "\nLetter Counts:\n" + "*" * 15 + "\n"
 puts letter_counts("hi") == { 'h' => 1, 'i' => 1 }
 puts letter_counts("hello") == { 'h' => 1, 'e' => 1 , 'l' => 2, 'o' => 1}
 
 # *********************************************
 
-#Refactor your code to make it look pretty and use good coding style
+# Take a moment and refactor your previous code to make it look sexy and use good coding style!
 
 # *********************************************
 
-#Write a boolean function palindrome? which takes in a word and returns true if it is palindrome
+# Write a boolean function palindrome? which takes in a word and returns true if it is palindrome.
 
 def palindrome?(str)
 end
@@ -163,7 +117,7 @@ puts palindrome?("coder") == false
 
 # *********************************************
 
-#Write a function that will reverse the digits of a number
+# Write a function that will reverse the digits of a number.
 def reverse_digits(num)
 end
 
@@ -189,8 +143,7 @@ puts phrase == "go steph go"
 
 # *********************************************
 
-#Write a method that will take a list of names and return a list of first initials
-#and the number of times they appear.
+# Write a method that will take a list of names and return a hash of first initials and the number of times they appear.
 def count_initials(names)
 end
 
@@ -201,7 +154,7 @@ puts count_initials(dubs) = { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 }
 
 # *********************************************
 
-#Write a function that takes an array of integers and uses each to calcuate their squares, storing them to an array
+# Write a function that takes an array of integers and uses each to calcuate their squares, returning them as an array.
 
 # *********************************************
 
@@ -209,23 +162,7 @@ def compute_squares(array)
 end
 
 #Tests
-puts "\ncompute squares map"
+puts "\ncompute squares"
 puts compute_squares([]) == []
 puts compute_squares([9]) == [81]
 puts compute_squares([1, 2, 3, 4]) == [1, 4, 9, 16]
-
-# *********************************************
-
-#Write a function that takes a lower-case letter and uses a range to construct
-#an array containing the letters of the alphabet starting with "a" up to that letter
-
-def alphabet(character)
-end
-
-#Tests
-puts "\nalphabet"
-puts alphabet("a") == ["a"]
-puts alphabet("c") == ["a", "b", "c"]
-puts alphabet("k") == ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
-
-

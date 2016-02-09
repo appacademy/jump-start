@@ -1,10 +1,4 @@
 # ***********************************
-# Write a method that prints the times table from 1 to 9
-
-def times_table
-end
-
-# ***********************************
 # Write a method that takes an array of numbers as input and uses select to return an array only of even numbers
 
 def get_evens(array)
@@ -36,12 +30,3 @@ puts "\narray sum"
 puts array_sum([]) == 0
 puts array_sum([1, 2, 3]) == 6
 puts array_sum([5, 5, 5, 5, 5]) == 25
-# ************************************
-# Write a method that uses reduce to join an array of strings
-
-def join_strings(array)
-end
-
-puts "\njoin strings"
-puts join_strings(["a", "b", "c", "d", "e"]) == "abcde"
-puts join_strings(["markov", "curie", "breakfast"]) == "markovcuriebreakfast"
