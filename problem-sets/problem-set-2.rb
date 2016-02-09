@@ -198,3 +198,34 @@ end
 puts "\nCount Initials:\n" + "*" * 15 + "\n"
 dubs = ["Steph", "Harrison", "Klay", "Andrew", "Andre", "Draymond", "Shaun"]
 puts count_initials(dubs) = { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 }
+
+# *********************************************
+
+#Write a function that takes an array of integers and uses each to calcuate their squares, storing them to an array
+
+# *********************************************
+
+def compute_squares(array)
+end
+
+#Tests
+puts "\ncompute squares map"
+puts compute_squares([]) == []
+puts compute_squares([9]) == [81]
+puts compute_squares([1, 2, 3, 4]) == [1, 4, 9, 16]
+
+# *********************************************
+
+#Write a function that takes a lower-case letter and uses a range to construct
+#an array containing the letters of the alphabet starting with "a" up to that letter
+
+def alphabet(character)
+end
+
+#Tests
+puts "\nalphabet"
+puts alphabet("a") == ["a"]
+puts alphabet("c") == ["a", "b", "c"]
+puts alphabet("k") == ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
+
+
