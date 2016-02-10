@@ -16,7 +16,7 @@
 * With great power comes great responsibility. I think you're ready.
 * You don't have to do this:
 ```ruby
-  def odd?(num)
+  def even?(num)
     if num % 2 == 0
       return true
     end
@@ -24,13 +24,13 @@
 ```
 * You can do this instead:
 ```ruby
-  def odd?(num)
+  def even?(num)
     return true if num % 2 == 0
   end
 ```
 OR
 ```ruby
-  def odd?(num)
+  def even?(num)
     return true unless num % 2 == 1
   end
 ```
