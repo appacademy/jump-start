@@ -18,21 +18,31 @@ puts sum_to_shorter(0) == 0
 # *********************************************
 
 #Write a function that takes in an amount of minutes and returns a time string formatted HH:MM
-def time_conversion(minutes)
-  hours = minutes / 60
-  mins = minutes - (hours * 60)
-  if hours < 10
-    hh = "0" + hours.to_s
-  else
-    hh = hours.to_s
-  end
-  if mins < 10
-    mm = "0" + mins.to_s
-  else
-    mm = mins.to_s
-  end
-  hh + ":" + mm
+def time_conversion(mins)
+  hours = mins / 60
+  minutes = mins % 60
+  hours_str = format_num(hours)
+  minutes_str = format_num(minutes)
+  hours_str + ":"  + minutes_str
 end
+
+def format_num(num)
+  if num < 10
+    "0" + num.to_s
+  else
+    num.to_s
+  end
+end
+
+# Test - these should all print true!
+puts "\nTime Conversion:\n" + "*" * 15 + "\n"
+puts time_conversion(30) == "00:30"
+puts time_conversion(60) == "01:00"
+puts time_conversion(90) == "01:30"
+puts time_conversion(120) == "02:00"
+puts time_conversion(10) == "00:10"
+puts time_conversion(5) == "00:05"
+puts time_conversion(0) == "00:00"
 
 # Test - these should all print true!
 puts "\nTime Conversion:\n" + "*" * 15 + "\n"
