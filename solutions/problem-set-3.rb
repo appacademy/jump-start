@@ -110,39 +110,6 @@ puts "\nMy Min"
 puts my_min([5, 9, 2, 4, 7]) == 2
 puts my_min([0, -2, -5, -5, 1]) == -5
 
-# ************************************
-# Write a method that uses a loop and repeatedly uses Array#min and Array#push (or <<) to return an
-# array sorted from least to greatest.  Your method should not call Array#sort
-
-#NB Too challenging for jump-start?
-
-def my_sort_v1(array)
-  sorted = []
-  until array.length == 0
-    sorted << array.delete_at(array.index(array.min))
-  end
-  sorted
-end
-
-puts "\nMy Sort V1"
-puts my_sort_v1([5, 2, 6, 3, 1, 4]) == [1, 2, 3, 4, 5, 6]
-
-# ************************************
-# Write a method that uses a loop and repeatedly uses Array#max and Array#unshift to return an array
-# sorted from least to greatest.  Your method should not call Array#sort
-
-#NB Too challenging for jump-start?
-
-def my_sort_v2(array)
-  sorted = []
-  until array.length == 0
-    sorted.unshift(array.delete_at(array.index(array.max)))
-  end
-  sorted
-end
-
-puts "\nMy Sort V2"
-puts my_sort_v2([5, 2, 6, 3, 1, 4]) == [1, 2, 3, 4, 5, 6]
 
 # ************************************
 # Write a method that returns the third greatest element in an array
@@ -238,7 +205,7 @@ puts redact_five_letter_words("we the people in order to form a more perfect uni
 # NB too challenging? Do they know string.count?
 
 def most_common_vowel(str)
-  vowels = "aeiouy".split("")
+  vowels = "aeiouy".chars
   counts = Hash.new(0)
   str.each_char do |char|
     if vowels.include?(char)

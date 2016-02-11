@@ -89,30 +89,6 @@ puts my_min([5, 9, 2, 4, 7]) == 2
 puts my_min([0, -2, -5, -5, 1]) == -5
 
 # ************************************
-# Write a method that uses a loop and repeatedly uses Array#min and Array#push (or <<) to return an
-# array sorted from least to greatest.  Your method should not call Array#sort
-
-#NB Too challenging for jump-start?
-
-def my_sort_v1(array)
-end
-
-puts "\nMy Sort V1"
-puts my_sort_v1([5, 2, 6, 3, 1, 4]) == [1, 2, 3, 4, 5, 6]
-
-# ************************************
-# Write a method that uses a loop and repeatedly uses Array#max and Array#unshift to return an array
-# sorted from least to greatest.  Your method should not call Array#sort
-
-#NB Too challenging for jump-start?
-
-def my_sort_v2(array)
-end
-
-puts "\nMy Sort V2"
-puts my_sort_v2([5, 2, 6, 3, 1, 4]) == [1, 2, 3, 4, 5, 6]
-
-# ************************************
 # Write a method that returns the third greatest element in an array
 
 def third_greatest(array)
