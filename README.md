@@ -35,6 +35,8 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Problem set 1](./problem-sets/problem-set-1.rb)
 ##### [Problem set 2](./problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./problem-sets/problem-set-3.rb)
+##### [Additional problems](./problem-sets/problem-set-additional-problems.rb)
+
 
 
 #### CodeEval
