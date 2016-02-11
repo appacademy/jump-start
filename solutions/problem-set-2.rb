@@ -10,10 +10,10 @@ end
 
 # Test - you know the drill!
 puts "\nSum To (with range and each):\n" + "*" * 15 + "\n"
-puts sum_to(5) == 15
-puts sum_to(3) == 6
-puts sum_to(1) == 1
-puts sum_to(0) == 0
+puts sum_to_shorter(5) == 15
+puts sum_to_shorter(3) == 6
+puts sum_to_shorter(1) == 1
+puts sum_to_shorter(0) == 0
 
 # *********************************************
 
@@ -212,3 +212,22 @@ end
 puts "\nCount Initials:\n" + "*" * 15 + "\n"
 dubs = ["Steph", "Harrison", "Klay", "Andrew", "Andre", "Draymond", "Shaun"]
 puts count_initials(dubs) == { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 }
+
+
+# Write a function that takes an array of integers and uses each to calcuate their squares, returning them as an array.
+
+# *********************************************
+
+def compute_squares(array)
+  squares = []
+  array.each do |el|
+    squares.push(el ** 2)
+  end
+  squares
+end
+
+#Tests
+puts "\ncompute squares"
+puts compute_squares([]) == []
+puts compute_squares([9]) == [81]
+puts compute_squares([1, 2, 3, 4]) == [1, 4, 9, 16]
