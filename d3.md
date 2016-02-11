@@ -121,20 +121,28 @@ puts n
 
 ```
 
+### Advanced iteration
+* Iterating with complex logic—while loops!
+* Looking forward or backward
+
+Exercises:
+  * Write a function called `longest_run_digit(num)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
+
 ### Nested iteration
 * Looping within a loop. First element touches every element, second element touches every element, etc.
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
+* Lookaheads
 * Bubble sort!
 * Generate all pairs
 
 Exercises:
+  * Write a function called `find_longest_sequence(arr)`
+  * Implement `bubble_sort!` on your own now!
+  * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
 
-* Implement `bubble_sort!` on your own now!
-* Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
 
-
-## Enumerables++
+### Enumerables++
 
 There are lots of crazy and powerful things you can do with advanced enumerable methods. Check out the Ruby documentation on `Enumerable` if you are curious, but here are a few of the more common methods:
 
@@ -147,44 +155,43 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 
 
 Exercises:
+  * Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
+  * Use the `#max_by` method to find the longest string in an array of strings.
+  * Write an `is_prime?` function in one line using enumerable methods.
+  * Write a one line function that lists all primes less than or equal to the argument passed in. Use enumerable methods in combination with your `is_prime?` function.
 
-* Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
-* Use the `#max_by` method to find the longest string in an array of strings.
-* Write an `is_prime?` function in one line using enumerable methods.
-* Write a one line function that lists all primes less than or equal to the argument passed in. Use enumerable methods in combination with your `is_prime?` function.
 
-
-## More array methods
+### More array methods
 
 * `reverse`
 * `min` and `max`
 * `sort`
 * `uniq` removes all duplicate elements.
-* `rotate`
 * `shuffle` puts the elements in a random order.
 
 Exercises:
 
-* Write your own `uniq` method, called `my_uniq`.
+  * Write a function called `range(arr)` which returns the difference between the smallest and the greatest value of the array.
+  * Write a function called `greatest_uniq(arr)` which returns the greatest unique (non-duplicated) number in the array.
+  * Write a function called `greatest_three(arr)` which given an unordered array, returns the greatest three values.
 
-## More string methods
+### More string methods
 
 * Several `String` methods exist for formatting purposes.
 * `#chomp` or `#strip` removes a newline from the end.
 * You can multiply strings. `"Ha" * 3` outputs ``"HaHaHa"``
 * `reverse` will return a string with all the characters in the opposite order.
-* `gsub` provides search and replace functionality for strings.
+* `gsub(this, for_that)` provides search and replace functionality for strings.
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
 
 Exercises:
 
-* Re-write the triangle exercises above in terms of the `*` operator.
-* Write a function that translates the Hobbit into the Lord of the Rings. It should replace all occurrences of the string "Bilbo" with the string "Frodo".
-* Write an `is_palindrome?` function that checks to see if the string reads the same backwards as it does forwards. It should not count spaces or be case sensitive.
-* Given a string, find the longest substring which is a palindrome. Do not count single letters or the empty string as a palindrome.
+  * Write a function called `lotrify(str)` translates passages from The Hobbit into the Lord of the Rings. It should replace all occurrences of the string "Bilbo" with the string "Frodo".
+  * Write an `is_palindrome?` function that checks to see if the string reads the same backwards as it does forwards. It should not count spaces or be case sensitive.
+  * Write a function called `longest_palindrome` that given a string, finds the longest substring of that string that is a palindrome.
 
 
-## Parallel assignment
+### Parallel assignment
 
 * Assign multiple variables at the same time with `dog1, dog2 = "Rover", "Spot"`.
 * This works even if the values on the right side are in an array, and even if there are more values in that array than we need.
