@@ -64,7 +64,7 @@ puts no_repeat_years(2016, 2020) == [2016, 2017, 2018, 2019]
 def most_frequent_letter(str)
 end
 
-puts "\Most Frequent Letter:\n" + "*" * 15 + "\n"
+puts "\nMost Frequent Letter:\n" + "*" * 15 + "\n"
 puts most_frequent_letter("aaaaa") == "a"
 puts most_frequent_letter("aaaaabbbbbb") == "b"
 puts most_frequent_letter("we the people in order to form a more perfect union") == "e"
@@ -77,7 +77,7 @@ puts most_frequent_letter("we the people in order to form a more perfect union")
 def non_unique_letters(str)
 end
 
-puts "\Non-unique Letters:\n" + "*" * 15 + "\n"
+puts "\nNon-unique Letters:\n" + "*" * 15 + "\n"
 puts non_unique_letters("abbbcdddde") == ["b", "d"]
 puts non_unique_letters("abcde") == []
 puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
@@ -92,7 +92,7 @@ puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
 def missing_letters(str)
 end
 
-puts "\Missing letters:\n" + "*" * 15 + "\n"
+puts "\nMissing letters:\n" + "*" * 15 + "\n"
 puts missing_letters("abcdefghijklmnopqrstuvwxyz") == []
 puts missing_letters("abcdefghiklmnopqrstuvwxyz") == ["j"]
 puts missing_letters("abcdefghiklmnopstuvwxyz") == ["j", "q", "r"]
