@@ -150,7 +150,7 @@ end
 #Tests
 puts "\nCount Initials:\n" + "*" * 15 + "\n"
 dubs = ["Steph", "Harrison", "Klay", "Andrew", "Andre", "Draymond", "Shaun"]
-puts count_initials(dubs) = { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 }
+puts count_initials(dubs) == { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 }
 
 # *********************************************
 
