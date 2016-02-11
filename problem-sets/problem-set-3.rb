@@ -4,7 +4,7 @@
 def get_evens(array)
 end
 
-puts "\nget_evens"
+puts "\nGet evens:\n" + "*" * 15 + "\n"
 puts get_evens([1, 2, 3, 4, 5, 6, 7]) == [2, 4, 6]
 puts get_evens([2, 4, 6, 8, 10, 12, 14]) == [2, 4, 6, 8, 10, 12, 14]
 puts get_evens([1, 3, 5, 7, 9, 11]) == []
@@ -15,7 +15,7 @@ puts get_evens([1, 3, 5, 7, 9, 11]) == []
 def reject_odds(array)
 end
 
-puts "\nreject odds"
+puts "\nReject odds:\n" + "*" * 15 + "\n"
 puts reject_odds([1, 2, 3, 4, 5]) == [2, 4]
 puts reject_odds([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]
 #puts reject_odds([1.1, 3.5, 2.9]) == [1.1, 3.5, 2.9]
@@ -26,7 +26,7 @@ puts reject_odds([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]
 def array_sum(array)
 end
 
-puts "\narray sum"
+puts "\nArray sum:\n" + "*" * 15 + "\n"
 puts array_sum([]) == 0
 puts array_sum([1, 2, 3]) == 6
 puts array_sum([5, 5, 5, 5, 5]) == 25
@@ -38,7 +38,7 @@ puts array_sum([5, 5, 5, 5, 5]) == 25
 def calculate_doubles(array)
 end
 
-puts "\nCalculate Doubles"
+puts "\nCalculate doubles:\n" + "*" * 15 + "\n"
 array = [1, 2, 3, 4, 5]
 doubled_array = calculate_doubles(array)
 puts array != doubled_array
@@ -51,7 +51,7 @@ puts doubled_array == [2, 4, 6, 8, 10]
 def calculate_doubles!(array)
 end
 
-puts "\nCalculate Doubles (bang)"
+puts "\nCalculate doubles!:\n" + "*" * 15 + "\n"
 array = [1, 2, 3, 4, 5]
 calculate_doubles!(array)
 puts array == [2, 4, 6, 8, 10]
@@ -63,7 +63,7 @@ puts array == [2, 4, 6, 8, 10]
 def array_sum_with_index(array)
 end
 
-puts "\nArray sum with index"
+puts "\nArray sum with index:\n" + "*" * 15 + "\n"
 puts array_sum_with_index([0, 1, 2, 3]) == 14
 
 # ************************************
@@ -73,7 +73,7 @@ puts array_sum_with_index([0, 1, 2, 3]) == 14
 def my_max(array)
 end
 
-puts "\nMy Max"
+puts "\nMy max:\n" + "*" * 15 + "\n"
 puts my_max([5, 9, 2, 4, 7]) == 9
 puts my_max([1, 4, 9, 19, 3]) == 19
 
@@ -84,7 +84,7 @@ puts my_max([1, 4, 9, 19, 3]) == 19
 def my_min(array)
 end
 
-puts "\nMy Min"
+puts "\nMy min:\n" + "*" * 15 + "\n"
 puts my_min([5, 9, 2, 4, 7]) == 2
 puts my_min([0, -2, -5, -5, 1]) == -5
 
@@ -94,7 +94,7 @@ puts my_min([0, -2, -5, -5, 1]) == -5
 def third_greatest(array)
 end
 
-puts "\nThird Greatest"
+puts "\nThird greatest:\n" + "*" * 15 + "\n"
 puts third_greatest([5, 9, 3, 7, 7, 2, 10]) == 7
 
 # ************************************
@@ -104,7 +104,7 @@ puts third_greatest([5, 9, 3, 7, 7, 2, 10]) == 7
 def delete_first(array, n)
 end
 
-puts "\nDelete first"
+puts "\nDelete first:\n" + "*" * 15 + "\n"
 p delete_first([1, 2, 3, 4, 5, 6], 1) == [2, 3, 4, 5, 6]
 p delete_first([1, 2, 3, 4, 5, 6], 3) == [4, 5, 6]
 
@@ -115,7 +115,7 @@ p delete_first([1, 2, 3, 4, 5, 6], 3) == [4, 5, 6]
 def longest_word(string)
 end
 
-puts "\nLongest Word"
+puts "\nLongest word:\n" + "*" * 15 + "\n"
 puts longest_word("we the people in order to form a more perfect union establish justice ensure domestic tranquility") == "tranquility"
 puts longest_word("one two three four five six seven") == "three"
 
@@ -129,7 +129,7 @@ puts longest_word("one two three four five six seven") == "three"
 def count_vowels(string)
 end
 
-puts "\nCount Vowels"
+puts "\nCount vowels:\n" + "*" * 15 + "\n"
 puts count_vowels("cat dog elephant monkey") == 8
 puts count_vowels("abcdefghijklmnopqrstuvwxyz") == 6
 
@@ -140,7 +140,7 @@ puts count_vowels("abcdefghijklmnopqrstuvwxyz") == 6
 def redact_five_letter_words(string)
 end
 
-puts "\nRedact Five Letter Words"
+puts "\nRedact five letter words:\n" + "*" * 15 + "\n"
 puts redact_five_letter_words("one two three four five six seven eight") == "one two ##### four five six ##### #####"
 puts redact_five_letter_words("we the people in order to form a more perfect union establish justice ensure domestic tranquility") == "we the people in ##### to form a more perfect ##### establish justice ensure domestic tranquility"
 
@@ -152,6 +152,6 @@ puts redact_five_letter_words("we the people in order to form a more perfect uni
 def most_common_vowel(str)
 end
 
-puts "\nMost Common Vowel"
+puts "\nMost common vowel:\n" + "*" * 15 + "\n"
 puts most_common_vowel("we the people in order to form a more perfect union establish justice ensure domestic tranquility") == "e"
 puts most_common_vowel("cat dog octopus spider") == "o"
