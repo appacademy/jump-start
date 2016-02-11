@@ -43,7 +43,7 @@ puts ordered_vowels(["firefox", "chrome", "safari", "netscape", "aeiou"]) == ["s
 # Hint: helper method?
 # no_repeat_years(2010,2015) -> [2013,2014,2015]
 
-def no_repeat_years(begin, end)
+def no_repeat_years(first_year, last_year)
 end
 
 puts "\nNo Repeat Years:\n" + "*" * 15 + "\n"
