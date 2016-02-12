@@ -169,14 +169,12 @@ Exercises:
 
 Exercises:
 
-  * Write a function called `range(arr)` which returns the difference between the smallest and the greatest value of the array.
+  * Write a function called `range_of(arr)` which returns the difference between the smallest and the greatest value of the array.
   * Write a function called `greatest_uniq(arr)` which returns the greatest unique (non-duplicated) number in the array.
   * Write a function called `greatest_three(arr)` which given an unordered array, returns the greatest three values.
 
 ### More string methods
 
-* Several `String` methods exist for formatting purposes.
-* `#chomp` or `#strip` removes a newline from the end.
 * You can multiply strings. `"Ha" * 3` outputs ``"HaHaHa"``
 * `reverse` will return a string with all the characters in the opposite order.
 * `gsub(this, for_that)` provides search and replace functionality for strings.
