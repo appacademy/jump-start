@@ -38,6 +38,8 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Additional problems](./problem-sets/problem-set-additional-problems.rb)
 
 
+### Terminal Crash Course
+##### [Guide to the terminal](./terminal-commands.rb)
 
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
