@@ -79,8 +79,12 @@ end
 
 #Test - Get these all true, look at the format of the return value
 puts "\nEvens and odds:\n" + "*" * 15 + "\n"
-puts evens_and_odds([1,3]) == {'even' => 0, 'odd' => 2}
-puts evens_and_odds([2,4]) == {'even' => 2, 'odd' => 0}
+puts evens_and_odds([1,3])['even'] ==  0
+puts evens_and_odds([1,3])['odd'] ==  2
+
+puts evens_and_odds([2,4])['even'] == 2
+puts evens_and_odds([2,4])['odd'] == 0
+
 puts evens_and_odds([]) == {'even' => 0, 'odd' => 0}
 puts evens_and_odds([1,2,3]) == {'even' => 1, 'odd' => 2}
 
