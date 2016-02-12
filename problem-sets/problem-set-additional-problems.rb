@@ -79,9 +79,8 @@ puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
 
 # ************************************
 # Write a method that takes a string of lower case words and returns an array of letters that do not occur in the string.
-# This creates a hash containing all the letters as keys and initializes their values (counts) to zero.  This problem
-# is different enough from most_frequent_letter that we can't initialize our hash the same way, at least not without
-# thinking very carefully.  Do you know why?
+# This problem requires a different approach from the one we used in most_frequent_letter and we will need to show some care 
+# in how we set up the hash or process it to get the result.  Do you see why?
 # We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
 def missing_letters(str)
