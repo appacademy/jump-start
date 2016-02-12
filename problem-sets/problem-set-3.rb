@@ -98,17 +98,6 @@ puts "\nThird greatest:\n" + "*" * 15 + "\n"
 puts third_greatest([5, 9, 3, 7, 7, 2, 10]) == 7
 
 # ************************************
-# Write a method that takes an array and a number and repeatedly uses delete_at to delete that many elements from the
-# front of the array
-
-def delete_first(array, n)
-end
-
-puts "\nDelete first:\n" + "*" * 15 + "\n"
-p delete_first([1, 2, 3, 4, 5, 6], 1) == [2, 3, 4, 5, 6]
-p delete_first([1, 2, 3, 4, 5, 6], 3) == [4, 5, 6]
-
-# ************************************
 # Write a method that takes a string of words separated by spaces and returns the longest word.  If there is more
 # than one word of that length, it should return the first instance of that word.
 
