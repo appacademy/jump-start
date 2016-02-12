@@ -216,4 +216,4 @@ arr[i], arr[j] = arr[j], arr[i]
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
 
 Exercise:
-  * Go back over your old code and see where you can refactor to use parallel assignment. `bubble_sort!` is a good place to start.
+  * Go back over your old code and see where you can refactor to use parallel assignment. `reverse!` or `five_sort!` are good candidates.
