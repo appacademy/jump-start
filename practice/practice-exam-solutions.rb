@@ -83,7 +83,7 @@ puts missing_letters("we the people of the united states in order to form a more
 
 
 #Write a function count_primes that takes an array of numbers and returns the count
-#of prime numbers in that array
+#of odd numbers in that array
 def count_odds(numbers)
   numbers.count { |num| num % 2 == 1 }
 end
