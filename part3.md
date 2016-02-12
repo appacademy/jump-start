@@ -132,14 +132,12 @@ Exercises:
 * Looping within a loop. First element touches every element, second element touches every element, etc.
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
-* Lookaheads
-* Bubble sort!
 * Generate all pairs
 
 Exercises:
-  * Write a function called `find_longest_sequence(arr)`
-  * Implement `bubble_sort!` on your own now!
   * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
+  * Write a function called `any_make_yahtzee?(arr)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
+    *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false. 
 
 
 ### Enumerables++
