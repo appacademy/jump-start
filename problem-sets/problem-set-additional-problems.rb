@@ -48,18 +48,13 @@ end
 
 puts "\nNo Repeat Years:\n" + "*" * 15 + "\n"
 puts no_repeat_years(1990, 2000) == []
-puts no_repeat_years(1900,1901) == [1901]
+puts no_repeat_years(1900,1901) == []
 puts no_repeat_years(2016, 2020) == [2016, 2017, 2018, 2019]
 
 
 # ************************************
 # Write a method that takes a string of lower case words (no punctuation) and returns the letter that occurs most frequently.
-# Use a hash within your method to keep track of the letter counts.
-#
-# I would set up the hash with the line
-# hash = Hash.new{|h, k| h[k] = 0}
-# This initializes the hash with a block to be run if you try to look up a key that isn't in the hash.  Here, we
-# set the value at that key to zero if we haven't already seen it.
+# Use a hash within your method to keep track of the letter counts.  You will need to account for spaces.  There are a few ways you can do this.
 
 def most_frequent_letter(str)
 end
@@ -85,7 +80,7 @@ puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
 # ************************************
 # Write a method that takes a string of lower case words and returns an array of letters that do not occur in the string.
 # This creates a hash containing all the letters as keys and initializes their values (counts) to zero.  This problem
-# is different enough from the first problem that we can't initialize our hash the same way, at least not without
+# is different enough from most_frequent_letter that we can't initialize our hash the same way, at least not without
 # thinking very carefully.  Do you know why?
 # We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
@@ -96,3 +91,4 @@ puts "\nMissing letters:\n" + "*" * 15 + "\n"
 puts missing_letters("abcdefghijklmnopqrstuvwxyz") == []
 puts missing_letters("abcdefghiklmnopqrstuvwxyz") == ["j"]
 puts missing_letters("abcdefghiklmnopstuvwxyz") == ["j", "q", "r"]
+puts missing_letters("abc def ghi jk lmn opq rs wxyz") == ["t", "u", "v"]
