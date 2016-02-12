@@ -1,15 +1,15 @@
-#Write a function sumation that takes a number and returns the sumation of all positive
-#intergers upto and including that number.
+#Write a function summation that takes a number and returns the summation of all positive
+#integers upto and including that number.
 
-def sumation(n)
+def summation(n)
 
 end
 
-puts "\nSumation:\n" + "*" * 15 + "\n"
-puts sumation(0) == 0
-puts sumation(1) == 1
-puts sumation(2) == 3
-puts sumation(15) == 120
+puts "\nSummation:\n" + "*" * 15 + "\n"
+puts summation(0) == 0
+puts summation(1) == 1
+puts summation(2) == 3
+puts summation(15) == 120
 
 
 
@@ -27,7 +27,7 @@ puts highest_prime_factor(6) == 3
 puts highest_prime_factor(28) == 7
 puts highest_prime_factor(69842) == 743
 
-#write a boolean function zero_sum? that takes an array of intergers and returns
+#write a boolean function zero_sum? that takes an array of integers and returns
 #true if 2 elements in the array sum to zero.
 
 def zero_sum?(arr)
@@ -70,13 +70,13 @@ puts count_odds([1,2]) == 1
 puts count_odds([1,2,3,4,5,6]) == 3
 puts count_odds([123,42,23,71,0]) == 3
 
-#Write a function hide_letter that takes a phrase and a letter to hide and replaces
-#all instances of that letter with an underscore
-def hide_letter(phrase, letter)
+#Write a function delete_first_letter that takes a phrase and a letter to hide and removes
+#the first instances of that letter
+def delete_first_letter(phrase, letter)
 
 end
 
 puts "\nHide Letter\n" + "*" * 15 + "\n"
-puts hide_letter("abc", "d") == "abc"
-puts hide_letter("abc", "b") == "a_c"
-puts hide_letter("hello, my name is Haseeb", "e") == "h_llo, my nam_ is Has__b"
+puts delete_first_letter("abc", "d") == "abc"
+puts delete_first_letter("abc", "b") == "ac"
+puts delete_first_letter("hello, my name is Tevy", "e") == "hllo, my name is Tevy"
