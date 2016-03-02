@@ -140,7 +140,7 @@ false|false|false|                       |
 * Exercises:
   * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
   * Write a function `reverse(arr)` that reverses an array in-place.
-  * Write a function `rotate(arr, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4], 2)` should produce `[3, 4, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
+  * Write a function `rotate(arr, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4, 5], 2)` should produce `[3, 4, 5, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[7, 6, 5]`.
     * Hint: a combination of `#shift`, `#unshift`, `#pop` and `#push` should come in handy here.
   * Write a function `all_uniqs(arr1, arr2)` that given two arrays, produces a new array of only elements unique to `arr1` and elements unique to `arr2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
 
