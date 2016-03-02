@@ -188,9 +188,9 @@ def ct(x)
   if x < 5
     r = 1
   elsif x < 10
-    r = x * .18
+    r = x * 0.18
   else
-    r = x * .13
+    r = x * 0.13
   end
   r
 end
