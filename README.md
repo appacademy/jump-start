@@ -3,25 +3,6 @@
 Welcome to the Jump Start course!
 (You can find this URL again at: http://tinyurl.com/aa-jump-start)
 
-The morning course is taught by:
-
-**Haseeb Qureshi**, instructor at App Academy
-
-TAs:
-* Matthew Highfield
-* Tevy Jacobs-Gomes
-* Marek Zwick
-
-The evening course is taught by:
-
-**Jeff Fiddler**, head instructor at App Academy
-
-TAs:
-* Jason Ebueng
-* Claire Rogers
-* Mike Ryan
-* Daniel Eager
-
 # Curriculum
 Get started by going to your day's work:
 ##### [Part 1](./part1.md)
