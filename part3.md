@@ -36,15 +36,15 @@ puts sum
 * And this one?
 
 ```ruby
-arr = [1, 2, 3, 4]
-def array_product(arr)
+def array_squared(arr)
   arr.each do |el|
     el *= el
   end
-  puts el
+  arr
 end
 
-array_product(arr)
+arr = [1, 2, 3, 4]
+puts array_squared(arr)
 ```
 
 ### Pass-by-reference
