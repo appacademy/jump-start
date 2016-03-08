@@ -21,7 +21,7 @@ If you're done with the main curriculum, you can start working through the probl
 
 
 ### Terminal Crash Course
-##### [Guide to the terminal](./terminal-commands.md)
+##### [Guide to the terminal](./terminal-commands.txt)
 
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
