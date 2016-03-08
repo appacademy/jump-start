@@ -36,6 +36,7 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Problem set 2](./problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./problem-sets/problem-set-3.rb)
 ##### [Additional problems](./problem-sets/problem-set-additional-problems.rb)
+##### [More problems (NYC)](./problem-sets/nyc_extra_problems.rb)
 
 
 ### Terminal Crash Course
