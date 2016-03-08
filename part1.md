@@ -158,7 +158,7 @@ Exercises:
     * E.g., `zip_with_indices([3, 20, 8]) == [[3, 0], [20, 1], [8, 2]]`
 
 ## `nil`
-* Everything returns something in Ruby
+* Everything returns something in Ruby, including control flow
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
