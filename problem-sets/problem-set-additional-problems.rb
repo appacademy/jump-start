@@ -76,7 +76,7 @@ puts "\nNon-Unique Letters\n" + "*" * 15 + "\n"
 puts non_unique_letters("abbbcdddde") == ["b", "d"]
 puts non_unique_letters("abcde") == []
 puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
-puts non_unique_letters("aaa bbb c d eee") = ["a", "b", "e"]
+puts non_unique_letters("aaa bbb c d eee") == ["a", "b", "e"]
 
 # ************************************
 # Write a method that takes a string of lower case words and returns an array of letters that do not occur in the string.
