@@ -10,7 +10,7 @@ def chunk(arr, n)
     chunk << el
   end
 
-  results << chunk unless chunk.empty?
+  results << chunk
 end
 
 puts "---------chunk-------"
