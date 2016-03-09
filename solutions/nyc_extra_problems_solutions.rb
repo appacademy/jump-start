@@ -23,7 +23,7 @@ def pig_latin(sentence)
 end
 
 def latinify(word)
-  vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  vowels = "aeiou".chars
   until vowels.include?(word[0])
     word = word[1..-1] + word[0]
   end
