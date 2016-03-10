@@ -82,7 +82,7 @@ puts missing_letters("abcdefghiklmnopstuvwxyz") == ["j", "q", "r"]
 puts missing_letters("we the people of the united states in order to form a more perfect union") == "bgjkqvxyz".split("")
 
 
-#Write a function count_primes that takes an array of numbers and returns the count
+#Write a function count_odds that takes an array of numbers and returns the count
 #of odd numbers in that array
 def count_odds(numbers)
   numbers.count { |num| num % 2 == 1 }
