@@ -24,7 +24,7 @@ end
 
 def latinify(word)
   vowels = "aeiou".chars
-  until vowels.include?(word[0])
+  until vowels.include?(word[0].downcase)
     word = word[1..-1] + word[0]
   end
   word + "ay"
