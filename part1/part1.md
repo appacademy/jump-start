@@ -36,11 +36,57 @@ Once you start implementing programs of a sufficient complexity, you will find t
 * IRB
 
 ## Functions
+
+Key concepts:
+
 * The building blocks of all programs
 * `def` and `end`
 * Function arguments
 * Watch your indentation!
 * Functions can call other functions
+
+Do the codecademy ruby track on functions if you haven't yet.
+
+**Note**: When you're writing a function, indent with two spaces, not four.  Python uses four spaces, but ruby uses two spaces.
+
+Also, when you're writing a function, never use single letters for variable names.  Always write out the full name of the variable.
+
+For example, instead of:
+
+```ruby
+def add_two_numbers(a, b)
+  return a + b
+end
+
+```
+
+You should be writing:
+
+```ruby
+def add_two_numbers(first_number, second_number)
+  return first_number + second_number
+end
+
+```
+
+More example functions:
+
+```ruby
+def print_out_yo_dawg # this is a function
+  puts "yo dawg"
+end
+
+def multiply(first_number, second_number) # this is another function
+  return first_number * second_number
+end
+
+def squared_product(first_number, second_number) # this function calls another function (multiply) inside
+  squared_product = multiply(first_number, second_number) * multiply(first_number, second_number)
+
+  return squared_product
+end
+
+```
 
 Exercises:
   * Write a function called `hello_world` will `puts` the string `"Hello world!"` to the screen.
@@ -48,6 +94,9 @@ Exercises:
   * Write a function called `print_thrice_thrice(num)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
 
 ## Numbers
+
+Key concepts:
+
 * Mathematical operators
 * Integer division (`/`)
 * Modulo (`%`)
@@ -60,7 +109,10 @@ Exercises:
   * Write a function called `is_factor_of(big_num, small_num)` that returns `true` if `small_num` is a factor of `big_num`, and `false` if it is not.
 
 ## Booleans and loops
-* Booleans
+
+Key concepts:
+
+* Booleans are `true` and `false`.  That's it.
 * `while` loops — `while(condition)`, do stuff, `end`
 * Conditionals and control flow
   * `elsif` and `else`
@@ -73,6 +125,9 @@ Exercises:
     * Hint: use your `is_factor_of(big_num, small_num)` function.
 
 ## Implicit and explicit returns
+
+Key concepts:
+
 * `return` jumps all the way out of the function
 
 Exercise:
@@ -82,6 +137,9 @@ Exercise:
 
 
 ## Advanced Conditionals
+
+Key concepts:
+
 * `if` vs. `unless`
 * `while` vs. `until`
 * Logical operators (`&&` = and, `||` = or, `!` = not)
@@ -115,6 +173,9 @@ false|false|false|                       |
   * Write an `until` loop that prints out all of the numbers that are less than 20 and are not divisible by 6.
 
 ## Strings
+
+Key concepts:
+
 * String methods
   * `#length`
   * `#upcase`
@@ -124,7 +185,9 @@ false|false|false|                       |
   * `string[idx] = letter` to assign a character at an index
   * `#split(char_to_split_on)` to split a string into an array of parts
 
+
 * Exercises:
+  * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
   * Write a function `capitalize(str)` that takes in a string, capitalizes the first letter of the string, and returns the string.
   * Write a function `shout_then_whisper(str1, str2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
@@ -151,6 +214,9 @@ false|false|false|                       |
   * Write a function `all_uniqs(arr1, arr2)` that given two arrays, produces a new array of only elements unique to `arr1` and elements unique to `arr2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
 
 ## Iteration
+
+Key concepts:
+
 * Iteration and blocks (`each`)
 * Blocks — `do` `|arg1, arg2|`, then code stuff, then `end`
 * `array.each_with_index` yields `|el, i|`
@@ -164,15 +230,26 @@ Exercises:
     * E.g., `zip_with_indices([3, 20, 8]) == [[3, 0], [20, 1], [8, 2]]`
 
 ## `nil`
+
 * Everything returns something in Ruby, including control flow
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
 ## Output
+
+Key concepts:
+
 * `p` and `puts`
   * `p` returns the thing you're printing, `puts` returns `nil`
 
+Exercises:
+
+* In irb, make a sample array. `puts` the array. Then `p` the array.  See the difference?
+
 ## Advanced iteration
+
+Key concepts:
+
 * `break`
 * `next`
 
@@ -274,6 +351,9 @@ identify_sheep
 
 
 ## Naming your variables and refactoring
+
+Key concepts:
+
 * Be as expressive and specific as possible
 * Break down operations into multiple named steps
 * Make your code read like English!

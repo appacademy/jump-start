@@ -1,10 +1,12 @@
 Meta:
   - Write one example and delegate to HIR/Scott?
   - Delegate setting up and coordinating slack to HIR/Scott with Daniel? (Optional)
-    - Slack channel for questions? (Optional)
-    - Pass over material to turn variable names into english, flesh out readings with pictures.
+    - Pass over material to turn variable names into english, flesh out readings with code examples.
+    - Add links to codecademy instead of bullet points
     - Reading on terminal (`pwd`, `cd`, `ls`, `ruby ____.rb`, googling to look up how to do things (e.g., "how do I display a file in terminal" for `cat`))
+    - Slack channel for questions? (Optional)
   - Google group for Jumpstart May
+    - Assigned to Daniel
 
 New additions:
 
