@@ -36,15 +36,15 @@ puts sum
 * And this one?
 
 ```ruby
-arr = [1, 2, 3, 4]
-def array_product(arr)
+def array_squared(arr)
   arr.each do |el|
     el *= el
   end
-  puts el
+  arr
 end
 
-array_product(arr)
+arr = [1, 2, 3, 4]
+puts array_squared(arr)
 ```
 
 ### Pass-by-reference
@@ -132,14 +132,24 @@ Exercises:
 * Looping within a loop. First element touches every element, second element touches every element, etc.
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
-* Lookaheads
-* Bubble sort!
 * Generate all pairs
+* Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
+* Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
 Exercises:
-  * Write a function called `find_longest_sequence(arr)`
-  * Implement `bubble_sort!` on your own now!
   * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
+  * Write a function called `any_make_yahtzee?(arr)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
+    *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
+  * Implement `bubble_sort!` on your own now!
+    * On paper, write out in english the process that bubble sort takes. Don't worry about writing code yet.
+    * Now take that english (we call that english "pseudocode") and turn it into real code
+    * Test it out:
+
+    ```ruby
+      array_to_sort = [3, 1, 2]
+      bubble_sort!(array_to_sort)
+      p array_to_sort # should be [1, 2, 3]
+    ```
 
 
 ### Enumerables++
@@ -171,18 +181,16 @@ Exercises:
 
 Exercises:
 
-  * Write a function called `range(arr)` which returns the difference between the smallest and the greatest value of the array.
+  * Write a function called `range_of(arr)` which returns the difference between the smallest and the greatest value of the array.
   * Write a function called `greatest_uniq(arr)` which returns the greatest unique (non-duplicated) number in the array.
   * Write a function called `greatest_three(arr)` which given an unordered array, returns the greatest three values.
 
 ### More string methods
 
-* Several `String` methods exist for formatting purposes.
-* `#chomp` or `#strip` removes a newline from the end.
 * You can multiply strings. `"Ha" * 3` outputs ``"HaHaHa"``
 * `reverse` will return a string with all the characters in the opposite order.
 * `gsub(this, for_that)` provides search and replace functionality for strings.
-* `sub`
+* `sub(this, for_that)` replaces only first occurance
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
 
 Exercises:
@@ -221,4 +229,4 @@ arr[i], arr[j] = arr[j], arr[i]
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
 
 Exercise:
-  * Go back over your old code and see where you can refactor to use parallel assignment. `bubble_sort!` is a good place to start.
+  * Go back over your old code and see where you can refactor to use parallel assignment. `reverse!` or `five_sort!` are good candidates.
