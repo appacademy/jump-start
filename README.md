@@ -31,12 +31,12 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Problem set 1](./problem-sets/problem-set-1.rb)
 ##### [Problem set 2](./problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./problem-sets/problem-set-3.rb)
-##### [Additional problems](./problem-sets/problem-set-additional-problems.rb)
-##### [More problems (NYC)](./problem-sets/nyc_extra_problems.rb)
+##### [Problem set 4](./problem-sets/problem-set-4.rb)
+##### [Problem set 5](./problem-sets/problem-set-5.rb)
 
 
 ### Terminal Crash Course
-##### [Guide to the terminal](./terminal-commands.txt)
+##### [Terminal Command Cheat Sheet](./terminal-commands.txt)
 
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
