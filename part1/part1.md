@@ -142,7 +142,7 @@ Exercise:
 ## Advanced Conditionals
 
 Key concepts:
-
+* `while` vs. `until`
 * `if` vs. `unless`
 * Logical operators (`&&` = and, `||` = or, `!` = not)
 * Parenthesization
