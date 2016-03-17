@@ -33,6 +33,9 @@ Once you start implementing programs of a sufficient complexity, you will find t
 ##
 
 * The terminal
+
+[Terminal Command Cheat Sheet](../terminal-commands.txt)
+
 * IRB
 
 ## Functions
@@ -144,6 +147,8 @@ Key concepts:
 * Logical operators (`&&` = and, `||` = or, `!` = not)
 * Parenthesization
 * Truth tables
+
+
 
 Exercise:
   * Complete these truth tables. Write it out on pencil and paper in your notebook.
