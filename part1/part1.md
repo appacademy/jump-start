@@ -1,8 +1,12 @@
 # Lesson Plan
 
+## Instructions
+
+Please read the bullet points, then do every exercise.  You can reference the linked material if you ever need help.
+
 ## Intro to programming
 
-#### Zen and the art of programming
+### Zen and the art of programming
 
 * A computer will always do exactly what you tell it to, no more and no less.
 * There's no bullshitting in programming. Your program either works or it doesn't, and no amount of cleverness or importance will change that.
@@ -18,13 +22,15 @@ In order to be a great software engineer, there are certain tangental skills tha
 
 One of the primary goals of the course is to provide you with the a foundation and resources to develop these skills.
 
-#### The Complexity of Programming
+### The Complexity of Programming
 
 *The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible.*
 
 -Edsger Dijkstra
 
 Once you start implementing programs of a sufficient complexity, you will find that it is very easy to make mistakes. Unlike computers, the human brain does not always think in perfect logic or arithmetic. The software engineers of the past quickly realized this and started developing techniques and structures to manage the complexity of their programs: variables, good style, abstraction and decomposition, objects and classes. Don't worry if some of those words seem unfamiliar. We will explore them all and more in the course.
+
+##
 
 * The terminal
 * IRB
@@ -151,10 +157,10 @@ false|false|false|                       |
 * `string.chars.each_with_index` gives you the same
 
 Exercises:
-  * Write a function called `vowels(str)` that returns an array of every vowel in the string.
+  * Write a function called `vowels(string)` that returns an array of every vowel in the string.
     * Use the `String#chars` method, which returns an array of characters. Then use an `each` over the chars.
-  * Write a function called `odd_elems(arr)` that prints out every other element (those with odd indices). Use `each_with_index`.
-  * Write a function called `zip_with_indices(arr)` that given an array, converts each element into a tuple with its index.
+  * Write a function called `odd_elements(array)` that prints out every other element (those with odd indices). Use `each_with_index`.
+  * Write a function called `zip_with_indices(array)` that given an array, converts each element into a tuple (array with two items) with its index.
     * E.g., `zip_with_indices([3, 20, 8]) == [[3, 0], [20, 1], [8, 2]]`
 
 ## `nil`
@@ -174,12 +180,105 @@ Exercises:
   * Adapt your `odd_elems(arr)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
 
+
+## Debugging
+
+You might notice that it can be hard to catch the errors you make.  These errors, like misspellings, or being off by one, might feel "silly" or "stupid", but professional software engineers make the same mistakes.  The key is catching them quickly.
+
+The most effective way to catch your errors is to use the debugger.  You had a small taste of this in the pre-curriculum.
+
+The way to put a debugger in your code: stick `byebug` in the middle of a function and run your code.  Make sure you `require 'byebug'` at the top of your file.  For example:
+
+![Byebug](./byebug.png)
+
+In your interviews, we'll be asking you to play the role of debugger (knowing what every variable is at every point in time in a function), so it's important that you know how to use a debugger well.  Debuggers are arguably the most useful tool you can have while learning to program.
+
+For your final assessment, it will be very helpful to know how to use the debugger to fix your errors quickly.
+
+The three most important commands in `byebug`:
+
+- `n` (or `next`): Goes to the next line
+- `c` (or `continue`): Goes to the next place byebug lives in the code
+- Printing out variable names: `elephants`, `grandma_age`, etc.  You type out the variable name and press enter.
+
+Take a look at how you can use byebug while you're running your code.
+
+![Byebug In Action](./byebug-in-action.gif)
+
+You can find out more about byebug in the "Byebug Commands" section [here][byebug]. Feel free to play around with new commands.
+
+[byebug]: https://github.com/deivid-rodriguez/byebug
+
+* Exercises:
+
+  * Copy and paste the code below into a file.
+
+```ruby
+  def company_performance(quarterly_projections, quarterly_profits)
+    times_we_beat_projection = 0
+
+    quarterly_projections.each_with_index do |projection, quarter|
+      profit = quarterly_profits[quarter]
+
+      if profit > projection
+        times_we_beat_projection += 1
+      end
+    end
+
+    return times_we_beat_projection
+
+  end
+
+
+  apple_projections = [10000, 25000, 8000, 30000]
+  apple_profits = [5000, 26000, 3000, 50000]
+
+  p company_performance(apple_projections, apple_profits)
+
+```
+
+  Run the file.  With pen and paper, write down what `projection`, `profit` and `quarter` are at every iteration of the loop.
+
+  Play around with `n` and `c` in byebug and see how you can jump to the next iteration of a loop.  Remember to `require 'byebug'` at the top if you haven't.
+
+  Move byebug inside and outside the if statement and rerun your code.  How many times should you hit byebug if it's inside the if statement?
+
+  * Copy and paste the code below into a file.
+
+```ruby
+def identify_sheep
+  sheep = ["Gary", "Adam", "Jacob", "Sam", "Toby", "Billy", "Mandy", "Guinness"]
+
+  i = 0
+
+  while i <= sheep.length
+    individual_sheep = sheep[i]
+    sheep_with_exclamation_point = individual_sheep + "!"
+    puts "This sheep is named #{sheep_with_exclamation_point}"
+    i += 1
+  end
+
+end
+
+identify_sheep
+
+```
+
+
+  Run the file and see the error that pops up.
+
+  Find the top line in the list of error lines (the stacktrace) that looks familiar.  Put a debugger (`byebug`) on the line right above the line with the error.  Print out all the variables that are on the line right below your debugger.
+
+  Try to figure out where the error might be coming from and fix it.
+
+
+
 ## Naming your variables and refactoring
 * Be as expressive and specific as possible
 * Break down operations into multiple named steps
 * Make your code read like English!
 
-* Exercise:
+* Exercises:
   * Refactor this tip-calculating function. Try to rename the variables and to make it more expressive, and take advantage of early returns.
 
 ```ruby

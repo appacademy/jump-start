@@ -3,11 +3,26 @@
 Welcome to the Jump Start course!
 (You can find this URL again at: http://tinyurl.com/aa-jump-start)
 
+# Pre-Curriculum
+
+Before the course starts, you must:
+
+1. Complete the ruby [codecademy track][codecademy-ruby].
+2. [Setup your system ruby][ruby-setup].
+3. [Install a debugger][debugger-setup].
+4. Read our [Intro Doc][intro-doc].
+
+[codecademy-ruby]: https://www.codecademy.com/learn/ruby
+[ruby-setup]: ./pre-curriculum/ruby-setup.md
+[debugger-setup]: ./pre-curriculum/debugger-setup.md
+[intro-doc]: ./pre-curriculum/intro.md
+
+
 # Curriculum
 Get started by going to your day's work:
-##### [Part 1](./part1.md)
-##### [Part 2](./part2.md)
-##### [Part 3](./part3.md)
+##### [Part 1](./part1/part1.md)
+##### [Part 2](./part2/part2.md)
+##### [Part 3](./part3/part3.md)
 
 
 #### Problem Sets
@@ -28,7 +43,7 @@ Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through
 
 # Final Assessment
 
-On the final day of the Jump Start course, we will give you a final assessment. The assessment will begin place 2 hours before the end of the day, and will last for one hour. The assessment will be a power-test—that is, we're going to give you more problems than you can probably solve in an hour, and it's up to you which ones you work on and how many you solve.
+On the final day of the Jump Start course, we will give you a final assessment. The assessment will take place 2 hours before the end of the day, and will last for one hour. The assessment will be a power-test—that is, we're going to give you more problems than you can probably solve in an hour, and it's up to you which ones you work on and how many you solve.
 
 We'll give you more information about it going forward, but rest assured that we know what's on the assessment, and will be tailoring the curriculum to give you everything you need to do well.
 
