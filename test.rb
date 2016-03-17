@@ -1,22 +1,28 @@
-require 'byebug'
+def horizontal_tic_tac_toe(board)
+  board.each do |row|
+    x_count = 0
+    o_count = 0
 
-def company_performance(quarterly_projections, quarterly_profits)
-  times_we_beat_projection = 0
+    row.each do |letter|
+      if letter == "X"
+        x_count += 1
+      else
+        o_count += 1
+    end
 
-  quarterly_projections.each_with_index do |projection, quarter|
-    profit = quarterly_profits[quarter]
+    if x_count == 3
+      return "X"
+    end
 
-    if profit > projection
-      times_we_beat_projection += 1
+    if o_count == 3
+      return "O"
     end
   end
-
-  return times_we_beat_projection
-
 end
 
 
-apple_projections = [10000, 25000, 8000, 30000]
-apple_profits = [5000, 26000, 3000, 50000]
-
-p company_performance(apple_projections, apple_profits)
+board = [
+  ["X", "X", "O"],
+  ["O", "O", "X"],
+  ["X", "O", "X"],
+]
