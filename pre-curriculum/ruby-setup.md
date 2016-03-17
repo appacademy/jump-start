@@ -4,7 +4,7 @@
 
 In order to make the most of your time in JumpStart, you need to be using ruby the right way.
 
-Setup ruby using [this doc][setup], steps 1-4.  We recommend using Cloud9.  Once you have an account on Cloud9, follow the gif below:
+Setup ruby using [this doc][setup], steps 1-4.  Use Cloud9.  Once you have an account on Cloud9, follow the gif below:
 
 ![Setup Cloud9](./setup-cloud9.gif)
 

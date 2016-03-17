@@ -8,7 +8,7 @@ Welcome to the Jump Start course!
 Before the course starts, you must:
 
 1. Complete the ruby [codecademy track][codecademy-ruby].
-2. [Setup your system ruby][ruby-setup].
+2. [Set up ruby on Cloud9][ruby-setup].
 3. [Install a debugger][debugger-setup].
 4. Read our [Intro Doc][intro-doc].
 

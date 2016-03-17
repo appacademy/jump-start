@@ -37,6 +37,7 @@ x Make page to learn debugging (off of page 1, after functions or arrays or some
   x Write down on paper what the values are
 
 - Terminal PROJECT?
+  - Delegated
 
 - Week 1 assessment to catch early birds and get them the prep work
 
@@ -46,7 +47,7 @@ Existing tweaks:
 - Expand out nested iteration
   - Write a piece of existing code for them to stick a debugger in
   - Add debugging exercise to nested iteration
-  - Make sample GIF off of a problem
+  x Make sample GIF off of a problem
 - Add clock problem to nested iteration: print out every half hour
 
 - Links to codecademy for each concept
