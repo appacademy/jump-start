@@ -1,6 +1,6 @@
 
 # Write a function that takes in a number and sums all the numbers up to that number
-def sum_to(n)
+def sum_to(number)
 end
 
 # Test - these should all print out true!
@@ -13,7 +13,7 @@ puts sum_to(0) == 0
 # *********************************************
 
 # Write a function that takes in an amount of minutes and returns a time string formatted HH:MM
-def time_conversion(mins)
+def time_conversion(minutes)
 end
 
 # Test - these should all print true!
@@ -28,7 +28,7 @@ puts time_conversion(0) == "00:00"
 
 # *********************************************
 # Write a function that takes an array of pairs and returns the pair with the greatest sum
-def largest_pair(pairs)
+def largest_pair(pairs_array)
 end
 
 #Tests - Get all these to print true
@@ -56,7 +56,7 @@ puts dont_change_this == "do not mutate me"
 # *********************************************
 
 # Write a boolean function that returns true if an array of numbers has any multiples of 3.
-def has_multiple_of_three?(nums)
+def has_multiple_of_three?(numbers)
 end
 
 #Tests - More trues
@@ -74,7 +74,7 @@ puts has_multiple_of_three?([1,2,4,5,6,7,12]) == true
 
 # Write a function that take an array of numbers and returns a hash of the number of even numbers and of odd numbers.
 
-def evens_and_odds(nums)
+def evens_and_odds(numbers)
 end
 
 #Test - Get these all true, look at the format of the return value
@@ -108,7 +108,7 @@ puts letter_counts("hello") == { 'h' => 1, 'e' => 1 , 'l' => 2, 'o' => 1}
 
 # Write a boolean function palindrome? which takes in a word and returns true if it is palindrome.
 
-def palindrome?(str)
+def palindrome?(string)
 end
 
 #Tests
@@ -122,7 +122,7 @@ puts palindrome?("coder") == false
 # *********************************************
 
 # Write a function that will reverse the digits of a number.
-def reverse_digits(num)
+def reverse_digits(number)
 end
 
 #Tests

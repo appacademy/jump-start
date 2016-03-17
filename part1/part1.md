@@ -93,8 +93,8 @@ end
 
 Exercises:
   * Write a function called `hello_world` will `puts` the string `"Hello world!"` to the screen.
-  * Write a function called `print_thrice(num)` that, given a number, will print out the number three times.
-  * Write a function called `print_thrice_thrice(num)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
+  * Write a function called `print_thrice(number)` that, given a number, will print out the number three times.
+  * Write a function called `print_thrice_thrice(number)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
 
 ## Numbers
 
@@ -106,10 +106,10 @@ Key concepts:
 * `+=`, `-=`, `/=` etc.
 
 Exercises:
-  * Write a function called `times_three_and_plus_five(num)` that takes a number, multiplies it by 3, and then adds 5. For example, `times_three_and_plus_five(4)` should output 17.
-  * Write a function called `even_or_odd(num)` that prints `"even"` if the number is even, and prints `"odd"` if the number is odd.
-  * Write a function called `division_plus_remainder(big_num, small_num)` that finds the number of times `small_num` completely divides into `big_num`, and then adds the remainder that's left over. For example, `divisor_plus_remainder(7, 2)` should equal `4`.
-  * Write a function called `is_factor_of(big_num, small_num)` that returns `true` if `small_num` is a factor of `big_num`, and `false` if it is not.
+  * Write a function called `times_three_and_plus_five(number)` that takes a number, multiplies it by 3, and then adds 5. For example, `times_three_and_plus_five(4)` should output 17.
+  * Write a function called `even_or_odd(number)` that prints `"even"` if the number is even, and prints `"odd"` if the number is odd.
+  * Write a function called `division_plus_remainder(big_number, small_number)` that finds the number of times `small_number` completely divides into `big_number`, and then adds the remainder that's left over. For example, `divisor_plus_remainder(7, 2)` should equal `4`.
+  * Write a function called `is_factor_of(big_number, small_number)` that returns `true` if `small_number` is a factor of `big_number`, and `false` if it is not.
 
 ## Booleans and loops
 
@@ -123,9 +123,9 @@ Key concepts:
 
 Exercises:
   * Write a `while` loop that prints out all the numbers from 1 to 25 inclusive.
-  * Write a function called `print_up_to(num)` that given a number, prints out all the numbers from 1 to that number, inclusive. It should use a `while` loop internally.
-  * Write a function called `print_factors(num)` that prints all of the factors of a number, including 1 and the number itself.
-    * Hint: use your `is_factor_of(big_num, small_num)` function.
+  * Write a function called `print_up_to(number)` that given a number, prints out all the numbers from 1 to that number, inclusive. It should use a `while` loop internally.
+  * Write a function called `print_factors(number)` that prints all of the factors of a number, including 1 and the number itself.
+    * Hint: use your `is_factor_of(big_number, small_number)` function.
 
 ## Implicit and explicit returns
 
@@ -134,8 +134,8 @@ Key concepts:
 * `return` jumps all the way out of the function
 
 Exercise:
-  * Write a function `largest_factor(num)` that returns the largest factor of a number. Adapt your `print_factors` method to use a `while` loop starting at `num - 1`, and return immediately once you find a number that's a factor.
-  * Write a function `is_prime?(num)` that returns a boolean depending on whether the number is prime. A reminder: a prime number only has two factors: 1 and itself.
+  * Write a function `largest_factor(number)` that returns the largest factor of a number. Adapt your `print_factors` method to use a `while` loop starting at `number - 1`, and return immediately once you find a number that's a factor.
+  * Write a function `is_prime?(number)` that returns a boolean depending on whether the number is prime. A reminder: a prime number only has two factors: 1 and itself.
     * Once you've written it, see if you can use an early `return` on numbers that you know for sure aren't prime, without having to check every possible factor.
 
 
@@ -168,9 +168,9 @@ true |false|false|                       |
 false|true |false|                       |
 false|false|false|                       |
   * Using pen and paper, see if you can figure out the value of these conditionals:
-    1. `F || (T || F)`
-    2. `(T && F) || F`
-    3. `(T || F) && (F && T)`
+    1. `False || (True || False)`
+    2. `(True && False) || False`
+    3. `(True || False) && (False && True)`
     4. `3 == 5 || 4 % 2 > 2`
     5. `6 + 4 <= 10 && 5 != 6`
     6. `(6 != 6 || (1 == 10 % 3)) && (3 + 5 < 6)`
@@ -185,45 +185,45 @@ Key concepts:
   * `#upcase`
   * `#downcase`
   * `+`
-  * `string[idx]` to look up the character at an index
-  * `string[idx] = letter` to assign a character at an index
-  * `#split(char_to_split_on)` to split a string into an array of parts
+  * `string[index]` to look up the character at an index
+  * `string[index] = letter` to assign a character at an index
+  * `#split(character_to_split_on)` to split a string into an array of parts
 
 
 * Exercises:
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
-  * Write a function `capitalize(str)` that takes in a string, capitalizes the first letter of the string, and returns the string.
-  * Write a function `shout_then_whisper(str1, str2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
+  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string.
+  * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
 
 ## Arrays
 * Array methods
   * `#length` or `#size` or `#count`
-  * `arr[idx]`
-  * `arr[idx] = val`
+  * `array[index]`
+  * `array[index] = val`
   * `#first`
   * `#last`
-  * `#include?(val)`
-  * `#push(val)` to add a value onto the end (also `<<`)
+  * `#include?(value)`
+  * `#push(value)` to add a value onto the end (also `<<`)
   * `#pop` to pop off a value from the end
-  * `#unshift(val)` to stick a value onto the beginning
+  * `#unshift(value)` to stick a value onto the beginning
   * `#shift` to shift off a value from the beginning
   * `#join(separator)` to join an array of strings, separated by a delimiter
 
 * Exercises:
   * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
-  * Write a function `reverse(arr)` that reverses an array in-place.
-  * Write a function `rotate(arr, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4], 2)` should produce `[3, 4, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
+  * Write a function `reverse(array)` that reverses an array in-place.
+  * Write a function `rotate(array, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4], 2)` should produce `[3, 4, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
     * Hint: a combination of `#shift`, `#unshift`, `#pop` and `#push` should come in handy here.
-  * Write a function `all_uniqs(arr1, arr2)` that given two arrays, produces a new array of only elements unique to `arr1` and elements unique to `arr2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
+  * Write a function `all_uniqs(array1, array2)` that given two arrays, produces a new array of only elements unique to `array1` and elements unique to `array2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
 
 ## Iteration
 
 Key concepts:
 
 * Iteration and blocks (`each`)
-* Blocks — `do` `|arg1, arg2|`, then code stuff, then `end`
-* `array.each_with_index` yields `|el, i|`
+* Blocks — `do` `|argument1, argument2|`, then code stuff, then `end`
+* `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
 Exercises:
@@ -258,7 +258,7 @@ Key concepts:
 * `next`
 
 * Exercises:
-  * Adapt your `odd_elems(arr)` function to use `next` to skip over every even-indexed element.
+  * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
 
 
@@ -330,13 +330,13 @@ You can find out more about byebug in the "Byebug Commands" section [here][byebu
 def identify_sheep
   sheep = ["Gary", "Adam", "Jacob", "Sam", "Toby", "Billy", "Mandy", "Guinness"]
 
-  i = 0
+  index = 0
 
-  while i <= sheep.length
-    individual_sheep = sheep[i]
+  while index <= sheep.length
+    individual_sheep = sheep[index]
     sheep_with_exclamation_point = individual_sheep + "!"
     puts "This sheep is named #{sheep_with_exclamation_point}"
-    i += 1
+    index += 1
   end
 
 end

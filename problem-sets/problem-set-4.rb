@@ -2,7 +2,7 @@
 # Write a method that takes an array of words and returns only the words that are
 # anagrams of a given string.
 
-def anagrams(str, arr)
+def anagrams(string, array)
 end
 
 #Tests
@@ -43,7 +43,7 @@ puts ordered_vowels(["firefox", "chrome", "safari", "netscape", "aeiou"]) == ["s
 # Hint: helper method?
 # no_repeat_years(2010,2015) -> [2013,2014,2015]
 
-def no_repeat_years(first_yr, last_yr)
+def no_repeat_years(first_year, last_year)
 end
 
 puts "\nNo Repeat Years:\n" + "*" * 15 + "\n"
@@ -56,7 +56,7 @@ puts no_repeat_years(2016, 2020) == [2016, 2017, 2018, 2019]
 # Write a method that takes a string of lower case words (no punctuation) and returns the letter that occurs most frequently.
 # Use a hash within your method to keep track of the letter counts.  You will need to account for spaces.  There are a few ways you can do this.
 
-def most_frequent_letter(str)
+def most_frequent_letter(string)
 end
 
 puts "\nMost Frequent Letter\n" + "*" * 15 + "\n"
@@ -69,7 +69,7 @@ puts most_frequent_letter("we the people in order to form a more perfect union")
 # Write a method that takes a string of lower case words (no punctuation) and returns an array of letters that occur more
 # than once.  We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
-def non_unique_letters(str)
+def non_unique_letters(string)
 end
 
 puts "\nNon-Unique Letters\n" + "*" * 15 + "\n"
@@ -84,7 +84,7 @@ puts non_unique_letters("aaa bbb c d eee") == ["a", "b", "e"]
 # in how we set up the hash or process it to get the result.  Do you see why?
 # We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
-def missing_letters(str)
+def missing_letters(string)
 end
 
 puts "\nMissing Letters\n" + "*" * 15 + "\n"
@@ -106,7 +106,7 @@ puts primes(6) == [2,3,5,7,11,13]
 #write a boolean function zero_sum? that takes an array of intergers and returns
 #true if 2 elements in the array sum to zero.
 
-def zero_sum?(arr)
+def zero_sum?(array)
 end
 
 puts "\nZero Sum:\n" + "*" * 15 + "\n"

@@ -17,7 +17,7 @@ puts summation(15) == 120
 #write a function that takes a number n and returns the highest prime factor of
 #that number. Hint: Helper function.
 
-def highest_prime_factor(num)
+def highest_prime_factor(number)
 
 end
 
@@ -30,7 +30,7 @@ puts highest_prime_factor(69842) == 743
 #write a boolean function zero_sum? that takes an array of integers and returns
 #true if 2 elements in the array sum to zero.
 
-def zero_sum?(arr)
+def zero_sum?(array)
 
 end
 
@@ -58,7 +58,7 @@ puts missing_letters("we the people of the united states in order to form a more
 
 #Write a function count_odds that takes an array of numbers and returns the count
 #of odd numbers in that array
-def count_odds(numbers)
+def count_odds(numbers_array)
 
 end
 

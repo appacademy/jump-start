@@ -16,25 +16,25 @@
 * With great power comes great responsibility. I think you're ready.
 * You don't have to do this:
 ```ruby
-  def even?(num)
-    if num % 2 == 0
+  def even?(number)
+    if number % 2 == 0
       return true
     end
   end
 ```
 * You can do this instead:
 ```ruby
-  def even?(num)
-    return true if num % 2 == 0
+  def even?(number)
+    return true if number % 2 == 0
   end
 ```
 OR
 ```ruby
-  def even?(num)
-    return true unless num % 2 == 1
+  def even?(number)
+    return true unless number % 2 == 1
   end
 ```
-(In reality, you should just return `num % 2 == 1`)
+(In reality, you should just return `number % 2 == 1`)
 * Only do this for **one line** conditionals. Otherwise, use the long form.
 * [Many more](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 
@@ -115,8 +115,8 @@ Exercises:
 
 Exercises:
   * `puts` an array of all of the numbers between 30 and 50, inclusive.
-  * Write a function called `letters_before(char)` that given a character in the alphabet, returns all of the characters that go before it in the alphabet.
-  * Write a function called `to_range(arr)` that given an ordered array of every value from `n` to `m`, returns the corresponding range.
+  * Write a function called `letters_before(character)` that given a character in the alphabet, returns all of the characters that go before it in the alphabet.
+  * Write a function called `to_range(array)` that given an ordered array of every value from `start_number` to `end_number`, returns the corresponding range.
     * For example, the `to_range([4, 5, 6, 7]` should return `(4..7)` as a range.
 
 ### Boolean enumerable methods
@@ -134,11 +134,11 @@ Exercises:
 Exercises:
 
 * Print every number from 1 to 30 using `each` and a range.
-* Write a function called `triplify(arr)` which given an array of integers, returns a new array with all of the values multiplied by three.
-* Write a boolean function called `zeroes?(arr)` that checks whether an array of integers contains at least one `0`.
+* Write a function called `triplify(array)` which given an array of integers, returns a new array with all of the values multiplied by three.
+* Write a boolean function called `zeroes?(array)` that checks whether an array of integers contains at least one `0`.
     * First implement this with `#each`, then use a more advanced enumerable boolean method.
-* Write a function called `all_odd?(arr)` that returns whether all of the integers in an array are odd.
-* Write a function called `squares(arr)` that, given an array of integers, returns a new array of each number squared.
+* Write a function called `all_odd?(array)` that returns whether all of the integers in an array are odd.
+* Write a function called `squares(array)` that, given an array of integers, returns a new array of each number squared.
 
 ### Function decomposition
 * Break down your functions into as small pieces as possible!
@@ -154,15 +154,15 @@ Exercises:
 * `nil` values by default
 
 * Important methods:
-  * `hash[key]` and `hash[key] = val`
+  * `hash[key]` and `hash[key] = value`
   * `#keys`
   * `#values`
-  * `#each do |k, v|`
+  * `#each do |key, value|`
 
 Exercises:
-  * Write a function called `word_lengths(str)` that given a sentence, returns a hash of each of the words and their lengths.
+  * Write a function called `word_lengths(string)` that given a sentence, returns a hash of each of the words and their lengths.
     * E.g., `word_lengths("hello my good good pal")` should return `{ 'hello' => 5, 'my' => 2, 'good' => 4, 'pal' => 3 }`
-  * Write a function called `uniq(arr)` that returns only the unique values in an array. (Hint: use a hash!)
+  * Write a function called `uniq(array)` that returns only the unique values in an array. (Hint: use a hash!)
   * Write a function called `greatest_val_key(hash)` that takes in a hash with any keys but only integers for values, and returns the key with the largest value.
     * E.g., `greatest_val_key({ "a" => 5, "b" => 6, "c" => 3 })` should return `"b"`
 
@@ -171,8 +171,8 @@ Exercises:
 * Counts pattern! `Hash.new(0)`
 
 Exercises:
-  * Write a function called `most_common_number(arr)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
-  * Write a function called `least_frequent_word(str)` that takes in a string, and returns the word repeated most infrequently.
+  * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
+  * Write a function called `least_frequent_word(string)` that takes in a string, and returns the word repeated most infrequently.
     * E.g., `least_frequent_word('hi ho hi hee ho hum ho hum')` should return `"hee"`
 
 # Free Work
