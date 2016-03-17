@@ -141,7 +141,6 @@ Exercise:
 Key concepts:
 
 * `if` vs. `unless`
-* `while` vs. `until`
 * Logical operators (`&&` = and, `||` = or, `!` = not)
 * Parenthesization
 * Truth tables
