@@ -133,7 +133,7 @@ Exercises:
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
 * Generate all pairs
-* Look at [bubble sort]() and get a feel for how it works.  On paper, write
+* Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
 Exercises:
