@@ -35,9 +35,6 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Problem set 5](./problem-sets/problem-set-5.rb)
 
 
-### Terminal Crash Course
-##### [Terminal Command Cheat Sheet](./terminal-commands.txt)
-
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
 

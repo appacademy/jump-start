@@ -5,11 +5,14 @@
 Here's the way most days will work.
 
 * Day begins at 6:30pm.
-* You will work on our lesson plans on your own computer.  These lesson plans mainly consist of exercises and problems.  If you finish every part of our curriculum, you can start to work through our final problem sets.
-* We'll have a 30 minute lecture at 7:45pm, in which your instructor will solve some of the problems that you did the day before and answer common questions.
-* Class ends at 6:00pm.
+* You will work on our lesson plans on your own computer.  These lesson plans mainly consist of exercises and problems.
+* If you finish every part of our curriculum, you will start to work through our final problem sets.
+* We'll have a 30 minute lecture at 7:45pm, in which your instructor will solve some of the problems that you did the day before and answer common questions they saw pop up.
+* Class ends at 9:30pm.
 * Class runs Monday through Thursday, but the facility is open 24/7.
 * Outside of JumpStart, we still expect you to be working on these projects when you have the time.
+
+The exercises start out easy, but will ramp up quickly.
 
 At the end of these two weeks, we'll have a "final assessment".  This assessment will have problems just like what you would see on our interview.  If you pass the assessment, you get into the program.
 
