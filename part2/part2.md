@@ -101,8 +101,10 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
   * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+  * [Inclusive and Exclusive Ranges]
+  (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Initialize an array of 100 elements with a default value of `"yes"`, and then set every other value to `"no"`.
@@ -134,6 +136,7 @@ Exercises:
 * `#times`
 * `#map`
 
+
 Exercises:
 
 * Print every number from 1 to 30 using `each` and a range.
@@ -162,7 +165,7 @@ Exercises:
   * `#values`
   * `#each do |key, value|`
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
 

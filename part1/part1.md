@@ -48,10 +48,6 @@ Key concepts:
 * Watch your indentation!
 * Functions can call other functions
 
-Codecademy link (do this first if you haven't yet!):
-* [Functions/ Methods] (https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
-
-
 **Note**: When you're writing a function, indent with two spaces, not four.  Python uses four spaces, but ruby uses two spaces.
 
 Also, when you're writing a function, never use single letters for variable names.  Always write out the full name of the variable.
@@ -93,6 +89,10 @@ end
 
 ```
 
+Codecademy link (complete this first if you haven't yet):
+* [Functions/ Methods] (https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
+
+
 Exercises:
   * Write a function called `hello_world` will `puts` the string `"Hello world!"` to the screen.
   * Write a function called `print_thrice(number)` that, given a number, will print out the number three times.
@@ -107,7 +107,7 @@ Key concepts:
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
 * [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
@@ -126,7 +126,7 @@ Key concepts:
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
 
-Codecademy links (do these first if you haven't yet!):
+Codecademy links (complete these first if you haven't yet):
 * [While loop] (https://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb)
 * [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
 * [Comparators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/1/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -158,7 +158,7 @@ Key concepts:
 * Parenthesization
 * Truth tables
 
-Codecademy links (do these first if you haven't yet!):
+Codecademy links (complete these first if you haven't yet):
 * [Until loop] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/0/3?curriculum_id=5059f8619189a5000201fbcb)
 * [Unless] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/3/3?curriculum_id=5059f8619189a5000201fbcb)
 * [Logical Operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/2/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -203,7 +203,7 @@ Key concepts:
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
   * [String methods] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
@@ -228,7 +228,7 @@ Key Concepts:
     * `#shift` to shift off a value from the beginning
     * `#join(separator)` to join an array of strings, separated by a delimiter
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
   * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
 
 
@@ -248,7 +248,7 @@ Key concepts:
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
-Codecademy link (do this first if you haven't yet!):
+Codecademy link (complete this first if you haven't yet):
   * [Iterators and Blocks] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
