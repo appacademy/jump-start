@@ -48,7 +48,9 @@ Key concepts:
 * Watch your indentation!
 * Functions can call other functions
 
-Do the codecademy ruby track on functions if you haven't yet.
+Codecademy link (do this first if you haven't yet!):
+* [Functions/ Methods] (https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
+
 
 **Note**: When you're writing a function, indent with two spaces, not four.  Python uses four spaces, but ruby uses two spaces.
 
@@ -105,6 +107,9 @@ Key concepts:
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
 
+Codecademy link (do this first if you haven't yet!):
+* [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
+
 Exercises:
   * Write a function called `times_three_and_plus_five(number)` that takes a number, multiplies it by 3, and then adds 5. For example, `times_three_and_plus_five(4)` should output 17.
   * Write a function called `even_or_odd(number)` that prints `"even"` if the number is even, and prints `"odd"` if the number is odd.
@@ -120,6 +125,11 @@ Key concepts:
 * Conditionals and control flow
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
+
+Codecademy links (do these first if you haven't yet!):
+* [While loop] (https://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb)
+* [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
+* [Comparators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Write a `while` loop that prints out all the numbers from 1 to 25 inclusive.
@@ -148,6 +158,10 @@ Key concepts:
 * Parenthesization
 * Truth tables
 
+Codecademy links (do these first if you haven't yet!):
+* [Until loop] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/0/3?curriculum_id=5059f8619189a5000201fbcb)
+* [Unless] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/3/3?curriculum_id=5059f8619189a5000201fbcb)
+* [Logical Operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
 
 Exercise:
@@ -189,28 +203,36 @@ Key concepts:
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
+Codecademy link (do this first if you haven't yet!):
+  * [String methods] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
-* Exercises:
+Exercises:
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
   * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string.
   * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
 
 ## Arrays
-* Array methods
-  * `#length` or `#size` or `#count`
-  * `array[index]`
-  * `array[index] = val`
-  * `#first`
-  * `#last`
-  * `#include?(value)`
-  * `#push(value)` to add a value onto the end (also `<<`)
-  * `#pop` to pop off a value from the end
-  * `#unshift(value)` to stick a value onto the beginning
-  * `#shift` to shift off a value from the beginning
-  * `#join(separator)` to join an array of strings, separated by a delimiter
 
-* Exercises:
+Key Concepts:
+  * Array methods
+    * `#length` or `#size` or `#count`
+    * `array[index]`
+    * `array[index] = val`
+    * `#first`
+    * `#last`
+    * `#include?(value)`
+    * `#push(value)` to add a value onto the end (also `<<`)
+    * `#pop` to pop off a value from the end
+    * `#unshift(value)` to stick a value onto the beginning
+    * `#shift` to shift off a value from the beginning
+    * `#join(separator)` to join an array of strings, separated by a delimiter
+
+Codecademy link (do this first if you haven't yet!):
+  * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+
+
+Exercises:
   * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
   * Write a function `reverse(array)` that reverses an array in-place.
   * Write a function `rotate(array, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4], 2)` should produce `[3, 4, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
@@ -225,6 +247,9 @@ Key concepts:
 * Blocks — `do` `|argument1, argument2|`, then code stuff, then `end`
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
+
+Codecademy link (do this first if you haven't yet!):
+  * [Iterators and Blocks] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Write a function called `vowels(string)` that returns an array of every vowel in the string.
