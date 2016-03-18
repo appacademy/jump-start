@@ -38,6 +38,8 @@ Once you start implementing programs of a sufficient complexity, you will find t
 
 * IRB
 
+[IRB Tutorial](./irb.md)
+
 ## Functions
 
 Key concepts:
