@@ -93,30 +93,30 @@ puts array
 ```ruby
 array = [1,2,3,4]
 
-def double_arr(original_array)
-  doubled_arr = original_array
+def double_array(original_array)
+  doubled_array = original_array
   (0...original_array.length).each do |index|
-    doubled_arr << original_array[index]
+    doubled_array << original_array[index]
   end
-  doubled_arr
+  doubled_array
 end
 
-puts double_arr(array)
+puts double_array(array)
 puts array
 ```
 
 * What about this?
 
 ```ruby
-def add_all_up_to_n(n)
-  (0..n).each do |value|
-    n += value
+def add_all_up_to_number(number)
+  (0..number).each do |value|
+    number += value
   end
-  n
+  number
 end
 
 n = 5
-puts add_all_up_to_n(n)
+puts add_all_up_to_number(n)
 puts n
 
 ```

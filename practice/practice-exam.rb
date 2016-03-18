@@ -1,7 +1,7 @@
 #Write a function summation that takes a number and returns the summation of all positive
 #integers upto and including that number.
 
-def summation(n)
+def summation(number)
 
 end
 
@@ -17,7 +17,7 @@ puts summation(15) == 120
 #write a function that takes a number n and returns the highest prime factor of
 #that number. Hint: Helper function.
 
-def highest_prime_factor(number)
+def highest_prime_factor(n)
 
 end
 
