@@ -101,6 +101,9 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
+Codecademy link (do this first if you haven't yet!):
+  * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+
 Exercises:
   * Initialize an array of 100 elements with a default value of `"yes"`, and then set every other value to `"no"`.
   * Now take that array and `puts` the subarray of only the first 10 elements (don't over-index!)
@@ -158,6 +161,10 @@ Exercises:
   * `#keys`
   * `#values`
   * `#each do |key, value|`
+
+Codecademy link (do this first if you haven't yet!):
+  * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
+
 
 Exercises:
   * Write a function called `word_lengths(string)` that given a sentence, returns a hash of each of the words and their lengths.
