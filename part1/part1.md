@@ -295,7 +295,7 @@ The way to put a debugger in your code: stick `byebug` in the middle of a functi
 
 ![Byebug](./byebug.png)
 
-In your interviews, we'll be asking you to play the role of debugger (knowing what every variable is at every point in time in a function), so it's important that you know how to use a debugger well.  Debuggers are arguably the most useful tool you can have while learning to program.
+In interviews, we ask applicants to play the role of debugger (knowing what every variable is at every point in time in a function).  So it's important that you know how to use a debugger well.  Debuggers are arguably the most useful tool you can have while learning to program.
 
 For your final assessment, it will be very helpful to know how to use the debugger to fix your errors quickly.
 
