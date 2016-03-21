@@ -1,13 +1,13 @@
 # chunk an array into nested arrays of length n
-def chunk(arr, n)
+def chunk(array, n)
   chunk = []
   results = []
-  arr.each do |el|
+  array.each do |element|
     if chunk.length == n
       results << chunk
       chunk = []
     end
-    chunk << el
+    chunk << element
   end
 
   results << chunk
@@ -35,8 +35,8 @@ puts pig_latin("i speak pig latin") == "iay eakspay igpay atinlay"
 puts pig_latin("throw me an aardvark") == "owthray emay anay aardvarkay"
 
 # Remove the nth letter of the string
-def remove_nth_letter(str, n)
-  str[0...n] + str[n + 1..-1]
+def remove_nth_letter(string, n)
+  string[0...n] + string[n + 1..-1]
 end
 
 puts "---------remove nth letter-------"
@@ -44,11 +44,11 @@ puts remove_nth_letter("helloworld", 5) == "helloorld"
 puts remove_nth_letter("helloworld", -3) == "hellowold"
 
 # Boolean function: check if  shortstr is a substring of longstr
-def substring?(longstr, shortstr)
-  length = shortstr.length
-  letters = longstr.chars
-  letters.each_with_index do |letter, i|
-    return true if letters[i...i + length].join == shortstr
+def substring?(long_string, short_string)
+  length = short_string.length
+  letters = long_string.chars
+  letters.each_with_index do |letter, index|
+    return true if letters[index...index + length].join == short_string
   end
   false
 end
@@ -61,11 +61,11 @@ puts substring?("whatifikeptontypingforever", "ik") == true
 # count the number of times that two adjacent numbers in an array add up to n.
 # You cannot reuse a number. So count_adjacent_sums([1, 5, 1], 6) => 1
 
-def count_adjacent_sums(arr, n)
+def count_adjacent_sums(array, n)
   count = 0
-  (1...arr.length).each do |i|
-    num = arr[i]
-    if num + arr[i - 1] == n && num != arr[i - 2]
+  (1...array.length).each do |index|
+    number = array[index]
+    if number + array[index - 1] == n && number != array[index - 2]
       count += 1
     end
   end
@@ -82,8 +82,8 @@ puts count_adjacent_sums([1, 9, 1, 8, 2, 10], 10) == 2
 # hash and replace the values for items that already exist.
 
 def inventory_hash(older, newer)
-  newer.each do |key, val|
-    older[key] = val
+  newer.each do |key, value|
+    older[key] = value
   end
   older
 end
@@ -106,6 +106,6 @@ def inventory_array(older, newer)
 end
 
 puts "---------inventory array-------"
-march_arr = [['diamonds', 2], ['emeralds', 14], ['rubies', 10]]
-april_arr = [['emeralds', 27], ['moonstones', 5]]
-puts inventory_array(march_arr, april_arr) == [['diamonds', 2], ['emeralds', 27], ['moonstones', 5], ['rubies', 10]]
+march_array = [['diamonds', 2], ['emeralds', 14], ['rubies', 10]]
+april_array = [['emeralds', 27], ['moonstones', 5]]
+puts inventory_array(march_array, april_array) == [['diamonds', 2], ['emeralds', 27], ['moonstones', 5], ['rubies', 10]]
