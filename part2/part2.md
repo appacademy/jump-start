@@ -101,6 +101,18 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
+```ruby
+def except_first_and_last(array)
+  array[1...-1]
+end
+
+eighty = Array.new(4, 20)             #=> [20, 20, 20, 20]
+eighty[0] -= 5                        #=> 15
+eighty[-1] += 5                       #=> 25
+eighty                                #=> [15, 20, 20, 25]
+forty = except_first_and_last(eighty) #=> [20, 20]
+```
+
 Exercises:
   * Initialize an array of 100 elements with a default value of `"yes"`, and then set every other value to `"no"`.
   * Now take that array and `puts` the subarray of only the first 10 elements (don't over-index!)
@@ -112,6 +124,27 @@ Exercises:
 * Use `#to_a` to convert to an array
 * Can also use characters! Watch your quotation marks though.
 * Can `#each` over a range
+
+```ruby
+def dance_instructor
+  (5..8).each do |count|
+    puts count
+  end
+end
+
+def report_card_feedback(grade)
+  passing_grades = ("A".."D").to_a
+  failing_grade  = "F"
+
+  if passing_grades.include?(grade.upcase)
+    "That'll do, I guess"
+  elsif grade.upcase == failing_grade
+    "Try harder"
+  else
+    "Nice try. #{grade} isn't a real grade!"
+  end
+end
+```
 
 Exercises:
   * `puts` an array of all of the numbers between 30 and 50, inclusive.
@@ -126,10 +159,74 @@ Exercises:
 * `#none?`
 * Based on the **return value** of the block! Think of it like a function.
 
+`Enumerable#any?` will return true if the block evaluates to true for any element in the collection. As soon as an element makes the block return true, `#any?` will return true without checking the remaining elements.
+```ruby
+def any_even?(numbers)
+  numbers.any? |number|
+    number % 2 == 0
+  end
+end
+```
+
+`Enumerable#all?` will return true if the block evaluates to true for every element in the collection. As soon as an element makes the block return false, `#all?` will return false without checking the remaining elements.
+```ruby
+def all_positive?(numbers)
+  numbers.all? do |number|
+    number >= 0
+  end
+end
+```
+
+`Enumerable#none?` will return true if the block evaluates to false for every element in the collection. As soon as an element makes the block return true, `#none?` will return false without checking the remaining elements.
+```ruby
+def all_positive?(numbers)
+  numbers.none? do |number|
+    number < 0
+  end
+end
+```
+
+**Note** These methods give us a lot of flexibility to craft very readable conditions. If your condition is confusing, think about whether using a different boolean method would make it clearer.
 
 ### Advanced enumerables
 * `#times`
 * `#map`
+
+Ruby's `times` is a nice way to write a loop that will stop after a number of iterations.
+```ruby
+def drop_and_give_me(quantity)
+  puts "Platoon (in unison): Sir, yes sir!"
+
+  quantity.times do |idx|
+    puts "Platoon: #{idx + 1}!"
+  end
+
+  3.times do
+    puts "Hup!"
+  end
+end
+```
+
+`Enumerable#map` evaluates the block for each successive item in the collection, storing the results in an array.
+```ruby
+def letter_grade(percentage)
+  letters = ("A".."D").to_a
+
+  letters.each.with_index do |letter, idx|
+    return letter if percentage >= 90 - 10 * idx
+  end
+
+  "F"
+end
+
+def grade_class(class_percentages)
+  class_percentages.map do |student_percentage|
+    letter_grade(student_percentage)
+  end
+end
+
+grade_class([ 92.5, 88, 50, 64, 0, 70]) #=> ["A", "B", "F", "D", "F", "C"]
+```
 
 Exercises:
 
@@ -145,6 +242,7 @@ Exercises:
 * Single responsibility per function
 * This will lower your cognitive load
 
+
 ### Hash Maps `{}`
 * A.k.a., a dictionary or a map
 * Also can conceive of as an array, but with indices other than integers
@@ -159,6 +257,27 @@ Exercises:
   * `#values`
   * `#each do |k, v|`
 
+
+```ruby
+pantry = {
+    "eggs" => 12,
+    "tomatoes" => 3,
+    "peppers" => 5
+}                      #=> {"eggs"=>12, "tomatoes"=>3, "peppers"=>5}
+
+pantry["onions"] = 2   #=> {"onions" => 2}
+pantry["eggs"]         #=> 12
+pantry["kielbasa"]     #=> nil
+pantry.keys            #=> ["eggs", "tomatoes", "peppers", "onions"]
+pantry.values          #=> [12, 3, 5, 2]
+
+def print_inventory(inventory)
+  inventory.each do |item, quantity|
+    puts "#{item}: #{quantity}"
+  end
+end
+```
+
 Exercises:
   * Write a function called `word_lengths(str)` that given a sentence, returns a hash of each of the words and their lengths.
     * E.g., `word_lengths("hello my good good pal")` should return `{ 'hello' => 5, 'my' => 2, 'good' => 4, 'pal' => 3 }`
@@ -169,6 +288,24 @@ Exercises:
 ### Custom hash defaults
 * Can change the default value using `hash = Hash.new(default_value)`
 * Counts pattern! `Hash.new(0)`
+
+```ruby
+def grade_counts(class_letter_grades)
+  grade_counts = Hash.new(0)
+
+  class_letter_grades.each do |letter_grade|
+    grade_counts[letter_grade] += 1
+  end
+
+  grade_counts
+end
+
+math_grades = ["A", "B", "A", "A", "C", "F"] #=> ["A", "B", "A", "A", "C", "F"]
+math_counts = grade_counts(math_grades)      #=> {"A"=>3, "B"=>1, "C"=>1, "F"=>1}
+math_counts["A"]                             #=> 3
+math_counts["D"]                             #=> 0
+math_counts["platypus"]                      #=> 0
+```
 
 Exercises:
   * Write a function called `most_common_number(arr)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.

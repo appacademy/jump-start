@@ -6,6 +6,7 @@
 * A **local variable** is only defined within its scope
 * You should generally not name a local variable the same as the function or as another variable in scope, because it causes a namespace conflict. (I.e., the older variable will no longer be accessible.)
 
+
 Exercise:
 
 * Will this function work? Don't run it, just analyze the code mentally.
@@ -53,6 +54,23 @@ puts array_squared(arr)
 * Re-assigning the same variable within another scope doesn't mutate the original object, it just changes that scope's address book.
 * Writing stuff into your address book doesn't actually change where buildings live! It's just your own form of book-keeping.
 * More concretely, all Ruby objects live in memory. And they'll still live in memory unless you explicitly mutate them.
+
+```ruby
+nyse = "11 Wall Street"
+
+def get_elected(work_address)
+  puts "I no longer work here: #{work_address}"
+
+  work_address = "1600 Pennsylvania Avenue"
+
+  puts "Now, I work here: #{work_address}"
+end
+
+get_elected(nyse)                                 #=> nil
+
+nyse                                              #=> "11 Wall Street"
+                                                  #   **Note** hasn't changed.
+```
 
 ### Mutation
 
@@ -118,12 +136,37 @@ end
 n = 5
 puts add_all_up_to_n(n)
 puts n
-
 ```
 
 ### Advanced iteration
 * Iterating with complex logic—while loops!
 * Looking forward or backward
+
+"He's heating up" and "He's on fire" and "Boomshakalaka!"
+```ruby
+def nba_jam(shots)
+  current_streak = 0
+
+  shots.each do |shot|
+    if shot = "made"
+      current_streak += 1
+    else
+      current_streak = 0
+    end
+
+    if current_streak == 2
+      puts "He's heating up"
+    elsif current_streak == 3
+      puts "He's on fire"
+    elsif current_streak > 3 && current_streak < 8
+      puts ["Boom-shaka-laka!", "Whoomp, there it is!", "Slam-a-jamma!"].sample
+    elsif current_streak > 8
+      current_streak = 0
+    end
+  end
+
+end
+```
 
 Exercises:
   * Write a function called `longest_run_digit(num)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
@@ -136,10 +179,29 @@ Exercises:
 * Look at [bubble sort]() and get a feel for how it works.  On paper, write
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
+```ruby
+def egg_timer(minutes, seconds)
+
+  minutes.downto(0).each do |minute|
+
+    seconds.downto(0).each do |second|
+      puts "#{minute}:#{'%02d' % second}"
+      sleep 1
+    end
+
+    seconds = 59
+  end
+
+  puts "Time's up!"
+end
+
+
+```
+
 Exercises:
   * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
   * Write a function called `any_make_yahtzee?(arr)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
-    *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
+    * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
   * Implement `bubble_sort!` on your own now!
     * On paper, write out in english the process that bubble sort takes. Don't worry about writing code yet.
     * Now take that english (we call that english "pseudocode") and turn it into real code
@@ -163,6 +225,38 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 * `#max_by`
 * One-line `is_prime?`
 
+```ruby
+def four_letter_words(paragraph)
+  paragraph.split.select do |word|
+    word.length == 4
+  end
+end
+
+def number_of_high_scoring_students(class_percentages)
+  class_percentages.count do |percentage|
+    percentage > 85
+  end
+end
+
+def shopping_list(pantry)
+  pantry.reject { |item, quantity| quantity > 3 }.keys
+end
+
+def average_percentage(class_percentages)
+  scores_sum = class_percentages.reduce do |sum, percentage|
+    sum + percentage
+  end
+
+  scores_sum / class_percentages.length
+end
+
+def farthest_from_five(numbers)
+  numbers.max_by do |number|
+    (number - 5).abs
+  end
+end
+```
+
 
 Exercises:
   * Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
@@ -179,6 +273,15 @@ Exercises:
 * `uniq` removes all duplicate elements.
 * `shuffle` puts the elements in a random order.
 
+```ruby
+[1, 2, 3].reverse        #=> [3, 2, 1]
+[1, 2, 3].min            #=> 1
+[1, 2, 3].max            #=> 3
+[9, 4, 7].sort           #=> [4, 7, 9]
+[1, 1, 2].uniq           #=> [1, 2]
+["e", "a", "r"].shuffle  #~> ["r", "a", "e"]
+```
+
 Exercises:
 
   * Write a function called `range_of(arr)` which returns the difference between the smallest and the greatest value of the array.
@@ -190,8 +293,19 @@ Exercises:
 * You can multiply strings. `"Ha" * 3` outputs ``"HaHaHa"``
 * `reverse` will return a string with all the characters in the opposite order.
 * `gsub(this, for_that)` provides search and replace functionality for strings.
-* `sub(this, for_that)` replaces only first occurance
+* `sub(this, for_that)` replaces only first occurrence
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
+
+```ruby
+def secret_service_encrypt(plaintext)
+  plaintext.gsub("President", "Eagle")
+end
+secret_service_encrypt("The President is in the Presidential suite")
+#=> "The Eagle is in the Eagleial suite"
+
+"better".sub("e", "i")      #=> "bitter"
+"AAA".gsub("A", "").empty?  #=> true
+```
 
 Exercises:
 
