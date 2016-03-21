@@ -109,6 +109,6 @@ p pair_greater_than_n(sample_numbers, 6)
 ```
 
 
-Then check [the answer.](./write-out-answer-2.md).  You can now run the code on your computer.
+Then check [the answer](./write-out-answer-2.md).  You can now run the code on your computer.
 
 
