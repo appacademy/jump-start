@@ -1,6 +1,6 @@
 # Lesson Plan
 
-### "Be" the debugger
+## "Be" the debugger
 
 You should be able to look at code you wrote and walk through that code from beginning to end, knowing exactly what every variable is at every point in time.  If you're watching The Godfather and you pause an hour in, you should know the names of all the characters onscreen.
 
@@ -8,9 +8,7 @@ This skill is important in our interview, because we don't let students run thei
 
 ### Example Exercise
 
-####
-
-Imagine you're in an interview and you wrote the following code:
+Imagine you wrote the following code:
 
 ```ruby
 def is_palindrome?(word)
@@ -41,7 +39,7 @@ Watch [this video][write-out-video] at 2x and compare it to the code.  We recomm
 
 ## Exercises
 
-#### Back and forth
+### Back and forth
 
 - Given the following code, write out what all the variables are, like in the video above, as you "run" the code in your head.  Write out what the code returns.  Do not run the code on your computer.
 
@@ -77,7 +75,7 @@ p includes_a_word_forwards_and_backwards?(sentence)
 
 Then compare what you wrote to [the answer.](./write-out-answer-1.md).  You can now run the code on your computer.
 
-#### Buggin' out
+### Buggin' out
 
 There is a bug in the following code.  Figure out where it is by writing out all the variables as you "run" the code in your head.  Do not run the code on your computer.
 
