@@ -403,6 +403,7 @@ end
 ```
 
   * Refactor this function that returns the Nth biggest prime number. Don't start by trying to understand what it's doing—first just start renaming the variables. Then, once you see what it's doing, make it use your own `is_prime?` function to pull out some of the complexity and make it more readable!
+    * Feel free to pause the code using the debugger so that you know which variable is which.
 ```ruby
 def pr(x)
   c = 0
