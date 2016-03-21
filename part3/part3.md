@@ -138,6 +138,25 @@ Exercises:
 
 Exercises:
   * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
+  * Write a function called `clock` that cycles through every minute of the day and prints out every half hour.  Include the AM and PM.
+    * For example:
+
+```ruby
+clock
+
+# => 00:00 AM
+# => 00:30 AM
+# => 01:30 AM
+# ...
+# => 11:30 AM
+# => 12:00 PM
+# => 12:30 PM
+# ...
+# => 11:00 PM
+# => 11:30 PM
+
+
+```
   * Write a function called `any_make_yahtzee?(arr)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
     *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
   * Implement `bubble_sort!` on your own now!
