@@ -2,8 +2,8 @@
 
 def sum_to_shorter(n)
   sum = 0
-  (0..n).each do |num|
-    sum += num
+  (0..n).each do |number|
+    sum += number
   end
   sum
 end
@@ -18,19 +18,19 @@ puts sum_to_shorter(0) == 0
 # *********************************************
 
 #Write a function that takes in an amount of minutes and returns a time string formatted HH:MM
-def time_conversion(mins)
-  hours = mins / 60
-  minutes = mins % 60
-  hours_str = format_num(hours)
-  minutes_str = format_num(minutes)
-  hours_str + ":"  + minutes_str
+def time_conversion(minutes)
+  hours = minutes / 60
+  minutes = minutes % 60
+  hours_string = format_number(hours)
+  minutes_string = format_number(minutes)
+  hours_string + ":"  + minutes_string
 end
 
-def format_num(num)
-  if num < 10
-    "0" + num.to_s
+def format_number(number)
+  if number < 10
+    "0" + number.to_s
   else
-    num.to_s
+    number.to_s
   end
 end
 
@@ -58,12 +58,12 @@ puts time_conversion(0) == "00:00"
 #Write a function that takes an array of pairs and returns the pair that sum to the largest number
 def largest_pair(pairs)
   largest = pairs[0]
-  i = 1
-  while i < pairs.length
-    if largest[0] + largest[1] < pairs[i][0] + pairs[i][1]
-      largest = pairs[i]
+  index = 1
+  while index < pairs.length
+    if largest[0] + largest[1] < pairs[index][0] + pairs[index][1]
+      largest = pairs[index]
     end
-    i += 1
+    index += 1
   end
   largest
 end
@@ -97,9 +97,9 @@ puts dont_change_this == "do not mutate me"
 # *********************************************
 
 #Write a boolean function that returns true is an array of numbers has any multiples of 3
-def has_multiple_of_three?(nums)
-  nums.any? do |num|
-    num % 3 == 0
+def has_multiple_of_three?(numbers)
+  numbers.any? do |number|
+    number % 3 == 0
   end
 end
 
@@ -115,10 +115,10 @@ puts has_multiple_of_three?([1,2,4,5,6,7,12]) == true
 #Write a function that take an array of numbers and returns the number of even
 #numbers and the number of odd numbers. Assume no zeros.
 
-def evens_and_odds(nums)
+def evens_and_odds(numbers)
   counts = { "even" => 0, "odd" => 0 }
-  nums.each do |num|
-    if num.even?
+  numbers.each do |number|
+    if number.even?
       counts["even"] += 1
     else
       counts["odd"] += 1
@@ -143,8 +143,8 @@ puts evens_and_odds([1,2,3]) == {'even' => 1, 'odd' => 2}
 
 def letter_counts(word)
   counts = Hash.new(0)
-  word.each_char do |char|
-    counts[char] += 1
+  word.each_char do |character|
+    counts[character] += 1
   end
   counts
 end
@@ -162,8 +162,8 @@ puts letter_counts("hello") == { 'h' => 1, 'e' => 1 , 'l' => 2, 'o' => 1}
 
 #Write a boolean function palindrome? which takes in a word and returns true if it is palindrome
 
-def palindrome?(str)
-  str == str.reverse
+def palindrome?(string)
+  string == string.reverse
 end
 
 #Tests
@@ -177,8 +177,8 @@ puts palindrome?("coder") == false
 # *********************************************
 
 #Write a function that will reverse the digits of a number
-def reverse_digits(num)
-  num.to_s.reverse.to_i
+def reverse_digits(number)
+  number.to_s.reverse.to_i
 end
 
 #Tests
@@ -233,8 +233,8 @@ puts count_initials(dubs) == { "S" => 2, "H" => 1, "K" => 1, "D" => 1, "A" => 2 
 
 def compute_squares(array)
   squares = []
-  array.each do |el|
-    squares.push(el ** 2)
+  array.each do |element|
+    squares.push(element ** 2)
   end
   squares
 end
