@@ -2,10 +2,10 @@
 # Write a method that takes an array of words and returns only the words that are
 # anagrams of a given string.
 
-def anagrams(str, arr)
-  sorted_str = str.chars.sort.join("")
-  arr.select do |word|
-    sorted_str == word.chars.sort.join("")
+def anagrams(string, array)
+  sorted_string = string.chars.sort.join("")
+  array.select do |word|
+    sorted_string == word.chars.sort.join("")
   end
 end
 
@@ -81,10 +81,10 @@ puts no_repeat_years(2016, 2020) == [2016, 2017, 2018, 2019]
 # This initializes the hash with a block to be run if you try to look up a key that isn't in the hash.  Here, we
 # set the value at that key to zero if we haven't already seen it.
 
-def most_frequent_letter(str)
+def most_frequent_letter(string)
   counts = Hash.new(0)
-  str.chars.each do |char|
-    counts[char] += 1 unless char == " "
+  string.chars.each do |character|
+    counts[character] += 1 unless character == " "
   end
   best_letter = counts.keys.first
   counts.each do |letter, count|
@@ -103,10 +103,10 @@ puts most_frequent_letter("we the people in order to form a more perfect union")
 # Write a method that takes a string of lower case words (no punctuation) and returns an array of letters that occur more
 # than once.  We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
-def non_unique_letters(str)
+def non_unique_letters(string)
   counts = Hash.new(0)
-  str.chars.each do |char|
-    counts[char] += 1 unless char == " "
+  string.chars.each do |character|
+    counts[character] += 1 unless character == " "
   end
   non_uniques = []
   counts.each do |letter, count|
@@ -127,13 +127,13 @@ puts non_unique_letters("aabbccddee") == ["a", "b", "c", "d", "e"]
 # thinking very carefully.  Do you know why?
 # We'll need to account for spaces, too.  Again, there are a few ways you can do this.
 
-def missing_letters(str)
+def missing_letters(string)
   alphabet = {}
   ("a".."z").each do |letter|
     alphabet[letter] = 0
   end
-  str.chars do |char|
-    alphabet[char] += 1 unless char == " "
+  string.chars do |character|
+    alphabet[character] += 1 unless character == " "
   end
   missing_letters = []
   alphabet.each do |letter, count|
@@ -148,18 +148,18 @@ puts missing_letters("abcdefghiklmnopqrstuvwxyz") == ["j"]
 puts missing_letters("abcdefghiklmnopstuvwxyz") == ["j", "q", "r"]
 
 #write a function primes that an arguement n and returns the first n primes
-def is_prime?(num)
-  return false if num <= 1
-  (2...num).to_a.none?{ |factor| num % factor == 0 }
+def is_prime?(number)
+  return false if number <= 1
+  (2...number).to_a.none?{ |factor| number % factor == 0 }
 end
 
 
 def primes(n)
   primes = []
-  i = 0
+  number = 0
   until primes.length == n
-    primes << i if is_prime?(i)
-    i += 1
+    primes << number if is_prime?(number)
+    number += 1
   end
   primes
 end
@@ -173,10 +173,10 @@ puts primes(6) == [2,3,5,7,11,13]
 #write a boolean function zero_sum? that takes an array of intergers and returns
 #true if 2 elements in the array sum to zero.
 
-def zero_sum?(arr)
-  (0...arr.length).each do |i|
-    (i + 1...arr.length).each do |j|
-      return true if arr[i] + arr[j] == 0
+def zero_sum?(array)
+  (0...array.length).each do |index1|
+    (index1 + 1...array.length).each do |index2|
+      return true if array[index1] + array[index2] == 0
     end
   end
   false
@@ -193,9 +193,9 @@ puts zero_sum?([2,3,4,-3,1]) == true
 
 def largest_sum_pair(array)
   indices = [0,1]
-  (0...array.length).each do |i|
-    (i + 1...array.length).each do |j|
-      indices = [i, j] if array[i] + array[j] > array[indices[0]] + array[indices[1]]
+  (0...array.length).each do |index1|
+    (index1 + 1...array.length).each do |index2|
+      indices = [index1, index2] if array[index1] + array[index2] > array[indices[0]] + array[indices[1]]
     end
   end
   indices

@@ -23,7 +23,7 @@ Get started by going to your day's work:
 ##### [Part 1](./part1/part1.md)
 ##### [Part 2](./part2/part2.md)
 ##### [Part 3](./part3/part3.md)
-
+##### [Part 4](./part4/part4.md)
 
 #### Problem Sets
 
@@ -34,9 +34,6 @@ If you're done with the main curriculum, you can start working through the probl
 ##### [Problem set 4](./problem-sets/problem-set-4.rb)
 ##### [Problem set 5](./problem-sets/problem-set-5.rb)
 
-
-### Terminal Crash Course
-##### [Terminal Command Cheat Sheet](./terminal-commands.txt)
 
 #### CodeEval
 Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.

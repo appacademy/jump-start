@@ -1,5 +1,5 @@
 # Write a function that given an array, returns another array with each of the numbers multiplied by two. Don't change the original array, make sure you construct a copy!
-def array_times_two(arr)
+def array_times_two(array)
 end
 
 # Tests — these should all spit out true!
@@ -13,7 +13,7 @@ puts dont_change_this == [3, 4, 5]
 # *********************************************
 
 # Write a function that given an array, now CHANGES each of the numbers to be twice as big. This should mutate the original array!
-def array_times_two!(arr)
+def array_times_two!(array)
 end
 
 # Tests
@@ -26,7 +26,7 @@ puts change_this == [12, 14, 16]
 # *********************************************
 
 # Write a function that given an array, returns another array of only the unique elements. I.e., return a version without duplicates.
-def uniq(arr)
+def uniq(array)
 end
 
 # Tests
@@ -44,7 +44,7 @@ puts uniq([1, 2, 1, 3, 3]) == [1, 2, 3]
 def slippery_numbers(n)
 end
 
-def is_slippery?(num)
+def is_slippery?(number)
 end
 
 # Tests
@@ -56,7 +56,7 @@ puts slippery_numbers(7) == [3, 5, 6, 9, 10, 12, 18]
 # *********************************************
 
 # Write a function that finds whether any two elements in the array sum to 0. If it does, return true; else, return false.
-def two_sum_to_zero?(arr)
+def two_sum_to_zero?(array)
 end
 
 # Tests
@@ -75,7 +75,7 @@ puts two_sum_to_zero?([0, 5]) == false
 def magic_numbers(count)
 end
 
-def is_magic_number?(num)
+def is_magic_number?(number)
 end
 
 # Tests

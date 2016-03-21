@@ -12,11 +12,11 @@ Exercise:
 * Will this function work? Don't run it, just analyze the code mentally.
 
 ```ruby
-i = 0
+index = 0
 def iterate!
-  while i < 5
-    puts i
-    i += 1
+  while index < 5
+    puts index
+    index += 1
   end
 end
 
@@ -26,10 +26,10 @@ iterate!
 * What about this one?
 
 ```ruby
-arr = [1, 2, 3, 4]
+array = [1, 2, 3, 4]
 sum = 0
-arr.each do |el|
-  sum += el
+array.each do |element|
+  sum += element
 end
 puts sum
 ```
@@ -37,15 +37,15 @@ puts sum
 * And this one?
 
 ```ruby
-def array_squared(arr)
-  arr.each do |el|
-    el *= el
+def array_squared(array)
+  array.each do |element|
+    element *= element
   end
-  arr
+  array
 end
 
-arr = [1, 2, 3, 4]
-puts array_squared(arr)
+array = [1, 2, 3, 4]
+puts array_squared(array)
 ```
 
 ### Pass-by-reference
@@ -87,54 +87,54 @@ nyse                                              #=> "11 Wall Street"
 * Think about it: can you imagine something immutable, like `true` or `0` changing because you called some function?
 
     ```ruby
-  var = false
-  crazy_function_that_does_crazy_things!(var)
-  puts var == false # no function can change its value!
+  variable = false
+  crazy_function_that_does_crazy_things!(variable)
+  puts variable == false # no function can change its value!
     ```
 
 Exercises:
 * What will this code do?
 
 ```ruby
-arr = [1,2,3,4]
+array = [1,2,3,4]
 
-def destroy_array!(arr)
-  arr = []
+def destroy_array!(array)
+  array = []
 end
 
-puts destroy_array!(arr)
-puts arr
+puts destroy_array!(array)
+puts array
 ```
 
 * And this code?
 
 ```ruby
-arr = [1,2,3,4]
+array = [1,2,3,4]
 
-def double_arr(original_arr)
-  doubled_arr = original_arr
-  (0...original_arr.length).each do |i|
-    doubled_arr << original_arr[i]
+def double_array(original_array)
+  doubled_array = original_array
+  (0...original_array.length).each do |index|
+    doubled_array << original_array[index]
   end
-  doubled_arr
+  doubled_array
 end
 
-puts double_arr(arr)
-puts arr
+puts double_array(array)
+puts array
 ```
 
 * What about this?
 
 ```ruby
-def add_all_up_to_n(n)
-  (0..n).each do |val|
-    n += val
+def add_all_up_to_number(number)
+  (0..number).each do |value|
+    number += value
   end
-  n
+  number
 end
 
 n = 5
-puts add_all_up_to_n(n)
+puts add_all_up_to_number(n)
 puts n
 ```
 
@@ -175,15 +175,22 @@ nba_jam(shaqs_shooting_record)
 ```
 
 Exercises:
-  * Write a function called `longest_run_digit(num)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
+  * Write a function called `longest_run_digit(number)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
 
 ### Nested iteration
+
 * Looping within a loop. First element touches every element, second element touches every element, etc.
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
 * Generate all pairs
-* Look at [bubble sort]() and get a feel for how it works.  On paper, write
+* Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
+
+Here's an example of nested iteration in code:
+
+![Nested Iteration](./nested-iteration.png)
+
+There's one "until" nested inside of another "until".
 
 ```ruby
 def egg_timer(minutes, seconds)
@@ -204,10 +211,31 @@ end
 
 ```
 
+There's one "downto" nested inside of another "downto".
+
 Exercises:
-  * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
-  * Write a function called `any_make_yahtzee?(arr)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
-    * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
+  * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
+  * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
+    *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
+  * Write a function called `clock` that cycles through every minute of the day and prints out every half hour.  Include the AM and PM.
+    * For example:
+
+```ruby
+clock
+
+# => 00:00 AM
+# => 00:30 AM
+# => 01:30 AM
+# ...
+# => 11:30 AM
+# => 12:00 PM
+# => 12:30 PM
+# ...
+# => 11:00 PM
+# => 11:30 PM
+
+
+```
   * Implement `bubble_sort!` on your own now!
     * On paper, write out in english the process that bubble sort takes. Don't worry about writing code yet.
     * Now take that english (we call that english "pseudocode") and turn it into real code
@@ -290,9 +318,9 @@ Exercises:
 
 Exercises:
 
-  * Write a function called `range_of(arr)` which returns the difference between the smallest and the greatest value of the array.
-  * Write a function called `greatest_uniq(arr)` which returns the greatest unique (non-duplicated) number in the array.
-  * Write a function called `greatest_three(arr)` which given an unordered array, returns the greatest three values.
+  * Write a function called `range_of(array)` which returns the difference between the smallest and the greatest value of the array.
+  * Write a function called `greatest_uniq(array)` which returns the greatest unique (non-duplicated) number in the array.
+  * Write a function called `greatest_three(array)` which given an unordered array, returns the greatest three values.
 
 ### More string methods
 
@@ -315,9 +343,9 @@ secret_service_encrypt("The President is in the Presidential suite")
 
 Exercises:
 
-  * Write a function called `lotrify(str)` translates passages from The Hobbit into the Lord of the Rings. It should replace all occurrences of the string "Bilbo" with the string "Frodo".
-  * Write an `is_palindrome?` function that checks to see if the string reads the same backwards as it does forwards. It should not count spaces or be case sensitive.
-  * Write a function called `longest_palindrome` that given a string, finds the longest substring of that string that is a palindrome.
+  * Write a function called `lotrify(string)` translates passages from The Hobbit into the Lord of the Rings. It should replace all occurrences of the string "Bilbo" with the string "Frodo".
+  * Write an `is_palindrome?(string)` function that checks to see if the string reads the same backwards as it does forwards. It should not count spaces or be case sensitive.
+  * Write a function called `longest_palindrome(string)` that given a string, finds the longest substring of that string that is a palindrome.
 
 
 ### Parallel assignment
@@ -343,7 +371,7 @@ daft, punk = song
 * You can swap two variables with parallel assignment. For example, swap the position of two array elements with
 
 ```
-arr[i], arr[j] = arr[j], arr[i]
+array[i], array[j] = array[j], array[i]
 ```
 
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
