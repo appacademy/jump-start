@@ -148,7 +148,7 @@ def nba_jam(shots)
   current_streak = 0
 
   shots.each do |shot|
-    if shot = "made"
+    if shot == "make"
       current_streak += 1
     else
       current_streak = 0
@@ -159,13 +159,19 @@ def nba_jam(shots)
     elsif current_streak == 3
       puts "He's on fire"
     elsif current_streak > 3 && current_streak < 8
-      puts ["Boom-shaka-laka!", "Whoomp, there it is!", "Slam-a-jamma!"].sample
+      puts "Boom-shaka-laka!"
     elsif current_streak > 8
       current_streak = 0
     end
   end
 
 end
+shaqs_shooting_record = ['make', 'make', 'miss', 'make', 'make', 'make', 'make']
+nba_jam(shaqs_shooting_record)
+# He's heating up
+# He's heating up
+# He's on fire
+# Boom-shaka-laka!
 ```
 
 Exercises:
