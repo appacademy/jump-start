@@ -1,4 +1,4 @@
- # Lesson Plan
+#Lesson Plan
 
 ## Instructions
 
