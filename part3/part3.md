@@ -121,6 +121,8 @@ puts n
 
 ```
 
+After you've made your guesses, test all the code above by running it.
+
 ### Advanced iteration
 * Iterating with complex logic—while loops!
 * Looking forward or backward
