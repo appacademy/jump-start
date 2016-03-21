@@ -34,7 +34,7 @@ sample_word = "detartrated"
 
 ```
 
-Watch [this video][write-out-video] at 2x and compare it to the code.  I recommend putting this window on the left half of the screen and the youtube video on the right half.  Follow along on a piece of paper.  (The "t" in the `end_letter` row should have been crossed out in the video.)
+Watch [this video][write-out-video] at 2x and compare it to the code.  We recommend putting this window on the left half of the screen and the youtube video on the right half.  Follow along on a piece of paper.  (The "t" in the `end_letter` row should have been crossed out in the video.)
 
 
 [write-out-video]: https://youtu.be/MpkXN5V-DqI
