@@ -313,7 +313,7 @@ You can find out more about byebug in the "Byebug Commands" section [here][byebu
 
 [byebug]: https://github.com/deivid-rodriguez/byebug
 
-* Exercises:
+Exercises:
 
   * Copy and paste the code below into a file.
 
