@@ -30,15 +30,11 @@ One of the primary goals of the course is to provide you with the a foundation a
 
 Once you start implementing programs of a sufficient complexity, you will find that it is very easy to make mistakes. Unlike computers, the human brain does not always think in perfect logic or arithmetic. The software engineers of the past quickly realized this and started developing techniques and structures to manage the complexity of their programs: variables, good style, abstraction and decomposition, objects and classes. Don't worry if some of those words seem unfamiliar. We will explore them all and more in the course.
 
-##
+## Initial Exercises
 
-* The terminal
+* [Terminal Command Cheat Sheet](../terminal-commands.txt)
 
-[Terminal Command Cheat Sheet](../terminal-commands.txt)
-
-* IRB
-
-[IRB Tutorial](./irb.md)
+* [IRB Tutorial](./irb.md)
 
 ## Functions
 
