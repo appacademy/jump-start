@@ -136,6 +136,12 @@ Exercises:
 * Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
+Here's an example of nested iteration in code:
+
+![Nested Iteration](./nested-iteration.png)
+
+There's one "until" nested inside of another "until".
+
 Exercises:
   * Write a function called `all_word_pairs(str)` that given a string, returns an array of every possible pair of words.
   * Write a function called `clock` that cycles through every minute of the day and prints out every half hour.  Include the AM and PM.
