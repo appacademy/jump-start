@@ -106,6 +106,9 @@ puts primes(6) == [2,3,5,7,11,13]
 #write a boolean function zero_sum? that takes an array of intergers and returns
 #true if 2 elements in the array sum to zero.
 
+# NOTE: For this question, do the "write out the variables" exercise from part 4 after
+# you've written a first draft.
+
 def zero_sum?(arr)
 end
 
@@ -117,6 +120,9 @@ puts zero_sum?([2,3,4,-3,1]) == true
 
 #write a function largest_sum_pair that takes an array of intergers and returns the
 #2 unique indices whose elements sum to the largest number. Formatted [earlier_index, later_index]
+
+# NOTE: For this question, do the "write out the variables" exercise from part 4 after
+# you've written a first draft.
 
 def largest_sum_pair(array)
 end
