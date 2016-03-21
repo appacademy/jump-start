@@ -13,13 +13,15 @@ This launches IRB and brings you into a view like this:
 
 ![IRB View](./irb-view.png)
 
-When you are finished with IRB, simply type exit to quit:
+When you are finished with IRB, type exit to quit:
 
 ![IRB Quit](./irb-quit.png)
 
 ## Exercises
 
-Now, it’s time to get started writing some Ruby! When executing IRB, prompts are displayed as follows. Then, enter the ruby expression. An input is executed when it is syntactically complete.
+Now, it’s time to get started writing some Ruby! Pop open IRB yourself.
+
+When executing IRB, prompts are displayed as follows. Then, enter the ruby expression. An input is executed when it is syntactically complete.
 
 Let's start out by initializing an array and pushing an element into it.
 
