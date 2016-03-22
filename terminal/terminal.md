@@ -17,11 +17,17 @@ Open a terminal now. In cloud9, your terminal should already show up on the bott
 
 ## Paths in the Terminal
 
-Certain terminal commands need to be given a path to a file's location to function properly. For example: `ruby some_directory/some_file.rb` executes the `ruby` command using a file called `some_file.rb` which is found in a directory called `some_directory`. This is an example of a relative path. The terminal looks for a directory called `some_directory` in the working directory and then looks for a file called `some_file.rb`.
-
-Another way to express a file's location is with an absolute path. An absolute path starts with a `/` and instructs the terminal to start looking from the root of your computer's directory structure. For example `ruby /home/ubuntu/workspace/some_directory/some_file.rb` would accomplish the same thing as `ruby some_directory/some_file.rb` but would work from any directory (assuming that there is a file called `some_file.rb` at that location in the computer's directory structure).
+- Get a feel first
+    - Type `cd ~` to get to your home directory.
+    - Type `pwd`
+    - Type `ls`.  Then try `ls .` (should be the same thing).
+    - Type `ls ..` to see the directory right above.
+    - Type `cd .`, then `ls`.
+    - Type `cd ..`, then `ls`.
+    - Type `pwd`.
 
 There are a few special symbols that you can use in your path to specify certain locations. The `.` represents your working directory. For example `./some_file.rb` refers to a file called `some_file.rb` that is located in the working directory.
+
 
 The `..` symbol allows you to refer to the directory that contains the working directory. For example `../../some_file.rb` refers to the file `some_file.rb` that is located two directories up from the working directory.
 
@@ -33,7 +39,7 @@ Here are some of the terminal commands you will use on a daily basis.
 - `ls` list
 - `cd` change directory
 - `mkdir` make directory
-- `clear`
+- `clear` (or command-K)
 - `ruby`
 
 
@@ -51,7 +57,7 @@ The `ls` command prints a list of the contents of a directory. By default it wil
 
 ![ls](./ls.png)
 
-By default the `ls` command will not show the 'hidden' files in a directory. Hidden files are files whose names start with a `.` like `.inputrc` or `.bash_profile`. These hidden files are usually things like configuration and settings files that you will not need to change very often. In order to show these files with `ls` we can use the `-a` option.
+By default the `ls` command will not show the 'hidden' files in a directory. Hidden files are files whose names start with a `.` like `.inputrc` or `.bash_profile`. These hidden files are usually things like configuration and settings files that you will not need to change very often. In order to show these files with `ls` we can use the `ls -a` option.
 
 ![ls-hidden](./ls-hidden.png)
 
@@ -95,11 +101,11 @@ If your code has any errors they will also be printed to the terminal.
 ## Getting Help
 ### Google
 
-As with most things, a good place to find out info about terminal commands is [google](http://google.com/). If you think that you should be able to do something using the terminal but don't know how then google it! If you want to figure out how to display the contents of a file in the terminal search for something like "display file contents in terminal" or "unzip file in terminal".
+As with most things, a good place to find out info about terminal commands is [google](http://google.com/). If you think that you should be able to do something using the terminal but don't know how then google it! For example: if you want to figure out how to display the contents of a file in the terminal, search for something like "display file contents in terminal" or "unzip file in terminal".
 
 ### explainshell.com
 
-Sometimes while searching for terminal commands you will come across some really complex looking stuff. One resource that might be able to help you parse all this info is [explainshell](http://www.explainshell.com). This neat little website will break down a complicated terminal command into its various parts and give you a brief explanation of each bit.
+Some terminal commands can be really complex. One resource that might be able to help you parse all this info is [explainshell](http://www.explainshell.com). This neat little website will break down a complicated terminal command into its various parts and give you a brief explanation of each bit.
 
 ### Man Pages
 
@@ -107,14 +113,23 @@ As we saw with `mkdir` and `ls`, some terminal commands can take options that ch
 
 ![man-page](./man-page.png)
 
-You can scroll around a 'man page' using the arrow keys and page up/down. To exit out of a 'man page' press 'q'. Alternatively you can use 'vim' keys 'j, k, h, l, d, and u' but unless you have some 'vim' chops I would stick with the arrow keys.
+You can scroll around a 'man page' using the arrow keys and page up/down. To exit out of a 'man page' press `q`.
 
 ## Tips and Tricks
 ### ctrl-c
 
-Imagine you have just written the world's best ruby program. You go to try it out in the terminal and OH NO there is an infinite loop. It just keeps printing out "Funky C Funky Do" for all eternity. What are you to do? Have no fear, `ctrl-c` is here. If you press `ctrl-c` while a terminal program is running it usually stop. `ctrl-c` is the key command to make a terminal program stop or exit.
+Try running this ruby program:
 
-Be aware that this is not guaranteed to work for all terminal programs. When you press `ctrl-c` what actually happens is your computer sends an interrupt signal called a `SIGINT` to the program. Most programs respond to a `SIGINT` by stopping what they are currently doing but some may have other responses or not respond at all.
+```ruby
+def loop_forever
+    while true
+        puts "LOOPING FOREVER"
+    end
+end
+
+```
+
+It's going to go forever.  Hit Ctrl-C to make it stop.  Do this whenever your program runs longer than it should.
 
 ### Tab Completion
 
