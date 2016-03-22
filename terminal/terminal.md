@@ -2,7 +2,14 @@
 
 ## Introduction
 
-When writing code you will often find yourself needing to execute commands from the terminal. Sometimes this is the only way to accomplish certain tasks on the computer. This guide will walk you through some of the common terminal commands that you will find yourself using as well as some tips and tricks to speed up your terminal use.
+You will often need to execute commands from the terminal.  `ls` is an example terminal command:
+
+![example terminal command](./example_terminal_command.png)
+
+
+This guide will walk you through some of the common terminal commands that you will find yourself using, as well as some tips and tricks to speed up your terminal use.
+
+Open a terminal now. In cloud9, your terminal should already show up on the bottom of your screen.
 
 ## General Notes
 
@@ -10,8 +17,6 @@ When writing code you will often find yourself needing to execute commands from 
 - Terminal commands are case sensitive. `ruby` is not the same thing as `Ruby`
 
 ## Paths in the Terminal
-
-Terminal commands are generally executed in the context of your working directory. This is essentially the directory that you are currently located in. This can be thought of as the terminal version of navigating to a folder in finder. Usually when you launch the terminal you will start in what is known as your `home` directory. As we will discuss below, there are various commands you can use to navigate around to different directories.
 
 Certain terminal commands need to be given a path to a file's location to function properly. For example: `ruby some_directory/some_file.rb` executes the `ruby` command using a file called `some_file.rb` which is found in a directory called `some_directory`. This is an example of a relative path. The terminal looks for a directory called `some_directory` in the working directory and then looks for a file called `some_file.rb`.
 
