@@ -32,7 +32,6 @@ Once you start implementing programs of a sufficient complexity, you will find t
 
 ## Initial Exercises
 
-* [Terminal Tutorial](../terminal/terminal.md)
 * [Terminal Command Cheat Sheet](../terminal-commands.txt)
 
 * [IRB Tutorial](./irb.md)
