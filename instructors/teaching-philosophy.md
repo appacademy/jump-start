@@ -12,7 +12,11 @@ Read the first section.  You can stop at "A closely related skill is concretenes
 
 ### Examples in the course
 
-GIFs of people using commands/writing code are better than static pictures and examples of code.  Pictures and code examples of how you'd use a method are better than describing that method in words.  Exercises are better than written curriculum.
+GIFs of people using commands/writing code are better than static pictures and examples of code.
+
+Pictures and code examples of how you'd use a method are better than describing that method in words.
+
+Exercises are better than written curriculum.
 
 Saying "call array dot pop" instead of "Call the instance method `pop` on the array".  Avoid jargon.  Use their language.
 
