@@ -20,10 +20,13 @@
   - TA
   - Important to ask for help
 
+- 2 assessments: 1 at end of week 1, 1 at end of week 2
+
+- Group A starts in lecture area, group B starts in curriculum area
+
 - Now we're going to do a quick test to see how far you are
     - Old interview problem
     - OK if you don't get it, this is to gauge where you are
     - Give cats n hats (put on board)
         - You have 15 minutes
     - Email us once you're done
-
