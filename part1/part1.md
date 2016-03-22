@@ -1,4 +1,4 @@
-#Lesson Plan
+# Lesson Plan
 
 ## Instructions
 
@@ -36,13 +36,6 @@ Once you start implementing programs of a sufficient complexity, you will find t
 
 * [IRB Tutorial](./irb.md)
 
-```bash
-$ irb
-irb(main):001:0> 1 + 1
-=> 2
-irb(main):002:0> quit
-$ _
-```
 
 ## Functions
 
@@ -113,126 +106,10 @@ Key concepts:
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
 
-Ruby can do all the usual arithmetic a calculator would do:
-```bash
-$ irb
-irb(main):001:0> 40 + 2 # Addition
-=> 42
-irb(main):002:0> 49 - 7 # Subtraction
-=> 42
-irb(main):003:0> 2 * 3  # Multiplication
-=> 6
-irb(main):004:0> 6 / 2  # Division
-=> 3
-irb(main):005:0> 2 ** 3 # Exponentiation
-=> 8
-```
-```ruby
-$ def print_some_arithmetic_results
-  puts 40 + 2 # Addition:       will print 42
-  puts 49 - 7 # Subtraction:    will print 42
-  puts 2 * 3  # Multiplication: will print 6
-  puts 6 / 2  # Division:       will print 3
-  puts 2**3   # Exponentiation: will print 8
-end
-```
-
-Notice all of the numbers above are integers (they don't have decimal points).
-
-Computers store integers and floating-point numbers (like `2.5` or `3.333...`) in different ways.
-
-When we do math in Ruby, our answer will be an integer if all of the inputs were integers. To make this work, ruby uses integer division, ignoring any fractional components (remainders) in the answer:
-```bash
-irb(main):006:0> 6 / 2
-=> 3
-irb(main):007:0> 7 / 2
-=> 3
-irb(main):008:0> 8 / 2
-=> 4
-```
-```ruby
-def print_some_integer_division_results
-  puts 6 / 2 # will print 3
-  puts 7 / 2 # will print 3, ignoring the remainder of 1
-  puts 8 / 2 # will print 4
-end
-```
-
-If we are interested in the fractional component of division, we can use the modulo operator:
-```bash
-irb(main):009:0> 6 % 2
-=> 0
-irb(main):010:0> 7 % 2
-=> 1
-irb(main):011:0> 8 % 2
-=> 0
-```
-```ruby
-def print_some_modulo_results
-  puts 6 % 2 # will print 0, 6 divides evenly by 2
-  puts 7 % 2 # will print 1, there is a remainder of 1 when 7 is divided by 2
-  puts 8 % 2 # will print 0, there is no remainder when 8 is divided by 2
-end
-```
-
-To force a floating-point answer, we can make one of our inputs a float:
-```bash
-irb(main):012:0> 7 / 2.0
-=> 3.5
-irb(main):013:0> 7.0 / 2
-=> 3.5
-```
-```ruby
-def print_some_more_division_results
-  puts 7.0 / 2 # will print 3.5
-  puts 7 / 2.0 # will print 3.5
-end
-```
-
-Ruby has a nice shorthand for combining arithmetic with variable assignment.
-```bash
-irb(main):014:0> number = 1
-=> 1
-irb(main):015:0> number
-=> 1
-irb(main):016:0> number += 2
-=> 3
-irb(main):017:0> number
-=> 3
-irb(main):018:0> number -= 1
-=> 2
-irb(main):019:0> number
-=> 2
-irb(main):020:0> number *= 3
-=> 6
-irb(main):021:0> number /= 2
-=> 3
-```
-
-Here are two functions that make use of the shorthand.
-```ruby
-def number_doubler(number)
-  number *= 2 # shorthand for: number = number * 2
-  return number
-end
-
-def next_smallest_integer(integer)
-  integer -= 1 # shorthand for: integer = integer - 1
-  return integer
-end
-```
- Long Expression                  | Shorthand
-----------------------------------|-----------
- `number = number + 1`            | `number += 1`
- `number = number - 2`            | `number -= 2`
- `number = number * other_number` | `number *= other_number`
- `number = number / 3`            | `number /= 3`
- **Note**: There are many valid shorthand operators, but these are the most common.
-
+[Numbers Bonus Reading](./advanced_conditionals.md)
 
 Codecademy link (complete this first if you haven't yet):
 * [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
-
 
 Exercises:
   * Write a function called `times_three_and_plus_five(number)` that takes a number, multiplies it by 3, and then adds 5. For example, `times_three_and_plus_five(4)` should output 17.
@@ -250,26 +127,32 @@ Key concepts:
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
 
-```ruby
-# This function returns true if the input is odd.
-def odd_integer?(integer)
-  return integer % 1 == 1
-end
-```
+Here are a few code examples that use the key concepts above.
+
+This first example isn't practical--it just prints a bunch of boolean values--but it lets us review comparators:
 ```ruby
 def print_some_comparator_results
   puts 1 == 1 # true
-  puts 1 < 1 # false
-  puts 1 < 2 # true
+  puts 1 < 1  # false
+  puts 1 < 2  # true
   puts 1 >= 2 # false
   puts 2 >= 2 # true
   puts 2 <= 3 # true
 end
 ```
 
+Here's a more practical function that uses a comparator:
 ```ruby
-# This function prints "10, 9, 8, 7, 6, 5, 4, 3, 2, 1, Liftoff!" each on a
-# new line.
+# This function returns true if the input is odd.
+def odd_integer?(integer)
+  return integer % 1 == 1
+end
+```
+
+This function employs a while-loop, which we use to do similar work repeatedly:
+```ruby
+# This function prints "T-Minus, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, Liftoff!",
+# each on a new line.
 def countdown
   counter = 10
 
@@ -283,6 +166,8 @@ def countdown
   puts "Liftoff!"
 end
 ```
+
+Here's a more complicated function that combines a while-loop with if-elsif-else branching:
 ```ruby
 # This function prints:
 # Ooga-Chaka Ooga-Ooga
@@ -332,6 +217,9 @@ Key concepts:
 
 * `return` jumps all the way out of the function
 
+The code example below determines whether a number is a power of 2 (`2`, `4`, `8`, `16`, ... `2**n`).
+
+For all powers of two, we should be able to divide them in half over and over and eventually get 1. This function takes a number and keeps dividing it in half until it reaches one. If the function gets to an odd number before reaching one, it knows right away that it is not a power of two, so it uses an explicit return to stop the function and return false.
 ```ruby
 # This function takes an integer input and returns whether it's a power of two.
 def silly_power_of_two?(number)
@@ -363,136 +251,66 @@ Key concepts:
 * Parenthesization
 * Truth tables
 
-Ruby's logical operators allow us to manipulate boolean values.
+[Advanced Conditionals Bonus Reading](./advanced_conditionals.md)
 
-The **not** operator (`!`) for boolean values works like a negative sign does for numbers. It returns the opposite of the value directly to its right:
+We can make our code easier to read by replacing any "`if`-not" conditions with `unless` and "`while`-not" with `until`
 ```ruby
-def print_some_not_results
-  puts !true    # will print false, because it's the opposite of true
-  puts !false   # will print true, because it's the opposite of false
+# This function takes a numeric input and returns true if it's 0 or greater.
+def positive?(number)
+  number >= 0
 end
-```
 
-There is also one more comparator we didn't introduce earlier, the not-equal comparator, `!=`:
-```ruby
-def print_more_not_results
-  puts 1 != 1   # will print false
-  puts 1 != 2   # will print true
-end
-```
+positive?(-1) # => false
+positive?(0)  # => true
+positive?(1)  # => true
 
-The **and** operator (`&&`) combines two boolean values. If *both* of them are true, it evaluates to true. If either or both of them are false, it evaluates to false:
-```ruby
-def print_some_and_results
-  puts true && true     # will print true
-  puts true && false    # will print false
-  puts false && true    # will print false
-  puts false && false   # will print false
-end
-```
-
-The **or** operator (`||`) evaluates to true if *one or both* of the boolean values is true. It only evaluates to false if both of the booleans are false:
-```ruby
-def print_some_or_results
-  puts true || true     # will print true
-  puts true || false    # will print true
-  puts false || true    # will print true
-  puts false || false   # will print false
-end
-```
-
-We can use a truth table to summarize all the examples above:
-
-`boolean_one` | `boolean_two` | `!boolean_one` | `boolean_one && boolean_two` | `boolean_one` &#124;&#124; `boolean_two`
-------------|-------------|--------------|----------------------------|-------------------------------------
-`true`        | `true`        | `false`        | `true`                       | `true`
-`true`        | `false`       | `false`        | `false`                      | `true`
-`false`       | `true`        | `true`         | `false`                      | `true`
-`false`       | `false`       | `true`         | `false`                      | `false`
-
-
-In Ruby, operators are evaluated in this order:
-- `!` (**not**)
-- `&&` (**and**)
-- `||` (**or**)
-```ruby
-def print_not_precedence_results
-  puts !false && false       # prints false. !false is evaluated first, then &&
-end
-```
-
-Ruby evaluates logical expressions left-to-right.
-
-The rules of logic allow for "short-circuit" evaluation. This means we don't have to bother checking the right-hand side of a logical expression for both of the following situations:
- - `true  || (anything)` evaluates to `true` no matter what the right-hand side is.
- - `false && (anything)` evaluates to `false` no matter what the right-hand side is.
-
-Ruby uses short-circuit evaluation, so it will not evaluate the right-hand side of a logical expression in either of the cases above.
-
-Let's simplify a complicated expression:
-```ruby
-!true && (1 < 2) || true  # First we'll evaluate the not operators
-false && (1 < 2) || true  # Now we evaluate the and operator
-      false      || true  # We see false && (anything) which evaluates to false.
-                          # NOTE: Ruby never evaluates (1 < 2)
-          true            # Lastly we evaluate the or operator
-```
-
-and one more:
-```ruby
-false && true || true && true || true && false # First we evaluate the &&'s
-    false     || true && true || true && false # short-circuited to false
-    false     || true && true || true && false # evaluated to true
-    false     ||     true     ||     false      # evaluated to false. Now the ||s
-             true             ||     false     # evaluated to true
-                             true              # short-circuited to true
-```
-
-When we combine multiple logical operators, we should use parentheses to ensure the operations occur in the expected order and to make them easier to read:
-
-```ruby
-def print_some_combined_results
-  puts (true || true) && false    # will print false
-  puts true || (true && false)    # will print true
-  puts true || true && false      # will print true, but is not easy to read
-
-  puts !(false || true)            # will print false
-  puts (!false) || true            # will print true
-  puts !false || true              # will print true, but is not easy to read
-end
-```
-
-We can make our code even easier to read by replacing any "`if`-not" conditions with `unless` and "`while`-not" with `until`
-```ruby
 # This function takes a numeric input and returns its absolute value.
 def absolute_value(number)
-  if !(number >= 0)
+  if !positive?(number)
     number *= -1
   end
 
   number
 end
+
+absolute_value(-4) # => 4
+absolute_value(24) # => 24
 
 # Here's the same function using unless instead of if-not
 def absolute_value(number)
-  unless number >= 0
+  unless positive?(number)
     number *= -1
   end
 
   number
 end
+
+absolute_value(-3) # => 3
+absolute_value(13) # => 13
 ```
 
 We can rewrite our silly_power_of_two? function from before, using what we've learned.
 ```ruby
+# This function takes an integer input and returns true if it's an odd number.
+def odd?(number)
+  number % 2 == 1
+end
+
+odd?(2) # => false
+odd?(3) # => true
+
+# This function takes an integer input and returns true if it's a power of 2.
 def silly_power_of_two?(number)
 
-  until number <= 1 || number % 2 == 1
+  until number <= 1 || odd?(number)
     number /= 2               # divide the number by two.
   end
 
   number == 1
 end
+
+silly_power_of_two?(16) # => true
+silly_power_of_two?(12) # => false
 ```
 
 Codecademy links (complete these first if you haven't yet):
@@ -541,6 +359,8 @@ Key concepts:
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
+
+Here's a quick refresher on a few String methods:
 ```ruby
 "Hey you!".length                                     #=> 8
 "answer to life the universe and everything".length   #=> 42
@@ -550,7 +370,7 @@ Key concepts:
 "#{5**2} or #{4 + 2} to #{8 / 2}"                     #=> "25 or 6 to 4"
 "you"[2]                                              #=> "u"
 movie_title = "Apocalypse Now"                        #=> "Apocalypse Now"
-movie_title[12] = "C"                                 #=> "C"
+movie_title[11] = "C"                                 #=> "C"
 movie_title                                           #=> "Apocalypse Cow"
 "/Users/dak/clients/empire/projects/death_star.tar".split("/")
 #=> ["", "Users", "dak", "clients", "empire", "projects", "death_star.tar"]
@@ -568,32 +388,6 @@ Exercises:
 
 ## Arrays
 
-```ruby
-["Anakin", "Luke", "Leia"].length    #=> 3
-[].size                              #=> 0
-[0, 1, 2, 3, 4, 5].count             #=> 5
-["ice", "ice", "baby"].count("ice")  #=> 2
-droids = ["C-3PO", "R2-D2", "MSE-6"] #=> ["C-3PO", "R2-D2", MSE-6"]
-droids[0]                            #=> "C-3PO"
-droids[2]                            #=> "MSE-6"
-droids[-1]                           #=> "MSE-6"
-droids[-3] = "BB-8"                  #=> "BB-8"
-droids                               #=> ["BB-8", "R2-D2", MSE-6"]
-droids.first                         #=> "BB-8"
-droids.last                          #=> "MSE-6"
-droids.include?("R2-D2")             #=> true
-droids.include?("Chewie")            #=> false
-numerals = ["IV", "V"]               #=> ["IV", "V"]
-numerals.push("VI")                  #=> ["IV", "V", "VI"]
-numerals << "I"                      #=> ["IV", "V", "VI", "I"]
-one = numerals.pop                   #=> "I"
-numerals                             #=> ["IV", "V", "VI"]
-numerals.unshift(one)                #=> ["I", "IV", "V", "VI"]
-one = numerals.shift                 #=> "I"
-numerals                             #=> ["IV", "V", "VI"]
-["H", "d", "r"].join("o")            #=> "Hodor"
-```
-
 Key Concepts:
   * Array methods
     * `#length` or `#size` or `#count`
@@ -607,6 +401,38 @@ Key Concepts:
     * `#unshift(value)` to stick a value onto the beginning
     * `#shift` to shift off a value from the beginning
     * `#join(separator)` to join an array of strings, separated by a delimiter
+
+
+Here's a quick refresher on a few Array methods:
+```ruby
+["Anakin", "Luke", "Leia"].length    #=> 3
+[].size                              #=> 0
+[0, 1, 2].count                      #=> 3
+["ice", "ice", "baby"].count("ice")  #=> 2
+droids = ["C-3PO", "R2-D2", "MSE-6"] #=> ["C-3PO", "R2-D2", "MSE-6"]
+droids[0]                            #=> "C-3PO"
+droids[2]                            #=> "MSE-6"
+droids[-1]                           #=> "MSE-6"
+droids[-3] = "BB-8"                  #=> "BB-8"
+droids                               #=> ["BB-8", "R2-D2", "MSE-6"]
+droids.first                         #=> "BB-8"
+droids.last                          #=> "MSE-6"
+droids.include?("R2-D2")             #=> true
+droids.include?("Chewie")            #=> false
+```
+
+Here's how we can use `push` (`<<`), `pop`, `unshift`, and `shift`
+```ruby
+numerals = ["IV", "V"]               #=> ["IV", "V"]
+numerals.push("VI")                  #=> ["IV", "V", "VI"]
+numerals << "I"                      #=> ["IV", "V", "VI", "I"]
+one = numerals.pop                   #=> "I"
+numerals                             #=> ["IV", "V", "VI"]
+numerals.unshift(one)                #=> ["I", "IV", "V", "VI"]
+one = numerals.shift                 #=> "I"
+numerals                             #=> ["IV", "V", "VI"]
+["H", "d", "r"].join("o")            #=> "Hodor"
+```
 
 Codecademy link (complete this first if you haven't yet):
   * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -627,7 +453,21 @@ Key concepts:
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
+
+Here's a basic example of iteration using `each`:
 ```ruby
+# This function prints out several delicious shrimp dishes.
+# Here is a sample output:
+#
+# Shrimp kabobs
+# Shrimp creole
+# Shrimp gumbo
+# Shrimp soup
+# Shrimp stew
+# Shrimp burger
+# Shrimp sandwich
+# That - that's about it.
+#
 def fruit_of_the_sea
   dishes = ["kabobs", "creole", "gumbo", "soup", "stew", "burger", "sandwich"]
 
@@ -637,28 +477,67 @@ def fruit_of_the_sea
 
   puts "That - that's about it."
 end
+```
 
+Here's a more interesting example using `each_with_index`:
+```ruby
+# This function prints out even-indexed elements of an array of famous Stevens.
+# It returns the whole array. Here is a sample output:
+#
+# Steven Spielberg
+# Steven McQueen
+# Steven Tyler
+#
 def even_stevens
   surnames = ["Spielberg", "Seagal", "McQueen", "Fernandez", "Tyler", "Gerrard"]
 
-  surnames.each_with_index do |surname, idx|
-    if idx % 2 == 0
+  surnames.each_with_index do |surname, index|
+    if index % 2 == 0
       puts "Steven " + surname
     end
   end
 end
+```
 
-def net_torque(forces, pivot_idx)
+This is a more practical `each_with_index` example:
+```ruby
+# This function takes a force and a distance as input and returns a torque.
+def torque(force, distance)
+  force * distance
+end
+
+torque(5, -2) # => -10
+
+# This function takes an array of forces and the index of the pivot point. It
+# returns the sum of torques around that pivot point.
+def net_torque(forces, pivot_index)
   net_torque = 0
 
-  forces.each_with_index do |force, idx|
-    distance = pivot_idx - idx
-    net_torque += force * distance
+  forces.each_with_index do |force, index|
+    distance = index - pivot_index
+    net_torque += torque(force, distance)
   end
 
   net_torque
 end
+loaded_beam = [4, -1, 0, 1, 3]
+net_torque(loaded_beam, 1) # => 7
+net_torque(loaded_beam, 2) # => 0
+net_torque(loaded_beam, 3) # => -7
+```
 
+This example uses `chars` to turn a string into an array of characters, so it can iterate over each character:
+```ruby
+# This function takes a team_name and prints a cheer for that team. Here is a
+# sample output for the input "ducks":
+#
+# Give me a D!
+# Give me a U!
+# Give me a C!
+# Give me a K!
+# Give me a S!
+# Go ducks!
+#
 def cheer_squad(team_name)
   team_name.chars.each do |letter|
     puts "Give me a " + letter.upcase + "!"
@@ -684,14 +563,20 @@ Exercises:
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
+Here's an example of code that implicitly returns `nil`, because the last thing to get evaluated in the function (`puts`), returns `nil`:
 ```ruby
+# This function takes a catchphrase as an argument, prints it, and returns nil.
 def print_catchphrase(catchphrase)
   puts catchphrase
 end
 
 return_value = print_catchphrase("Bazinga!") #=> nil
+```
 
-
+Here are two functions that try to decrease a quantity by five. `if`-`elsif` branches will return the value of the branch that gets evaluated. If no branch is evaluated (none of the conditions were true), `nil` is returned:
+```ruby
+# This function takes an integer and if the integer is greater than or equal to
+# five, it returns five less than the integer. Otherwise, it returns nil.
 def take_five(initial_quantity)
   if initial_quantity >= 5
     initial_quantity - 5
@@ -700,7 +585,15 @@ end
 
 take_five(9) #=> 4
 take_five(2) #=> nil
+```
+In the example above, if the initial_quantity was less than five, the function returned nil because the `if` condition evaluated to false.
 
+In this second example, the method adds an `elsif` branch so it can return the initial_quantity again if it was less than five.
+```ruby
+# This function takes an integer argument. If the integer is greater than or
+# equal to five, it returns five less than the integer. Otherwise, if the
+# integer is greater than zero, it returns the integer itself. Integer inputs
+# that are not greater than zero cause the function to return nil.
 def try_to_take_five(initial_quantity)
   if initial_quantity >= 5
     initial_quantity - 5
@@ -708,6 +601,7 @@ def try_to_take_five(initial_quantity)
     initial_quantity
   end
 end
+
 try_to_take_five(9) #=> 4
 try_to_take_five(2) #=> 2
 try_to_take_five(0) #=> nil
@@ -723,10 +617,19 @@ Key concepts:
 `puts` and `p` are both methods that take an argument and print it. To make our
 code more readable, we usually omit the parentheses.
 ```ruby
-puts "This is shorthand"  #=> nil
-puts("for this.")         #=> nil
-p "The same is true"      #=> "The same is true"
-p("for p.")               #=> "for p."
+# This function prints four phrases, collecting the return value for each. These
+# values are returned as an array.
+def collect_p_and_puts_return_values
+  first_puts = puts "This is shorthand"
+  second_puts = puts("for this.")
+
+  first_p = p "The same is true"
+  second_p = p("for p.")
+
+  return [first_puts, second_puts, first_p, second_p]
+end
+
+collect_p_and_puts_return_values # => [nil, nil, "The same is true", "for p."]
 ```
 
 Exercises:
@@ -740,8 +643,10 @@ Key concepts:
 * `break`
 * `next`
 
-`break` and `next` give us some flexibility when using looping constructs. Both `break` and `next` skip over the rest of the code within an interation of a loop. `next` will then run the loop on the next element in the collection, while `break` stops the loop completely.
+`break` and `next` give us some flexibility when using looping constructs. Both `break` and `next` skip over the rest of the code within an iteration of a loop. `next` will then run the loop on the next element in the collection, while `break` stops the loop completely.
 ```ruby
+# This function takes an array of numbers that are all greater than or equal to
+# zero. It then returns the smallest number.
 def smallest_nonnegative_number(numbers)
   current_smallest = numbers.first
 
@@ -759,6 +664,9 @@ def smallest_nonnegative_number(numbers)
 
   current_smallest
 end
+
+some_positive_numbers = [7, 4, 0, 5, 1]             # => [7, 4, 0, 5, 1]
+smallest_nonnegative_number(some_positive_numbers)  # => 0
 ```
 
 * Exercises:

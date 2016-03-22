@@ -101,7 +101,16 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
+
+Codecademy link (complete this first if you haven't yet):
+  * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+  * [Inclusive and Exclusive Ranges]
+  (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/1/2?curriculum_id=5059f8619189a5000201fbcb)
+
+Here's a quick example that shows advanced array topics:
 ```ruby
+# This function returns a copy of an array with the
+# first and last elements removed.
 def except_first_and_last(array)
   array[1...-1]
 end
@@ -112,12 +121,6 @@ eighty[-1] += 5                       #=> 25
 eighty                                #=> [15, 20, 20, 25]
 forty = except_first_and_last(eighty) #=> [20, 20]
 ```
-
-Codecademy link (complete this first if you haven't yet):
-  * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
-  * [Inclusive and Exclusive Ranges]
-  (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/1/2?curriculum_id=5059f8619189a5000201fbcb)
-
 
 Exercises:
   * Initialize an array of 100 elements with a default value of `"yes"`, and then set every other value to `"no"`.
@@ -131,13 +134,19 @@ Exercises:
 * Can also use characters! Watch your quotation marks though.
 * Can `#each` over a range
 
+Here's an example that iterates over a range:
 ```ruby
+# This function prints "5, 6, 7, 8" each on a newline, returning the range (5..8)
 def dance_instructor
   (5..8).each do |count|
     puts count
   end
 end
+```
 
+This example employs a range of characters. Note the method **returns** the string instead of printing it:
+```ruby
+# This function takes a letter grade as input, returning a reasonable response to the grade.
 def report_card_feedback(grade)
   passing_grades = ("A".."D").to_a
   failing_grade  = "F"
@@ -150,6 +159,9 @@ def report_card_feedback(grade)
     "Nice try. #{grade} isn't a real grade!"
   end
 end
+report_card_feedback("c")        # => "That'll do, I guess"
+report_card_feedback("F")        # => "Try harder"
+report_card_feedback("Awesome")  # => "Nice try. Awesome isn't a real grade!"
 ```
 
 Exercises:
@@ -167,29 +179,44 @@ Exercises:
 
 `Enumerable#any?` will return true if the block evaluates to true for any element in the collection. As soon as an element makes the block return true, `#any?` will return true without checking the remaining elements.
 ```ruby
+# This function takes an array of numbers, returning true if any
+# of them is evenly divisible by two.
 def any_even?(numbers)
-  numbers.any? |number|
+  numbers.any? do |number|
     number % 2 == 0
   end
 end
+
+any_even?([1, 2, 3]) # => true
+any_even?([1, 3, 5]) # => false
 ```
 
 `Enumerable#all?` will return true if the block evaluates to true for every element in the collection. As soon as an element makes the block return false, `#all?` will return false without checking the remaining elements.
 ```ruby
+# This function takes an array of numbers, returning true if all
+# of them are zero or greater.
 def all_positive?(numbers)
   numbers.all? do |number|
     number >= 0
   end
 end
+
+all_positive?([0, -1, 1]) # => false
+all_positive?([1, 0, 11]) # => true
 ```
 
 `Enumerable#none?` will return true if the block evaluates to false for every element in the collection. As soon as an element makes the block return true, `#none?` will return false without checking the remaining elements.
 ```ruby
+# This function takes an array of numbers, returning true if none
+# of them is less than zero.
 def all_positive?(numbers)
   numbers.none? do |number|
     number < 0
   end
 end
+
+all_positive?([0, -1, 1]) # => false
+all_positive?([1, 0, 11]) # => true
 ```
 
 **Note** These methods give us a lot of flexibility to craft very readable conditions. If your condition is confusing, think about whether using a different boolean method would make it clearer.
@@ -200,11 +227,21 @@ end
 
 Ruby's `times` is a nice way to write a loop that will stop after a number of iterations.
 ```ruby
+# This method takes a quantity of pushups to perform and prints
+# the platoon's responses. Here's a sample output for input of 2:
+#
+# Platoon (in unison): Sir, yes sir!
+# Platoon: 1!
+# Platoon: 2!
+# Hup!
+# Hup!
+# Hup!
+#
 def drop_and_give_me(quantity)
   puts "Platoon (in unison): Sir, yes sir!"
 
-  quantity.times do |idx|
-    puts "Platoon: #{idx + 1}!"
+  quantity.times do |index|
+    puts "Platoon: #{index + 1}!"
   end
 
   3.times do
@@ -212,20 +249,25 @@ def drop_and_give_me(quantity)
   end
 end
 ```
+What is the return value of the method in the example above? Why?
 
 `Enumerable#map` evaluates the block for each successive item in the collection, storing the results in an array.
 
 ```ruby
+# This function takes a percentage,
+# returning the corresponding letter grade
 def letter_grade(percentage)
   letters = ("A".."D").to_a
 
-  letters.each.with_index do |letter, idx|
-    return letter if percentage >= 90 - 10 * idx
+  letters.each.with_index do |letter, index|
+    return letter if percentage >= 90 - 10 * index
   end
 
   "F"
 end
 
+# This function takes an array of grades as percentages,
+# returning a new array of their corresponding letter grades.
 def grade_class(class_percentages)
   class_percentages.map do |student_percentage|
     letter_grade(student_percentage)
@@ -249,6 +291,42 @@ Exercises:
 * Single responsibility per function
 * This will lower your cognitive load
 
+```ruby
+
+# This function returns an array of the values of the elements directly next
+# to a given index.
+def neighbors_in_array(array, index)
+  neighbors = []
+
+  neighbors << array[index - 1] unless index == 0
+  neighbors << array[index + 1] unless index == array.length - 1
+
+  neighbors
+end
+
+# This function returns the sum of an array.
+def sum_array(array)
+  sum = 0
+
+  array.each do |number|
+    sum += number
+  end
+
+  sum
+end
+
+# This function takes an array and returns a new array where each element is
+# replaced by the sum of its neighbors.
+def neighbor_sums(array)
+  array.map.with_index do |number, index|
+    neighbors = neighbors_in_array(array, index)
+    sum_array(neighbors)
+  end
+end
+
+neighbor_sums([1, 5, 3, 2, 8, 0, 6])  # => [5, 4, 7, 11, 2, 14, 0]
+```
+
 
 ### Hash Maps `{}`
 * A.k.a., a dictionary or a map
@@ -268,20 +346,28 @@ Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
 
-
+Here's an example of how we can put build hashes and access their data.
 ```ruby
-pantry = {
-    "eggs" => 12,
-    "tomatoes" => 3,
-    "peppers" => 5
-}                      #=> {"eggs"=>12, "tomatoes"=>3, "peppers"=>5}
+  pantry = {
+      "eggs" => 12,
+      "tomatoes" => 3,
+      "peppers" => 5
+  }                      #=> {"eggs"=>12, "tomatoes"=>3, "peppers"=>5}
 
-pantry["onions"] = 2   #=> {"onions" => 2}
-pantry["eggs"]         #=> 12
-pantry["kielbasa"]     #=> nil
-pantry.keys            #=> ["eggs", "tomatoes", "peppers", "onions"]
-pantry.values          #=> [12, 3, 5, 2]
+  pantry["onions"] = 2   #=> {"onions" => 2}
+  pantry["eggs"]         #=> 12
+  pantry["kielbasa"]     #=> nil
+  pantry.keys            #=> ["eggs", "tomatoes", "peppers", "onions"]
+  pantry.values          #=> [12, 3, 5, 2]
+```
 
+Here's a function that iterates over a hash with `each`:
+```ruby
+# This function takes an inventory as a hash,
+# in the form { item => quantity }. It then prints an inventory.
+# Here's sample output for the input { "eggs" => 12, "tea" => 1 }:
+# eggs: 12
+# tea: 1
 def print_inventory(inventory)
   inventory.each do |item, quantity|
     puts "#{item}: #{quantity}"
@@ -300,7 +386,11 @@ Exercises:
 * Can change the default value using `hash = Hash.new(default_value)`
 * Counts pattern! `Hash.new(0)`
 
+Here's an example showing how we can set a hash's default value to something more useful than `nil`. This example shows a very useful pattern.
 ```ruby
+# This function takes an array of letter grades,
+# returning a hash with each grade as the key and the number off
+# occurrences of the grade in the array as the value.
 def grade_counts(class_letter_grades)
   grade_counts = Hash.new(0)
 
@@ -317,6 +407,7 @@ math_counts["A"]                             #=> 3
 math_counts["D"]                             #=> 0
 math_counts["platypus"]                      #=> 0
 ```
+
 
 Exercises:
   * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
