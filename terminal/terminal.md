@@ -126,8 +126,8 @@ Another neat trick is using the terminal's command history function. While in th
 
 ## Exercises
 
-- Practice using `cd` and `ls` to explore your computer's directory structure. Try going all the way down to the root `/` and looking at the various directories that make up a Linux and OSX computer system.
+- Practice using `cd` and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root `/`. Look at the various directories that make up a Linux and OSX computer system.  You'll be fine as long as you don't enter the `rm` command.
 
-- `touch` and `cat` are two additional commands that I find myself using a fair amount. Look them up in google and check out their 'man pages'. After you feel you have a basic understanding of what they do try `cat`ing and `touch`ing some files you have made.
+- From your desktop or workspace, make a sample folder (`mkdir sample_folder_name`), and `cd` into it.  `touch` and `cat` are two additional commands that I find myself using a fair amount.  Look them up in google and try them out: e.g., `touch my_file_1`, `echo "Hello world" > my_file_1`, `cat my_file_1`.  After you feel you have a basic understanding of what they do look up the `man` pages and try out some different options.
 
 - Look at the 'man pages' for all of the commands described above and try out some of the different options. `ls` has a ton of fun options to try out.
