@@ -133,11 +133,15 @@ It's going to go forever.  Hit Ctrl-C to make it stop.  Do this whenever your pr
 
 ### Tab Completion
 
-One of the biggest time saving features of the terminal is 'tab-completion'. If you start typing something in the terminal and press 'tab' your computer will try to fill in the rest of the word with matching commands, programs, and files. This is sort of like a much simpler version of OSX's 'spotlight'. If nothing comes up when you press 'tab' that means that either nothing matched what you started typing or that more than one thing matched. If you press tab a second time your terminal should display a list of all possible matches. Using 'tab-completion' can dramatically speed up your terminal use.
+One of the biggest time saving features of the terminal is 'tab-completion'. If you start typing something in the terminal and press 'tab' your computer will try to fill in the rest of the word with matching commands, programs, and files. This is like a much simpler version of OSX's 'spotlight'. If you press tab a second time, your terminal should display a list of all possible matches. Using 'tab-completion' can dramatically speed up your terminal use.
 
 ### Command History
 
-Another neat trick is using the terminal's command history function. While in the terminal you can press the 'up' and 'down' arrow keys to cycle through previously entered commands. This is very useful if you find yourself typing the same command over and over again. Instead of typing `bundle exec rspec spec/` or `gcc -Wall -o myProg main.c && valgrind --leak-check=full ./myProg` (yes, terminal commands can get very long)  over and over you can just press 'up' and 'enter'.
+Another neat trick is using the terminal's command history function. While in the terminal you can press the 'up' and 'down' arrow keys to cycle through previously entered commands.
+
+Try it out now.
+
+This is very useful if you find yourself typing the same command over and over again. Instead of typing long commands like `bundle exec rspec spec/` or `gcc -Wall -o myProg main.c && valgrind --leak-check=full ./myProg` over and over (you don't have to know these commands), you can just press 'up' and 'enter'.
 
 ## Exercises
 
