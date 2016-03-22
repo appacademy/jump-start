@@ -138,7 +138,7 @@ puts redact_five_letter_words("we the people in order to form a more perfect uni
 # return the one that occurs earliest in the alphabet.  For our purposes, count "y" as a vowel.
 # Assume all letters are lower case.
 
-def most_common_vowel(str)
+def most_common_vowel(string)
 end
 
 puts "\nMost common vowel:\n" + "*" * 15 + "\n"

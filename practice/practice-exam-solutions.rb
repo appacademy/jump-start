@@ -1,10 +1,10 @@
 #Write a function summation that takes a number and returns the summation of all positive
 #integers upto and including that number.
 
-def summation(n)
+def summation(number)
   sum = 0
-  (0..n).each do |num|
-    sum += num
+  (0..number).each do |integer|
+    sum += integer
   end
   sum
 end
@@ -21,16 +21,16 @@ puts summation(15) == 120
 #write a function that takes a number n and returns the highest prime factor of
 #that number. Hint: Helper function.
 
-def is_prime?(num)
-  return false if num < 2
-  (2...num).to_a.none?{ |factor| num % factor == 0 }
+def is_prime?(number)
+  return false if number < 2
+  (2...number).to_a.none?{ |integer| number % integer == 0 }
 end
 
-def highest_prime_factor(num)
-  i = num - 1
-  while i > 0
-    return i if num % i == 0 && is_prime?(i)
-    i -= 1
+def highest_prime_factor(n)
+  number = n - 1
+  while number > 0
+    return number if n % number == 0 && is_prime?(number)
+    number -= 1
   end
 end
 
@@ -43,10 +43,10 @@ puts highest_prime_factor(69842) == 743
 #write a boolean function zero_sum? that takes an array of integers and returns
 #true if 2 elements in the array sum to zero.
 
-def zero_sum?(arr)
-  (0...arr.length).each do |i|
-    (i+1...arr.length).each do |j|
-      return true if arr[i] + arr[j] == 0
+def zero_sum?(array)
+  (0...array.length).each do |index1|
+    (index1 + 1...array.length).each do |index2|
+      return true if array[index1] + array[index2] == 0
     end
   end
   false
@@ -65,8 +65,8 @@ puts zero_sum?([2,3,4,-3,1]) == true
 
 def missing_letters(phrase)
   counts = Hash.new(0)
-  phrase.chars.each do |char|
-    counts[char] += 1
+  phrase.chars.each do |character|
+    counts[character] += 1
   end
   missing = []
   ('a'..'z').each do |letter|
@@ -85,7 +85,7 @@ puts missing_letters("we the people of the united states in order to form a more
 #Write a function count_odds that takes an array of numbers and returns the count
 #of odd numbers in that array
 def count_odds(numbers)
-  numbers.count { |num| num % 2 == 1 }
+  numbers.count { |number| number % 2 == 1 }
 end
 
 puts "\nCount Odds\n" + "*" * 15 + "\n"
@@ -99,9 +99,9 @@ puts count_odds([123,42,23,71,0]) == 3
 #Write a function delete_first_letter that takes a phrase and a letter to hide and removes
 #the first instances of that letter
 def delete_first_letter(phrase, letter)
-  (0...phrase.length).each do |i|
-    if phrase[i] == letter
-      phrase[i] = ""
+  (0...phrase.length).each do |index|
+    if phrase[index] == letter
+      phrase[index] = ""
       break
     end
   end

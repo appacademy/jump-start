@@ -1,5 +1,5 @@
 # chunk an array into nested arrays of length n
-def chunk(arr, n)
+def chunk(array, n)
 
 end
 
@@ -16,7 +16,7 @@ puts pig_latin("i speak pig latin") == "iay eakspay igpay atinlay"
 puts pig_latin("throw me an aardvark") == "owthray emay anay aardvarkay"
 
 # Remove the nth letter of the string
-def remove_nth_letter(str, n)
+def remove_nth_letter(string, n)
 
 end
 
@@ -24,8 +24,8 @@ puts "---------remove nth letter-------"
 puts remove_nth_letter("helloworld", 5) == "helloorld"
 puts remove_nth_letter("helloworld", -3) == "hellowold"
 
-# Boolean function: check if  shortstr is a substring of longstr
-def substring?(longstr, shortstr)
+# Boolean function: check if  short_string is a substring of long_string
+def substring?(long_string, short_string)
 
 end
 
@@ -37,7 +37,7 @@ puts substring?("whatifikeptontypingforever", "ik") == true
 # count the number of times that two adjacent numbers in an array add up to n.
 # You cannot reuse a number. So count_adjacent_sums([1, 5, 1], 6) => 1
 
-def count_adjacent_sums(arr, n)
+def count_adjacent_sums(array, n)
 
 end
 
@@ -65,6 +65,6 @@ def inventory_array(older, newer)
 end
 
 puts "---------inventory array-------"
-march_arr = [['diamonds', 2], ['emeralds', 14], ['rubies', 10]]
-april_arr = [['emeralds', 27], ['moonstones', 5]]
-puts inventory_array(march_arr, april_arr) == [['diamonds', 2], ['emeralds', 27], ['moonstones', 5], ['rubies', 10]]
+march_array = [['diamonds', 2], ['emeralds', 14], ['rubies', 10]]
+april_array = [['emeralds', 27], ['moonstones', 5]]
+puts inventory_array(march_array, april_array) == [['diamonds', 2], ['emeralds', 27], ['moonstones', 5], ['rubies', 10]]
