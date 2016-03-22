@@ -6,7 +6,6 @@ You will often need to execute commands from the terminal.  `ls` is an example t
 
 ![example terminal command](./example_terminal_command.png)
 
-
 This guide will walk you through some of the common terminal commands that you will find yourself using, as well as some tips and tricks to speed up your terminal use.
 
 Open a terminal now. In cloud9, your terminal should already show up on the bottom of your screen.
@@ -127,8 +126,8 @@ Another neat trick is using the terminal's command history function. While in th
 
 ## Exercises
 
-- Look at the 'man pages' for all of the commands described above and try out some of the different options. `ls` has a ton of fun options to try out.
-
 - Practice using `cd` and `ls` to explore your computer's directory structure. Try going all the way down to the root `/` and looking at the various directories that make up a Linux and OSX computer system.
 
 - `touch` and `cat` are two additional commands that I find myself using a fair amount. Look them up in google and check out their 'man pages'. After you feel you have a basic understanding of what they do try `cat`ing and `touch`ing some files you have made.
+
+- Look at the 'man pages' for all of the commands described above and try out some of the different options. `ls` has a ton of fun options to try out.
