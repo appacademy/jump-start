@@ -2,7 +2,13 @@
 
 ## Instructions
 
-Please read the bullet points, then do every exercise.  You can reference the linked material if you ever need help.
+Please do every exercise.
+
+Reference the linked material when you get stuck or need help.
+
+Prioritize doing the exercises (correctly) over doing the readings.  We want you to struggle with problems and then fill in your knowledge.
+
+It's OK to go "I don't understand the question".  That's when you should read the linked material.
 
 ## Intro to programming
 
