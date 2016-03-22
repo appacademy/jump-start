@@ -107,8 +107,23 @@ You can scroll around a 'man page' using the arrow keys and page up/down. To exi
 
 ## Tips and Tricks
 ### ctrl-c
-<!--TODO-->
+
+Imagine you have just written the world's best ruby program. You go to try it out in the terminal and OH NO there is an infinite loop. It just keeps printing out "Funky C Funky Do" for all eternity. What are you to do? Have no fear, `ctrl-c` is here. If you press `ctrl-c` while a terminal program is running it usually stop. `ctrl-c` is the key command to make a terminal program stop or exit.
+
+Be aware that this is not guaranteed to work for all terminal programs. When you press `ctrl-c` what actually happens is your computer sends an interrupt signal called a `SIGINT` to the program. Most programs respond to a `SIGINT` by stopping what they are currently doing but some may have other responses or not respond at all.
+
 ### Tab Completion
-<!--TODO-->
+
+One of the biggest time saving features of the terminal is 'tab-completion'. If you start typing something in the terminal and press 'tab' your computer will try to fill in the rest of the word with matching commands, programs, and files. This is sort of like a much simpler version of OSX's 'spotlight'. If nothing comes up when you press 'tab' that means that either nothing matched what you started typing or that more than one thing matched. If you press tab a second time your terminal should display a list of all possible matches. Using 'tab-completion' can dramatically speed up your terminal use.
+
 ### Command History
-<!--TODO-->
+
+Another neat trick is using the terminal's command history function. While in the terminal you can press the 'up' and 'down' arrow keys to cycle through previously entered commands. This is very useful if you find yourself typing the same command over and over again. Instead of typing `bundle exec rspec spec/` or `gcc -Wall -o myProg main.c && valgrind --leak-check=full ./myProg` (yes, terminal commands can get very long)  over and over you can just press 'up' and 'enter'.
+
+## Exercises
+
+- Look at the 'man pages' for all of the commands described above and try out some of the different options. `ls` has a ton of fun options to try out.
+
+- Practice using `cd` and `ls` to explore your computer's directory structure. Try going all the way down to the root `/` and looking at the various directories that make up a Linux and OSX computer system.
+
+- `touch` and `cat` are two additional commands that I find myself using a fair amount. Look them up in google and check out their 'man pages'. After you feel you have a basic understanding of what they do try `cat`ing and `touch`ing some files you have made.
