@@ -20,7 +20,9 @@ collect_p_and_puts_return_values # => [nil, nil, "The same is true", "for p."]
 ```
 
 
-`p` is also shorthand for calling `puts` with `#inspect`.  For example:
+`p` is also shorthand for calling `puts` with `#inspect`.
+
+For example:
 
 ```ruby
 
