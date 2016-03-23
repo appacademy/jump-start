@@ -6,6 +6,7 @@
 * A **local variable** is only defined within its scope
 * You should generally not name a local variable the same as the function or as another variable in scope, because it causes a namespace conflict. (I.e., the older variable will no longer be accessible.)
 
+
 Exercise:
 
 * Will this function work? Don't run it, just analyze the code mentally.
@@ -54,25 +55,13 @@ puts array_squared(array)
 * Writing stuff into your address book doesn't actually change where buildings live! It's just your own form of book-keeping.
 * More concretely, all Ruby objects live in memory. And they'll still live in memory unless you explicitly mutate them.
 
+Readings link with examples (in case you get stuck or need help):
+* [Pass-by-reference Reading](./pass-by-reference.md)
+
 ### Mutation
 
-* Safe vs. unsafe methods. The bang, `!`, at the end of the method name denotes an unsafe method.
-* The bang generally means the method mutates the input.
-* Pay attention to whether you need to re-assign your variable, or mutate it in your function.
-* Some Ruby objects are **immutable**, which means they cannot mutate. You must create a new and different object and re-assign your variable if you want to change an immutable object.
-* Things that are immutable:
-  * Booleans (`true`/`false`)
-  * `nil`
-  * Numbers
-* Arrays and hashes are **mutable**. `[1,2,3,[4,5,6],7]` is an array with some immutable elements, and one mutable element. This could make a difference if you are iterating over elements of an array and changing them as you go.
-* Here's a rule of thumb for mutability—if you can pass it into a function and change the object, then it's mutable. Otherwise it's not.
-* Think about it: can you imagine something immutable, like `true` or `0` changing because you called some function?
-
-    ```ruby
-  variable = false
-  crazy_function_that_does_crazy_things!(variable)
-  puts variable == false # no function can change its value!
-    ```
+Readings link with examples (in case you get stuck or need help):
+* [Mutation Reading](./mutation.md)
 
 Exercises:
 * What will this code do?
@@ -118,7 +107,6 @@ end
 n = 5
 puts add_all_up_to_number(n)
 puts n
-
 ```
 
 After you've made your guesses, test all the code above by running it.
@@ -127,10 +115,15 @@ After you've made your guesses, test all the code above by running it.
 * Iterating with complex logic—while loops!
 * Looking forward or backward
 
+Readings link with examples (in case you get stuck or need help):
+* [Advanced Iteration Reading](./advanced-iteration.md)
+
+
 Exercises:
   * Write a function called `longest_run_digit(number)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
 
 ### Nested iteration
+
 * Looping within a loop. First element touches every element, second element touches every element, etc.
 * Think like the hands of a clock!
 * Beware of edge conditions. Should your two iterators ever be equal? Should they ever be 0? Should they reach the end of the array?
@@ -138,14 +131,14 @@ Exercises:
 * Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
-Here's an example of nested iteration in code:
-
-![Nested Iteration](./nested-iteration.png)
-
-There's one "until" nested inside of another "until".
+Readings link with examples (in case you get stuck or need help):
+* [Nested Iteration Reading](./nested-iteration.md)
 
 Exercises:
   * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
+  * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
+    * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
+  * Put a debugger inside the inner loop of the `color_mixer` function from the reading (just above the line where the colors are being shoveled into the `mixes` array). Run the function using the input: ["beige", "white", "tan"] and write out on a piece of paper what you expect `first_color` and `second_color` to be each time the function pauses at the debugger. Then use the debugger to check your answer before using `c` to move to the next iteration.
   * Write a function called `clock` that cycles through every minute of the day and prints out every half hour.  Include the AM and PM.
     * For example:
 
@@ -165,8 +158,6 @@ clock
 
 
 ```
-  * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
-    *E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
   * Implement `bubble_sort!` on your own now!
     * On paper, write out in english the process that bubble sort takes. Don't worry about writing code yet.
     * Now take that english (we call that english "pseudocode") and turn it into real code
@@ -190,6 +181,8 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 * `#max_by`
 * One-line `is_prime?`
 
+Readings link with examples (in case you get stuck or need help):
+* [Enumerables++ Reading](./enumerables++.md)
 
 Exercises:
   * Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
@@ -206,6 +199,9 @@ Exercises:
 * `uniq` removes all duplicate elements.
 * `shuffle` puts the elements in a random order.
 
+Readings link with examples (in case you get stuck or need help):
+* [More Array Methods Reading](./more-array-methods.md)
+
 Exercises:
 
   * Write a function called `range_of(array)` which returns the difference between the smallest and the greatest value of the array.
@@ -217,8 +213,11 @@ Exercises:
 * You can multiply strings. `"Ha" * 3` outputs ``"HaHaHa"``
 * `reverse` will return a string with all the characters in the opposite order.
 * `gsub(this, for_that)` provides search and replace functionality for strings.
-* `sub(this, for_that)` replaces only first occurance
+* `sub(this, for_that)` replaces only first occurrence
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
+
+Readings link with examples (in case you get stuck or need help):
+* [More String Methods Reading](./more-string-methods.md)
 
 Exercises:
 
@@ -256,4 +255,4 @@ array[i], array[j] = array[j], array[i]
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
 
 Exercise:
-  * Go back over your old code and see where you can refactor to use parallel assignment. `reverse!` or `five_sort!` are good candidates.
+  * Go back to `reverse!` and `five_sort!` and see where you can refactor to use parallel assignment.
