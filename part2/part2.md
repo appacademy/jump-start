@@ -101,7 +101,8 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
-[Advanced Array Refresher](./advanced-arrays.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Advanced Array Refresher](./advanced-arrays.md)
 
 Codecademy link (complete this first if you haven't yet):
   * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -120,7 +121,8 @@ Exercises:
 * Can also use characters! Watch your quotation marks though.
 * Can `#each` over a range
 
-[Ranges Reading](./ranges.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Ranges Reading](./ranges.md)
 
 Exercises:
   * `puts` an array of all of the numbers between 30 and 50, inclusive.
@@ -135,13 +137,15 @@ Exercises:
 * `#none?`
 * Based on the **return value** of the block! Think of it like a function.
 
-[Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
 
 ### Advanced enumerables
 * `#times`
 * `#map`
 
-[Advanced Enumerables Reading](advanced-enumerables.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Advanced Enumerables Reading](advanced-enumerables.md)
 
 Exercises:
 
@@ -157,7 +161,8 @@ Exercises:
 * Single responsibility per function
 * This will lower your cognitive load
 
-[Function Decomposition Reading](function-decomposition.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Function Decomposition Reading](function-decomposition.md)
 
 
 ### Hash Maps `{}`
@@ -174,7 +179,8 @@ Exercises:
   * `#values`
   * `#each do |key, value|`
 
-[Hash Maps Reading](./hash-maps.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Hash Maps Reading](./hash-maps.md)
 
 Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -190,7 +196,8 @@ Exercises:
 * Can change the default value using `hash = Hash.new(default_value)`
 * Counts pattern! `Hash.new(0)`
 
-[Custom Hash Defaults Reading](./hash-defaults.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Custom Hash Defaults Reading](./hash-defaults.md)
 
 Exercises:
   * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.

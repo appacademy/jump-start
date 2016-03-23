@@ -53,7 +53,8 @@ Key concepts:
 * Watch your indentation!
 * Functions can call other functions
 
-[Functions Reading](./functions.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Functions Reading](./functions.md)
 
 **Note**: When you're writing a function, indent with two spaces, not four.  Python uses four spaces, but ruby uses two spaces.
 
@@ -114,7 +115,8 @@ Key concepts:
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
 
-[Numbers Reading](./numbers.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Numbers Reading](./numbers.md)
 
 Codecademy link (complete this first if you haven't yet):
 * [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
@@ -135,8 +137,9 @@ Key concepts:
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
 
-[Booleans Reading](./booleans.md)
-[Loops Reading](./loops.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Booleans Reading](./booleans.md)
+* [Loops Reading](./loops.md)
 
 
 Codecademy links (complete these first if you haven't yet):
@@ -156,7 +159,8 @@ Key concepts:
 
 * `return` jumps all the way out of the function
 
-[Implicit and Explicit Returns Reading](./implicit-returns.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Implicit and Explicit Returns Reading](./implicit-returns.md)
 
 Exercise:
   * Write a function `largest_factor(number)` that returns the largest factor of a number. Adapt your `print_factors` method to use a `while` loop starting at `number - 1`, and return immediately once you find a number that's a factor.
@@ -173,7 +177,8 @@ Key concepts:
 * Parenthesization
 * Truth tables
 
-[Advanced Conditionals  Reading](./advanced-conditionals.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Advanced Conditionals  Reading](./advanced-conditionals.md)
 
 
 Codecademy links (complete these first if you haven't yet):
@@ -222,7 +227,8 @@ Key concepts:
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
-[String Refresher](./strings.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [String Refresher](./strings.md)
 
 Codecademy link (complete this first if you haven't yet):
   * [String methods](https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
@@ -249,7 +255,8 @@ Key Concepts:
     * `#shift` to shift off a value from the beginning
     * `#join(separator)` to join an array of strings, separated by a delimiter
 
-[Array Refresher](./arrays.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Array Refresher](./arrays.md)
 
 Codecademy link (complete this first if you haven't yet):
   * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -270,7 +277,8 @@ Key concepts:
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
-[Iteration Reading](./iteration.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Iteration Reading](./iteration.md)
 
 Codecademy link (complete this first if you haven't yet):
   * [Iterators and Blocks](https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
@@ -288,7 +296,8 @@ Exercises:
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
-[Nil Reading](./nil.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Nil Reading](./nil.md)
 
 ## Output
 
@@ -297,7 +306,8 @@ Key concepts:
 * `p` and `puts`
   * `p` returns the thing you're printing, `puts` returns `nil`
 
-[Output Reading](./output.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Output Reading](./output.md)
 
 Exercises:
 
@@ -310,7 +320,8 @@ Key concepts:
 * `break`
 * `next`
 
-[Break and Next Reading](./break-next.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Break and Next Reading](./break-next.md)
 
 * Exercises:
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
@@ -319,7 +330,8 @@ Key concepts:
 
 ## Debugging
 
-[Debugging Reading](./debugging.md)
+Readings or Examples Links (in case you get stuck or need help.):
+* [Debugging Reading](./debugging.md)
 
 You might notice that it can be hard to catch the errors you make.  These errors, like misspellings, or being off by one, might feel "silly" or "stupid", but professional software engineers make the same mistakes.  The key is catching them quickly.
 
