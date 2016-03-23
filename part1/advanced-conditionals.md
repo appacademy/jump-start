@@ -107,3 +107,65 @@ def print_some_combined_results
   puts !false || true              # will print true, but is not easy to read
 end
 ```
+
+## `Unless` and `Until`
+
+We can make our code easier to read by replacing any "`if`-not" conditions with `unless` and "`while`-not" with `until`
+```ruby
+# This function takes a numeric input and returns true if it's 0 or greater.
+def positive?(number)
+  number >= 0
+end
+
+positive?(-1) # => false
+positive?(0)  # => true
+positive?(1)  # => true
+
+# This function takes a numeric input and returns its absolute value.
+def absolute_value(number)
+  if !positive?(number)
+    number *= -1
+  end
+
+  number
+end
+
+absolute_value(-4) # => 4
+absolute_value(24) # => 24
+
+# Here's the same function using unless instead of if-not
+def absolute_value(number)
+  unless positive?(number)
+    number *= -1
+  end
+
+  number
+end
+
+absolute_value(-3) # => 3
+absolute_value(13) # => 13
+```
+
+We can rewrite our silly_power_of_two? function from before, using what we've learned.
+```ruby
+# This function takes an integer input and returns true if it's an odd number.
+def odd?(number)
+  number % 2 == 1
+end
+
+odd?(2) # => false
+odd?(3) # => true
+
+# This function takes an integer input and returns true if it's a power of 2.
+def silly_power_of_two?(number)
+
+  until number <= 1 || odd?(number)
+    number /= 2               # divide the number by two.
+  end
+
+  number == 1
+end
+
+silly_power_of_two?(16) # => true
+silly_power_of_two?(12) # => false
+```

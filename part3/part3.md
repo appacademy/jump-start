@@ -55,29 +55,7 @@ puts array_squared(array)
 * Writing stuff into your address book doesn't actually change where buildings live! It's just your own form of book-keeping.
 * More concretely, all Ruby objects live in memory. And they'll still live in memory unless you explicitly mutate them.
 
-Notice how the variable nyse always refers to the same string here, even after the function reassigns work_addres to the white house:
-```ruby
-nyse = "11 Wall Street"
-
-# This function takes a previous work address and prints a change of address
-# form for a newly elected president. The function returns nil.
-# Here's a sample output:
-# I no longer work here: 11 Wall Street
-# Now, I work here: 1600 Pennsylvania Avenue
-#
-def get_elected(work_address)
-  puts "I no longer work here: #{work_address}"
-
-  work_address = "1600 Pennsylvania Avenue"
-
-  puts "Now, I work here: #{work_address}"
-end
-
-get_elected(nyse)                                 #=> nil
-
-nyse                                              #=> "11 Wall Street"
-                                                  #   **Note** hasn't changed.
-```
+[Pass-by-reference Reading](./pass-by-reference.md)
 
 ### Mutation
 
@@ -149,45 +127,8 @@ puts n
 * Iterating with complex logic—while loops!
 * Looking forward or backward
 
-```ruby
-# This function takes a player's shooting record as an array of "miss"ed and
-# "made" shots. It prints the appropriate commentary for each shot using the
-# following rules:
-# second shot made in a row: print "He's heating up"
-# third shot made in a row: print "He's on fire"
-# fourth through seventh: print "Boom-shaka-laka!"
-# The streak is reset if eight shots in a row are made.
+[Advanced Iteration Reading](./advanced_iteration.md)
 
-def nba_jam(shots)
-  current_streak = 0
-
-  shots.each do |shot|
-    if shot == "made"
-      current_streak += 1
-    else
-      current_streak = 0
-    end
-
-    if current_streak == 2
-      puts "He's heating up"
-    elsif current_streak == 3
-      puts "He's on fire"
-    elsif current_streak > 3 && current_streak < 8
-      puts "Boom-shaka-laka!"
-    elsif current_streak > 8
-      current_streak = 0
-    end
-  end
-
-end
-
-shaqs_shooting_record = ['made', 'made', 'miss', 'made', 'made', 'made', 'made']
-nba_jam(shaqs_shooting_record)
-# He's heating up
-# He's heating up
-# He's on fire
-# Boom-shaka-laka!
-```
 
 Exercises:
   * Write a function called `longest_run_digit(number)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
@@ -201,93 +142,11 @@ Exercises:
 * Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
+[Nested Iteration Reading](./nested-iteration.md)
+
 Here's an example of nested iteration in code:
 
 ![Nested Iteration](./nested-iteration.png)
-
-There's one "until" nested inside of another "until".
-
-```ruby
-# This function takes an integer number of minutes and an integer number of
-# seconds as input and proceeds to count down, printing the remaining number
-# of minutes and seconds in the form m:ss, until the time reaches 0:00.
-# Here's sample output for the egg_timer(2, 1):
-#
-# 2:01
-# 2:00
-# 1:59
-# ...
-# 0:01
-# 0:00
-# Time's up!
-def egg_timer(minutes, seconds)
-
-  while minutes >= 0
-
-    while seconds >= 0
-      puts "#{minutes}:#{'%02d' % seconds}"
-      # sleep 1                               # pauses the function for 1 second.
-
-      seconds -= 1
-    end
-
-    seconds = 59
-    minutes -= 1
-  end
-
-  puts "Time's up!"
-end
-```
-
-There's one `while` nested inside of another `while`.
-
-```ruby
-def color_mixer(colors)
-  mixes = []
-
-  colors.each do |first_color|
-    colors.each do |second_color|
-      mixes << "#{first_color}-#{second_color}" unless first_color == second_color
-    end
-  end
-
-  mixes
-end
-color_mixer(["red", "blue", "green"]) # => [ "red-blue", "red-green",
-#      "blue-red", "blue-green",
-#      "green-red", "green-blue"]
-```
-There's one `each` nested inside of another `each`.
-
-```ruby
-adjectives = ["bawdy", "puny", "rank", "saucy", "yeasty", "surly"]
-hyphenated = ["beetle-headed", "elf-skinned", "onion-eyed", "swag-bellied"]
-nouns = ["lout", "scut", "strumpet", "foot-licker", "bugbear"]
-
-# This function prints every possible insult using three
-# arrays of words as input. Using the three arrays above,
-# we can generate Shakespearean insults:
-# insult_generator(adjectives, hyphenated, nouns)
-# You bawdy, beetle-headed, lout!
-# You bawdy, beetle-headed, scut!
-# You bawdy, beetle-headed, strumpet!
-# ...
-# You surly, swag-bellied, foot-licker!
-# You surly, swag-bellied, bugbear!
-#
-def insult_generator(first_adjectives, second_adjectives, nouns)
-  first_adjectives.each do |first_word|
-    second_adjectives.each do |second_word|
-      nouns.each do |third_word|
-        puts "You #{first_word}, #{second_word}, #{third_word}!"
-      end
-    end
-  end
-end
-
-insult_generator(adjectives, hyphenated, nouns)
-```
-
 
 Exercises:
   * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
@@ -336,68 +195,7 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 * `#max_by`
 * One-line `is_prime?`
 
-Here's an example that uses `count` with a block to get the number of elements that meet a criteria:
-```ruby
-# This function takes an array of integers and returns the number of them
-# that exceed 85.
-def number_of_high_scoring_students(class_percentages)
-  class_percentages.count do |percentage|
-    percentage > 85
-  end
-end
-number_of_high_scoring_students([55, 100, 35, 75, 90]) # => 2
-```
-
-Here's an example that uses `select` and a block to filter an array:
-```ruby
-# This function takes a paragraph of text as a string and returns an array of
-# all the four letter words.
-def four_letter_words(paragraph)
-  paragraph.split.select do |word|
-    word.length == 4
-  end
-end
-marc_antony = "Friends, Romans, countrymen, lend me your ears"
-four_letter_words(marc_antony) # => ["lend", "your", "ears"]
-```
-
-Here's an example using `reject`, returning the items cause the block to return false.
-```ruby
-# This function takes a hash in the form { item => quantity }, returning
-# an array of the items with a quantity of three or less.
-def shopping_list(pantry)
-  pantry.reject { |item, quantity| quantity > 3 }.keys
-end
-my_pantry = {"eggs" => 12, "pies" => 1, "rice" => 3}
-shopping_list(my_pantry) # => ["pies", "rice"]
-```
-
-This example shows `reduce`, which passes the return value from the previous iteration into the next iteration as the variable `sum`
-```ruby
-# This function takes an array of numbers and returns the mean (average).
-# Note: the average is obtained using integer division.
-def average_percentage(class_percentages)
-  scores_sum = class_percentages.reduce do |sum, percentage|
-    sum + percentage                  # The return value of this block
-  end                                 # becomes the sum for the next iteration.
-
-  scores_sum / class_percentages.length
-end
-average_percentage([55, 100, 35, 75, 90])  # => 71
-```
-
-This function uses `max_by` to find the item which causes the block to return the highest value.
-```ruby
-# This function takes an array of numbers and returns the number that would
-# be farthest from +5 on a number line.
-def farthest_from_five(numbers)
-  numbers.max_by do |number|
-    (number - 5).abs
-  end
-end
-farthest_from_five([-4, -6, 0, 6, 12])  # => -6
-```
-
+[Enumerables++ Reading](./enumerables++.md)
 
 Exercises:
   * Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
@@ -414,15 +212,7 @@ Exercises:
 * `uniq` removes all duplicate elements.
 * `shuffle` puts the elements in a random order.
 
-Here's a quick demo of some more array methods:
-```ruby
-[1, 2, 3].reverse        #=> [3, 2, 1]
-[1, 2, 3].min            #=> 1
-[1, 2, 3].max            #=> 3
-[9, 4, 7].sort           #=> [4, 7, 9]
-[1, 1, 2].uniq           #=> [1, 2]
-["e", "a", "r"].shuffle  #~> ["r", "a", "e"]
-```
+[More Array Methods Reading](./more-array-methods.md)
 
 Exercises:
 
@@ -438,21 +228,7 @@ Exercises:
 * `sub(this, for_that)` replaces only first occurrence
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
 
-```ruby
-# This function takes a string and encrypts it by replacing every instance of
-# "President" with "Eagle".
-def secret_service_encrypt(plaintext)
-  plaintext.gsub("President", "Eagle")
-end
-secret_service_encrypt("The President is in the Presidential suite")
-#=> "The Eagle is in the Eagleial suite"
-```ruby
-
-The `g` in `gsub` is for global, and it replaces all the matches in the string, while `sub` only replaces the first match.
-```
-"better".sub("e", "i")      #=> "bitter"
-"AAA".gsub("A", "").empty?  #=> true
-```
+[More String Methods Reading](./more-string-methods.md)
 
 Exercises:
 
