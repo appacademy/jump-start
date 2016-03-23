@@ -309,7 +309,7 @@ The three most important commands in `byebug`:
 
 - `n` (or `next`): Goes to the next line
 - `c` (or `continue`): Goes to the next place byebug lives in the code
-- Printing out variable names: `elephants`, `grandma_age`, etc.  You type out the variable name and press enter.
+- Printing out variables: `multiples`, `amount_to_multiple_by`, etc.  You type out the variable name and press enter.
 
 Take a look at how you can use byebug while you're running your code.
 
