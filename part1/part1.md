@@ -2,7 +2,13 @@
 
 ## Instructions
 
-Please read the bullet points, then do every exercise.  You can reference the linked material if you ever need help.
+Please do every exercise.
+
+Reference the linked material when you get stuck or need help.
+
+Prioritize doing the exercises (correctly) over doing the readings.  We want you to struggle with problems and then fill in your knowledge.
+
+It's OK to go "I don't understand the question".  That's when you should read the linked material.
 
 ## Intro to programming
 
@@ -37,6 +43,7 @@ Once you start implementing programs of a sufficient complexity, you will find t
 
 * [IRB Tutorial](./irb.md)
 
+
 ## Functions
 
 Key concepts:
@@ -47,49 +54,12 @@ Key concepts:
 * Watch your indentation!
 * Functions can call other functions
 
-**Note**: When you're writing a function, indent with two spaces, not four.  Python uses four spaces, but ruby uses two spaces.
+Readings link with examples (in case you get stuck or need help):
+* [Functions Reading](./functions.md)
 
-Also, when you're writing a function, never use single letters for variable names.  Always write out the full name of the variable.
-
-For example, instead of:
-
-```ruby
-def add_two_numbers(a, b)
-  return a + b
-end
-
-```
-
-You should be writing:
-
-```ruby
-def add_two_numbers(first_number, second_number)
-  return first_number + second_number
-end
-
-```
-
-More example functions:
-
-```ruby
-def print_out_yo_dawg # this is a function
-  puts "yo dawg"
-end
-
-def multiply(first_number, second_number) # this is another function
-  return first_number * second_number
-end
-
-def squared_product(first_number, second_number) # this function calls another function (multiply) inside
-  squared_product = multiply(first_number, second_number) * multiply(first_number, second_number)
-
-  return squared_product
-end
-
-```
 
 Codecademy link (complete this first if you haven't yet):
-* [Functions/ Methods] (https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
+* [Functions/ Methods](https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
 
 
 Exercises:
@@ -105,6 +75,9 @@ Key concepts:
 * Integer division (`/`)
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
+
+Readings link with examples (in case you get stuck or need help):
+* [Numbers Reading](./numbers.md)
 
 Codecademy link (complete this first if you haven't yet):
 * [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
@@ -125,6 +98,11 @@ Key concepts:
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
 
+Readings link with examples (in case you get stuck or need help):
+* [Booleans Reading](./booleans.md)
+* [Loops Reading](./loops.md)
+
+
 Codecademy links (complete these first if you haven't yet):
 * [While loop] (https://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb)
 * [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
@@ -142,6 +120,9 @@ Key concepts:
 
 * `return` jumps all the way out of the function
 
+Readings link with examples (in case you get stuck or need help):
+* [Implicit and Explicit Returns Reading](./implicit-returns.md)
+
 Exercise:
   * Write a function `largest_factor(number)` that returns the largest factor of a number. Adapt your `print_factors` method to use a `while` loop starting at `number - 1`, and return immediately once you find a number that's a factor.
   * Write a function `is_prime?(number)` that returns a boolean depending on whether the number is prime. A reminder: a prime number only has two factors: 1 and itself.
@@ -156,6 +137,10 @@ Key concepts:
 * Logical operators (`&&` = and, `||` = or, `!` = not)
 * Parenthesization
 * Truth tables
+
+Readings link with examples (in case you get stuck or need help):
+* [Advanced Conditionals  Reading](./advanced-conditionals.md)
+
 
 Codecademy links (complete these first if you haven't yet):
 * [Until loop] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/0/3?curriculum_id=5059f8619189a5000201fbcb)
@@ -198,12 +183,16 @@ Key concepts:
   * `#upcase`
   * `#downcase`
   * `+`
+  * `#{}` interpolation
   * `string[index]` to look up the character at an index
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
+Readings link with examples (in case you get stuck or need help):
+* [String Refresher](./strings.md)
+
 Codecademy link (complete this first if you haven't yet):
-  * [String methods] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
+  * [String methods](https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
@@ -227,9 +216,11 @@ Key Concepts:
     * `#shift` to shift off a value from the beginning
     * `#join(separator)` to join an array of strings, separated by a delimiter
 
-Codecademy link (complete this first if you haven't yet):
-  * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+Readings link with examples (in case you get stuck or need help):
+* [Array Refresher](./arrays.md)
 
+Codecademy link (complete this first if you haven't yet):
+  * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
@@ -247,8 +238,11 @@ Key concepts:
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
+Readings link with examples (in case you get stuck or need help):
+* [Iteration Reading](./iteration.md)
+
 Codecademy link (complete this first if you haven't yet):
-  * [Iterators and Blocks] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
+  * [Iterators and Blocks](https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
 Exercises:
   * Write a function called `vowels(string)` that returns an array of every vowel in the string.
@@ -263,12 +257,18 @@ Exercises:
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
+Readings link with examples (in case you get stuck or need help):
+* [Nil Reading](./nil.md)
+
 ## Output
 
 Key concepts:
 
 * `p` and `puts`
   * `p` returns the thing you're printing, `puts` returns `nil`
+
+Readings link with examples (in case you get stuck or need help):
+* [Output Reading](./output.md)
 
 Exercises:
 
@@ -281,12 +281,18 @@ Key concepts:
 * `break`
 * `next`
 
-* Exercises:
+Readings link with examples (in case you get stuck or need help):
+* [Break and Next Reading](./break-next.md)
+
+Exercises:
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
 
 
 ## Debugging
+
+Readings link with examples (in case you get stuck or need help):
+* [Debugging Reading](./debugging.md)
 
 You might notice that it can be hard to catch the errors you make.  These errors, like misspellings, or being off by one, might feel "silly" or "stupid", but professional software engineers make the same mistakes.  The key is catching them quickly.
 
@@ -304,7 +310,7 @@ The three most important commands in `byebug`:
 
 - `n` (or `next`): Goes to the next line
 - `c` (or `continue`): Goes to the next place byebug lives in the code
-- Printing out variable names: `elephants`, `grandma_age`, etc.  You type out the variable name and press enter.
+- Printing out variables: `multiples`, `amount_to_multiple_by`, etc.  You type out the variable name and press enter.
 
 Take a look at how you can use byebug while you're running your code.
 
@@ -386,7 +392,7 @@ Key concepts:
 * Break down operations into multiple named steps
 * Make your code read like English!
 
-* Exercises:
+Exercises:
   * Refactor this tip-calculating function. Try to rename the variables and to make it more expressive, and take advantage of early returns.
 
 ```ruby

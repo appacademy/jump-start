@@ -4,43 +4,23 @@
 
 ### Review
 
-### Code style
+Key Concepts:
+
+* Code style
 * Indent appropriately
 * Snake case
 * Spaces—let your code breathe!
 * Know the conventions for your programming language
 * Keep your code DRY
 * Single responsibility principle
+* [In-line `if` and `unless`](./inline-if-and-unless.md)
 
-### In-line `if` and `unless`
-* With great power comes great responsibility. I think you're ready.
-* You don't have to do this:
-```ruby
-  def even?(number)
-    if number % 2 == 0
-      return true
-    end
-  end
-```
-* You can do this instead:
-```ruby
-  def even?(number)
-    return true if number % 2 == 0
-  end
-```
-OR
-```ruby
-  def even?(number)
-    return true unless number % 2 == 1
-  end
-```
-(In reality, you should just return `number % 2 == 1`)
-* Only do this for **one line** conditionals. Otherwise, use the long form.
-* [Many more](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
+Readings link with Examples (in case you get stuck or need help):
+  * [Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 
 Exercises:
 
-* The below is valid and correct Ruby. However, the style sucks. See if you can fix the style problems and variable naming.
+* The below is valid and correct Ruby. However, the style sucks. Take five minutes and see how many style problems you can fix (including variable naming).
 
 ```ruby
 def  hello_world
@@ -62,6 +42,9 @@ puts "Hello, world!" end
 
 
 ### Reading a stack trace
+
+Key Concepts:
+
 Too many `end`s:
 ```
 unexpected keyword_end, expecting end-of-input
@@ -93,7 +76,13 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 	from :0
 ```
 
+Exercises:
+
+* For each error above, write code that raises that error.  Yes, we want you to write bad code for once :).
+  * If you're having trouble, google the error and look for a stackoverflow question.  Type out the relevant parts of the code.
+
 ### Advanced arrays
+
 * Initializing arrays: `Array.new(20, 0)` creates an array of twenty `0`s. => `Array.new(size, default_value)`
 * You don't just have to index one element, you can index a range of elements!
 * `arr[0..10]` (two dots) gives you all of the elements from `0` to and including `10` (the 11th element)
@@ -101,8 +90,11 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 * You can index from any start and end index within the range.
 * You can even use negative indices! `arr[4..-1]`
 
+Readings link with Examples (in case you get stuck or need help):
+* [Advanced Array Refresher](./advanced-arrays.md)
+
 Codecademy link (complete this first if you haven't yet):
-  * [Arrays] (https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
+  * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
   * [Inclusive and Exclusive Ranges]
   (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
@@ -118,6 +110,9 @@ Exercises:
 * Can also use characters! Watch your quotation marks though.
 * Can `#each` over a range
 
+Readings link with Examples (in case you get stuck or need help):
+* [Ranges Reading](./ranges.md)
+
 Exercises:
   * `puts` an array of all of the numbers between 30 and 50, inclusive.
   * Write a function called `letters_before(character)` that given a character in the alphabet, returns all of the characters that go before it in the alphabet.
@@ -131,11 +126,18 @@ Exercises:
 * `#none?`
 * Based on the **return value** of the block! Think of it like a function.
 
+Readings link with Examples (in case you get stuck or need help):
+* [Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
+
+Exercises:
+  * Write a one-line function that checks if all the numbers in an array are greater than 3.
 
 ### Advanced enumerables
 * `#times`
 * `#map`
 
+Readings link with Examples (in case you get stuck or need help):
+* [Advanced Enumerables Reading](advanced-enumerables.md)
 
 Exercises:
 
@@ -151,6 +153,39 @@ Exercises:
 * Single responsibility per function
 * This will lower your cognitive load
 
+Readings link with Examples (in case you get stuck or need help):
+* [Function Decomposition Reading](function-decomposition.md)
+
+Exercises:
+  * Take the function below and refactor it using all the tools you know (it may look familiar).  Make sure it's readable and make sure that the output is the same.  One-line what can be one-lined.  Decompose what can be decomposed.
+
+```ruby
+def pr(x)
+  c = 0
+  n = 2
+  while true
+    i = 2
+    f = true
+    while i < n
+      if n % i == 0
+        f = false
+        break
+      end
+      i += 1
+    end
+    if f
+      c += 1
+      if c == x
+        return n
+      end
+    end
+    n += 1
+  end
+end
+
+```
+
+
 ### Hash Maps `{}`
 * A.k.a., a dictionary or a map
 * Also can conceive of as an array, but with indices other than integers
@@ -165,9 +200,11 @@ Exercises:
   * `#values`
   * `#each do |key, value|`
 
+Readings link with Examples (in case you get stuck or need help):
+* [Hash Maps Reading](./hash-maps.md)
+
 Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
-
 
 Exercises:
   * Write a function called `word_lengths(string)` that given a sentence, returns a hash of each of the words and their lengths.
@@ -180,9 +217,10 @@ Exercises:
 * Can change the default value using `hash = Hash.new(default_value)`
 * Counts pattern! `Hash.new(0)`
 
+Readings link with Examples (in case you get stuck or need help):
+* [Custom Hash Defaults Reading](./hash-defaults.md)
+
 Exercises:
   * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
   * Write a function called `least_frequent_word(string)` that takes in a string, and returns the word repeated most infrequently.
     * E.g., `least_frequent_word('hi ho hi hee ho hum ho hum')` should return `"hee"`
-
-# Free Work
