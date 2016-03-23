@@ -12,6 +12,8 @@ Read the first section.  You can stop at "A closely related skill is concretenes
 
 ### Examples in the course
 
+For algorithms, pictures and animations are better than paragraph descriptions.  See bubble_sort in part3 of jumpstart.
+
 GIFs of people using commands/writing code are better than static pictures and examples of code.
 
 Pictures and code examples of how you'd use a method are better than describing that method in words.
