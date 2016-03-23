@@ -224,5 +224,3 @@ Exercises:
   * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
   * Write a function called `least_frequent_word(string)` that takes in a string, and returns the word repeated most infrequently.
     * E.g., `least_frequent_word('hi ho hi hee ho hum ho hum')` should return `"hee"`
-
-# Free Work
