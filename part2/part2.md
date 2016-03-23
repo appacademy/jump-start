@@ -4,8 +4,10 @@
 
 ### Review
 
-### Code style
+Readings link with Examples (in case you get stuck or need help):
+  * [Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 
+* Code style
 * Indent appropriately
 * Snake case
 * Spaces—let your code breathe!
