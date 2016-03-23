@@ -43,7 +43,7 @@ puts "Hello, world!" end
 
 ### Reading a stack trace
 
-* Key Concepts:
+Key Concepts:
 
 Too many `end`s:
 ```

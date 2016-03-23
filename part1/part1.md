@@ -283,7 +283,7 @@ Key concepts:
 Readings link with examples (in case you get stuck or need help):
 * [Break and Next Reading](./break-next.md)
 
-* Exercises:
+Exercises:
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
 
@@ -319,7 +319,7 @@ You can find out more about byebug in the "Byebug Commands" section [here][byebu
 
 [byebug]: https://github.com/deivid-rodriguez/byebug
 
-* Exercises:
+Exercises:
 
   * Copy and paste the code below into a file.
 
@@ -391,7 +391,7 @@ Key concepts:
 * Break down operations into multiple named steps
 * Make your code read like English!
 
-* Exercises:
+Exercises:
   * Refactor this tip-calculating function. Try to rename the variables and to make it more expressive, and take advantage of early returns.
 
 ```ruby
