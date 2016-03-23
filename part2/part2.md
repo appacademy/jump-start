@@ -4,9 +4,6 @@
 
 ### Review
 
-Readings link with Examples (in case you get stuck or need help):
-  * [Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
-
 Key Concepts:
 
 * Code style
@@ -17,6 +14,9 @@ Key Concepts:
 * Keep your code DRY
 * Single responsibility principle
 * [In-line `if` and `unless`](./inline-if-and-unless.md)
+
+Readings link with Examples (in case you get stuck or need help):
+  * [Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 
 Exercises:
 
