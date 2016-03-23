@@ -18,7 +18,7 @@ At the end of each week, we'll have an assessment.  This assessment will have pr
 
 1. Try to google it first.
 2. Ask the person next to you to see if they've had the same question
-3. Write your name on the board and a TA will find you to help.  They will tell you to google it first, so make sure you've done step 1.
+3. Ask a TA for help.  They will tell you to google it first, so make sure you've done step 1.
 
 ## How to approach JumpStart
 
