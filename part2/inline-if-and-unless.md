@@ -23,4 +23,3 @@ OR
 ```
 (In reality, you should just return `number % 2 == 1`)
 * Only do this for **one line** conditionals. Otherwise, use the long form.
-* [Many more](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
