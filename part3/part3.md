@@ -253,4 +253,4 @@ array[i], array[j] = array[j], array[i]
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
 
 Exercise:
-  * Go back over your old code and see where you can refactor to use parallel assignment. `reverse!` or `five_sort!` are good candidates.
+  * Go back to `reverse!` and `five_sort!` and see where you can refactor to use parallel assignment.
