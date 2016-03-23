@@ -73,6 +73,11 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 	from :0
 ```
 
+Exercises:
+
+* For each error above, write code that raises that error.  Yes, we want you to write bad code for once :).
+  * If you're having trouble, google the error and look for a stackoverflow question.  Type out the relevant parts of the code.
+
 ### Advanced arrays
 * Initializing arrays: `Array.new(20, 0)` creates an array of twenty `0`s. => `Array.new(size, default_value)`
 * You don't just have to index one element, you can index a range of elements!
