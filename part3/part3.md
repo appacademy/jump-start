@@ -114,7 +114,7 @@ puts n
 * Looking forward or backward
 
 Readings link with examples (in case you get stuck or need help):
-* [Advanced Iteration Reading](./advanced_iteration.md)
+* [Advanced Iteration Reading](./advanced-iteration.md)
 
 
 Exercises:
