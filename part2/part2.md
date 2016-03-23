@@ -156,6 +156,35 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Function Decomposition Reading](function-decomposition.md)
 
+* Exercises
+  * Take the function below and refactor it using all the tools you know (it may look familiar).  Make sure it's readable and make sure that the output is the same.  One-line what can be one-lined.  Decompose what can be decomposed.
+
+```ruby
+def pr(x)
+  c = 0
+  n = 2
+  while true
+    i = 2
+    f = true
+    while i < n
+      if n % i == 0
+        f = false
+        break
+      end
+      i += 1
+    end
+    if f
+      c += 1
+      if c == x
+        return n
+      end
+    end
+    n += 1
+  end
+end
+
+```
+
 
 ### Hash Maps `{}`
 * A.k.a., a dictionary or a map
