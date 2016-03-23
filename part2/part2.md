@@ -43,7 +43,7 @@ puts "Hello, world!" end
 
 ### Reading a stack trace
 
-Key Concepts:
+* Key Concepts:
 
 Too many `end`s:
 ```
@@ -128,6 +128,9 @@ Exercises:
 
 Readings link with Examples (in case you get stuck or need help):
 * [Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
+
+* Exercises:
+  * Write a one-line function that checks if all the numbers in an array are greater than 3.
 
 ### Advanced enumerables
 * `#times`
