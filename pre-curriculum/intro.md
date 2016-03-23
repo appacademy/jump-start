@@ -12,7 +12,7 @@ Here's the way most days will work.
 * Class runs Monday through Thursday, but the facility is open 24/7.
 * Outside of JumpStart, we still expect you to be working on these projects when you have the time.
 
-At the end of these two weeks, we'll have a "final assessment".  This assessment will have problems just like what you would see on our interview.  If you pass the assessment, you get into the program.
+At the end of each week, we'll have an assessment.  This assessment will have problems just like what you would see on our interview.  If you pass the assessment, you get into the program.
 
 ## If you have questions
 
