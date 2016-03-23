@@ -5,42 +5,18 @@
 ### Review
 
 ### Code style
+
 * Indent appropriately
 * Snake case
 * Spaces—let your code breathe!
 * Know the conventions for your programming language
 * Keep your code DRY
 * Single responsibility principle
-
-### In-line `if` and `unless`
-* With great power comes great responsibility. I think you're ready.
-* You don't have to do this:
-```ruby
-  def even?(number)
-    if number % 2 == 0
-      return true
-    end
-  end
-```
-* You can do this instead:
-```ruby
-  def even?(number)
-    return true if number % 2 == 0
-  end
-```
-OR
-```ruby
-  def even?(number)
-    return true unless number % 2 == 1
-  end
-```
-(In reality, you should just return `number % 2 == 1`)
-* Only do this for **one line** conditionals. Otherwise, use the long form.
-* [Many more](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
+* [In-line `if` and `unless`](./inline-if-and-unless.md)
 
 Exercises:
 
-* The below is valid and correct Ruby. However, the style sucks. See if you can fix the style problems and variable naming.
+* The below is valid and correct Ruby. However, the style sucks. Take five minutes and see how many style problems you can fix (including variable naming).
 
 ```ruby
 def  hello_world
