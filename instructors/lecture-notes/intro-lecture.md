@@ -18,6 +18,7 @@
   - Check readings
   - Google
   - TA
+    - INTRODUCE TAS: former students who've succeeded in the program, ask them for help
   - Important to ask for help
 
 - 2 assessments: 1 at end of week 1, 1 at end of week 2
