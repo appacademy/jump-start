@@ -42,6 +42,9 @@ puts "Hello, world!" end
 
 
 ### Reading a stack trace
+
+Key Concepts:
+
 Too many `end`s:
 ```
 unexpected keyword_end, expecting end-of-input
@@ -79,6 +82,7 @@ Exercises:
   * If you're having trouble, google the error and look for a stackoverflow question.  Type out the relevant parts of the code.
 
 ### Advanced arrays
+
 * Initializing arrays: `Array.new(20, 0)` creates an array of twenty `0`s. => `Array.new(size, default_value)`
 * You don't just have to index one element, you can index a range of elements!
 * `arr[0..10]` (two dots) gives you all of the elements from `0` to and including `10` (the 11th element)
