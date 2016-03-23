@@ -132,10 +132,6 @@ Exercises:
 Readings link with examples (in case you get stuck or need help):
 * [Nested Iteration Reading](./nested-iteration.md)
 
-Here's an example of nested iteration in code:
-
-![Nested Iteration](./nested-iteration.png)
-
 Exercises:
   * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
   * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
