@@ -156,7 +156,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Function Decomposition Reading](function-decomposition.md)
 
-* Exercises
+Exercises:
   * Take the function below and refactor it using all the tools you know (it may look familiar).  Make sure it's readable and make sure that the output is the same.  One-line what can be one-lined.  Decompose what can be decomposed.
 
 ```ruby
