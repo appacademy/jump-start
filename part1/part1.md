@@ -53,7 +53,7 @@ Key concepts:
 * Watch your indentation!
 * Functions can call other functions
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Functions Reading](./functions.md)
 
 
@@ -75,7 +75,7 @@ Key concepts:
 * Modulo (`%`)
 * `+=`, `-=`, `/=` etc.
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Numbers Reading](./numbers.md)
 
 Codecademy link (complete this first if you haven't yet):
@@ -97,7 +97,7 @@ Key concepts:
   * `elsif` and `else`
 * Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Booleans Reading](./booleans.md)
 * [Loops Reading](./loops.md)
 
@@ -119,7 +119,7 @@ Key concepts:
 
 * `return` jumps all the way out of the function
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Implicit and Explicit Returns Reading](./implicit-returns.md)
 
 Exercise:
@@ -137,7 +137,7 @@ Key concepts:
 * Parenthesization
 * Truth tables
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Advanced Conditionals  Reading](./advanced-conditionals.md)
 
 
@@ -187,7 +187,7 @@ Key concepts:
   * `string[index] = letter` to assign a character at an index
   * `#split(character_to_split_on)` to split a string into an array of parts
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [String Refresher](./strings.md)
 
 Codecademy link (complete this first if you haven't yet):
@@ -215,7 +215,7 @@ Key Concepts:
     * `#shift` to shift off a value from the beginning
     * `#join(separator)` to join an array of strings, separated by a delimiter
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Array Refresher](./arrays.md)
 
 Codecademy link (complete this first if you haven't yet):
@@ -237,7 +237,7 @@ Key concepts:
 * `array.each_with_index` yields `|element, index|`
 * `string.chars.each_with_index` gives you the same
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Iteration Reading](./iteration.md)
 
 Codecademy link (complete this first if you haven't yet):
@@ -256,7 +256,7 @@ Exercises:
 * Specifically, it often returns `nil`
 * Chances are, if you're getting a `nil`, you're doing something wrong
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Nil Reading](./nil.md)
 
 ## Output
@@ -266,7 +266,7 @@ Key concepts:
 * `p` and `puts`
   * `p` returns the thing you're printing, `puts` returns `nil`
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Output Reading](./output.md)
 
 Exercises:
@@ -280,7 +280,7 @@ Key concepts:
 * `break`
 * `next`
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Break and Next Reading](./break-next.md)
 
 * Exercises:
@@ -290,7 +290,7 @@ Readings or Examples Links (in case you get stuck or need help.):
 
 ## Debugging
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Debugging Reading](./debugging.md)
 
 You might notice that it can be hard to catch the errors you make.  These errors, like misspellings, or being off by one, might feel "silly" or "stupid", but professional software engineers make the same mistakes.  The key is catching them quickly.

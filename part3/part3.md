@@ -55,7 +55,7 @@ puts array_squared(array)
 * Writing stuff into your address book doesn't actually change where buildings live! It's just your own form of book-keeping.
 * More concretely, all Ruby objects live in memory. And they'll still live in memory unless you explicitly mutate them.
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Pass-by-reference Reading](./pass-by-reference.md)
 
 ### Mutation
@@ -128,7 +128,7 @@ puts n
 * Iterating with complex logic—while loops!
 * Looking forward or backward
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Advanced Iteration Reading](./advanced_iteration.md)
 
 
@@ -144,7 +144,7 @@ Exercises:
 * Look at [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) and get a feel for how it works.  Pay special attention to the animation.  Pay less attention to the text on the wikipedia page, although you can reference it if you want.  Make sure you go through at least two passes of the whole array when watching the animation.
 * Nested iteration is one of the most important concepts you need to handle on the assessment, so we want to give you a lot of practice with it.
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Nested Iteration Reading](./nested-iteration.md)
 
 Here's an example of nested iteration in code:
@@ -198,7 +198,7 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 * `#max_by`
 * One-line `is_prime?`
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [Enumerables++ Reading](./enumerables++.md)
 
 Exercises:
@@ -216,7 +216,7 @@ Exercises:
 * `uniq` removes all duplicate elements.
 * `shuffle` puts the elements in a random order.
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [More Array Methods Reading](./more-array-methods.md)
 
 Exercises:
@@ -233,7 +233,7 @@ Exercises:
 * `sub(this, for_that)` replaces only first occurrence
 * `empty?` is a Ruby-like way of checking to see if the string equals the empty string: `str == ""`.
 
-Readings or Examples Links (in case you get stuck or need help.):
+Readings link with examples (in case you get stuck or need help):
 * [More String Methods Reading](./more-string-methods.md)
 
 Exercises:
