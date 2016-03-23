@@ -31,3 +31,7 @@ You're all at different levels and will work at different paces.  Don't worry if
 If you DON'T pass the assessment, you can still get into our program!  We don't expect everyone to pass the assessment.  The worst thing you can do is overstress about the assessment--you can still interview with us later, and you've gotten a bunch of extra practice that you wouldn't have had otherwise by doing JumpStart.
 
 As you work, try the exercises before you consult the readings.  Look at the readings once you find an unfamiliar concept or you get stuck.
+
+## Reading this before the course starts?
+
+Feel free to start going through the curriculum on your own.  The better prepared you are, the better.
