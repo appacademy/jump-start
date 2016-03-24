@@ -27,7 +27,7 @@ Get started by going to your day's work:
 
 #### Problem Sets
 
-If you're done with the main curriculum, you can start working through the problem sets:
+When you're done with the main curriculum, you can start working through the problem sets:
 ##### [Problem set 1](./problem-sets/problem-set-1.rb)
 ##### [Problem set 2](./problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./problem-sets/problem-set-3.rb)
