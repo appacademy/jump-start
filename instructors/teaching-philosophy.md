@@ -1,6 +1,6 @@
 # Teaching Philosophy
 
-From Asher: Some people were interested in reading about my teaching philosophy.  Here's an overview, as well as examples of how I use them in the curriculum.
+From Asher: Some people were interested in reading about my teaching philosophy.  Here's an overview, as well as examples of how I use it in the curriculum.
 
 (Note: this was written quickly, so I haven't applied all my teaching principles to this document to teach you...)
 
