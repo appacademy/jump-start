@@ -29,6 +29,8 @@ Exercises:
 
   * Look at the 'man pages' for all of the commands in the reading and try out some of the different options. `ls` has a ton, for example.
 
+  * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens.
+
 ## IRB
 
 Readings link with examples (in case you get stuck or need help):
