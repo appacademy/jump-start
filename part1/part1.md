@@ -27,7 +27,7 @@ Exercises:
 
   * From your desktop or workspace, make a sample folder (`mkdir sample_folder_name`), and `cd` into it.  `touch` and `cat` are two additional commands that we use a fair amount.  Look them up in google and try them out: e.g., `touch my_file_1`, `echo "Hello world" > my_file_1`, `cat my_file_1`.  After you feel you have a basic understanding of what they do look up the `man` pages and try out some different options.
 
-  * Look at the 'man pages' for all of the commands in the reading and try out some of the different options. `ls` has a ton, for example.
+  * Look at the 'man pages' for one of the commands in the reading and try out some of the different options. `ls` has a ton, for example.
 
   * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens.
 
