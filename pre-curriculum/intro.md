@@ -12,7 +12,15 @@ Here's the way most days will work.
 * Class runs Monday through Thursday, but the facility is open 24/7.
 * Outside of JumpStart, we still expect you to be working on these projects when you have the time.
 
-At the end of each week, we'll have an assessment.  This assessment will have problems just like what you would see on our interview.  If you pass the assessment, you get into the program.
+
+# Assessments
+
+On the final day of each week, we will give you an assessment. The assessment will take place at the end of the day and will last for one hour.  The assessment will be a power-test—that is, we're going to give you more problems than you can probably solve in an hour, and it's up to you which ones you work on and how many you solve.
+
+We'll give you more information about it going forward, but rest assured that we know what's on the assessment, and will be tailoring the curriculum to give you everything you need to do well.
+
+Just keep coming in, make sure you get plenty of sleep, and you should be fully prepared by the second assessment.  We don't expect most people to pass the first assessment, but it should give you a taste of where we want you to be by the second assessment.
+
 
 ## If you have questions
 
