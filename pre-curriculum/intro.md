@@ -28,6 +28,8 @@ Just keep coming in, make sure you get plenty of sleep, and you should be fully 
 2. Ask the person next to you to see if they've had the same question
 3. Ask a TA for help.  They will tell you to google it first, so make sure you've done step 1.
 
+A good rule of thumb is: if you're stuck for more than five minutes and the top three google answers don't make sense to you, call for a TA.
+
 ## How to approach JumpStart
 
 As you do the exercises, type everything out as you go along.  Don't read text and assume you know it.  This usually means that, at some point, you're running `ruby my_file.rb` and understanding what's going on in the file.
