@@ -12,36 +12,68 @@ It's OK to go "I don't understand the question".  That's when you should read th
 
 ## Intro to programming
 
-### Zen and the art of programming
-
 * A computer will always do exactly what you tell it to, no more and no less.
+
 * There's no bullshitting in programming. Your program either works or it doesn't, and no amount of cleverness or importance will change that.
 
-In order to be a great software engineer, there are certain tangental skills that must be cultivated:
+## Terminal
 
-* Logical Reasoning
-* Numerical Reasoning
-* Procedural Reasoning
-* Curiosity
-* Debugging
-* **Patience**
-
-One of the primary goals of the course is to provide you with the a foundation and resources to develop these skills.
-
-### The Complexity of Programming
-
-*The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible.*
-
--Edsger Dijkstra
-
-Once you start implementing programs of a sufficient complexity, you will find that it is very easy to make mistakes. Unlike computers, the human brain does not always think in perfect logic or arithmetic. The software engineers of the past quickly realized this and started developing techniques and structures to manage the complexity of their programs: variables, good style, abstraction and decomposition, objects and classes. Don't worry if some of those words seem unfamiliar. We will explore them all and more in the course.
-
-## Initial Exercises
-
+Readings link with examples (in case you get stuck or need help):
 * [Terminal Tutorial](../terminal/terminal.md)
-  * [Terminal Command Cheat Sheet](../terminal-commands.txt)
+* [Terminal Command Cheat Sheet](../terminal-commands.txt)
 
+Exercises:
+  * Practice using `cd` and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root `/`. Look at the various directories that make up a Linux and OSX computer system.  You'll be fine as long as you don't enter the `rm` command.
+
+  * From your desktop or workspace, make a sample folder (`mkdir sample_folder_name`), and `cd` into it.  `touch` and `cat` are two additional commands that we use a fair amount.  Look them up in google and try them out: e.g., `touch my_file_1`, `echo "Hello world" > my_file_1`, `cat my_file_1`.  After you feel you have a basic understanding of what they do look up the `man` pages and try out some different options.
+
+  * Look at the 'man pages' for all of the commands in the reading and try out some of the different options. `ls` has a ton, for example.
+
+## IRB
+
+Readings link with examples (in case you get stuck or need help):
 * [IRB Tutorial](./irb.md)
+
+Exercises:
+
+* Pop open IRB.
+* Initialize an array and push an element into it. (See picture below.)
+
+![IRB Push](./irb-push.png)
+
+As we can see in this example, IRB executes our ruby commands as we type them in line by line. We've successfully initialized our array in a variable and pushed a value into it.
+
+* Map over your array:
+
+![IRB Map](./irb-map.png)
+
+* Use underscore to access the last returned value. Save the results of your previous command like so:
+
+![IRB Underscore](./irb-underscore.png)
+
+* Manipulate a string. Type the following code into IRB and observe the results.
+
+![IRB Downcase](./irb-downcase.png)
+
+* Type multiple lines of code into IRB before it evaluates.  Try typing the following multi-liner into IRB.
+
+![IRB Multiline](./irb-multiline.png)
+
+* Invoke a method in IRB. Copy and paste this method, which lists the factors of a number in descending order, into IRB, and hit enter.
+
+```ruby
+  def factors(num)
+    return -1 if !num.is_a?(Integer) || num < 1
+    (1..num).select { |el| num % el == 0 }.reverse
+  end
+```
+
+Now you can invoke the method by typing factors() into IRB and passing it any input you want! Try a couple of sample inputs and see what you get.
+
+![IRB Factors](./irb-factors.png)
+
+* Play around in IRB and test out methods that you are not familiar with. Did any of the results surprise you? IRB is one of the best tools for learning how Ruby works and testing newly written code, so you want to become familiar with it. Most importantly, have fun with it! A programmer's curiosity is the greatest asset he/she has in learning :)
+
 
 
 ## Functions

@@ -45,3 +45,6 @@ As you work, try the exercises before you consult the readings.  Look at the rea
 ## Reading this before the course starts?
 
 Feel free to start going through the curriculum on your own.  The better prepared you are, the better.
+
+
+[Zen and the art of programming (Optional Reading)](./zen-and-the-art.md)

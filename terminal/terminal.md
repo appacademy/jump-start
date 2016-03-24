@@ -142,11 +142,3 @@ Another neat trick is using the terminal's command history function. While in th
 Try it out now.
 
 This is very useful if you find yourself typing the same command over and over again. Instead of typing long commands like `bundle exec rspec spec/` or `gcc -Wall -o myProg main.c && valgrind --leak-check=full ./myProg` over and over (you don't have to know these commands), you can just press 'up' and 'enter'.
-
-## Exercises
-
-- Practice using `cd` and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root `/`. Look at the various directories that make up a Linux and OSX computer system.  You'll be fine as long as you don't enter the `rm` command.
-
-- From your desktop or workspace, make a sample folder (`mkdir sample_folder_name`), and `cd` into it.  `touch` and `cat` are two additional commands that I find myself using a fair amount.  Look them up in google and try them out: e.g., `touch my_file_1`, `echo "Hello world" > my_file_1`, `cat my_file_1`.  After you feel you have a basic understanding of what they do look up the `man` pages and try out some different options.
-
-- Look at the 'man pages' for all of the commands described above and try out some of the different options. `ls` has a ton of fun options to try out.
