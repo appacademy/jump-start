@@ -18,7 +18,7 @@ Key Concepts:
 Readings link with Examples (in case you get stuck or need help):
   * [Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 
-Exercises:
+#### Exercises
 
 * The below is valid and correct Ruby. However, the style sucks. Take five minutes and see how many style problems you can fix (including variable naming).
 
@@ -76,7 +76,7 @@ NoMethodError: undefined method `capitalize' for nil:NilClass
 	from :0
 ```
 
-Exercises:
+#### Exercises
 
 * For each error above, write code that raises that error.  Yes, we want you to write bad code for once :).
   * If you're having trouble, google the error and look for a stackoverflow question.  Type out the relevant parts of the code.
@@ -98,7 +98,7 @@ Codecademy link (complete this first if you haven't yet):
   * [Inclusive and Exclusive Ranges]
   (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
-Exercises:
+#### Exercises
   * Initialize an array of 100 elements with a default value of `"yes"`, and then set every other value to `"no"`.
   * Now take that array and `puts` the subarray of only the first 10 elements (don't over-index!)
   * Then `puts` the last 10 elements.
@@ -113,7 +113,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Ranges Reading](./ranges.md)
 
-Exercises:
+#### Exercises
   * `puts` an array of all of the numbers between 30 and 50, inclusive.
   * Write a function called `letters_before(character)` that given a character in the alphabet, returns all of the characters that go before it in the alphabet.
   * Write a function called `to_range(array)` that given an ordered array of every value from `start_number` to `end_number`, returns the corresponding range.
@@ -129,7 +129,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
 
-Exercises:
+#### Exercises
   * Write a one-line function that checks if all the numbers in an array are greater than 3.
 
 ### Advanced enumerables
@@ -139,7 +139,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Advanced Enumerables Reading](advanced-enumerables.md)
 
-Exercises:
+#### Exercises
 
 * Print every number from 1 to 30 using `each` and a range.
 * Write a function called `triplify(array)` which given an array of integers, returns a new array with all of the values multiplied by three.
@@ -156,7 +156,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Function Decomposition Reading](function-decomposition.md)
 
-Exercises:
+#### Exercises
   * Take the function below and refactor it using all the tools you know (it may look familiar).  Make sure it's readable and make sure that the output is the same.  One-line what can be one-lined.  Decompose what can be decomposed.
 
 ```ruby
@@ -206,7 +206,7 @@ Readings link with Examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
-Exercises:
+#### Exercises
   * Write a function called `word_lengths(string)` that given a sentence, returns a hash of each of the words and their lengths.
     * E.g., `word_lengths("hello my good good pal")` should return `{ 'hello' => 5, 'my' => 2, 'good' => 4, 'pal' => 3 }`
   * Write a function called `uniq(array)` that returns only the unique values in an array. (Hint: use a hash!)
@@ -220,7 +220,7 @@ Exercises:
 Readings link with Examples (in case you get stuck or need help):
 * [Custom Hash Defaults Reading](./hash-defaults.md)
 
-Exercises:
+#### Exercises
   * Write a function called `most_common_number(array)` that takes an array, and returns the number that appears the most times. If there's a tie, just return one of the tied people.
   * Write a function called `least_frequent_word(string)` that takes in a string, and returns the word repeated most infrequently.
     * E.g., `least_frequent_word('hi ho hi hee ho hum ho hum')` should return `"hee"`
