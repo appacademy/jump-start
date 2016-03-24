@@ -38,7 +38,7 @@ Everyone who clears our bar gets in.  This means you should be helping your fell
 
 You're all at different levels and will work at different paces.  Don't worry if someone moves faster than you or solves problems faster than you.  What's important is that you continually build a foundation of what you know.  We expect people to be at different places by the middle of the curriculum.
 
-If you DON'T pass the assessment, you can still get into our program!  We don't expect everyone to pass the assessment.  The worst thing you can do is overstress about the assessment--you can still interview with us later, and you've gotten a bunch of extra practice that you wouldn't have had otherwise by doing JumpStart.
+If you DON'T pass the assessments, you can still get into our program!  We don't expect everyone to pass the assessments.  The worst thing you can do is overstress about the assessments--you can still interview with us later, and you've gotten a bunch of extra practice that you wouldn't have had otherwise by doing JumpStart.
 
 As you work, try the exercises before you consult the readings.  Look at the readings once you find an unfamiliar concept or you get stuck.
 
