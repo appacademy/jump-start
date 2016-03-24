@@ -97,7 +97,7 @@ Emphasizing sleep
 
 ## Exercises (not required, for your learning only)
 
-1. Refactor this document to include pictures of examples instead of text descriptions.  Go down the ladder of abstraction.
+1. Refactor this document to include pictures of examples instead of text descriptions.  Go down the ladder of abstraction.  Submit as a pull request.
 2. Come up with three ideas for how you'd systematize the course.  If you can implement one in less than two hours, make a pull request (or email Asher to run it by him).
 3. Describe the ladder of abstraction in your own words.  Find one example where going down the ladder of abstraction wouldn't work well.
 
