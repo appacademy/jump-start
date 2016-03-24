@@ -6,7 +6,7 @@ From Asher: Some people were interested in reading about my teaching philosophy.
 
 ## The Ladder of Abstraction
 
-[Reading](./ladder-of-abstraction)
+[Reading](./ladder-of-abstraction.md)
 
 ### Examples in the course
 
