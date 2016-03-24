@@ -6,9 +6,7 @@ From Asher: Some people were interested in reading about my teaching philosophy.
 
 ## The Ladder of Abstraction
 
-[Reading](http://lesswrong.com/lw/bc3/sotw_be_specific/)
-
-Read the first section.  You can stop at "A closely related skill is concreteness."  (Though you can keep reading if interested.)
+[Reading](./ladder-of-abstraction)
 
 ### Examples in the course
 
