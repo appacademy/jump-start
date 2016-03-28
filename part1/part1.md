@@ -22,7 +22,10 @@ Readings link with examples (in case you get stuck or need help):
 * [Terminal Tutorial](../terminal/terminal.md)
 * [Terminal Command Cheat Sheet](../terminal-commands.txt)
 
-#### Exercises
+----
+
+#### `Exercises`
+
   * Practice using `cd` and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root `/`. Look at the various directories that make up a Linux and OSX computer system.  You'll be fine as long as you don't enter the `rm` command.
 
   * From your desktop or workspace, make a sample folder (`mkdir sample_folder_name`), and `cd` into it.  `touch` and `cat` are two additional commands that we use a fair amount.  Look them up in google and try them out: e.g., `touch my_file_1`, `echo "Hello world" > my_file_1`, `cat my_file_1`.  After you feel you have a basic understanding of what they do look up the `man` pages and try out some different options.
@@ -31,12 +34,16 @@ Readings link with examples (in case you get stuck or need help):
 
   * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens.
 
+---
+
 ## IRB
 
 Readings link with examples (in case you get stuck or need help):
 * [IRB Tutorial](./irb.md)
 
-#### Exercises
+----
+
+#### `Exercises`
 
 * Pop open IRB.
 * Initialize an array and push an element into it. (See picture below.)
@@ -76,7 +83,7 @@ Now you can invoke the method by typing factors() into IRB and passing it any in
 
 * Play around in IRB and test out methods that you are not familiar with. Did any of the results surprise you? IRB is one of the best tools for learning how Ruby works and testing newly written code, so you want to become familiar with it. Most importantly, have fun with it! A programmer's curiosity is the greatest asset he/she has in learning :)
 
-
+---
 
 ## Functions
 
@@ -95,11 +102,15 @@ Readings link with examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
 * [Functions/ Methods](https://www.codecademy.com/courses/ruby-beginner-en-ET4bU/0/1?curriculum_id=5059f8619189a5000201fbcb)
 
+----
 
-#### Exercises
+#### `Exercises`
+
   * Write a function called `hello_world` will `puts` the string `"Hello world!"` to the screen.
   * Write a function called `print_thrice(number)` that, given a number, will print out the number three times.
   * Write a function called `print_thrice_thrice(number)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
+
+---
 
 ## Numbers
 
@@ -116,11 +127,15 @@ Readings link with examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
 * [Math operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/0/4?curriculum_id=5059f8619189a5000201fbcb)
 
-#### Exercises
+----
+
+#### `Exercises`
   * Write a function called `times_three_and_plus_five(number)` that takes a number, multiplies it by 3, and then adds 5. For example, `times_three_and_plus_five(4)` should output 17.
   * Write a function called `even_or_odd(number)` that prints `"even"` if the number is even, and prints `"odd"` if the number is odd.
   * Write a function called `division_plus_remainder(big_number, small_number)` that finds the number of times `small_number` completely divides into `big_number`, and then adds the remainder that's left over. For example, `divisor_plus_remainder(7, 2)` should equal `4`.
   * Write a function called `is_factor_of(big_number, small_number)` that returns `true` if `small_number` is a factor of `big_number`, and `false` if it is not.
+
+---
 
 ## Booleans and loops
 
@@ -142,11 +157,15 @@ Codecademy links (complete these first if you haven't yet):
 * [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
 * [Comparators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
-#### Exercises
+----
+
+#### `Exercises`
   * Write a `while` loop that prints out all the numbers from 1 to 25 inclusive.
   * Write a function called `print_up_to(number)` that given a number, prints out all the numbers from 1 to that number, inclusive. It should use a `while` loop internally.
   * Write a function called `print_factors(number)` that prints all of the factors of a number, including 1 and the number itself.
     * Hint: use your `is_factor_of(big_number, small_number)` function.
+
+---
 
 ## Implicit and explicit returns
 
@@ -157,11 +176,14 @@ Key concepts:
 Readings link with examples (in case you get stuck or need help):
 * [Implicit and Explicit Returns Reading](./implicit-returns.md)
 
-#### Exercises
+----
+
+#### `Exercises`
   * Write a function `largest_factor(number)` that returns the largest factor of a number. Adapt your `print_factors` method to use a `while` loop starting at `number - 1`, and return immediately once you find a number that's a factor.
   * Write a function `is_prime?(number)` that returns a boolean depending on whether the number is prime. A reminder: a prime number only has two factors: 1 and itself.
     * Once you've written it, see if you can use an early `return` on numbers that you know for sure aren't prime, without having to check every possible factor.
 
+---
 
 ## Advanced Conditionals
 
@@ -181,8 +203,9 @@ Codecademy links (complete these first if you haven't yet):
 * [Unless] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/3/3?curriculum_id=5059f8619189a5000201fbcb)
 * [Logical Operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
+----
 
-#### Exercises
+#### `Exercises`
   * Complete these truth tables. Write it out on pencil and paper in your notebook.
 
 x  | y   | z   | x && y &#124;&#124; z |  x && (y &#124;&#124; z)
@@ -208,6 +231,8 @@ false|false|false|                       |
     6. `(6 != 6 || (1 == 10 % 3)) && (3 + 5 < 6)`
   * Write an `until` loop that prints out all of the numbers that are less than 20 and are not divisible by 6.
 
+---
+
 ## Strings
 
 Key concepts:
@@ -228,11 +253,15 @@ Readings link with examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
   * [String methods](https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
 
-#### Exercises
+  ----
+
+  #### `Exercises`
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
   * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string.
   * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
+
+---
 
 ## Arrays
 
@@ -256,12 +285,16 @@ Readings link with examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
   * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
 
-#### Exercises
+  ----
+
+  #### `Exercises`
   * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
   * Write a function `reverse(array)` that reverses an array in-place.
   * Write a function `rotate(array, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4], 2)` should produce `[3, 4, 1, 2]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
     * Hint: a combination of `#shift`, `#unshift`, `#pop` and `#push` should come in handy here.
   * Write a function `all_uniqs(array1, array2)` that given two arrays, produces a new array of only elements unique to `array1` and elements unique to `array2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
+
+---
 
 ## Iteration
 
@@ -278,7 +311,9 @@ Readings link with examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
   * [Iterators and Blocks](https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/2/1?curriculum_id=5059f8619189a5000201fbcb)
 
-#### Exercises
+  ----
+
+  #### `Exercises`
   * Write a function called `vowels(string)` that returns an array of every vowel in the string.
     * Use the `String#chars` method, which returns an array of characters. Then use an `each` over the chars.
   * Write a function called `odd_elements(array)` that prints out every other element (those with odd indices). Use `each_with_index`.
@@ -294,6 +329,8 @@ Codecademy link (complete this first if you haven't yet):
 Readings link with examples (in case you get stuck or need help):
 * [Nil Reading](./nil.md)
 
+---
+
 ## Output
 
 Key concepts:
@@ -304,9 +341,13 @@ Key concepts:
 Readings link with examples (in case you get stuck or need help):
 * [Output Reading](./output.md)
 
-#### Exercises
+----
+
+#### `Exercises`
 
 * In irb, make a sample array. `puts` the array. Then `p` the array.  See the difference?
+
+---
 
 ## Advanced iteration
 
@@ -318,10 +359,13 @@ Key concepts:
 Readings link with examples (in case you get stuck or need help):
 * [Break and Next Reading](./break-next.md)
 
-#### Exercises
+----
+
+#### `Exercises`
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
 
+---
 
 ## Debugging
 
@@ -354,7 +398,9 @@ You can find out more about byebug in the "Byebug Commands" section [here][byebu
 
 [byebug]: https://github.com/deivid-rodriguez/byebug
 
-#### Exercises
+----
+
+#### `Exercises`
 
   * Copy and paste the code below into a file.
 
@@ -416,7 +462,7 @@ identify_sheep
 
   Try to figure out where the error might be coming from and fix it.
 
-
+---
 
 ## Naming your variables and refactoring
 
@@ -426,7 +472,9 @@ Key concepts:
 * Break down operations into multiple named steps
 * Make your code read like English!
 
-#### Exercises
+----
+
+#### `Exercises`
   * Refactor this tip-calculating function. Try to rename the variables and to make it more expressive, and take advantage of early returns.
 
 ```ruby
