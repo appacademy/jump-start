@@ -7,7 +7,9 @@
 * You should generally not name a local variable the same as the function or as another variable in scope, because it causes a namespace conflict. (I.e., the older variable will no longer be accessible.)
 
 
-#### Exercise
+---
+
+#### `Exercises`
 
 * Will this function work? Don't run it, just analyze the code mentally.
 
@@ -48,6 +50,8 @@ array = [1, 2, 3, 4]
 puts array_squared(array)
 ```
 
+---
+
 ### Pass-by-reference
 * When you pass a variable into a function or a method, the original variable always continues to refer to the same object.
 * A variable is just a **pointer**. Think of it as just writing down the address of a building into an address book.
@@ -63,7 +67,9 @@ Readings link with examples (in case you get stuck or need help):
 Readings link with examples (in case you get stuck or need help):
 * [Mutation Reading](./mutation.md)
 
-#### Exercises
+---
+
+#### `Exercises`
 * What will this code do?
 
 ```ruby
@@ -119,8 +125,12 @@ Readings link with examples (in case you get stuck or need help):
 * [Advanced Iteration Reading](./advanced-iteration.md)
 
 
-#### Exercises
+---
+
+#### `Exercises`
   * Write a function called `longest_run_digit(number)` that returns the digit that has the longest run of consecutive repeats in a number. For example, `longest_run_digit(10555223)` should return `5`.
+
+---
 
 ### Nested iteration
 
@@ -134,7 +144,9 @@ Readings link with examples (in case you get stuck or need help):
 Readings link with examples (in case you get stuck or need help):
 * [Nested Iteration Reading](./nested-iteration.md)
 
-#### Exercises
+---
+
+#### `Exercises`
   * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
   * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
     * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
@@ -168,7 +180,7 @@ clock
       bubble_sort!(array_to_sort)
       p array_to_sort # should be [1, 2, 3]
     ```
-
+---
 
 ### Enumerables++
 
@@ -184,12 +196,15 @@ There are lots of crazy and powerful things you can do with advanced enumerable 
 Readings link with examples (in case you get stuck or need help):
 * [Enumerables++ Reading](./enumerables++.md)
 
-#### Exercises
+---
+
+#### `Exercises`
   * Use enumerable methods to add up all the numbers that are not equal to 2 in an array. Do NOT modify the original array.
   * Use the `#max_by` method to find the longest string in an array of strings.
   * Write an `is_prime?` function in one line using enumerable methods.
   * Write a one line function that lists all primes less than or equal to the argument passed in. Use enumerable methods in combination with your `is_prime?` function.
 
+---
 
 ### More array methods
 
@@ -202,11 +217,15 @@ Readings link with examples (in case you get stuck or need help):
 Readings link with examples (in case you get stuck or need help):
 * [More Array Methods Reading](./more-array-methods.md)
 
-#### Exercises
+---
+
+#### `Exercises`
 
   * Write a function called `range_of(array)` which returns the difference between the smallest and the greatest value of the array.
   * Write a function called `greatest_uniq(array)` which returns the greatest unique (non-duplicated) number in the array.
   * Write a function called `greatest_three(array)` which given an unordered array, returns the greatest three values.
+
+---
 
 ### More string methods
 
@@ -219,11 +238,15 @@ Readings link with examples (in case you get stuck or need help):
 Readings link with examples (in case you get stuck or need help):
 * [More String Methods Reading](./more-string-methods.md)
 
-#### Exercises
+---
+
+#### `Exercises`
 
   * Write a function called `lotrify(string)` translates passages from The Hobbit into the Lord of the Rings. It should replace all occurrences of the string "Bilbo" with the string "Frodo".
   * Write an `is_palindrome?(string)` function that checks to see if the string reads the same backwards as it does forwards. It should not count spaces or be case sensitive.
   * Write a function called `longest_palindrome(string)` that given a string, finds the longest substring of that string that is a palindrome.
+
+---
 
 
 ### Parallel assignment
@@ -254,5 +277,7 @@ array[i], array[j] = array[j], array[i]
 
 * In other, less convenient programming languages, you need a temporary variable to do this swapping.
 
-#### Exercise
+---
+
+#### `Exercises`
   * Go back to `reverse!` and `five_sort!` and see where you can refactor to use parallel assignment.
