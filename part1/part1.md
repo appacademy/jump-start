@@ -106,8 +106,8 @@ Codecademy link (complete this first if you haven't yet):
 
 #### `Exercises`
 
-  * Write a function called `hello_world` will `puts` the string `"Hello world!"` to the screen.
-  * Write a function called `print_thrice(number)` that, given a number, will print out the number three times.
+  * Write a function called `hello_world` that will `puts` the string `"Hello world!"` to the screen.
+  * Write a function called `print_thrice(number)` that, given a number, will `print` the number three times.
   * Write a function called `print_thrice_thrice(number)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
 
 ---
