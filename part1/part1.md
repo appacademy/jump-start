@@ -257,7 +257,7 @@ Codecademy link (complete this first if you haven't yet):
 
   #### `Exercises`
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
-  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string.
+  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string. Note: Do not use the built in method `String#capitalize` 
   * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
 
