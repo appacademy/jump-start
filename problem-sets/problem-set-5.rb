@@ -24,7 +24,7 @@ puts "---------remove nth letter-------"
 puts remove_nth_letter("helloworld", 5) == "helloorld"
 puts remove_nth_letter("helloworld", -3) == "hellowold"
 
-# Boolean function: check if  short_string is a substring of long_string
+# Boolean function: check if short_string is a substring of long_string
 def substring?(long_string, short_string)
 
 end

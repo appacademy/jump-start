@@ -371,6 +371,8 @@ Readings link with examples (in case you get stuck or need help):
 
 Readings link with examples (in case you get stuck or need help):
 * [Debugging Reading](./debugging.md)
+* [Debugging Lecture](https://vimeo.com/129370279)
+  * Watch at up to 2-4x speed.  Install the [chrome extension](https://chrome.google.com/webstore/detail/vimeo-repeat-speed/noonakfaafcdaagngpjehilgegefdima?hl=en)
 
 You might notice that it can be hard to catch the errors you make.  These errors, like misspellings, or being off by one, might feel "silly" or "stupid", but professional software engineers make the same mistakes.  The key is catching them quickly.
 
