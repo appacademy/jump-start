@@ -364,6 +364,7 @@ Readings link with examples (in case you get stuck or need help):
 #### `Exercises`
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to use your `is_prime?` function that you wrote earlier. Use `break` in your function.
+    * For example, `first_n_primes(6)` should return `[1, 2, 3, 5, 7, 11]`.
 
 ---
 
