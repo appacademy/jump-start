@@ -153,6 +153,7 @@ Readings link with examples (in case you get stuck or need help):
     * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
   * Put a debugger inside the inner loop of the `color_mixer` function from the reading (just above the line where the colors are being shoveled into the `mixes` array). Run the function using the input: ["beige", "white", "tan"] and write out on a piece of paper what you expect `first_color` and `second_color` to be each time the function pauses at the debugger. Then use the debugger to check your answer before using `c` to move to the next iteration.
   * Write a function called `clock` that cycles through every minute of the day and prints out every half hour.  Include the AM and PM.
+    * You should have two loops: one outer loop for hours (0 through 23) and one for minutes (0 through 59).  You shouldn't need seconds.
     * For example:
 
 ```ruby
