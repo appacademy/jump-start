@@ -101,11 +101,11 @@ puts isogram_matcher("unpredictably", "hydromagnetic") == [1, 8]
 # The fibonacci sequence takes the last two numbers in the sequence and adds
 # them together to create the next number.
 #
-# First five fibonnacci numbers = [1, 1, 2, 3, 5]
-# The fourth fibonnacci number (3) is the sum of the two numbers before it
+# First five fibonacci numbers = [1, 1, 2, 3, 5]
+# The fourth fibonacci number (3) is the sum of the two numbers before it
 # (1 and 2).
 #
-# In Xbonnacci, the sum of the last X numbers (instead of the last 2 numbers)
+# In Xbonacci, the sum of the last X numbers (instead of the last 2 numbers)
 # of the sequence becomes the next number in the sequence.
 #
 # The method will take two inputs: the starting sequence with X number of
