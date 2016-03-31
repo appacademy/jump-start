@@ -36,6 +36,7 @@ When you're done with the main curriculum, you can start working through the pro
 
 
 #### CodeEval
-Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. 
+Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby.
 
 Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.  Find the problems that look like they're just beyond your comfort zone.
+HEEELLO
