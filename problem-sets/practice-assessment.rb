@@ -145,3 +145,23 @@ puts xbonacci([0, 0, 0, 0, 1], 10) == [0, 0, 0, 0, 1, 1, 2, 4, 8, 16]
 
 
 
+#  CupCake Solver
+#------------------------------------------------------------------------------
+# It's Jennifer's birthday today. Jennifer's mom decided to bake multiple and different kinds of cupcakes for Jennifer's entire first grade class.
+# Only problem is, because this is first grade, everybody needs to have an equal amount of the different kinds of cupcakes, which is a problem Jennifer's mom did not consider.
+# It's up to you, to write a method to determine the total number of cupcakes each student in the class should get, so that everybody has equal amounts of every kind of cupcake.
+# when given an array, where at every index represents the number of a specific kind of cupcake, and an integer 'n', which represents the students in the class, find how many cupcakes each student will be able to get.
+
+
+def cupcake_solver (array, n)
+  #
+  # your code goes here
+  #
+end
+
+
+puts "-------Cupcake Solver-------"
+puts cupcake_solver([10, 10, 10], 5) == 6
+puts cupcake_solver([25, 27, 30], 5) == 16
+puts cupcake_solver([32, 27, 28], 20) == 3
+puts cupcake_solver([32, 27, 28, 24], 20) == 4
