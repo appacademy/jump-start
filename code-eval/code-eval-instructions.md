@@ -4,11 +4,9 @@ Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through
 
 ## Instructions
 
-The test cases in CodeEval can be a little strange.
+The test cases in CodeEval can be a little strange.  Don't worry about the "path to a filename" code they want you to write.
 
-**NOTE: Don't worry about the "path to a filename" code they want you to write.**
-
-For each problem you do, make a new ruby file yourself and add the test cases for the problem.
+Instead: For each problem you do, make a new ruby file yourself and add the test cases for the problem.
 
 Here's an [example file](./code-eval-instructions.md) you can reference.  In the example file, notice how we represent the sample input from CodeEval by `puts`ing whether it `==` the expected output.  For example:
 
