@@ -19,7 +19,9 @@ Before the course starts, you must:
 
 
 # Curriculum
-Get started by going to your day's work:
+
+Start by going through parts 1-4.  Do not do the problem sets until after you're done with part 4.
+
 ##### [Part 1](./part1/part1.md)
 ##### [Part 2](./part2/part2.md)
 ##### [Part 3](./part3/part3.md)
@@ -27,15 +29,18 @@ Get started by going to your day's work:
 
 #### Problem Sets
 
-When you're done with the main curriculum, you can start working through the problem sets:
+Once you're done with parts 1-4, work through the problem sets:
+
 ##### [Problem set 1](./problem-sets/problem-set-1.rb)
 ##### [Problem set 2](./problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./problem-sets/problem-set-3.rb)
 ##### [Problem set 4](./problem-sets/problem-set-4.rb)
 ##### [Problem set 5](./problem-sets/problem-set-5.rb)
+##### [Problem set 6 - Practice Assessment](./problem-sets/practice-assessment.rb)
 
 
 #### CodeEval
-Once you're finished, jump onto [CodeEval](http://codeeval.com) and work through some problems in Ruby. 
 
-Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.  Find the problems that look like they're just beyond your comfort zone.
+Once you're finished with the problem sets, follow the CodeEval instructions below.  Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
+
+##### [Code Eval Instructions](./code-eval/code-eval-instructions.md)
