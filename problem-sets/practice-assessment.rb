@@ -25,7 +25,9 @@
 # should return "difference" because it has two repeated letters (f and e).
 #
 # All words will be separated by spaces and there will be no punctuation or
-# capitalization.  If there is a tie return the first word
+# capitalization.  If there is a tie return the first word.  It doesn't matter
+# how many times individual letters repeat, just that they repeat (see the third test
+# case).
 
 def word_with_most_repeats(sentence)
 end
@@ -33,6 +35,7 @@ end
 puts "-------Word With Most Repeats-------"
 puts word_with_most_repeats('good luck') == 'good'
 puts word_with_most_repeats('what if there is a tie betwixt words') == 'there'
+puts word_with_most_repeats('ooooooooooh tutu') == 'tutu'
 
 
 # Even Splitters
