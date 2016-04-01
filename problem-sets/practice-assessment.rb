@@ -133,27 +133,29 @@ puts xbonacci([1, 1, 1, 1, 1, 1], 10) == [1, 1, 1, 1, 1, 1, 6, 11, 21, 41]
 puts xbonacci([0, 0, 0, 0, 1], 10) == [0, 0, 0, 0, 1, 1, 2, 4, 8, 16]
 
 
-# ------------------------------------------------------------------------------
-# Finished?
-# ------------------------------------------------------------------------------
-# Make sure everything puts out as 'true' when you run the file.
-# Make sure you don't have any unexpected `end`s or infinite loops
-# that would keep your code from running.
-#
-# Rename the file to be your firstname and lastname.
-# ------------------------------------------------------------------------------
-
-
-
-#  CupCake Solver
+#  Cupcake Solver
 #------------------------------------------------------------------------------
-# It's Jennifer's birthday today. Jennifer's mom decided to bake multiple and different kinds of cupcakes for Jennifer's entire first grade class.
-# Only problem is, because this is first grade, everybody needs to have an equal amount of the different kinds of cupcakes, which is a problem Jennifer's mom did not consider.
-# It's up to you, to write a method to determine the total number of cupcakes each student in the class should get, so that everybody has equal amounts of every kind of cupcake.
-# when given an array, where at every index represents the number of a specific kind of cupcake, and an integer 'n', which represents the students in the class, find how many cupcakes each student will be able to get.
+# It's Jennifer's birthday today. Jennifer's mom decided to bake different kinds
+# of cupcakes for Jennifer's first grade class.  Everybody needs to have an equal
+# amount of the different kinds of cupcakes.
+
+# Write a method that takes an array of the counts of the different kinds of
+# cupcakes and the number of students in the class, and returns
+# the total number of cupcakes that each student in the class
+# should get.
+
+# Every student should have equal amounts of every kind of cupcake.
+# No student gets to have more cupcakes than the others.  There can be leftover
+# cupcakes.
+
+# An array of [1, 2, 3] means that there's one red velvet cupcake,
+# two vanilla cupcakes, and three chocolate cupcakes.
+
+# Example: cupcake_solver([10, 10, 10], 5) == 6  means that there are five
+# students in the class, and each student gets to eat six cupcakes, total.
 
 
-def cupcake_solver (array, n)
+def cupcake_solver(cupcake_counts, number_of_students_in_class)
   #
   # your code goes here
   #
@@ -165,3 +167,15 @@ puts cupcake_solver([10, 10, 10], 5) == 6
 puts cupcake_solver([25, 27, 30], 5) == 16
 puts cupcake_solver([32, 27, 28], 20) == 3
 puts cupcake_solver([32, 27, 28, 24], 20) == 4
+
+
+# ------------------------------------------------------------------------------
+
+# Finished?
+# ------------------------------------------------------------------------------
+# Make sure everything puts out as 'true' when you run the file.
+# Make sure you don't have any unexpected `end`s or infinite loops
+# that would keep your code from running.
+#
+# Rename the file to be your firstname and lastname.
+# ------------------------------------------------------------------------------
