@@ -63,9 +63,17 @@ puts substring?("whatifikeptontypingforever", "ik") == true
 
 def count_adjacent_sums(array, n)
   count = 0
+  counted_numbers = []
+
   (1...array.length).each do |index|
     number = array[index]
-    if number + array[index - 1] == n && number != array[index - 2]
+    number_before = array[index - 1]
+    sum = number + number_before
+    havent_counted_these_numbers_yet = !counted_numbers.include?(number) && !counted_numbers.include?(number_before)
+
+    if sum == n && havent_counted_these_numbers_yet
+      counted_numbers.push(number)
+      counted_numbers.push(number_before)
       count += 1
     end
   end
