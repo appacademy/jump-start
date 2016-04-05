@@ -161,7 +161,8 @@ end
 # Given a list of students ordered by how far they are in the course and a
 # list of pods, return their seat assignments.  Assume you can only seat four
 # people per pod.  "Fill up" each pod as you go, (it's OK to have a pod with
-# four people and the next pod with one person).
+# four people and the next pod with one person).  It's OK to have empty pods
+# if there aren't enough students.
 
 def assign_pods(students, pods)
   assigned_pods = {}
