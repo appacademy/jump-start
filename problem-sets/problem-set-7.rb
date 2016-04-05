@@ -80,29 +80,3 @@ puts "\nHide Letter\n" + "*" * 15 + "\n"
 puts delete_first_letter("abc", "d") == "abc"
 puts delete_first_letter("abc", "b") == "ac"
 puts delete_first_letter("hello, my name is Tevy", "e") == "hllo, my name is Tevy"
-
-# Number Counting Sequence
-# ------------------------------------------------------------------------------
-# The number counting sequence is a sequence of number strings that begins with:
-# ["1", "11", "21", "1211", "111221", ...]
-#
-# "1" is counted as "one 1" or "11", followed by
-# "11" which is counted as "two 1s" or "21", followed by
-# "21" which is counted as "one 2 and one 1" or "1211", and so on.
-#
-# Given an integer n, generate the n-th element in the number counting sequence.
-
-def number_counting_seq(n)
-  #
-  # your code goes here
-  #
-end
-
-puts "-------Number Counting Sequence-------"
-puts number_counting_seq(0) == ""
-puts number_counting_seq(1) == "1"
-puts number_counting_seq(2) == "11"
-puts number_counting_seq(3) == "21"
-puts number_counting_seq(5) == "111221"
-puts number_counting_seq(8) == "1113213211"
-puts number_counting_seq(10) == "13211311123113112211"
