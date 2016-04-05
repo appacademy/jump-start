@@ -100,12 +100,12 @@ end
 
 # Two Degrees of Separation
 # ------------------------------------------------------------------------------
-# You are Mark Zuckerberg.  You have a hash that represents all of Facebook
-# (lookit you).  Each key is the name of a person on facebook, and each value
-# is an array of all their friends.  Assume everyone on Facebook has a different name.
+# You have a hash that represents all of Facebook (lookit you).  Each key is the
+# name of a person on facebook, and each value is an array of all their friends.
+# Assume everyone on Facebook has a different name.
 #
 # Given Facebook and the name of a person, return an array of all the friends
-# of their friends (do not include the original person or their immediate friends).
+# of their friends. Do not include the original person or their immediate friends.
 
 def two_degrees_away(facebook, name)
   two_degree_friends = []
@@ -160,7 +160,7 @@ end
 #
 # Given a list of students ordered by how far they are in the course and a
 # list of pods, return their seat assignments.  Assume you can only seat four
-# people per pod.  "Fill up" each pod as you go, (it's OK to have a pod with
+# people per pod.  "Fill up" each pod as you go.  It's OK to have a pod with
 # four people and the next pod with one person).  It's OK to have empty pods
 # if there aren't enough students.
 
