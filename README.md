@@ -37,7 +37,7 @@ Once you're done with parts 1-4, work through the problem sets:
 ##### [Problem set 4](./problem-sets/problem-set-4.rb)
 ##### [Problem set 5](./problem-sets/problem-set-5.rb)
 ##### [Problem set 6 - Practice Assessment](./problem-sets/problem-set-6.rb)
-##### [Problem set 7 - Additional Practice](./problem-sets/problem-set-7.rb)
+##### [Problem set 7](./problem-sets/problem-set-7.rb)
 ##### [Problem set 8 - Second Practice Assessmenet](./problem-sets/problem-set-8.rb)
 
 
