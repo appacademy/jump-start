@@ -53,7 +53,7 @@ def get_factors(number)
   factors
 end
 
-
+# puts "-------Greatest Common Factor-------"
 # puts greatest_common_factor(6, 10) == 2
 # puts greatest_common_factor(10, 15) == 5
 # puts greatest_common_factor(4, 7) == 1
@@ -86,13 +86,15 @@ def panoramic_pairs(landmarks)
   pairs
 end
 
-landmarks_1 = ["House", "Horse"]
-pairs_1 = [["House", "Horse"], ["Horse", "House"]]
+# puts "-------Panoramic Pairs-------"
 
-# puts panoramic_pairs(landmarks_1) == pairs_1
+# landmarks_1 = ["House", "Horse"]
+# pairs_1 = [["House", "Horse"], ["Horse", "House"]]
 
-landmarks_2 = ["Tree", "Mountain", "Ocean", "Cottage"]
-pairs_2 = [["Tree", "Mountain"], ["Mountain", "Ocean"], ["Ocean", "Cottage"], ["Cottage", "Tree"]]
+# # puts panoramic_pairs(landmarks_1) == pairs_1
+
+# landmarks_2 = ["Tree", "Mountain", "Ocean", "Cottage"]
+# pairs_2 = [["Tree", "Mountain"], ["Mountain", "Ocean"], ["Ocean", "Cottage"], ["Cottage", "Tree"]]
 
 # puts panoramic_pairs(landmarks_2) == pairs_2
 
@@ -122,6 +124,9 @@ def two_degrees_away(facebook, name)
 
   two_degree_friends
 end
+
+
+# puts "-------Two Degrees of Separation-------"
 
 # facebook_1 = {
 #   "Harry Potter" => ["Ron Weasley"],
@@ -178,6 +183,8 @@ def assign_pods(students, pods)
 
   assigned_pods
 end
+
+# puts "-------Assign Pods-------"
 
 # students_1 = [
 #   "Scott",
@@ -262,6 +269,8 @@ def remove_letter_a(words)
   non_a_words
 end
 
+
+# puts "-------Remove Letter 'A'-------"
 # words_1 = ["blueberry", "apple", "banana", "peach"]
 # without_a_1 = ["blueberry", "pple", "bnn", "pech"]
 
@@ -335,6 +344,8 @@ def summarize(serial_killer_days, murderer, last_spree)
   serial_killer_days[murderer].push(last_spree)
 end
 
+
+# puts "-------Serial Killer Summary-------"
 # crime_calendar_1 = [
 #   "Bald Vinnie",
 #   "Fat Tony",
