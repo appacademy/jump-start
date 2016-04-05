@@ -6,7 +6,7 @@ require 'byebug'
 #
 # Make sure everything puts out as 'true' when you run the file.
 #
-# Give yourself 5 minutes for easy problems and 10-20 minutes for harder problems.
+# Give yourself an hour to complete this assessment.
 # When time is up, make sure you don't have any unexpected `end`s or infinite loops
 # that would keep your code from running.
 #
