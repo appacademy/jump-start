@@ -87,7 +87,7 @@ puts total_product_sequence(8) == 2821109907456 # etc...
 # [2, 3, 4] => [12, 8, 6], where:
 #   12 because you take out 2, leaving 3 * 4
 #   8, because you take out 3, leaving 2 * 4
-#   6, because you take out 3, leaving 2 * 4
+#   6, because you take out 4, leaving 2 * 3
 # ]
 #
 # [1, 2, 3, 5] => [30, 15, 10, 6], where:
