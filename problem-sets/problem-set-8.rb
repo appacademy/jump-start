@@ -90,7 +90,7 @@ puts "-------Two Degrees of Separation-------"
 facebook_1 = {
   "Harry Potter" => ["Ron Weasley"],
   "Ron Weasley" => ["Harry Potter", "Fred Weasley"],
-  "Fred Weasley" => ["Harry Potter"]
+  "Fred Weasley" => ["Ron Weasley"]
 }
 
 friends_1 = ["Fred Weasley"]
