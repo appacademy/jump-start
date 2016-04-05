@@ -61,7 +61,6 @@ end
 
 # Panoramic Pairs
 # ------------------------------------------------------------------------------
-#
 # You have a panoramic view in front of you, but you only can take a picture of
 # two landmarks at a time (your camera is small).  You want to capture every
 # pair of landmarks that are next to each other.
@@ -156,10 +155,9 @@ end
 
 # Assign Pods
 # ------------------------------------------------------------------------------
-
 # You are a JumpStart TA and you need to assign students to sit with other
 # students who are at the same place in the curriculum.
-
+#
 # Given a list of students ordered by how far they are in the course and a
 # list of pods, return their seat assignments.  Assume you can only seat four
 # people per pod.  "Fill up" each pod as you go, (it's OK to have a pod with
