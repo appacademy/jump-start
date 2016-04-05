@@ -39,6 +39,7 @@ Once you're done with parts 1-4, work through the problem sets:
 ##### [Problem set 6 - Practice Assessment](./problem-sets/problem-set-6.rb)
 ##### [Problem set 7](./problem-sets/problem-set-7.rb)
 ##### [Problem set 8 - Second Practice Assessment](./problem-sets/problem-set-8.rb)
+##### [Problem set 9 - Third Practice Assessment](./problem-sets/problem-set-9.rb)
 
 
 #### CodeEval
