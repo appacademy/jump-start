@@ -34,7 +34,7 @@ def price_is_right(bids, actual_retail_price)
   #
 end
 
-
+puts "-------Price is Right-------"
 puts price_is_right([200, 2350, 1400, 1600], 1599) == 1400
 puts price_is_right([950, 850, 1000, 1], 1300) == 1000
 
@@ -53,6 +53,7 @@ def total_product_sequence(n)
   #
 end
 
+puts "-------Total Product Sequence-------"
 puts total_product_sequence(1) == 1
 puts total_product_sequence(2) == 2
 puts total_product_sequence(3) == 3
@@ -91,7 +92,7 @@ def products_except_me(numbers)
   #
 end
 
-
+puts "-------Products Except Me-------"
 puts products_except_me([2, 3, 4]) == [12, 8, 6]
 puts products_except_me([1, 2, 3, 5]) == [30, 15, 10, 6]
 puts products_except_me([7, 2, 1, 4]) == [8, 28, 56, 14]
@@ -149,6 +150,7 @@ second_half_birthday_pairs_2 = [
   ["Charlie", "Ajit"],
 ]
 
+puts "-------Fall and Winter Birthdays-------"
 puts fall_and_winter_birthdays(students_with_birthdays_1) == second_half_birthday_pairs_1
 puts fall_and_winter_birthdays(students_with_birthdays_2) == second_half_birthday_pairs_2
 
@@ -168,7 +170,7 @@ def more_than_n_factors(numbers, n)
   #
 end
 
-
+puts "-------More Than N Factors-------"
 puts more_than_n_factors([1, 3, 10, 16], 5) == [16]
 puts more_than_n_factors([1, 3, 10, 16], 2) == [3, 10, 16]
 puts more_than_n_factors([20, 36, 39, 16], 6) == [20, 36]
@@ -197,6 +199,7 @@ one_week_wonders_1 = ["Call Me Maybe"]
 top_hits_2 = ["Beat It", "Beat It", "Careless Whisper", "Beat It", "Baby", "Baby", "Never Gonna Give You Up", "Uptown Funk", "Uptown Funk", "Uptown Funk"]
 one_week_wonders_2 = ["Careless Whisper", "Never Gonna Give You Up"]
 
+puts "-------One Week Wonders-------"
 puts one_week_wonders(top_hits_1) == one_week_wonders_1
 puts one_week_wonders(top_hits_2) == one_week_wonders_2
 
@@ -212,6 +215,7 @@ def can_tweak_sign?(normal_sign, vandalized_sign)
   #
 end
 
+puts "-------Sign Tweakers-------"
 puts can_tweak_sign?("Come in and see our pretty armchairs", "Come and see our hairy armpits") == true
 puts can_tweak_sign?("Student and teacher art fair starts Wed.", "Teacher farts stain underwear") == true
 puts can_tweak_sign?("Choose the bread of life or you are toast", "Teacher farts stain underwear") == false
@@ -229,7 +233,7 @@ def repeated_number_ranges(numbers)
   #
 end
 
-
+puts "-------Repeated Number Ranges-------"
 puts repeated_number_ranges([1, 1, 2]) == [[0, 1]]
 puts repeated_number_ranges([1, 2, 3, 3, 4]) == [[2, 3]]
 puts repeated_number_ranges([1, 2, 3, 3, 4, 4]) == [[2, 3], [4, 5]]
