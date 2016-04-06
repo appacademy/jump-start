@@ -240,7 +240,7 @@ puts xbonacci([0, 0, 0, 0, 1], 10) == [0, 0, 0, 0, 1, 1, 2, 4, 8, 16]
 # the total number of cupcakes that each student in the class
 # should get.
 
-# Every student should have equal amounts of every kind of cupcake.
+# Every student should have equal amounts of the same kind of cupcake.
 # No student gets to have more cupcakes than the others.  There can be leftover
 # cupcakes.
 
