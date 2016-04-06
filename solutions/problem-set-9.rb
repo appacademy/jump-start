@@ -317,6 +317,10 @@ def repeated_number_ranges(numbers)
   current_index = 0
   start_index = nil
 
+  # start walking
+  # set the start index when the next number is the same
+  # reset the start index when the next number is different
+
   while current_index < numbers.length
     if numbers[current_index + 1] == numbers[current_index]
       start_index = current_index if start_index.nil?
@@ -329,9 +333,6 @@ def repeated_number_ranges(numbers)
 
     current_index += 1
   end
-  # start walking
-  # set the start index when the next number is the same
-  # reset the start index when the next number is different
 
   ranges
 end

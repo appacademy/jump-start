@@ -30,7 +30,44 @@
 # case).
 
 def word_with_most_repeats(sentence)
+  max_repeats = 0
+  words = sentence.split
+  max_repeated_word = words.first
+
+  words.each do |word|
+    number_of_repeats = get_number_of_repeats_in(word)
+
+    if number_of_repeats > max_repeats
+      max_repeats = number_of_repeats
+      max_repeated_word = word
+    end
+  end
+
+  max_repeated_word
 end
+
+def get_number_of_repeats_in(word)
+  repeats = 0
+  current_index = 0
+  repeated_letters = Hash.new(0)
+  last_letter = nil
+
+  until current_index == word.length
+    current_letter = word[current_index]
+
+    if current_letter != last_letter
+      repeated_letters[current_letter] += 1
+      last_letter = current_letter
+    end
+
+    current_index += 1
+  end
+
+  max_letter_and_count = repeated_letters.max_by {|letter, count| count}
+
+  max_letter_and_count[1]
+end
+
 
 puts "-------Word With Most Repeats-------"
 puts word_with_most_repeats('good luck') == 'good'
@@ -57,9 +94,38 @@ puts word_with_most_repeats('ooooooooooh tutu') == 'tutu'
 # ------------------------------------------------------------------------------
 
 def even_splitters(string)
-  #
-  # your code goes here
-  #
+  splittable_letters = []
+
+  string.each_char do |letter|
+    split_string = string.split(letter)
+    length = get_length_of_first_actual_letter(split_string)
+
+    splittable_letters.push(letter) if can_split_string?(split_string, length) && !splittable_letters.include?(letter)
+  end
+
+  splittable_letters
+end
+
+def get_length_of_first_actual_letter(split_string)
+  split_string.each do |split_chunk|
+    if split_chunk != ""
+      return split_chunk.length
+    end
+  end
+
+  0
+end
+
+def can_split_string?(split_string, length)
+  can_split_evenly = true
+
+  split_string.each do |split_chunk|
+    if split_chunk != "" && split_chunk.length != length
+      can_split_evenly = false
+    end
+  end
+
+  can_split_evenly
 end
 
 puts "-----Even Splitters----"
@@ -80,9 +146,18 @@ puts even_splitters("mishmash") == ["m","h"]
 # same position.
 
 def isogram_matcher(isogram1, isogram2)
-  #
-  # your code goes here
-  #
+  idx_match = 0
+  letter_match = 0
+
+  isogram1.length.times do |i|
+    if(isogram1[i] == isogram2[i])
+      idx_match += 1
+    elsif isogram2.include?(isogram1[i])
+      letter_match += 1
+    end
+  end
+
+  [idx_match, letter_match]
 end
 
 puts "-------Isogram Matcher-------"
@@ -121,12 +196,30 @@ puts isogram_matcher("unpredictably", "hydromagnetic") == [1, 8]
 # In the code, number_of_fibonacci_numbers_to_return is the same as N.
 
 def xbonacci(starting_sequence, number_of_xbonacci_numbers_to_return)
-  # how_many_numbers_to_sum = starting_sequence.length
+  how_many_numbers_to_sum = starting_sequence.length
 
-  #
-  # your code goes here
-  #
+  until starting_sequence.length == number_of_xbonacci_numbers_to_return
+    next_xbonacci_number = sum_of_last_n_numbers(starting_sequence, how_many_numbers_to_sum)
+    starting_sequence.push(next_xbonacci_number)
+  end
+
+  starting_sequence
 end
+
+def sum_of_last_n_numbers(starting_sequence, how_many_numbers_to_sum)
+  sum = 0
+  current_index = starting_sequence.length - 1
+  end_index = starting_sequence.length - how_many_numbers_to_sum
+  end_index = 0 if end_index < 0
+
+  while current_index >= end_index
+    sum += starting_sequence[current_index]
+    current_index -= 1
+  end
+
+  sum
+end
+
 
 puts "-------Xbonacci-------"
 puts xbonacci([1, 1], 5) == [1, 1, 2, 3, 5]
@@ -159,9 +252,14 @@ puts xbonacci([0, 0, 0, 0, 1], 10) == [0, 0, 0, 0, 1, 1, 2, 4, 8, 16]
 
 
 def cupcake_solver(cupcake_counts, number_of_students_in_class)
-  #
-  # your code goes here
-  #
+  total_cupcakes = 0
+
+  cupcake_counts.each do |cupcake_count|
+    allotted_number = cupcake_count / number_of_students_in_class
+    total_cupcakes += allotted_number
+  end
+
+  total_cupcakes
 end
 
 
