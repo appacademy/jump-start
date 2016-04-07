@@ -282,4 +282,4 @@ array[i], array[j] = array[j], array[i]
 ---
 
 #### `Exercises`
-  * Go back to `reverse!` and `five_sort!` and see where you can refactor to use parallel assignment.
+  * Go back to `reverse` (Part 1) and `bubble_sort!` (Part 3) and see where you can refactor to use parallel assignment.
