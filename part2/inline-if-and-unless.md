@@ -21,5 +21,5 @@ OR
     return true unless number % 2 == 1
   end
 ```
-(In reality, you should just return `number % 2 == 1`)
+(In reality, you should just return `number % 2 == 0`)
 * Only do this for **one line** conditionals. Otherwise, use the long form.
