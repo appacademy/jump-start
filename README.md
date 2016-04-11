@@ -31,7 +31,7 @@ Start by going through parts 1-4.  Do not do the problem sets until after you're
 
 Once you're done with parts 1-4, work through the problem sets.
 
-Solutions live [here](./jumpstart-files/solutions).  **DO NOT** look at them until you have tried the problems.  You'll only be hurting yourself.
+Solutions live [here](./jumpstart-files/solutions).  **DO NOT look at them until you have tried the problems.**  You'll only be hurting yourself.
 
 ##### [Problem set 1](./jumpstart-files/problem-sets/problem-set-1.rb)
 ##### [Problem set 2](./jumpstart-files/problem-sets/problem-set-2.rb)
