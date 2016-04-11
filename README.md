@@ -41,6 +41,7 @@ Once you're done with parts 1-4, work through the problem sets:
 ##### [Problem set 8 - Second Practice Assessment](./jumpstart-files/problem-sets/problem-set-8.rb)
 ##### [Problem set 9 - Third Practice Assessment](./jumpstart-files/problem-sets/problem-set-9.rb)
 
+Solutions live [here](./jumpstart-files/solutions).  **DO NOT** look at them until you have tried the problems.  You'll only be hurting yourself.
 
 #### CodeEval
 
