@@ -10,11 +10,13 @@ Before the course starts, you must:
 1. Complete the ruby [codecademy track][codecademy-ruby].
 2. [Set up ruby on Cloud9][ruby-setup].
 3. [Install a debugger][debugger-setup].
-4. Read our [Intro Doc][intro-doc].
+4. Download [Slack][slack].
+5. Read our [Intro Doc][intro-doc].
 
 [codecademy-ruby]: https://www.codecademy.com/learn/ruby
 [ruby-setup]: ./jumpstart-files/pre-curriculum/ruby-setup.md
 [debugger-setup]: ./jumpstart-files/pre-curriculum/debugger-setup.md
+[slack]: https://slack.com
 [intro-doc]: ./jumpstart-files/pre-curriculum/intro.md
 
 
@@ -42,7 +44,6 @@ Solutions live [here](./jumpstart-files/solutions).  **DO NOT look at them until
 ##### [Problem set 7](./jumpstart-files/problem-sets/problem-set-7.rb)
 ##### [Problem set 8 - Second Practice Assessment](./jumpstart-files/problem-sets/problem-set-8.rb)
 ##### [Problem set 9 - Third Practice Assessment](./jumpstart-files/problem-sets/problem-set-9.rb)
-
 
 
 #### CodeEval
