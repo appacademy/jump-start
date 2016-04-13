@@ -46,5 +46,12 @@ As you work, try the exercises before you consult the readings.  Look at the rea
 
 Feel free to start going through the curriculum on your own.  The better prepared you are, the better.
 
+## Final task
+
+Done reading this page?  Please fill out [this form][pre-curriculum-completion-form] and to confirm that you've done all of the pre-curriculum work.
+
+## Bonus material
 
 [Zen and the art of programming (Optional Reading)](./zen-and-the-art.md)
+
+[pre-curriculum-completion-form]: http://goo.gl/forms/WZVSPKlkuH

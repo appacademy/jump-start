@@ -147,8 +147,9 @@ Readings link with examples (in case you get stuck or need help):
 ---
 
 #### `Exercises`
-  * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words. 
+  * Write a function called `all_word_pairs(string)` that given a string, returns an array of every possible pair of words.
     * Each pair should only appear once. For example, `all_word_pairs("cat yogurt phone")` should return `[["cat", "yogurt"], ["cat", "phone"], ["yogurt", "phone"]]`.
+    * Using comments, write out an approach in pseudocode first.
   * Write a function called `any_make_yahtzee?(array)` that given an array, determines whether the concatenation of any two strings makes the string "yahtzee".
     * E.g., with the input `["yah", "car", "build", "tzee"]`, it should return `true`. With the input `["yahtz", "fish", "y"]` it should return false.
   * Put a debugger inside the inner loop of the `color_mixer` function from the reading (just above the line where the colors are being shoveled into the `mixes` array). Run the function using the input: ["beige", "white", "tan"] and write out on a piece of paper what you expect `first_color` and `second_color` to be each time the function pauses at the debugger. Then use the debugger to check your answer before using `c` to move to the next iteration.

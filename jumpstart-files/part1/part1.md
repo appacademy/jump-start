@@ -167,6 +167,37 @@ Codecademy links (complete these first if you haven't yet):
 
 ---
 
+## Commenting Out Code
+
+Key concepts:
+
+* Hitting `command + /` comments out the current line of code.  On Windows, this is `ctrl + /`.
+* Hitting `command + /` on an empty line starts a comment.
+* Selecting multiple lines with `shift + up/down arrow`
+
+#### `Exercises`
+
+* Paste the following code into a file and comment out the offending lines using keyboard shortcuts (don't delete them).
+
+```ruby
+def print_hello
+  adsiofjiodafsj
+  raiojtdaiocccpp
+  nothisisntgoodcode
+  infactitwontrun
+
+  3.times do
+    puts "hello"
+  end
+end
+
+
+```
+
+* Using comments, write out in pseudocode an approach to the Cats N' Hats problem that you did day 1.  You don't have to write real code off of it.
+
+---
+
 ## Implicit and explicit returns
 
 Key concepts:
@@ -257,7 +288,7 @@ Codecademy link (complete this first if you haven't yet):
 
   #### `Exercises`
   * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
-  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string. Note: Do not use the built in method `String#capitalize` 
+  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string. Note: Do not use the built in method `String#capitalize`
   * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
     * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
 
@@ -315,6 +346,7 @@ Codecademy link (complete this first if you haven't yet):
 
   #### `Exercises`
   * Write a function called `vowels(string)` that returns an array of every vowel in the string.
+    * Using comments, write out an approach in pseudocode first.
     * Use the `String#chars` method, which returns an array of characters. Then use an `each` over the chars.
   * Write a function called `odd_elements(array)` that prints out every other element (those with odd indices). Use `each_with_index`.
   * Write a function called `zip_with_indices(array)` that given an array, converts each element into a tuple (array with two items) with its index.
@@ -365,6 +397,7 @@ Readings link with examples (in case you get stuck or need help):
   * Adapt your `odd_elems(array)` function to use `next` to skip over every even-indexed element.
   * Write a function `first_n_primes(n)` that returns the first N many prime numbers. You'll want to call (use) your `is_prime?` function that you wrote earlier. Use `break` in your function.
     * For example, `first_n_primes(6)` should return `[1, 2, 3, 5, 7, 11]`.
+    * Using comments, write out an approach in pseudocode first.
 
 ---
 

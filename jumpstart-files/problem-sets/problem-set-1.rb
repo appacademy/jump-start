@@ -1,3 +1,5 @@
+# Using comments, write out an approach in pseudocode for each of these first.
+
 # Write a function that given an array, returns another array with each of the numbers multiplied by two. Don't change the original array, make sure you construct a copy!
 def array_times_two(array)
 end
