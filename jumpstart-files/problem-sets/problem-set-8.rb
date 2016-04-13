@@ -216,57 +216,57 @@ puts remove_letter_a(words_1) == without_a_1
 puts remove_letter_a(words_2) == without_a_2
 
 
-# Serial Killer Summary
+# Care Bear Summary
 # ------------------------------------------------------------------------------
-# You have a calendar of murders that mafia members committed (given as a list of
-# names by murderer).  Some of them are serial killers: some have murdered multiple
+# You have a calendar of hugs that care bears made (given as a list of
+# names by care bears).  Some of them have hugged multiple
 # times in a row.
 #
-# Return a hash where the keys are the serial killers and the values are an array
-# of all of the start and end days of their killing sprees.
+# Return a hash where the keys are the care bears and the values are an array
+# of all of the start and end days of their hugging streaks.
 #
 # Days are the index of the calendar array.
 
-def serial_killer_summary(calendar_of_murderers)
+def care_bear_summary(calendar_of_hugs)
   #
   # your code goes here
   #
 end
 
-puts "-------Serial Killer Summary-------"
+puts "-------Care Bear Summary-------"
 
-crime_calendar_1 = [
-  "Bald Vinnie",
-  "Fat Tony",
-  "Bald Vinnie",
-  "Bald Vinnie",
-  "Fat Tony"
+hug_calendar_1 = [
+  "Birthday Bear",
+  "Bedtime Bear",
+  "Birthday Bear",
+  "Birthday Bear",
+  "Bedtime Bear"
 ]
 
-serial_killer_counts_1 = {
-  "Bald Vinnie" => [[2, 3]]
+care_bear_counts_1 = {
+  "Birthday Bear" => [[2, 3]]
 }
 
-crime_calendar_2 = [
-  "Bald Vinnie",
-  "Bald Vinnie",
-  "Saucy Michael",
-  "Fat Tony",
-  "Fat Tony",
-  "Bald Vinnie",
-  "Bald Vinnie",
-  "Bald Vinnie",
-  "Fat Tony",
-  "Slim Lorenzo"
+hug_calendar_2 = [
+  "Birthday Bear",
+  "Birthday Bear",
+  "Cheer Bear",
+  "Bedtime Bear",
+  "Bedtime Bear",
+  "Birthday Bear",
+  "Birthday Bear",
+  "Birthday Bear",
+  "Bedtime Bear",
+  "Friend Bear"
 ]
 
-serial_killer_counts_2 = {
-  "Bald Vinnie" => [[0, 1], [5, 7]],
-  "Fat Tony" => [[3, 4]]
+care_bear_counts_2 = {
+  "Birthday Bear" => [[0, 1], [5, 7]],
+  "Bedtime Bear" => [[3, 4]]
 }
 
-puts serial_killer_summary(crime_calendar_1) == serial_killer_counts_1
-puts serial_killer_summary(crime_calendar_2) == serial_killer_counts_2
+puts care_bear_summary(hug_calendar_1) == care_bear_counts_1
+puts care_bear_summary(hug_calendar_2) == care_bear_counts_2
 
 
 # Number Counting Sequence

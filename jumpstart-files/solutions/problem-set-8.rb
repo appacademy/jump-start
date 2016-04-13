@@ -280,103 +280,105 @@ end
 # puts remove_letter_a(words_2) == without_a_2
 
 
-# Serial Killer Summary
+# Care Bear Summary
 # ------------------------------------------------------------------------------
-# You have a calendar of murders that mafia members committed (given as a list of
-# names by murderer).  Some of them are serial killers: some have murdered multiple
+# You have a calendar of hugs that care bears made (given as a list of
+# names by care bears).  Some of them have hugged multiple
 # times in a row.
 #
-# Return a hash where the keys are the serial killers and the values are an array
-# of all of the start and end days of their killing sprees.
+# Return a hash where the keys are the care bears and the values are an array
+# of all of the start and end days of their hugging streaks.
 #
 # Days are the index of the calendar array.
 
-def serial_killer_summary(calendar_of_murderers)
-  serial_killer_days = {}
-  current_murderer = nil
+def care_bear_summary(calendar_of_hugs)
+  final_care_bear_summary = {}
+  current_hugger = nil
   start_day = 0
 
-  calendar_of_murderers.each_with_index do |murderer, day|
-    if murderer != current_murderer #new murderer
-      if day >= 2 #we don't care if the murderer changed on day 0 (from nil) or 1
-        yesterdays_murderer = current_murderer # we haven't changed the current_murderer yet
-        check_if_end_of_killing_spree(yesterdays_murderer, calendar_of_murderers, start_day, day, serial_killer_days)
+  calendar_of_hugs.each_with_index do |hugger, day|
+    if hugger != current_hugger #new hugger
+      if day >= 2 #we don't care if the hugger changed on day 0 (from nil) or 1
+        yesterdays_hugger = current_hugger # we haven't changed the current_hugger yet
+        check_if_end_of_hugging_streak(yesterdays_hugger, calendar_of_hugs, start_day, day, final_care_bear_summary)
       end
 
-      current_murderer = murderer
+      current_hugger = hugger
       start_day = day
     else
-      check_if_last_day_killing_spree(calendar_of_murderers, start_day, day, current_murderer, serial_killer_days)
+      check_if_last_day_hugging_streak(calendar_of_hugs, start_day, day, current_hugger, final_care_bear_summary)
     end
   end
 
-  serial_killer_days
+  final_care_bear_summary
 end
 
 
-def check_if_end_of_killing_spree(yesterdays_murderer, calendar_of_murderers, start_day, day, serial_killer_days)
-    serial_killing_happened = serial_killing_happened?(calendar_of_murderers, start_day, day, yesterdays_murderer)
+def check_if_end_of_hugging_streak(yesterdays_hugger, calendar_of_hugs, start_day, day, final_care_bear_summary)
+    multiple_hugs_happened = multiple_hugs_happened?(calendar_of_hugs, start_day, day, yesterdays_hugger)
     yesterday = day - 1
-    last_spree = [start_day, yesterday]
+    last_streak = [start_day, yesterday]
 
-    summarize(serial_killer_days, yesterdays_murderer, last_spree) if serial_killing_happened
+    summarize(final_care_bear_summary, yesterdays_hugger, last_streak) if multiple_hugs_happened
 end
 
-def check_if_last_day_killing_spree(calendar_of_murderers, start_day, day, current_murderer, serial_killer_days)
-  last_day = day == calendar_of_murderers.length - 1
+def check_if_last_day_hugging_streak(calendar_of_hugs, start_day, day, current_hugger, final_care_bear_summary)
+  last_day = day == calendar_of_hugs.length - 1
 
   if last_day
-    serial_killing_happened = serial_killing_happened?(calendar_of_murderers, start_day, day + 1, current_murderer)
-    last_spree = [start_day, day]
+    multiple_hugs_happened = multiple_hugs_happened?(calendar_of_hugs, start_day, day + 1, current_hugger)
+    last_streak = [start_day, day]
 
-    summarize(serial_killer_days, current_murderer, last_spree) if serial_killing_happened
+    summarize(final_care_bear_summary, current_hugger, last_streak) if multiple_hugs_happened
   end
 end
 
-def serial_killing_happened?(calendar_of_murderers, start_day, day, yesterdays_murderer)
-  guy_two_days_ago = calendar_of_murderers[day - 2]
-  guy_two_days_ago == yesterdays_murderer
+def multiple_hugs_happened?(calendar_of_hugs, start_day, day, yesterdays_hugger)
+  guy_two_days_ago = calendar_of_hugs[day - 2]
+  guy_two_days_ago == yesterdays_hugger
 end
 
-def summarize(serial_killer_days, murderer, last_spree)
-  serial_killer_days[murderer] ||= []
-  serial_killer_days[murderer].push(last_spree)
+def summarize(final_care_bear_summary, hugger, last_streak)
+  final_care_bear_summary[hugger] ||= []
+  final_care_bear_summary[hugger].push(last_streak)
 end
 
 
-# puts "-------Serial Killer Summary-------"
-# crime_calendar_1 = [
-#   "Bald Vinnie",
-#   "Fat Tony",
-#   "Bald Vinnie",
-#   "Bald Vinnie",
-#   "Fat Tony"
+# puts "-------Care Bear Summary-------"
+
+# hug_calendar_1 = [
+#   "Birthday Bear",
+#   "Bedtime Bear",
+#   "Birthday Bear",
+#   "Birthday Bear",
+#   "Bedtime Bear"
 # ]
 
-# serial_killer_counts_1 = {
-#   "Bald Vinnie" => [[2, 3]]
+# care_bear_counts_1 = {
+#   "Birthday Bear" => [[2, 3]]
 # }
 
-# crime_calendar_2 = [
-#   "Bald Vinnie",
-#   "Bald Vinnie",
-#   "Saucy Michael",
-#   "Fat Tony",
-#   "Fat Tony",
-#   "Bald Vinnie",
-#   "Bald Vinnie",
-#   "Bald Vinnie",
-#   "Fat Tony",
-#   "Slim Lorenzo"
+# hug_calendar_2 = [
+#   "Birthday Bear",
+#   "Birthday Bear",
+#   "Cheer Bear",
+#   "Bedtime Bear",
+#   "Bedtime Bear",
+#   "Birthday Bear",
+#   "Birthday Bear",
+#   "Birthday Bear",
+#   "Bedtime Bear",
+#   "Friend Bear"
 # ]
 
-# serial_killer_counts_2 = {
-#   "Bald Vinnie" => [[0, 1], [5, 7]],
-#   "Fat Tony" => [[3, 4]]
+# care_bear_counts_2 = {
+#   "Birthday Bear" => [[0, 1], [5, 7]],
+#   "Bedtime Bear" => [[3, 4]]
 # }
 
-# puts serial_killer_summary(crime_calendar_1) == serial_killer_counts_1
-# puts serial_killer_summary(crime_calendar_2) == serial_killer_counts_2
+# puts care_bear_summary(hug_calendar_1) == care_bear_counts_1
+# puts care_bear_summary(hug_calendar_2) == care_bear_counts_2
+
 
 
 # Number Counting Sequence
