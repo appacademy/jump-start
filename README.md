@@ -40,7 +40,8 @@ Solutions live [here](./jumpstart-files/solutions).  **DO NOT look at them until
 ##### [Problem set 3](./jumpstart-files/problem-sets/problem-set-3.rb)
 ##### [Problem set 4](./jumpstart-files/problem-sets/problem-set-4.rb)
 ##### [Problem set 5](./jumpstart-files/problem-sets/problem-set-5.rb)
-* **Recommended: complete by day 3 of the second week of the program at latest.**
+
+**Recommended Checkpoint: complete problem sets 1-5 by day 2 of the second week of the program.**
 
 ##### [Problem set 6 - Practice Assessment](./jumpstart-files/problem-sets/problem-set-6.rb)
 ##### [Problem set 7](./jumpstart-files/problem-sets/problem-set-7.rb)
