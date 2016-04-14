@@ -183,7 +183,20 @@ clock
       bubble_sort!(array_to_sort)
       p array_to_sort # should be [1, 2, 3]
     ```
+
+  * Use nested iteration with ruby's `#each_with_index` method to solve the following problem:
+
+```ruby
+# write a function smallest_pair_product that takes an array of integers and returns the
+# 2 unique indices whose elements multiply to the smallest number. Formatted [earlier_index, later_index].  Assume none of the elements are 0.
+
+puts smallest_pair_product([1,2,3,4,5]) == [1,2]
+puts smallest_pair_product([3,2,1,1,2,3]) == [1,1]
+puts smallest_pair_product([-2,-1,-1,-2,-3]) == [-1,-1]
+
+```
 ---
+
 
 ### Enumerables++
 
