@@ -39,7 +39,7 @@ Solutions live [here](./jumpstart-files/solutions).  **DO NOT look at them until
 ##### [Problem set 2](./jumpstart-files/problem-sets/problem-set-2.rb)
 ##### [Problem set 3](./jumpstart-files/problem-sets/problem-set-3.rb)
 ##### [Problem set 4](./jumpstart-files/problem-sets/problem-set-4.rb)
-##### [Problem set 5](./jumpstart-files/problem-sets/problem-set-5.rb)
+##### [Problem set 5](./jumpstart-files/problem-sets/problem-set-5.rb) (Recommended: Complete by W2D3 of the program at latest.)
 ##### [Problem set 6 - Practice Assessment](./jumpstart-files/problem-sets/problem-set-6.rb)
 ##### [Problem set 7](./jumpstart-files/problem-sets/problem-set-7.rb)
 ##### [Problem set 8 - Second Practice Assessment](./jumpstart-files/problem-sets/problem-set-8.rb)
