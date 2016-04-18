@@ -139,7 +139,7 @@ Codecademy link (complete this first if you haven't yet):
 
 #### Video Solution (Optional)
 
-We recommend watching the below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
+We recommend watching the video below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
 
 [TA Video Solution](https://youtu.be/WxVRmB_uRBU)
 
@@ -175,7 +175,7 @@ Codecademy links (complete these first if you haven't yet):
 
 #### Video Solution (Optional)
 
-We recommend watching the below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
+We recommend watching the video below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
 
 [TA Video Solution](https://youtu.be/qksk-8ywhKA)
 
