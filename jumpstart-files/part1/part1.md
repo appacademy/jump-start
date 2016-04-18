@@ -137,6 +137,12 @@ Codecademy link (complete this first if you haven't yet):
 
 ---
 
+#### Video Solution (Optional)
+
+We recommend watching the below at 2x speed and pausing at new concepts.
+
+**DO NOT WATCH UNTIL AFTER YOU'VE DONE THE EXERCISES:** [TA Video Solution](https://youtu.be/WxVRmB_uRBU)
+
 ## Booleans and loops
 
 Key concepts:
@@ -166,6 +172,13 @@ Codecademy links (complete these first if you haven't yet):
     * Hint: use your `is_factor_of(big_number, small_number)` function.
 
 ---
+
+#### Video Solution (Optional)
+
+We recommend watching the below at 2x speed and pausing at new concepts.
+
+**DO NOT WATCH UNTIL AFTER YOU'VE DONE THE EXERCISES:** [TA Video Solution](https://youtu.be/qksk-8ywhKA)
+
 
 ## Commenting Out Code
 
