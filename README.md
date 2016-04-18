@@ -46,7 +46,6 @@ Solutions live [here](./jumpstart-files/solutions).  **DO NOT look at them until
 ##### [Problem set 6 - Practice Assessment](./jumpstart-files/problem-sets/problem-set-6.rb)
 ##### [Problem set 7](./jumpstart-files/problem-sets/problem-set-7.rb)
 ##### [Problem set 8 - Second Practice Assessment](./jumpstart-files/problem-sets/problem-set-8.rb)
-##### [Problem set 9 - Third Practice Assessment](./jumpstart-files/problem-sets/problem-set-9.rb)
 
 
 #### CodeEval
