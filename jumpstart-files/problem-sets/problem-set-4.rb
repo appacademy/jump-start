@@ -92,7 +92,7 @@ puts missing_letters("abcdefghijklmnopqrstuvwxyz") == []
 puts missing_letters("abcdefghiklmnopqrstuvwxyz") == ["j"]
 puts missing_letters("abcdefghiklmnopstuvwxyz") == ["j", "q", "r"]
 
-#write a function primes that an arguement n and returns the first n primes
+#write a function primes that an argument n and returns the first n primes
 
 def primes(n)
 end
@@ -103,7 +103,7 @@ puts primes(1) == [2]
 puts primes(2) == [2,3]
 puts primes(6) == [2,3,5,7,11,13]
 
-#write a boolean function zero_sum? that takes an array of intergers and returns
+#write a boolean function zero_sum? that takes an array of integers and returns
 #true if 2 elements in the array sum to zero.
 
 # NOTE: For this question, do the "write out the variables" exercise from part 4 after
