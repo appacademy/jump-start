@@ -190,9 +190,9 @@ clock
 # write a function smallest_pair_product that takes an array of integers and returns the
 # 2 unique indices whose elements multiply to the smallest number. Formatted [earlier_index, later_index].  Assume none of the elements are 0.
 
-puts smallest_pair_product([1,2,3,4,5]) == [1,2]
-puts smallest_pair_product([3,2,1,1,2,3]) == [1,1]
-puts smallest_pair_product([-2,-1,-1,-2,-3]) == [-1,-1]
+puts smallest_pair_product([1,2,3,4,5]) == [0,1]
+puts smallest_pair_product([3,2,1,1,2,3]) == [2,3]
+puts smallest_pair_product([-2,-1,-1,-2,-3]) == [1,2]
 
 ```
 ---
