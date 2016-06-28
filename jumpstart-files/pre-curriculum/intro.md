@@ -5,11 +5,13 @@
 Here's the way most days will work.
 
 * Day begins at 6:30pm.
-* You will work on our lesson plans on your own computer.  These lesson plans mainly consist of exercises and problems.  The exercises start out easy, but will ramp up quickly.  Work at your own pace.
-* If you finish every part of our curriculum, you will start to work through our final problem sets.
-* We'll have a 30 minute lecture in the middle, in which your instructor will address the common questions they saw pop up.
+* You will have a 30 minute lecture on various topics, often covering the most common bugs from the day before.
+* After lecture we will do a ~20 minute warm-up. You will code and discuss topics in small groups.
+* Afterwards, you will work on our lesson plans on your own computer. These lesson plans mainly consist of exercises and problems sets. The exercises start out easy, but will ramp up quickly. You will work at your own pace.
+* If you finish every part of our curriculum, you will work through a series of more challenging problem sets.
+* Depending on which group you are assigned to, the order of evengs my vary.
 * Class ends at 9:30pm.
-* Class runs Monday through Thursday, but the facility is open 24/7.
+* Class runs Monday through Thursday.
 * Outside of JumpStart, we still expect you to be working on these projects when you have the time.
 
 
