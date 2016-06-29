@@ -8,14 +8,15 @@ Welcome to the Jump Start course!
 Before the course starts, you must:
 
 0. Complete the ruby [codecademy track][codecademy-ruby].
-0. [Set up ruby on Cloud9][ruby-setup].
-0. [Install a debugger][debugger-setup].
+0. [Set up ruby on Cloud9][ruby-setup]. ([Or on your Mac][setup-rbenv])
+0. [Install a debugger][debugger-setup]. 
 0. Read our [Intro Doc][intro-doc].
 
 [codecademy-ruby]: https://www.codecademy.com/learn/ruby
 [ruby-setup]: ./jumpstart-files/pre-curriculum/ruby-setup.md
 [debugger-setup]: ./jumpstart-files/pre-curriculum/debugger-setup.md
 [intro-doc]: ./jumpstart-files/pre-curriculum/intro.md
+[setup-rbenv]: ./jumpstart-files/setup_rbenv.md
 
 
 # Curriculum
