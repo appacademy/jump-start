@@ -9,7 +9,7 @@ Before the course starts, you must:
 
 0. Complete the ruby [codecademy track][codecademy-ruby].
 0. [Set up ruby on Cloud9][ruby-setup]. ([Or on your Mac][setup-rbenv])
-0. [Install a debugger][debugger-setup]. 
+0. [Install a debugger][debugger-setup].
 0. Read our [Intro Doc][intro-doc].
 
 [codecademy-ruby]: https://www.codecademy.com/learn/ruby
@@ -22,9 +22,9 @@ Before the course starts, you must:
 
 Other than a brief intro lecture on day one, each day will consist of:
 
-Warm-up - working in pairs to solve a short problem and discussing your solutions with your pod
-Work time - working through the curriculum, problem sets, and CodeEval with instructors available for one-on-one questions
-Lecture - brief (30-45 min) talk and/or demo on coding topics, common issues, solutions, etc.
+- Warm-up (15 min) - working in pairs to solve two short problems and discussing your solutions with another pair in your pod
+- Work time (~2 hours) - working through the curriculum, problem sets, and CodeEval with instructors available for one-on-one questions
+- Lecture (30 min) - brief talk and/or demo on coding topics, common issues, solutions, etc.
 
 Depending on which pod you are in, lecture may come before or after the warm-up and work time.
 
