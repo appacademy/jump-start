@@ -68,6 +68,11 @@ def largest_pair(pairs)
   largest
 end
 
+def alternate_largest_pair(pairs)
+  pairs.inject do |max_pair, pair|
+    max_pair.inject(:+) > pair.inject(:+) ? max_pair : pair
+  end
+end
 #Tests - Get all these to print true
 puts "\nLargest Pair:\n" + "*" * 15 + "\n"
 puts largest_pair([[1,0]]) == [1,0]
