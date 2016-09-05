@@ -18,16 +18,6 @@ Before the course starts, you must:
 [intro-doc]: ./jumpstart-files/pre-curriculum/intro.md
 [setup-rbenv]: ./jumpstart-files/pre-curriculum/setup_rbenv.md
 
-# Daily Schedule
-
-Other than a brief intro lecture on day one, each day will consist of:
-
-- Warm-up (15 min) - working in pairs to solve two short problems and discussing your solutions with another pair in your pod
-- Work time (~2 hours) - working through the curriculum, problem sets, and CodeEval with instructors available for one-on-one questions
-- Lecture (30 min) - brief talk and/or demo on coding topics, common issues, solutions, etc.
-
-Depending on which pod you are in, lecture may come before or after the warm-up and work time.
-
 # Curriculum
 
 Start by going through parts 1-4.  Do not do the problem sets until after you're done with part 4.
