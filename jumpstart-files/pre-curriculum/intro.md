@@ -12,19 +12,22 @@ When        | What
 7:30 - 9:30 | Independent work
 9:30 +      | Homework problem
 
-### Attendance
+#### Attendance
   We will take attendance every day; your record will be considered when making admission decisions. You **must** be present for attendance on assessment days.
 
-### Code Demo
+#### Code Demo
   During the coding demo, we will demonstrate solving a challenging coding problem that was assigned as homework the night before. Here, we will focus more on problem-solving architectures and design techniques.
 
-### Warm-up
+#### Warm-up
   You will have a different warm-up partner every day. Pairs will be assigned via email at the beginning of the day. After meeting your pair, the two of you will solve two sets of problems and answer the discussion questions together.
 
-### Independent Work
+#### Independent Work
   The majority of your time in JumpStart will be spent doing independent work. The independence will allow you to go through the curriculum at your own pace, but will also require some intrinsic motivation.
 
   You will be grouped into pods with other students at similar levels, and each pod will have a TA mentor. You are **strongly encouraged** to discuss problems with your fellow pod members and to ask your TA mentor for help.
+
+#### Homework
+  You will have one homework problem every night. If your time is limited during JumpStart, feel free do the homework problem during independent work time. Don't spend more than 20 - 30 minutes on it (unless you want to!). We'll do the problem together in class (the next day) during the code demo.
 
 ---
 
