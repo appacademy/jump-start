@@ -16,7 +16,7 @@ Before the course starts, you must:
 [ruby-setup]: ./jumpstart-files/pre-curriculum/ruby-setup.md
 [debugger-setup]: ./jumpstart-files/pre-curriculum/debugger-setup.md
 [intro-doc]: ./jumpstart-files/pre-curriculum/intro.md
-[setup-rbenv]: ./jumpstart-files/setup_rbenv.md
+[setup-rbenv]: ./jumpstart-files/pre-curriculum/setup_rbenv.md
 
 # Daily Schedule
 
