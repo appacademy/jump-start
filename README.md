@@ -20,7 +20,7 @@ Before the course starts, you must:
 
 # Curriculum
 
-Start by going through parts 1-4.  **Do not do the problem sets** until after you're done with part 4.
+Start by going through parts 1-4.  **Do not do the problem sets** until after you're done with part 4. Try to finish the readings by the end of week 1.
 
 ### Readings
 ##### [Part 1](./jumpstart-files/part1/part1.md)
@@ -30,22 +30,22 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 
 ### Problem Sets
 
-**Read the [solutions][solutions]** after you finish each problem, but **not beforehand!**
+**Read the [solutions][solutions]** after you finish each problem, but **not beforehand!** Try to finish all the problem sets by the end of week 2. Take the practice assessments at home in a timed setting.
 
-##### [Problem set 1](./jumpstart-files/problem-sets/problem-set-1.rb)
-##### [Problem set 2](./jumpstart-files/problem-sets/problem-set-2.rb)
-##### [Problem set 3](./jumpstart-files/problem-sets/problem-set-3.rb)
-##### [Problem set 4](./jumpstart-files/problem-sets/problem-set-4.rb)
-##### [Problem set 5](./jumpstart-files/problem-sets/problem-set-5.rb)
+##### [Problem Set 1](./jumpstart-files/problem-sets/problem_set_1.rb)
+##### [Problem Set 2](./jumpstart-files/problem-sets/problem_set_2.rb)
+##### [Problem Set 3](./jumpstart-files/problem-sets/problem_set_3.rb)
+##### [Problem Set 4](./jumpstart-files/problem-sets/problem_set_4.rb)
+##### [Problem Set 5](./jumpstart-files/problem-sets/problem_set_5.rb)
+##### [Problem Set 6](./jumpstart-files/problem-sets/problem_set_6.rb)
 
 **Recommended Checkpoint: complete problem sets 1-5 by day 2 of the second week of the program.**
 
-##### [Problem set 6 - Practice Assessment](./jumpstart-files/problem-sets/problem-set-6.rb)
-##### [Problem set 7](./jumpstart-files/problem-sets/problem-set-7.rb)
-##### [Problem set 8 - Second Practice Assessment](./jumpstart-files/problem-sets/problem-set-8.rb)
+##### [Practice Assessment 1](./jumpstart-files/problem-sets/practice_assessment_1.rb)
+##### [Practice Assessment 2](./jumpstart-files/problem-sets/practice_assessment_2.rb)
 
 
-#### CodeEval
+### CodeEval
 
 Once you're finished with the problem sets, follow the CodeEval instructions below.  Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
 
