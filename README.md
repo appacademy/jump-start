@@ -30,7 +30,7 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 
 ### Problem Sets
 
-**Read the [solutions][solutions]** after you finish each problem, but **not beforehand!** Try to finish all the problem sets by the end of week 2. Take the practice assessments at home in a timed setting.
+**Read the [solutions][solutions]** after you finish each problem, but **not beforehand!** Try to finish all the problem sets by the end of week 2.
 
 ##### [Problem Set 1](./jumpstart-files/problem_sets/problem_set_1.rb)
 ##### [Problem Set 2](./jumpstart-files/problem_sets/problem_set_2.rb)
@@ -41,13 +41,15 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 
 ### Practice Assessments
 
+Take the practice assessments at home in a timed setting. **Read the [solutions][solutions]**.
+
 ##### [Practice Assessment 1](./jumpstart-files/problem_sets/practice_assessment_1.rb)
 ##### [Practice Assessment 2](./jumpstart-files/problem_sets/practice_assessment_2.rb)
 
 
 ### CodeEval
 
-Once you're finished with the problem sets, follow the CodeEval instructions below.  Don't worry if you don't get here, we'll all jump on CodeEval together as the course progresses.
+If you're finished with the problem sets and practice assessments, follow the CodeEval instructions below.  Don't worry if you don't get here.
 
 ##### [Code Eval Instructions](./jumpstart-files/code-eval/code-eval-instructions.md)
 

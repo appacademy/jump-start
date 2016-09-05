@@ -1,4 +1,4 @@
-#Write a function summation that takes a number and returns the summation of all positive
+problem_set_5_solutionproblem_set_5_solution#Write a function summation that takes a number and returns the summation of all positive
 #integers upto and including that number.
 
 def summation(number)
