@@ -2,27 +2,35 @@
 
 ## Course Structure
 
-Here's the way most days will work.
+Here's what the average day will look like:
 
-* Day begins at 6:30pm.
-* You will have a 30 minute lecture on various topics, often covering the most common bugs from the day before.
-* After lecture we will do a ~20 minute warm-up. You will code and discuss topics in small groups.
-* Afterwards, you will work on our lesson plans on your own computer. These lesson plans mainly consist of exercises and problems sets. The exercises start out easy, but will ramp up quickly. You will work at your own pace.
-* If you finish every part of our curriculum, you will work through a series of more challenging problem sets.
-* Depending on which group you are assigned to, the order of evengs my vary.
-* Class ends at 9:30pm.
-* Class runs Monday through Thursday.
-* Outside of JumpStart, we still expect you to be working on these projects when you have the time.
+When        | What
+----------  |:---------------------:
+6:30pm      | Attendance
+6:30 - 7:00 | Code demo & Q/A
+7:00 - 7:30 | Warm-up
+7:30 - 9:30 | Independent work
+9:30 +      | Homework problem
 
+### Attendance
+  We will take attendance every day; your record will be considered when making admission decisions. You **must** be present for attendance on assessment days.
 
-# Assessments
+### Code Demo
+  During the coding demo, we will demonstrate solving a challenging coding problem that was assigned as homework the night before. Here, we will focus more on problem-solving architectures and design techniques.
 
-On the final day of each week, we will give you an assessment. The assessment will take place at the end of the day and will last for one hour.  The assessment will be a power-test—that is, we're going to give you more problems than you can probably solve in an hour, and it's up to you which ones you work on and how many you solve.
+### Warm-up
+  You will have a different warm-up partner every day. Pairs will be assigned via email at the beginning of the day. After meeting your pair, the two of you will solve two sets of problems and answer the discussion questions together.
 
-We'll give you more information about it going forward, but rest assured that we know what's on the assessment, and will be tailoring the curriculum to give you everything you need to do well.
+### Independent Work
+  The majority of your time in JumpStart will be spent doing independent work. The independence will allow you to go through the curriculum at your own pace, but will also require some intrinsic motivation.
 
-Just keep coming in, make sure you get plenty of sleep, and you should be fully prepared by the second assessment.  We don't expect most people to pass the first assessment, but it should give you a taste of where we want you to be by the second assessment.
+  You will be grouped with other students at similar levels. Each pod will have a TA mentor. You are **strongly encouraged** to discuss problems with your fellow pod members and to ask your TA mentor for help.
 
+---
+
+## Assessments
+
+You will have an assessment on both Thursdays during JumpStart. If you receive a passing score on either, your application will be forwarded to our admissions team for a final review. You do not need to attend week 2 if you pass assessment 1.
 
 ## If you have questions
 
