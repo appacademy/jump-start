@@ -1,24 +1,6 @@
 ##Installing rbenv on Mac
 
-### Why version control Ruby?
-
-Out-of-date programmer Ollie uses Ruby 1.9.
-
-Ollie is coding one day in an old project and realizes there's a really cool method he wants to use (for example, [#to_h][#to_h] to turn an object into a hash).
-
-But Ruby 1.9 doesn't have #to_h!  Ruby 2.0 has #to_h.
-
-Wouldn't it be great if Ollie could switch between ruby versions easily?  What if Ollie has tons of different projects using different ruby versions?
-
-[#to_h]: http://ruby-doc.org/core-2.0.0/Struct.html#method-i-to_h
-
-### Enter rbenv
-[rbenv][rbenv] keeps track of which version of Ruby you're using.
-
-[rbenv]: https://github.com/sstephenson/rbenv
-
-
-### For Mac OS X:
+### rbenv:
 
 If you have previously installed rvm, you must [remove it!][remove-rvm]
 
@@ -37,4 +19,10 @@ If you have previously installed rvm, you must [remove it!][remove-rvm]
 
 Try running a ruby program to test!
 
+
+### Atom:
+
+In addition to ruby, you'll want a native text editor. We recommend using [atom][atom].
+
 [remove-rvm]: ./remove_rvm.md
+[atom]: https://atom.io/
