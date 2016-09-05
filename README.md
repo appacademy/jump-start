@@ -13,8 +13,8 @@ Before the course starts, you must:
 0. Read our [Intro Doc][intro-doc].
 
 [codecademy-ruby]: https://www.codecademy.com/learn/ruby
-[ruby-setup]: ./jumpstart-files/pre-curriculum/ruby-setup.md
-[debugger-setup]: ./jumpstart-files/pre-curriculum/debugger-setup.md
+[ruby-setup]: ./jumpstart-files/pre-curriculum/c9_setup.md
+[debugger-setup]: ./jumpstart-files/pre-curriculum/debugger_setup.md
 [intro-doc]: ./jumpstart-files/pre-curriculum/intro.md
 [setup-rbenv]: ./jumpstart-files/pre-curriculum/setup_rbenv.md
 
