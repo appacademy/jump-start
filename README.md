@@ -20,16 +20,15 @@ Before the course starts, you must:
 
 # Curriculum
 
-Start by going through parts 1-4.  Do not do the problem sets until after you're done with part 4.
+Start by going through parts 1-4.  **Do not do the problem sets** until after you're done with part 4.
 
+### Readings
 ##### [Part 1](./jumpstart-files/part1/part1.md)
 ##### [Part 2](./jumpstart-files/part2/part2.md)
 ##### [Part 3](./jumpstart-files/part3/part3.md)
 ##### [Part 4](./jumpstart-files/part4/part4.md)
 
-#### Problem Sets
-
-Once you're done with parts 1-4, work through the problem sets.
+### Problem Sets
 
 **Read the [solutions][solutions]** after you finish each problem, but **not beforehand!**
 
