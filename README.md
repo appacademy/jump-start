@@ -32,17 +32,17 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 
 **Read the [solutions][solutions]** after you finish each problem, but **not beforehand!** Try to finish all the problem sets by the end of week 2. Take the practice assessments at home in a timed setting.
 
-##### [Problem Set 1](./jumpstart-files/problem-sets/problem_set_1.rb)
-##### [Problem Set 2](./jumpstart-files/problem-sets/problem_set_2.rb)
-##### [Problem Set 3](./jumpstart-files/problem-sets/problem_set_3.rb)
-##### [Problem Set 4](./jumpstart-files/problem-sets/problem_set_4.rb)
-##### [Problem Set 5](./jumpstart-files/problem-sets/problem_set_5.rb)
-##### [Problem Set 6](./jumpstart-files/problem-sets/problem_set_6.rb)
+##### [Problem Set 1](./jumpstart-files/problem_sets/problem_set_1.rb)
+##### [Problem Set 2](./jumpstart-files/problem_sets/problem_set_2.rb)
+##### [Problem Set 3](./jumpstart-files/problem_sets/problem_set_3.rb)
+##### [Problem Set 4](./jumpstart-files/problem_sets/problem_set_4.rb)
+##### [Problem Set 5](./jumpstart-files/problem_sets/problem_set_5.rb)
+##### [Problem Set 6](./jumpstart-files/problem_sets/problem_set_6.rb)
 
-**Recommended Checkpoint: complete problem sets 1-5 by day 2 of the second week of the program.**
+### Practice Assessments
 
-##### [Practice Assessment 1](./jumpstart-files/problem-sets/practice_assessment_1.rb)
-##### [Practice Assessment 2](./jumpstart-files/problem-sets/practice_assessment_2.rb)
+##### [Practice Assessment 1](./jumpstart-files/problem_sets/practice_assessment_1.rb)
+##### [Practice Assessment 2](./jumpstart-files/problem_sets/practice_assessment_2.rb)
 
 
 ### CodeEval
