@@ -43,8 +43,11 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 
 Take the practice assessments at home in a timed setting. **Read the [solutions][solutions]**.
 
-##### [Practice Assessment 1](./jumpstart-files/problem_sets/practice_assessment_1.rb)
-##### [Practice Assessment 2](./jumpstart-files/problem_sets/practice_assessment_2.rb)
+##### [Practice Assessment 1](./jumpstart-files/practice_assessments/practice_assessment_1.rb)
+##### [Practice Assessment 2](./jumpstart-files/practice_assessments/practice_assessment_2.rb)
+##### [Practice Assessment 3](./jumpstart-files/practice_assessments/practice_assessment_3.rb)
+##### [Practice Assessment 4](./jumpstart-files/practice_assessments/practice_assessment_4.rb)
+##### [Practice Assessment 5](./jumpstart-files/practice_assessments/practice_assessment_5.rb)
 
 
 ### CodeEval
