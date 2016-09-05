@@ -20,7 +20,7 @@ Wouldn't it be great if Ollie could switch between ruby versions easily?  What i
 
 ### For Mac OS X:
 
-If you have previously installed rvm, you must remove it!
+If you have previously installed rvm, you must [remove it!][remove-rvm]
 
 0. Open the terminal
 0. [Install Homebrew](http://brew.sh)
