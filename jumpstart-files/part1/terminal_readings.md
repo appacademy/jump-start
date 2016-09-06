@@ -4,7 +4,7 @@
 
 You will often need to execute commands from the terminal.  `ls` is an example terminal command:
 
-![example terminal command](./example_terminal_command.png)
+![example terminal command](./assets/example_terminal_command.png)
 
 This guide will walk you through some of the common terminal commands that you will find yourself using, as well as some tips and tricks to speed up your terminal use.
 
@@ -48,25 +48,25 @@ Here are some of the terminal commands you will use on a daily basis.
 
 The `pwd` command prints out the path of the directory you are currently in. As mentioned above, many commands function in the context of the working directory. The `pwd` command is great for keeping track of where you are in your computer's directory structure.
 
-![pwd](./pwd.png)
+![pwd](./assets/pwd.png)
 
 ### ls
 #### List Directory Contents
 
 The `ls` command prints a list of the contents of a directory. By default it will list the contents of the working directory. If you use the `ls` command with a path to another directory it will print out that directory's contents.
 
-![ls](./ls.png)
+![ls](./assets/ls.png)
 
 By default the `ls` command will not show the 'hidden' files in a directory. Hidden files are files whose names start with a `.` like `.inputrc` or `.bash_profile`. These hidden files are usually things like configuration and settings files that you will not need to change very often. In order to show these files with `ls` we can use the `ls -a` option.
 
-![ls-hidden](./ls-hidden.png)
+![ls-hidden](./assets/ls-hidden.png)
 
 ### cd
 #### Change Working Directory
 
 The `cd` command allows us to change our working directory. If we enter `cd` without any arguments it will take us back to our `home` directory. If we give it a path it will take us to the location specified by that path.
 
-![cd](./cd.png)
+![cd](./assets/cd.png)
 
 The `cd` command is our main means of navigating around our computer's directory structure when using the terminal.
 
@@ -77,26 +77,26 @@ The `mkdir` command creates a new directory at a provided path. For example `mkd
 
 By default `mkdir` can only make a new directory inside of an existing directory. If you tried to enter `mkdir funky/pics` and `funky` doesn't already exist it would not work. To get around this we can use the `-p` option. `mkdir -p funky/pics` would create both `funky` and `pics`.
 
-![mkdir](./mkdir.png)
+![mkdir](./assets/mkdir.png)
 
 ### clear
 #### Clear the Terminal
 
 My favorite terminal command is `clear`. It simply clears all the text from the terminal.
 
-![clear1](./clear1.png)
-![clear2](./clear2.png)
+![clear1](./assets/clear1.png)
+![clear2](./assets/clear2.png)
 
 ### ruby
 #### Run a Ruby Program
 
 As software developers we need a way to run our code. The `ruby` command does just that. Say you have a program saved in a file called `terminal_fun.rb`. In order to run it you would enter the command `ruby terminal_fun.rb`. This will execute your code and print the results to the terminal.
 
-![ruby1](./ruby1.png)
+![ruby1](./assets/ruby1.png)
 
 If your code has any errors they will also be printed to the terminal.
 
-![ruby2](./ruby2.png)
+![ruby2](./assets/ruby2.png)
 
 ## Getting Help
 ### Google
@@ -111,7 +111,7 @@ Some terminal commands can be really complex. One resource that might be able to
 
 As we saw with `mkdir` and `ls`, some terminal commands can take options that change how they function. If you want to see a list of a command's options as well as detailed instructions about its use you can look at the command's 'man page'. A 'man page' is built in instructions for a terminal command or program. You can access a command's 'man page' by entering `man command>` into the terminal. For example, to see the 'man page' for `ls` you would type `man ls`.
 
-![man-page](./man-page.png)
+![man-page](./assets/man-page.png)
 
 You can scroll around a 'man page' using the arrow keys and page up/down. To exit out of a 'man page' press `q`.
 
