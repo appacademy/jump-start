@@ -12,17 +12,15 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 ## Sections
 
-<input type="checkbox" class="task-list-item-checkbox"/> Terminal Readings
-
-* [ ] Terminal Readings
-  * [ ] Terminal Exercises
-* [ ] REPL Readings
-  * [ ] REPL Exercises
-* [ ] Scripts & Methods Readings
-  * [ ] Scripts & Methods Exercises
-* [ ] Variables & Scope Readings
-  * [ ] Variables & Scope Exercises
-* [ ] Return Value Readings
-  * [ ] Return Value Exercises
-* [ ] Print Statements Readings
-  * [ ] Print Statements Exercises
+* Terminal Readings
+  * Terminal Exercises
+* REPL Readings
+  * REPL Exercises
+* Scripts & Methods Readings
+  * Scripts & Methods Exercises
+* Variables & Scope Readings
+  * Variables & Scope Exercises
+* Return Value Readings
+  * Return Value Exercises
+* Print Statements Readings
+  * Print Statements Exercises
