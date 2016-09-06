@@ -1,6 +1,6 @@
 # Terminal Exercises
 
-0. Practice using `cd`, `pwd`, and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root `/`. Look at the various directories that make up a Linux and OSX computer system. Don't worry, you're not going to break anything.
+0. Practice using `cd`, `pwd`, and `ls` to explore your computer's directory structure. Enter `cd ..` until you go all the way down to the root directory, `/`. Look at the various directories that make up a Linux and OSX computer system. Don't worry, you're not going to break anything.
 
 0. Navigate to the directory of your desktop. This is usually `~/Desktop`. Use the `mkdir` command to make a new folder on your desktop. See it appear!? (Feel free to delete it afterwards).
 
