@@ -26,7 +26,7 @@ Here are some of the terminal commands you will use on a daily basis. **Write th
  `cd`    | change directory        | move into and out of folders
  `mkdir` | make directory          | create a folder
  `clear` | (or command-K)          | clear the terminal output
- `ruby`  |                         | run a ruby file
+ `ruby`  | ruby interpreter        | run a ruby file
  `irb`   | interactive ruby shell  | test small pieces of ruby code
 
 <!-- ## File Prefixes
