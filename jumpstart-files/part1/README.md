@@ -12,15 +12,15 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 ## Sections
 
-* Terminal [Readings][./terminal_readings.md]
-  * Terminal [Exercises][./terminal_exercises.md]
-* REPL [Readings][./repl_readings.md]
-  * REPL [Exercises][./repl_exercises.md]
-* Scripts & Methods [Readings][./scripts_and_methods_readings.md]
-  * Scripts & Methods [Exercises][./scripts_and_methods_exercises.md]
-* Variables & Scope [Readings][./variables_and_scope_readings.md]
-  * Variables & Scope [Exercises][./variables_and_scope_exercises.md]
-* Return Value [Readings][./return_readings.md]
-  * Return Value [Exercises][./return_exercises.md]
-* Print Statements [Readings][./print_readings.md]
-  * Print Statements [Exercises][./print_exercises.md]
+* Terminal [Readings](./terminal_readings.md)
+  * Terminal [Exercises](./terminal_exercises.md)
+* REPL [Readings](./repl_readings.md)
+  * REPL [Exercises](./repl_exercises.md)
+* Scripts & Methods [Readings](./scripts_and_methods_readings.md)
+  * Scripts & Methods [Exercises](./scripts_and_methods_exercises.md)
+* Variables & Scope [Readings](./variables_and_scope_readings.md)
+  * Variables & Scope [Exercises](./variables_and_scope_exercises.md)
+* Return Value [Readings](./return_readings.md)
+  * Return Value [Exercises](./return_exercises.md)
+* Print Statements [Readings](./print_readings.md)
+  * Print Statements [Exercises](./print_exercises.md)
