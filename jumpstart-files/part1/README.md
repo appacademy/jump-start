@@ -12,6 +12,8 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 ## Sections
 
+<input type="checkbox" /> Terminal Readings
+
 * [ ] Terminal Readings
   * [ ] Terminal Exercises
 * [ ] REPL Readings
