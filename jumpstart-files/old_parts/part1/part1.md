@@ -2,11 +2,11 @@
 
 ## Instructions
 
-**Do every exercise.**  Prioritize doing the exercises (correctly) over doing the readings. We want you to struggle with problems and then fill in your knowledge.
+<!-- **Do every exercise.**  Prioritize doing the exercises (correctly) over doing the readings. We want you to struggle with problems and then fill in your knowledge.
 
 Reference the linked material when you get stuck or need help.
 
-It's OK to go "I don't understand the question".  That's when you should read the linked material.
+It's OK to go "I don't understand the question".  That's when you should read the linked material. -->
 
 
 ## Terminal
