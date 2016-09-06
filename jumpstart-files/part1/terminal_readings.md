@@ -4,7 +4,7 @@
 
 The terminal is the most direct line of communication between you and your computer. You will often need to execute commands from the terminal, such as `ls`.
 
-![example terminal command](./assets/example_terminal_command.png)
+![example terminal command](./assets/terminal/example_terminal_command.png)
 
 This guide will walk you through some of the most useful terminal commands and give you some tricks to speed up your terminal use.
 
@@ -34,14 +34,14 @@ Here are some of the terminal commands you will use on a daily basis. **Write th
 
 Many commands function in the context of the working directory. The `pwd` command prints out the path of the directory you are currently in. The `pwd` command is great for keeping track of where you are.
 
-![pwd](./assets/pwd.png)
+![pwd](./assets/terminal/pwd.png)
 
 ---
 ### ls
 
 The `ls` command prints a list of the contents of a directory. By default it will list the contents of the working directory.
 
-![ls](./assets/ls.png)
+![ls](./assets/terminal/ls.png)
 
 ---
 ### cd
@@ -58,7 +58,7 @@ The `cd` command changes your working directory. It is your primary tool for nav
  `cd /`           | Go to the root directory
 
 
-![cd](./assets/cd.png)
+![cd](./assets/terminal/cd.png)
 
 ---
 ### mkdir
@@ -67,26 +67,26 @@ The `mkdir` command creates a new directory (also known as a folder) at a provid
 
 By default `mkdir` can only make a new directory inside of an existing directory. If you tried to enter `mkdir funky/pics` and `funky` doesn't already exist it would not work. To get around this we can use the `-p` option. `mkdir -p funky/pics` would create both `funky` and `pics`.
 
-![mkdir](./assets/mkdir.png)
+![mkdir](./assets/terminal/mkdir.png)
 
 ---
 ### clear
 
 `clear` simply clears all the text from the terminal.
 
-![clear1](./assets/clear1.png)
-![clear2](./assets/clear2.png)
+![clear1](./assets/terminal/clear1.png)
+![clear2](./assets/terminal/clear2.png)
 
 ---
 ### ruby
 
 The `ruby` command allows us to run our ruby files. Say you have a program saved in a file called `terminal_fun.rb`. In order to run it you would enter the command `ruby terminal_fun.rb`. This will execute your code and print the results to the terminal.
 
-![ruby1](./assets/ruby1.png)
+![ruby1](./assets/terminal/ruby1.png)
 
 If your code has any errors they will also be printed to the terminal.
 
-![ruby2](./assets/ruby2.png)
+![ruby2](./assets/terminal/ruby2.png)
 
 ---
 ## Additional Resources
@@ -99,7 +99,7 @@ Some terminal commands can be really complex. One resource that might be able to
 
 As we saw with `mkdir`, some terminal commands can take options that change how they function. If you want to see a list of a command's options as well as detailed instructions about its use you can look at the command's 'man page'. You can access a command's 'man page' by entering `man some_command` into the terminal. For example, to see the 'man page' for `ls` you would type `man ls`.
 
-![man-page](./assets/man-page.png)
+![man-page](./assets/terminal/man-page.png)
 
 You can scroll around a 'man page' using the arrow keys and page up/down. To exit out of a 'man page' press `q`.
 

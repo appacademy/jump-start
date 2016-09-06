@@ -28,13 +28,13 @@ Readings link with examples (in case you get stuck or need help):
   * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens. -->
 
 ---
-
+<!-- 
 ## IRB
 
 Readings link with examples (in case you get stuck or need help):
 * [IRB Tutorial](./irb.md)
 
-----
+---- -->
 
 #### `Exercises`
 

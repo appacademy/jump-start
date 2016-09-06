@@ -12,23 +12,23 @@ To get it up and running, all you need to do is type the following into a termin
 
 This launches IRB. Inside, you can perform basic ruby methods, like adding two numbers:
 
-![IRB View](./assets/repl/irb2.png)
+![IRB Addition](./assets/repl/irb2.png)
 
 You can also create variables:
 
-![IRB Quit](./assets/repl/irb3.png)
+![IRB Variables](./assets/repl/irb3.png)
 
 You can leave irb by typing `exit`
 
-![IRB Quit](./assets/repl/irb4.png)
+![IRB Exit](./assets/repl/irb4.png)
 
 ## Pry
 
-Pry is a slightly nicer repl -- it's color-coded and formats output nicely for us. Install pry by first running:
+Pry is a slightly nicer repl; it's color-coded and formats output nicely for us. Install pry by running:
 
 `gem install pry`
 
-![IRB Quit](./assets/repl/pry1.png)
+![Pry Install](./assets/repl/pry1.png)
 
 Start pry by just typing:
 
@@ -36,8 +36,8 @@ Start pry by just typing:
 
 (You leave in the same manner, `exit`)
 
-![IRB Quit](./assets/repl/pry2.png)
+![Pry Launch](./assets/repl/pry2.png)
 
 Oh the colors! :)
 
-![IRB Quit](./assets/repl/pry3.png)
+![Pry Colors](./assets/repl/pry3.png)
