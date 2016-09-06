@@ -2,17 +2,12 @@
 
 ## Instructions
 
-Please do every exercise.  Prioritize doing the exercises (correctly) over doing the readings.  We want you to struggle with problems and then fill in your knowledge.
+**Do every exercise.**  Prioritize doing the exercises (correctly) over doing the readings. We want you to struggle with problems and then fill in your knowledge.
 
 Reference the linked material when you get stuck or need help.
 
 It's OK to go "I don't understand the question".  That's when you should read the linked material.
 
-## Intro to programming
-
-* A computer will always do exactly what you tell it to, no more and no less.
-
-* There's no bullshitting in programming. Your program either works or it doesn't, and no amount of cleverness or importance will change that.
 
 ## Terminal
 
