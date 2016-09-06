@@ -29,13 +29,6 @@ Here are some of the terminal commands you will use on a daily basis. **Write th
  `ruby`  | ruby interpreter        | run a ruby file
  `irb`   | interactive ruby shell  | test small pieces of ruby code
 
-<!-- ## File Prefixes
-
-There are a few special symbols that you can use in your path to specify certain locations. The `.` represents your working directory. For example `./some_file.rb` refers to a file called `some_file.rb` that is located in the working directory.
-
-
-The `..` symbol allows you to refer to the directory that contains the working directory. For example `../../some_file.rb` refers to the file `some_file.rb` that is located two directories up from the working directory. -->
-
 ---
 ### pwd
 
@@ -112,7 +105,7 @@ You can scroll around a 'man page' using the arrow keys and page up/down. To exi
 
 ---
 ## Tips and Tricks
-### ctrl-c
+### ctrl-C
 
 If we run this ruby program:
 
@@ -125,7 +118,7 @@ end
 
 ```
 
-It will loop forever! Hit Ctrl-C to make it stop. Do this whenever your program runs longer than it should.
+It will loop forever! Hit ctrl-C to make it stop. Do this whenever your program runs longer than it should.
 
 ### Tab Completion
 
