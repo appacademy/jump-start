@@ -26,3 +26,15 @@ You will not learn by simply reading about code. **You must write it too.** Do t
   * [ ] Return Value Exercises
 * [ ] Print Statements Readings
   * [ ] Print Statements Exercises
+
+<script type="text/javascript">
+  document.addEventListenet("DOMContentLoaded", () => {
+    const inps = document.getElementsByTagName("input");
+    const arr = Array.from(inps);
+    arr.forEach( e => {
+      if (e.type === "checkbox){
+        e.disabled = false;
+      }
+    });
+  });
+</script>
