@@ -7,15 +7,15 @@
 Reference the linked material when you get stuck or need help.
 
 It's OK to go "I don't understand the question".  That's when you should read the linked material. -->
-
+<!--
 
 ## Terminal
 
 Readings link with examples (in case you get stuck or need help):
 * [Terminal Tutorial](../terminal/terminal.md)
-* [Terminal Command Cheat Sheet](../terminal-commands.txt)
+* [Terminal Command Cheat Sheet](../terminal-commands.txt) -->
 
-----
+<!-- ----
 
 #### `Exercises`
 
@@ -25,7 +25,7 @@ Readings link with examples (in case you get stuck or need help):
 
   * Look at the 'man pages' for one of the commands in the reading and try out some of the different options. `ls` has a ton, for example.
 
-  * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens.
+  * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens. -->
 
 ---
 
