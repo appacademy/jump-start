@@ -4,10 +4,10 @@
 
 Let's start this section with a few definitions:
 
-* **script** --> A file that contains code. We run ruby scripts from the terminal by typing `ruby script_name.rb`
-* **method** --> A function or set of commands that were bundled together. We can use scripts to define methods and execute them.
+* **script** --> A file that contains code. We run ruby scripts from the terminal by typing `ruby script_name.rb`.
+* **method** --> A function or set of commands that are bundled together. We can use scripts to define methods and execute them.
 
-You've already used several methods, like `#capitalize`, and even `+` (integer addition) is a method in ruby! We haven't written any scripts yet. Let's change that!
+You've already used several methods. `#capitalize` and even `+` (integer addition) are ruby methods! We haven't written any scripts yet. Let's change that!
 
 ## Our first script
 
@@ -73,4 +73,4 @@ Let's run our new script.
 
 ![Arguments](./assets/scripts/arguments.png)
 
-**95% of this JumpStart will be focused on defining methods**
+**95% of JumpStart will be focused on defining methods**
