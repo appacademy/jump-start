@@ -35,7 +35,7 @@ Explicit returns are used to *return early* from a method. This means that once 
   end
 ```
 
-In the method above, we will never invoke the `puts` method. You should also know that a method can only ever have **1 return value**.
+In the method above, we will never invoke the `puts` method. You should also know that a method can only ever have **one return value**.
 
 ```ruby
   def add_and_multiply(a, b)
@@ -57,7 +57,7 @@ Since we already noted that **all methods must have a return value**, what happe
 
   product = multiply(3, 5)
 
-  puts product # ==> 15
+  puts product # ==> ?
 ```
 
 As it turns out, **this works!** If no `return` statement is made, then ruby will default to using the last line evaluated as the return value. You will commonly see methods that use *both* implicit and explicit returns.
