@@ -145,7 +145,7 @@ The word "scope" is used to describe what context a variable is defined in. For 
   puts a
 ```
 
-What will the value of a print to? Go find out! Here is a very important concept in ruby:
+What will the value of `a` be when we `puts` `a`? Go find out! Here is a very important concept in ruby:
 
 **ruby methods have their own scope**
 
