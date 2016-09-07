@@ -15,10 +15,41 @@ You've already used several methods, like `#capitalize`, and even `+` (integer a
   * Enter the following code into that file:
 
   ```ruby
-    puts "Hello, world!"
+    puts "hello, world!"
   ```
 
   * Using the terminal, navigate to the directory containing `my_script.rb`
   * Tell your computer to run the script by typing: `ruby my_script.rb`
 
   ![First Script](./assets/scripts/first_script.png)
+
+Notice that we used the `puts` method to tell the computer to print the string to the terminal. Nothing is printed automatically from scripts (like it is in pry/irb). Instead, we have to tell the computer manually whenever we want it to print something.
+
+## Our First Method
+
+Let's change our `my_script.rb` file to instead look like this:
+
+```ruby
+  def say_hello
+    puts "hello"
+  end
+```
+
+In this file, we're now defining a method called `#say_hello` (the '#' is used to tell the reader we're talking about a method). `#say_hello` is responsible for printing 'hello' to the screen.
+
+Let's run our script.
+
+![First Method](./assets/scripts/first_method1.png)
+
+Notice that nothing happens. Well, in our script, we *defined* a method, but we never *invoked* the method. Let's amend our script to also invoke `#say_hello`.
+
+```ruby
+  def say_hello
+    puts "hello"
+  end
+
+  say_hello
+```
+Let's run our script again.
+
+![First Method](./assets/scripts/first_method2.png)
