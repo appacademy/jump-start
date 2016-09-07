@@ -21,7 +21,7 @@ Until now, we have been building methods that `puts` useful information to the t
 ---
 ### Native Methods
 
-In addition to the methods we create using `def ... end`, all of ruby's built in methods have return values. Some that you may have seen already:
+In addition to the methods we create using `def ... end`, all of ruby's built in methods have return values. Some that you may have seen already include:
 
   ```ruby
     "string".capitalize # ==> "String"

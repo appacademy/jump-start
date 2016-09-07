@@ -95,7 +95,7 @@ The following are valid variable names:
 
 ### Rules
 
-A ruby variable name must follow the following rules:
+A ruby variable name must obey the following rules:
   * Cannot start with a number (ex: `3x`)
   * No special characters (@ # $ % ^ & | , ' " ...)
   * Cannot be one of ruby's keywords (below)
