@@ -21,8 +21,8 @@
     return c
   end
 
-  c = 5
-  a = 10
+  a = 5
+  c = a
   b = multiply(a, c)
 
   puts c
