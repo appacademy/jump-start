@@ -6,7 +6,7 @@ We've already used variables a number of times so far, but let's talk about them
 
 ## Variables
 
-Similar to variables in algebra, we can create variables that will provide a name to various objects that we can access later. As an example:
+Similar to variables in algebra, we can create variables in ruby that will provide a name to certain objects so that we can access them later. As an example:
 
 ```ruby
 x = 5
