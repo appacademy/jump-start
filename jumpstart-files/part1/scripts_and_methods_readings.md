@@ -23,7 +23,7 @@ You've already used several methods, like `#capitalize`, and even `+` (integer a
 
   ![First Script](./assets/scripts/first_script.png)
 
-Notice that we used the `puts` method to tell the computer to print the string to the terminal. Nothing is printed automatically from scripts (like it is in pry/irb). Instead, we have to tell the computer manually whenever we want it to print something.
+Notice that we used the `puts` method to tell the computer to print the string to the terminal. Nothing is printed automatically from scripts (like it is in `pry`/`irb`). Instead, we have to tell the computer manually whenever we want it to print something.
 
 ## Our First Method
 
@@ -35,7 +35,7 @@ Let's change our `my_script.rb` file to instead look like this:
   end
 ```
 
-In this file, we're now defining a method called `#say_hello` (the '#' is used to tell the reader we're talking about a method). `#say_hello` is responsible for printing 'hello' to the screen.
+In this file, we're now defining a method called `#say_hello` (the '#' in documentation is used to tell the reader that we're talking about a method). `#say_hello` is responsible for printing 'hello' to the screen.
 
 Let's run our script.
 
@@ -53,3 +53,24 @@ Notice that nothing happens. Well, in our script, we *defined* a method, but we 
 Let's run our script again.
 
 ![First Method](./assets/scripts/first_method2.png)
+
+## Arguments
+
+Arguments are pieces of information that we pass to methods. Let's re-write our script to instead define a method called `#say_hello_to`. This method should *accept one argument*, the name of the person to say hello to!
+
+
+```ruby
+  def say_hello_to(name)
+    puts "hello, " + name
+  end
+
+  say_hello_to("Avi")
+  say_hello_to("Rosalie")
+  say_hello_to("Ksenija")
+```
+
+Let's run our new script.
+
+![Arguments](./assets/scripts/arguments.png)
+
+**95% of this JumpStart will be focused on defining methods**
