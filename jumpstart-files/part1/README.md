@@ -1,4 +1,4 @@
-# Your Coding Basics
+# Coding Basics
 
 In this section we'll talk about how ruby interacts with your computer.
 

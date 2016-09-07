@@ -1,4 +1,4 @@
-# Your Coding Basics
+# Ruby Objects
 
 In this section we'll talk about the different types of objects in ruby.
 
