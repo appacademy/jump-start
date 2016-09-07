@@ -4,7 +4,7 @@
 
 We've already used variables a number of times so far, but let's talk about them in greater detail!
 
-## Variable
+## Variables
 
 Similar to variables in algebra, we can create variables that will provide a name to various objects that we can access later. As an example:
 
@@ -68,7 +68,7 @@ puts c # ==> 5
 
 Run this example in the pry and confirm the output!
 
-Let's watch an example of how Re-assignment works.
+Let's watch an example of how variable re-assignment works.
 
 [![Assignment](./assets/video_link.png)](https://vimeo.com/181828680)
 
@@ -85,7 +85,7 @@ The following are valid variable names:
   * `x3`
   * `a88HDK83H`
   * `_`
-  * `___5`
+  * `__5_`
 
 ### Rules
 
@@ -103,7 +103,7 @@ Ruby developers follow a particular set of guidelines called Rubyisms. (We'll ta
 
 #### Snake Case
 
-Snake Case is the tactic of separating words with underscores. Some variables that might use snake case include:
+Snake case is the pattern of separating words with underscores. Some variable names that might use snake case include:
 
 ```ruby
   my_favorite_number = 5
@@ -121,3 +121,38 @@ BEGIN     break  do        false   next    rescue  then   when
 END       case   else      for     nil     retry   true   while
 alias     class  elsif     if      not     return  undef  yield
 ```
+
+---
+
+## Scope
+
+The word "scope" is used to describe what context a variable is defined in. For example:
+
+```ruby
+  def set_a
+    a = 10
+  end
+
+  a = 7
+  set_a
+
+  puts a
+```
+
+What will the value of a print to? Go find out! Here is a very important concept in ruby:
+
+**ruby methods have their own scope**
+
+This means that `a` inside of the `#set_a` method exists completely independently from the `a` outside the method. They don't even know one another exists! Let's show this method scoping another way..
+
+```ruby
+  def set_b
+    b = 10
+  end
+
+  set_b
+
+  puts b
+```
+
+The above code will throw an error. This is because the variable `b` doesn't exist in the scope where we try to call `puts` `b`.
