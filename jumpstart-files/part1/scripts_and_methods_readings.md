@@ -74,3 +74,5 @@ Let's run our new script.
 ![Arguments](./assets/scripts/arguments.png)
 
 **95% of JumpStart will be focused on defining methods**
+
+From this point on, you will be expected to create scripts, define methods, and run them.
