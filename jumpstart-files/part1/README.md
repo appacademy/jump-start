@@ -8,7 +8,7 @@ In this section we'll talk about how ruby interacts with your computer.
 
 You will not learn by simply reading about code. **You must write it too.** Do the exercises :)
 
-**Call over a TA** when you hit a "mandatory check point".
+**Call over a TA** when you hit a "mandatory TA check point".
 
 ## Sections
 
@@ -18,9 +18,9 @@ You will not learn by simply reading about code. **You must write it too.** Do t
   * REPL [Exercises](./repl_exercises.md)
 * Scripts & Methods [Readings](./scripts_and_methods_readings.md)
   * Scripts & Methods [Exercises](./scripts_and_methods_exercises.md)
-* Variables & Scope [Readings](./variables_and_scope_readings.md)
-  * Variables & Scope [Exercises](./variables_and_scope_exercises.md)
 * Return Value [Readings](./return_readings.md)
   * Return Value [Exercises](./return_exercises.md)
+* Variables & Scope [Readings](./variables_and_scope_readings.md)
+  * Variables & Scope [Exercises](./variables_and_scope_exercises.md)
 * Print Statements [Readings](./print_readings.md)
   * Print Statements [Exercises](./print_exercises.md)

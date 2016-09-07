@@ -18,7 +18,7 @@
   * subtract the sum from the product
   * puts the result
 
-You should create 2 - 3 variables (sum, product, difference) to help keep your code neat and clean!
+You should create 3 variables (sum, product, difference) to help keep your code neat and clean!
 
 
 0. Test your methods by invoking them in your script and running your script from the terminal.
