@@ -99,7 +99,7 @@ We used a conditional (an `if` statement) in the above code snippet, and we'll g
 
 ---
 
-### Common Mistakes
+### Common `puts` Mistake
 
 A common mistake among beginner rubyists is to use the `#puts` method as the return value of their custom method. Here's an example:
 

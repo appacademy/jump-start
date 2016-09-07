@@ -22,5 +22,3 @@ You will not learn by simply reading about code. **You must write it too.** Do t
   * Return Value [Exercises](./return_exercises.md)
 * Variables & Scope [Readings](./variables_and_scope_readings.md)
   * Variables & Scope [Exercises](./variables_and_scope_exercises.md)
-* Print Statements [Readings](./print_readings.md)
-  * Print Statements [Exercises](./print_exercises.md)
