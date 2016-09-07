@@ -3,7 +3,7 @@
 0. Install `pry` via the instructions in the reading
 
 0. Use pry to figure out what 732 * 114 is
-  * Create a variable, x, and assign it the last return value by using the underscore, `_`
+  * Create a variable, x, and then assign it to the last return value by using the underscore, `_`
   * Then, divide x by 4
 
 ![Math Demo](./assets/repl/demo_math.png)
