@@ -28,14 +28,14 @@ Readings link with examples (in case you get stuck or need help):
   * Run the last three commands you did, without typing them out.  Use the up arrow and see what happens. -->
 
 ---
-<!-- 
+<!--
 ## IRB
 
 Readings link with examples (in case you get stuck or need help):
 * [IRB Tutorial](./irb.md)
 
 ---- -->
-
+<!--
 #### `Exercises`
 
 * Pop open IRB.
@@ -76,9 +76,9 @@ Now you can invoke the method by typing factors() into IRB and passing it any in
 
 * Play around in IRB and test out methods that you are not familiar with. Did any of the results surprise you? IRB is one of the best tools for learning how Ruby works and testing newly written code, so you want to become familiar with it. Most importantly, have fun with it! A programmer's curiosity is the greatest asset he/she has in learning :)
 
----
+--- -->
 
-## Functions
+<!-- ## Functions
 
 Key concepts:
 
@@ -101,7 +101,7 @@ Codecademy link (complete this first if you haven't yet):
 
   * Write a function called `hello_world` that will `puts` the string `"Hello world!"` to the screen.
   * Write a function called `print_thrice(number)` that, given a number, will `print` the number three times.
-  * Write a function called `print_thrice_thrice(number)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints).
+  * Write a function called `print_thrice_thrice(number)` that, given a number, will call `print_thrice` with that number three times (for 9 total prints). -->
 
 ---
 
