@@ -12,18 +12,20 @@ Similar to variables in algebra, we can create variables in ruby that will provi
 x = 5
 ```
 
-This code stores the number 5 into a variable called `x`. Later on, we can use this variable name to retrieve the value:
+This code stores the number 5 into a variable called `x`. Later on, we can use this variable to retrieve the value:
 
 ```ruby
 x = 5
 puts x
 ```
 
-In ruby, the equal sign, `=`, is known as the **assignment operator**.  Ruby evaluates everything to the right of the `=` sign, and stores the result into the variable on the left-hand side.
+In ruby, the equal sign, `=`, is known as the **assignment operator**.  Ruby first evaluates everything to the right of the `=`, and then stores the result into the variable on the left-hand side.
+
+---
 
 ### What can a variable store?
 
-**Any object** in Ruby can be stored in a variable. This means that we can use variables to store any objects we may encounter. Some we're already familiar with:
+**Any object** in Ruby can be stored in a variable. Some types of objects we're already familiar with:
 
 ```ruby
   a = 5
@@ -37,6 +39,8 @@ And some objects we'll learn about later, but we can still store them in variabl
   t = true
   n = nil
 ```
+
+---
 
 ### Variable Re-assignment
 
@@ -71,6 +75,8 @@ Run this example in the pry and confirm the output!
 Let's watch an example of how variable re-assignment works.
 
 [![Assignment](./assets/video_link.png)](https://vimeo.com/181828680)
+
+---
 
 ## Variable Naming
 
