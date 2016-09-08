@@ -9,7 +9,7 @@ We can represent the number 2 in ruby in a variety of different formats:
 
 Though it may seem strange to represent 2 as a `String`, we often find use cases for this, such as:
 
-Write a method, `#time_string` that accepts 3 arguments, hours, minutes, and seconds (all integers). Convert these integers into one contiguous time string that has the following format:
+Define a method, `#time_string` that accepts 3 arguments: hours, minutes, and seconds (all integers). Convert these integers into one contiguous time string that has the following format:
 
   ```ruby
     "hh:mm:ss"
