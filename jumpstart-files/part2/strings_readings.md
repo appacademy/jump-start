@@ -99,8 +99,6 @@ Range      | `"string".slice(2..3)` | `"string"[2..3]` | `"ri"`
 
  Method        | Definition
 ---------------|-----------
- `#slice`      | Returns a copy of a piece off of the string
- `#[]`         | Bracket methods, same as `#slice`
  `#length`     | Returns the number of characters in a string (including spaces!)
  `#upcase`     | Converts all letters to uppercase
  `#downcase`   | Converts all letters to lowercase
@@ -109,3 +107,5 @@ Range      | `"string".slice(2..3)` | `"string"[2..3]` | `"ri"`
  `#gsub`       | Replaces all occurrences of one substring with another
  `#start_with?`| Returns true/false if the string starts with a particular sub-string
  `#reverse`    | Reverses a string
+
+#### [String Documentation](http://ruby-doc.org/core-2.2.0/String.html)
