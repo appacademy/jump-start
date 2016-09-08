@@ -1,6 +1,11 @@
-# Ruby Objects
+# Ruby Basics
 
-In this section we'll talk about the different types of objects in ruby.
+In this section we'll talk about some of the fundamental objets in ruby:
+  * `Fixnums` and `Floats`
+  * `Strings`
+  * Booleans and `nil`
+
+We'll also explore comparators, conditionals, and loops.
 
 ## Instructions
 
@@ -18,11 +23,5 @@ You will not learn by simply reading about code. **You must write it too.** Do t
   * Booleans & Conditionals [Exercises](./booleans_and_conditionals_exercises.md)
 * Strings [Readings](./strings_readings.md)
   * Strings [Exercises](./strings_exercises.md)
-* Arrays [Readings](./arrays_readings.md)
-  * Arrays [Exercises](./arrays_exercises.md)
-* Ranges [Readings](./ranges_readings.md)
-  * Ranges [Exercises](./ranges_exercises.md)
-* Hashes [Readings](./hashes_readings.md)
-  * Hashes [Exercises](./hashes_exercises.md)
 * Type Conversion [Readings](./type_conversion_readings.md)
   * Type Conversion [Exercises](./type_conversion_exercises.md)
