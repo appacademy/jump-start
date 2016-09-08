@@ -84,14 +84,20 @@ Note that you must use the following symbols: `#{..}` whatever ruby code is cont
 
 Watch the video!
 
-[![Slice](../video_link.png)](https://vimeo.com/..)
+[![Slice](../video_link.png)](https://vimeo.com/181974255)
 
-Indexing allows us to pull a particular character out of a string.
+Argument   | `#slice` example       | `#[]` example    | Result
+-----------|------------------------|------------------|
+1 Integer  | `"string".slice(1)`    | `"string"[1]`    | `"t"`
+Range      | `"string".slice(2..3)` | `"string"[2..3]` | `"ri"`
+2 Integers | `"string".slice(2, 3)` | `"string"[2, 3]` | `"rin"`
+
+**Try this in pry!**
 
 ### Other useful methods
 
- Method      | Definition
--------------|-----------
+ Method        | Definition
+---------------|-----------
  `#slice`      | Returns a copy of a piece off of the string
  `#[]`         | Bracket methods, same as `#slice`
  `#length`     | Returns the number of characters in a string (including spaces!)
