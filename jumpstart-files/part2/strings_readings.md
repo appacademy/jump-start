@@ -88,9 +88,9 @@ Watch the video!
 
 Argument   | `#slice` example       | `#[]` example    | Result
 -----------|------------------------|------------------|---------
-1 Integer  | "string".slice(1)    | "string"[1]    | "t"
-Range      | "string".slice(2..3) | "string"[2..3] | "ri"
-2 Integers | "string".slice(2, 3) | "string"[2, 3] | "rin"
+1 Integer  | `"string".slice(1)`    | "string"[1]    | "t"
+Range      | `"string".slice(2..3)` | "string"[2..3] | "ri"
+2 Integers | `"string".slice(2, 3)` | "string"[2, 3] | "rin"
 
 **Try this in pry!**
 
