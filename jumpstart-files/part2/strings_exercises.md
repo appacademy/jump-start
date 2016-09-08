@@ -14,6 +14,10 @@
 
 0. Write a method `#capitalize` that accepts a string as an argument and capitalizes the first letter of the string. Note: Do not use the built in method `String#capitalize`
 
+  ```ruby
+    capitalize("yahoo!") == "Yahoo!"
+  ```
+
 0. Write a method, `#shout_then_whisper` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
 
   ```ruby
