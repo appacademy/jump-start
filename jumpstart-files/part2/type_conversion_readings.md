@@ -11,7 +11,9 @@ Though it may seem strange to represent 2 as a `String`, we often find use cases
 
 Write a method, `#time_string` that accepts 3 arguments, hours, minutes, and seconds (all integers). Convert these integers into one contiguous time string that has the following format:
 
-  `hh:mm:ss`
+  ```ruby
+    "hh:mm:ss"
+  ```
 
 Well.. if we use simple interpolation:
 
