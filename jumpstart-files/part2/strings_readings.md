@@ -86,7 +86,7 @@ Watch the video!
 
 [![Slice](../video_link.png)](https://vimeo.com/181974255)
 
-Argument   | #slice example       | #[] example    | Result
+Argument   | `#slice` example       | `#[]` example    | Result
 -----------|------------------------|------------------|---------
 1 Integer  | "string".slice(1)    | "string"[1]    | "t"
 Range      | "string".slice(2..3) | "string"[2..3] | "ri"
