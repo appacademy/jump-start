@@ -41,7 +41,7 @@ Ruby only calculates the number of whole times that a divisor can divide another
 If we are interested in the remainder, we can use the modulo operator:
 
   ```ruby
-    puts 6 % 2 # will print 0, 6 divides evenly by 2
+    puts 6 % 2 # will print 0, 6 is divided evenly by 2
     puts 7 % 2 # will print 1, there is a remainder of 1 when 7 is divided by 2
     puts 11 % 3 # will print 2, there is a remainder of 2 when 11 is divided by 3
   ```
