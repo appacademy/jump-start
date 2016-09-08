@@ -33,7 +33,7 @@ And this doesn't have the appropriate format! We need something like:
     "12:01:03"
   ```
 
-To aid us in this challenge, we can use type conversion.
+To aid us in this challenge, we can use type conversion. Don't worry about solving the above problem now, we'll do it in the exercises!
 
 ---
 
