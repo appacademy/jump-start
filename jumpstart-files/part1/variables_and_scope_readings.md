@@ -74,7 +74,7 @@ Run this example in the pry and confirm the output!
 
 Let's watch an example of how variable re-assignment works.
 
-[![Assignment](./assets/video_link.png)](https://vimeo.com/181828680)
+[![Assignment](../video_link.png)](https://vimeo.com/181828680)
 
 ---
 

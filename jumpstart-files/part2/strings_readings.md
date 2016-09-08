@@ -58,7 +58,7 @@ I could do so using string `concatenation`:
 
 **Test this in pry!**
 
-This works well then the two strings are combined one after another. But what if I want to insert one string somewhere in the middle of another? This is where we'll want to use `interpolation`. An important note:
+This works well when the two strings are combined one after another. But what if I want to insert one string somewhere in the middle of another? This is where we'll want to use `interpolation`. An important note:
 
 **interpolation only works with double quoted strings!**
 
@@ -68,7 +68,7 @@ This works well then the two strings are combined one after another. But what if
     puts "Why, hello there #{name}! Have a nice day!"
   ```
 
-**Try this out in pry!**
+**Test this in pry!**
 
 Note that you must use the following symbols: `#{..}` whatever ruby code is contained inside the curly braces is `interpolated` into the string. Here's another example:
 
@@ -84,7 +84,7 @@ Note that you must use the following symbols: `#{..}` whatever ruby code is cont
 
 Watch the video!
 
-[![Slice](./assets/video_link.png)](https://vimeo.com/..)
+[![Slice](../video_link.png)](https://vimeo.com/..)
 
 Indexing allows us to pull a particular character out of a string.
 
