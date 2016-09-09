@@ -26,9 +26,26 @@
 
 Fill out the following truth table:
 
-`A`    | `B`   | `!A && B`  | `!(A || B)` | (`A` && `B`) || !B
+`A`    | `B`   | `!A && B`  | `!(A || B)` | `(A && B) || !B`
 -------|-------|------------|-------------|--------------------
 `true` |`true` |            |             |
 `true` |`false`|            |             |
 `false`|`true` |            |             |
 `false`|`false`|            |             |
+
+0. Define a method, `#same_type?` that accepts any two objects as arguments. Your method should return true if both objects are the same type (`String`, `Fixnum`, etc.). Otherwise, return false.
+
+  ```ruby
+    same_type?(5, "abc")    # ==> false
+    same_type?(5, 10)       # ==> true
+    same_type?(5.0, 10)     # ==> false
+    same_type?(true, false) # ==> false
+    same_type?(nil, nil)    # ==> true
+  ```
+
+To aid you in solving this problem, you can use the `#class` method, which tells you which class a ruby object belongs to.
+
+  ```ruby
+    5.class     # ==> Fixnum
+    "abc".class # ==> String
+  ```
