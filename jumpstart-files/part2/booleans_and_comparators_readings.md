@@ -79,13 +79,12 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
 
 Ruby has several comparator methods that allow us to compare two objets here are a few of them:
 
-
 Method| Example        | Result  
 ------|----------------|---------
-  ==  | nil == false   | false
-  <   | 3 < 4          | true
-  >   | "B" > "A"      | true
-  <=  | "C" <= "C"     | true
-  >=  | 9 >= 8         | true
+`==`  | `nil == false` | `false`
+`<`   | `3 < 4`        | `true`
+`>`   | `"B" > "A"`    | `true`
+`<=`  | `"C" <= "C"`   | `true`
+`>=`  | `9 >= 8`       | `true`
 
 **Test these in pry!** Note: you can compare strings by alphabetical order using `<`, `>`, `<=`, or `>=`.
