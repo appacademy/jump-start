@@ -19,14 +19,6 @@ Codecademy links (complete these first if you haven't yet):
 * [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
 * [Comparators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
-----
-
-#### `Exercises`
-  * Write a `while` loop that prints out all the numbers from 1 to 25 inclusive.
-  * Write a function called `print_up_to(number)` that given a number, prints out all the numbers from 1 to that number, inclusive. It should use a `while` loop internally.
-  * Write a function called `print_factors(number)` that prints all of the factors of a number, including 1 and the number itself.
-    * Hint: use your `is_factor_of(big_number, small_number)` function.
-
 ---
 
 #### Video Solution (Optional)
