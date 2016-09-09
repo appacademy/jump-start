@@ -4,29 +4,13 @@
 
 ---
 
-  * Write a function called `division_plus_remainder(big_number, small_number)` that finds the number of times `small_number` completely divides into `big_number`, and then adds the remainder that's left over. For example, `divisor_plus_remainder(7, 2)` should equal `4`.
-  * Write a function called `is_factor_of(big_number, small_number)` that returns `true` if `small_number` is a factor of `big_number`, and `false` if it is not.
-
----
-
 #### Video Solution (Optional)
 
 We recommend watching the video below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
 
 [TA Video Solution](https://youtu.be/WxVRmB_uRBU)
 
-## Booleans and loops
 
-Key concepts:
-
-* Booleans are `true` and `false`.  That's it.
-* `while` loops — `while(condition)`, do stuff, `end`
-* Conditionals and control flow
-  * `elsif` and `else`
-* Comparators that produce booleans: `==`, `<`, `>`, `>=`, `<=`
-
-Readings link with examples (in case you get stuck or need help):
-* [Booleans Reading](./booleans.md)
 * [Loops Reading](./loops.md)
 
 
@@ -87,46 +71,11 @@ end
 
 Key concepts:
 * `while` vs. `until`
-* `if` vs. `unless`
-* Logical operators (`&&` = and, `||` = or, `!` = not)
-* Parenthesization
-* Truth tables
-
-Readings link with examples (in case you get stuck or need help):
-* [Advanced Conditionals  Reading](./advanced-conditionals.md)
-
 
 Codecademy links (complete these first if you haven't yet):
 * [Until loop] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/0/3?curriculum_id=5059f8619189a5000201fbcb)
-* [Unless] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/3/3?curriculum_id=5059f8619189a5000201fbcb)
-* [Logical Operators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/2/1?curriculum_id=5059f8619189a5000201fbcb)
-
-----
-
-#### `Exercises`
-  * Complete these truth tables. Write it out on pencil and paper in your notebook.
-
-x  | y   | z   | x && y &#124;&#124; z |  x && (y &#124;&#124; z)
------|-----|-----|-----------------------|--------------------------
-true |true |false|                       |
-true |false|false|                       |
-false|true |false|                       |
-false|false|false|                       |
 
 
-  x  | y   | z   | x &#124;&#124; y && z |  x &#124;&#124; (y && z)
------|-----|-----|-----------------------|-------------------------
-true |true |false|                       |
-true |false|false|                       |
-false|true |false|                       |
-false|false|false|                       |
-  * Using pen and paper, see if you can figure out the value of these conditionals:
-    1. `False || (True || False)`
-    2. `(True && False) || False`
-    3. `(True || False) && (False && True)`
-    4. `3 == 5 || 4 % 2 > 2`
-    5. `6 + 4 <= 10 && 5 != 6`
-    6. `(6 != 6 || (1 == 10 % 3)) && (3 + 5 < 6)`
   * Write an `until` loop that prints out all of the numbers that are less than 20 and are not divisible by 6.
 
 ---
