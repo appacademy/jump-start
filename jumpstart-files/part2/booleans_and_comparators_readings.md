@@ -7,7 +7,7 @@ We're going to introduce several concepts in this reading. Three types of ruby o
   * `false`
   * `nil`
 
-We'll also talk about making comparisons, such as "a equals b", or "c is greater than d". Then, we'll introduce logical operators such as `and`, `or`, and `not`. Finally, we'll discuss the concepts of *truthiness* and *falseness*.
+We'll also talk about making **comparisons**, such as "a equals b", or "c is greater than d". Then, we'll introduce **logical operators** such as `and`, `or`, and `not`. Finally, we'll discuss the concepts of **truthiness** and **falseness**.
 
 ## Booleans
 
