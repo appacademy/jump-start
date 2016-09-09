@@ -28,7 +28,7 @@ Boolean objects are the *return value* of comparator methods. One that we've alr
 
 **Test these in pry!**
 
-Since `==` is a *method* with a *return value* I can even capture that return value in a variable and use it elsewhere.
+Since `==` is a *method* with a *return value* you can capture that return value in a variable and use it elsewhere.
 
 ```ruby
   result = (1 == 1)
@@ -37,10 +37,10 @@ Since `==` is a *method* with a *return value* I can even capture that return va
 
 ### Bang
 
-The `!` (bang) operator -- also known at 'not' -- will convert between the two booleans.
+The `!` (bang) operator -- also known as 'not' -- will convert between the two booleans.
 
 ```ruby
-  !true # ==> false
+  !true  # ==> false
   !false # ==> true
 ```
 
@@ -64,7 +64,7 @@ The `!` (bang) operator -- also known at 'not' -- will convert between the two b
 
 ### Boolean Methods
 
-Rubyists customarily name "boolean methods" with a question mark at the end. A "boolean method" is just a method whose return value is either `true` or `false`. Some that examples of build in methods include:
+Rubyists customarily name "boolean methods" with a question mark at the end. A "boolean method" is just a method whose return value is either `true` or `false`. Some examples of built-in methods include:
 
   ```ruby
     5.even?                    # ==> false
@@ -79,12 +79,13 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
 
 Ruby has several comparator methods that allow us to compare two objets here are a few of them:
 
+
 Method| Example        | Result  
 ------|----------------|---------
-`==`  | `nil == false` | `false`
-`<`   | `3 < 4`        | `true`
-`>`   | `"B" > "A"`    | `true`
-`<=`  | `"C" <= "C"`   | `true`
-`>=`  | `9 >= 8`       | `true`
+  ==  | nil == false   | false
+  <   | 3 < 4          | true
+  >   | "B" > "A"      | true
+  <=  | "C" <= "C"     | true
+  >=  | 9 >= 8         | true
 
 **Test these in pry!** Note: you can compare strings by alphabetical order using `<`, `>`, `<=`, or `>=`.
