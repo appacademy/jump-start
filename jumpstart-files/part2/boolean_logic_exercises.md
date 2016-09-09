@@ -1,4 +1,4 @@
-# Booleans and Comparators Exercises
+# Boolean Logic Exercises
 
 0. Define a method, `odd_integer?`, that accepts an integer, `n`, as an argument. Your method should return `true` or `false` based on whether `n` is odd or even. Do not use the built in `#odd?` method. Instead, think about how you could use the modulo operator, `%`, to determine whether an integer is odd or even.
 
