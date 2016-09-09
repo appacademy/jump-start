@@ -17,7 +17,7 @@
 
 0. Here is an example of a truth table:
 
-`A`    | `B`   | `!A`  | `A && B` | `A || B`
+`A`    | `B`   | `!A`  | `A && B` | `A` &#124;&#124; `B`
 -------|-------|-------|----------|-------------|
 `true` |`true` |`false`|`true`    | `true`
 `true` |`false`|`false`|`false`   | `true`
@@ -26,7 +26,7 @@
 
 Fill out the following truth table:
 
-`A`    | `B`   | `!A && B`  | `!(A || B)` | `(A && B) || !B`
+`A`    | `B`   | `!A && B`  | `!(A || B)` | `(A && B)` &#124;&#124; `!B`
 -------|-------|------------|-------------|--------------------|
 `true` |`true` |            |             |
 `true` |`false`|            |             |
