@@ -21,3 +21,10 @@
     evens_below(6)  # ==> [0, 2, 4]
     evens_below(9)  # ==> [0, 2, 4, 6, 8]
   ```
+
+0. Define a method, `#to_range(array)` that, given an array of integers, constructs a range covering the span of integers in the array argument.
+
+  ```ruby
+    to_range([1, 8, 11, 5, 6])  # ==> (1..11)
+    to_range([6, 15, 2, 12])    # ==> (2..15)
+  ```
