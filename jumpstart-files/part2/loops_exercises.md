@@ -5,3 +5,5 @@
 0. Write a method, `#print_up_to(number)` that, given a number, prints out all the numbers from 1 to that number, inclusive. It should use a `while` loop internally.
 
 0. Write a method, `print_factors(number)` that prints all of the factors of a number, including 1 and the number itself. You'll need to use a while loop, a conditional statement, and the modulo operator!
+
+0. Write an `until` loop that prints out all of the numbers that are less than 20 and are not divisible by 6.
