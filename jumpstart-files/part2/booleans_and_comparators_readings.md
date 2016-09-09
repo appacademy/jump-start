@@ -11,13 +11,13 @@ We'll also talk about making comparisons, such as "a equals b", or "c is greater
 
 ## Booleans
 
-Booleans are `true` and `false`. That's it. They are their own objects, with their own methods!! For example:
+Booleans are `true` and `false`. That's it. They are their own objects, with their own methods! For example:
 
   ```ruby
     true.to_s # ==> "true"
   ```
 
-Boolean objects are the *return value* of comparator methods. One that we've already seen is the `==` method. Again, the *return value** of the `==` method is either `true` or `false`.
+Boolean objects are the *return value* of comparator methods. One that we've already seen is the `==` method. Again, the *return value* of the `==` method is either `true` or `false`.
 
   ```ruby
     1 == "1"            # ==> false
@@ -72,7 +72,7 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
     "apple".starts_with?("ap") # ==> true
     3.9.is_a?(Float)           # ==> true
   ```
-  
+
 ---
 
 ## Comparators
