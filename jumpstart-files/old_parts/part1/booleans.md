@@ -18,6 +18,6 @@ Here's a more practical function that uses a comparator:
 ```ruby
 # This function returns true if the input is odd.
 def odd_integer?(integer)
-  return integer % 1 == 1
+  return integer % 2 == 1
 end
 ```

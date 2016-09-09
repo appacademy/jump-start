@@ -21,7 +21,7 @@
     accurate_division(7, 6) == 1.167
   ```
 
-0. Define a method, `#two_digit_format`, that accepts an integer, `n`, and returns a string version of that integer. If the integer has a single digit, you should append a 0. You can assume that n will always be two or fewer digits. Hint: try create a string using `'0' + n.to_s`, then use `#slice` to get the last two digits!
+0. Define a method, `#two_digit_format`, that accepts an integer, `n`, and returns a string version of that integer. If the integer has a single digit, you should append a 0. You can assume that n will always be two or fewer digits. Hint: try creating a string using `'0' + n.to_s`, then use `#slice` to get the last two digits!
 
   ```ruby
     two_digit_format(8) == "08"

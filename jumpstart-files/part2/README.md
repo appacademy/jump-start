@@ -19,9 +19,11 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 * Numbers [Readings](./numbers_readings.md)
   * Numbers [Exercises](./numbers_exercises.md)
-* Booleans & Conditionals [Readings](./booleans_and_conditionals_readings.md)
-  * Booleans & Conditionals [Exercises](./booleans_and_conditionals_exercises.md)
 * Strings [Readings](./strings_readings.md)
   * Strings [Exercises](./strings_exercises.md)
 * Type Conversion [Readings](./type_conversion_readings.md)
   * Type Conversion [Exercises](./type_conversion_exercises.md)
+* Booleans, nil, & Comparators [Readings](./booleans_and_comparators.md)
+  * Booleans, nil, & Comparators [Exercises](./booleans_and_comparators.md)
+* Loops [Readings](./loops_readings.md)
+  * Loops [Exercises](./loops_exercises.md)
