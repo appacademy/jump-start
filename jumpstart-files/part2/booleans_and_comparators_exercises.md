@@ -14,3 +14,21 @@
     before_tarantula?("tarantula") # ==> false
     before_tarantula?("yak") # ==> false
   ```
+
+0. Here is an example of a truth table:
+
+`A`    | `B`   | `!A`  | `A && B` | `A` \|\| `B`
+-------|-------|-------|----------|-------------
+`true` |`true` |`false`|`true`    | `true`
+`true` |`false`|`false`|`false`   | `true`
+`false`|`true` |`true` |`false`   | `true`
+`false`|`false`|`true` |`false`   | `false`
+
+Fill out the following truth table:
+
+`A`    | `B`   | `!A && B`  | `!(A || B)` | (`A` && `B`) || !B
+-------|-------|------------|-------------|--------------------
+`true` |`true` |            |             |
+`true` |`false`|            |             |
+`false`|`true` |            |             |
+`false`|`false`|            |             |
