@@ -60,15 +60,15 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
   ```ruby
     5.even?                    # ==> false
     5.odd?                     # ==> true
-    "apple".starts_with?("ap") # ==> true
-    3.9.is_a?(Float)           # ==> true
+    "abc".starts_with?("ab")   # ==> true
+    "abc".is_a?(String)        # ==> true
   ```
 
 ---
 
 ## Comparators
 
-Ruby has several comparator methods that allow us to compare two objets. Remember, the return value of comparator methods are either `true` or `false`!
+Ruby has several comparator methods that allow us to compare two objets. Remember, the return value of a comparator method is either `true` or `false`!
 
 Method| Example        | Result  
 ------|----------------|---------
@@ -84,12 +84,12 @@ Method| Example        | Result
     "string" >= 5
   ```
 
-This comparison will throw an error. It doesn't make sense! How do you compare a string to an integer??
+This comparison will throw an error. It doesn't make sense! How do you compare a string to an integer?
 
 ---
 ## Logical Operators
 
-Logical operators are like the `+`, `-`, `*`, and `/` of the boolean world! We can combine / operate on booleans in 3 primary methods:
+Logical operators are like the `+`, `-`, `*`, and `/` of the boolean world! We can operate on booleans in 3 primary manners:
 
 ### And: `&&`
 
