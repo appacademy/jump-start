@@ -17,21 +17,21 @@
 
 0. Here is an example of a truth table:
 
-A      | B     | !A    | A && B   | A  &#124;&#124;  B
--------|-------|-------|----------|-------------|
-`true` |`true` |`false`|`true`    | `true`
-`true` |`false`|`false`|`false`   | `true`
-`false`|`true` |`true` |`false`   | `true`
-`false`|`false`|`true` |`false`   | `false`
+  A      | B     | !A    | A && B   | A  &#124;&#124;  B
+  -------|-------|-------|----------|-------------|
+  `true` |`true` |`false`|`true`    | `true`
+  `true` |`false`|`false`|`false`   | `true`
+  `false`|`true` |`true` |`false`   | `true`
+  `false`|`false`|`true` |`false`   | `false`
 
-Fill out the following truth table:
+  Fill out the following truth table:
 
-A      | B     | !A && B    | !(A &#124;&#124; B) | (A && B) &#124;&#124; !B
--------|-------|------------|-------------|--------------------|
-`true` |`true` |            |             |
-`true` |`false`|            |             |
-`false`|`true` |            |             |
-`false`|`false`|            |             |
+  A      | B     | !A && B    | !(A &#124;&#124; B) | (A && B) &#124;&#124; !B
+  -------|-------|------------|-------------|--------------------|
+  `true` |`true` |            |             |
+  `true` |`false`|            |             |
+  `false`|`true` |            |             |
+  `false`|`false`|            |             |
 
 0. Define a method, `#same_type?` that accepts any two objects as arguments. Your method should return true if both objects are the same type (`String`, `Fixnum`, etc.). Otherwise, return false.
 
