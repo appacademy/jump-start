@@ -2,30 +2,7 @@
 
 ## Instructions
 
----
 
-#### Video Solution (Optional)
-
-We recommend watching the video below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
-
-[TA Video Solution](https://youtu.be/WxVRmB_uRBU)
-
-
-* [Loops Reading](./loops.md)
-
-
-Codecademy links (complete these first if you haven't yet):
-* [While loop] (https://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb)
-* [Conditionals] (https://www.codecademy.com/courses/ruby-beginner-en-NFCZ7/0/2?curriculum_id=5059f8619189a5000201fbcb)
-* [Comparators] (https://www.codecademy.com/en/courses/ruby-beginner-en-NFCZ7/1/1?curriculum_id=5059f8619189a5000201fbcb)
-
----
-
-#### Video Solution (Optional)
-
-We recommend watching the video below at 2x speed and pausing at new concepts.  **DO NOT WATCH IT UNTIL AFTER YOU'VE DONE THE EXERCISES.**
-
-[TA Video Solution](https://youtu.be/qksk-8ywhKA)
 
 
 ## Commenting Out Code
@@ -57,52 +34,6 @@ end
 
 * Using comments, write out in pseudocode an approach to the Cats N' Hats problem that you did day 1.  You don't have to write real code off of it.
 
----
-
-## Advanced Conditionals
-
-Key concepts:
-* `while` vs. `until`
-
-Codecademy links (complete these first if you haven't yet):
-* [Until loop] (https://www.codecademy.com/en/courses/ruby-beginner-en-XYcN1/0/3?curriculum_id=5059f8619189a5000201fbcb)
-
-
-  * Write an `until` loop that prints out all of the numbers that are less than 20 and are not divisible by 6.
-
----
-
-
-## Arrays
-
-Key Concepts:
-  * Array methods
-    * `#length` or `#size` or `#count`
-    * `array[index]`
-    * `array[index] = val`
-    * `#first`
-    * `#last`
-    * `#include?(value)`
-    * `#push(value)` to add a value onto the end (also `<<`)
-    * `#pop` to pop off a value from the end
-    * `#unshift(value)` to stick a value onto the beginning
-    * `#shift` to shift off a value from the beginning
-    * `#join(separator)` to join an array of strings, separated by a delimiter
-
-Readings link with examples (in case you get stuck or need help):
-* [Array Refresher](./arrays.md)
-
-Codecademy link (complete this first if you haven't yet):
-  * [Arrays](https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb)
-
-  ----
-
-  #### `Exercises`
-  * Write a function `first_n_evens(n)` that returns an array of the first N many even numbers, starting from 0.
-  * Write a function `reverse(array)` that reverses an array in-place.
-  * Write a function `rotate(array, shift)` that given an array, rotates it in-place by the shift amount. E.g., `rotate([1, 2, 3, 4, 5], 2)` should produce `[4, 5, 1, 2, 3]`. `rotate([5, 6, 7], -1)` should produce `[6, 7, 5]`.
-    * Hint: a combination of `#shift`, `#unshift`, `#pop` and `#push` should come in handy here.
-  * Write a function `all_uniqs(array1, array2)` that given two arrays, produces a new array of only elements unique to `array1` and elements unique to `array2`. E.g., `all_uniqs([2, 5, 7], [1, 2, 7])` should return `[1, 5]`
 
 ---
 
