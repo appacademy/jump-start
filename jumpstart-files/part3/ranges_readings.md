@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Range objects are a nifty tool in ruby. Ranges can be used to represent a set of integers or characters. For example, lets say you wanted to create an alphabet. You'll need a collection of all the characters from "a" -- "z". Well, you could use an array..
+Ranges can be used to represent a set of integers or characters. For example, lets say you wanted to create an alphabet. You'll need a collection of all the characters from "a" -- "z". Well, you could use an array..
 
   ```ruby
     alphabet = ["a", "b", "c", ... "z"]
   ```
 
-This process is quite annoying... We don't want to have to type out 26 different characters. Behold, the alphabet range:
+but this process is quite annoying. We don't want to have to type out 26 different characters. Behold, the alphabet range:
 
   ```ruby
     alphabet = ("a".."z")
@@ -59,6 +59,11 @@ We cannot directly index a range:
   ```
 
 Instead, we can convert a range into an array using the `to_a` method. Doing so allows us to index the collection and ask for specific values.
+
+```ruby
+  alphabet = ("a".."z").to_a
+  alphabet[10] # ==> "k"
+```
 
 ## `#each`
 
