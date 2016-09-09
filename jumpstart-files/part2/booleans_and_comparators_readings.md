@@ -7,7 +7,7 @@ We're going to introduce several concepts in this reading. Three types of ruby o
   * `false`
   * `nil`
 
-We'll also talk about making comparisons, such as "a equals b", or "c is greater than d".
+We'll also talk about making comparisons, such as "a equals b", or "c is greater than d". Then, we'll introduce logical operators such as `and`, `or`, and `not`. Finally, we'll discuss the concepts of *truthiness* and *falseness*.
 
 ## Booleans
 
@@ -35,15 +35,6 @@ Since `==` is a *method* with a *return value* you can capture that return value
   puts result # ==> true
 ```
 
-### Bang
-
-The `!` (bang) operator -- also known as 'not' -- will convert between the two booleans.
-
-```ruby
-  !true  # ==> false
-  !false # ==> true
-```
-
 ## `nil`
 
 `nil` is another object in ruby. It represents nothingness. `nil` also has it's own methods!
@@ -64,7 +55,7 @@ The `!` (bang) operator -- also known as 'not' -- will convert between the two b
 
 ### Boolean Methods
 
-Rubyists customarily name "boolean methods" with a question mark at the end. A "boolean method" is just a method whose return value is either `true` or `false`. Some examples of built-in methods include:
+Rubyists customarily name "boolean methods" with a question mark at the end. A "boolean method" is just a method whose return value is either `true` or `false`. Some examples of built-in boolean methods include:
 
   ```ruby
     5.even?                    # ==> false
@@ -77,14 +68,97 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
 
 ## Comparators
 
-Ruby has several comparator methods that allow us to compare two objets here are a few of them:
+Ruby has several comparator methods that allow us to compare two objets. Remember, the return value of comparator methods are either `true` or `false`!
 
 Method| Example        | Result  
 ------|----------------|---------
 `==`  | `nil == false` | `false`
 `<`   | `3 < 4`        | `true`
 `>`   | `"B" > "A"`    | `true`
-`<=`  | `"C" <= "C"`   | `true`
-`>=`  | `9 >= 8`       | `true`
+`<=`  | `"C" <= "B"`   | `false`
+`>=`  | `9 >= 9`       | `true`
 
-**Test these in pry!** Note: you can compare strings by alphabetical order using `<`, `>`, `<=`, or `>=`.
+**Test these in pry!** Note: you can compare strings by alphabetical order using `<`, `>`, `<=`, or `>=`. Also note that any two objects can be compared using `==`, but only some objects can be compared using the `<`, `>`, `<=`, or `>=`. For example:
+
+  ```ruby
+    "string" >= 5
+  ```
+
+This comparison will throw an error. It doesn't make sense! How do you compare a string to an integer??
+
+---
+## Logical Operators
+
+Logical operators are like the `+`, `-`, `*`, and `/` of the boolean world! We can combine / operate on booleans in 3 primary methods:
+
+### And: `&&`
+
+The **and** operator (`&&`) combines two boolean values. If *both* of them are true, it evaluates to true. If either or both of them are false, it evaluates to false:
+
+  ```ruby
+    puts true && true     # ==> true
+    puts true && false    # ==> false
+    puts false && true    # ==> false
+    puts false && false   # ==> false
+  ```
+
+**Test these in pry!**
+
+### Or: `||`
+
+The **or** operator (`||`) evaluates to true if *one or both* of the boolean values is true. It only evaluates to false if both of the booleans are false:
+  ```ruby
+    puts true || true     # ==> true
+    puts true || false    # ==> true
+    puts false || true    # ==> true
+    puts false || false   # ==> false
+  ```
+
+**Test these in pry!**
+
+### Not: `!`
+
+  The **not** operator (`!`) for boolean values works like a negative sign does for numbers. It returns the opposite of the value directly to its right:
+
+  ```ruby
+    puts !true    # ==> false
+    puts !false   # ==> true
+  ```
+
+**Test these in pry!**
+
+---
+## Truthiness and Falseness
+
+In ruby, we can say that all objects are *truthy* except for two:
+  * `false`
+  * `nil`
+
+We can determine the truthiness of an object by using a "double-bang"
+
+  ```ruby
+    !!true      # ==> true
+    !!false     # ==> false
+    !!nil       # ==> false
+    !!"string"  # ==> true
+    !!5         # ==> true
+  ```
+
+**Test these in pry!**
+
+The *truthiness* of an object will come into play when using logical operators as well:
+
+  ```ruby
+    true && nil   # ==> false
+    true && "abc" # ==> true
+    5 & "abc"     # ==> true
+
+    true || nil   # ==> true
+    nil || false  # ==> false
+    "abc" || nil  # ==> "abc"
+    5 || "abc"    # ==> 5
+  ```
+
+**Try these in pry!**
+
+Note that the `&&` operator **always** return `true` or `false`.. nothing else. The `||` operator, however, will return *the first truthy value* or false.

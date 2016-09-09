@@ -131,35 +131,6 @@ false|false|false|                       |
 
 ---
 
-## Strings
-
-Key concepts:
-
-* String methods
-  * `#length`
-  * `#upcase`
-  * `#downcase`
-  * `+`
-  * `#{}` interpolation
-  * `string[index]` to look up the character at an index
-  * `string[index] = letter` to assign a character at an index
-  * `#split(character_to_split_on)` to split a string into an array of parts
-
-Readings link with examples (in case you get stuck or need help):
-* [String Refresher](./strings.md)
-
-Codecademy link (complete this first if you haven't yet):
-  * [String methods](https://www.codecademy.com/en/courses/ruby-beginner-en-d1Ylq/1/2?curriculum_id=5059f8619189a5000201fbcb)
-
-  ----
-
-  #### `Exercises`
-  * Crack open irb and make a sample string.  Play around with each of the above methods on the string.
-  * Write a function `capitalize(string)` that takes in a string, capitalizes the first letter of the string, and returns the string. Note: Do not use the built in method `String#capitalize`
-  * Write a function `shout_then_whisper(string1, string2)` that takes in two strings, and shouts the first part, then whispers the second part. The output should look like this:
-    * `shout_then_whisper("Hello", "McDouglas") == "HELLO!! ... mcdouglas"`
-
----
 
 ## Arrays
 
