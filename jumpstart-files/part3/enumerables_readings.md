@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The `Enumerables` module contains a set of methods that are 'mixed in' to various other classes. You don't have to understand how this works, but you need to know where and how to use `Enumerable` methods.
+The `Enumerable` module contains a set of methods that are 'mixed in' to various other classes. You don't have to understand how this works, but you need to know where and how to use `Enumerable` methods.
 
 The `Enumerable` methods are *extremely* useful methods that can be used with ruby collections. All of the following can use `Enumerable` methods.
   * Arrays
   * Ranges
   * Hashes
 
-Generally, if the object has an `#each` method, then it probably has the `Enumerables` module.
+Generally, if the object has an `#each` method, then it probably has the `Enumerable` module.
 
 For example, let's say you have an array of integers and you want to double each value. There's a handy `Enumerable` method we can use, called `#map`:
 
@@ -31,7 +31,7 @@ You should take a minute to review the [documentation][documentation] for the `E
   ```
 
 #### `#select`
-  Returns a new collection but only with the elements that whose code block evaluated to `true`
+  Returns a new collection but only with the elements whose code block evaluated to `true`
 
   ```ruby
     dictionary = {
@@ -99,7 +99,7 @@ You should take a minute to review the [documentation][documentation] for the `E
 
 
 #### `#with_index`
-  Some enumerable methods are chainable with the `#with_index` method. Let's say we wanted to map and array to a new value where n \~\~> n * index(n)
+  Some enumerable methods are chainable with the `#with_index` method. Let's say we wanted to map an array to a new value where `n` \~\~> `n * index(n)`
 
   We could accomplish this using the `#with_index` method.
 

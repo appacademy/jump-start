@@ -1,6 +1,6 @@
 # Enumerable Exercises
 
-0. Write a method, `#words_with_a`, that accepts an array of strings as an argument. It should return the number of strings that have an 'a' in them
+0. Write a method, `#words_with_a`, that accepts an array of strings as an argument. It should return the number of strings that have an 'a' in them.
 
   ```ruby
     words_with_a(["enumerables", "are", "cake!")) == 3
@@ -8,7 +8,7 @@
     words_with_a(["ruby")) == 0
   ```
 
-0. Write a method, `#odds`, that accepts an array of integers as an argument. It should return an array containing only the odd numbers
+0. Write a method, `#odds`, that accepts an array of integers as an argument. It should return an array containing only the odd numbers.
 
   ```ruby
     odds([1,2,3,4,5,6]) == [2,4,6]
