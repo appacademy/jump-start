@@ -4,6 +4,7 @@
 
 Iterators are loops of a fixed length. With while loops, we do something while some condition is met. With iterators, we'll just do something N times. These methods can be useful when we know beforehand the number of necessary iterations.
 
+---
 ## `#times`
 
 Let's tell the computer to do something 7 times:
@@ -24,7 +25,8 @@ We can also use code blocks to determine which iteration we're on.
 
 **Test this in pry!**
 
-## `#upto` and `#downto`
+---
+### `#upto` and `#downto`
 
 Let's count from 10 up to 20
 
@@ -44,7 +46,8 @@ Now, let's count down from 10 to 1.
 
 **Test these in pry!**
 
-## `#step`
+---
+### `#step`
 
 Lastly, let's count from 0 to 100, but in increments of 5.
 
