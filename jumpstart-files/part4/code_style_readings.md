@@ -12,4 +12,4 @@ Watch the video!
 
 [![Rubyisms](../video_link.png)](https://vimeo.com/181705461)
 
-[article]: https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
+[article]: https://www.artima.com/weblogs/viewpost.jsp?thread=331531
