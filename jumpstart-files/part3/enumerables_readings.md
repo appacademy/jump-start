@@ -22,8 +22,8 @@ You should take a minute to review the [documentation][documentation] for the `E
 Note: code blocks used with `Array` and `Range` `Enumerable` methods use a single argument, but code blocks used with `Hash` `Enumerable` methods use two arguments: one for keys and 1 for values.
 
   ```ruby
-    [1, 2, 3].each { |el| ... } # ==> single argument in code block
-    (0...100).each { |el| ... } # ==> single argument in code block
+    [1, 2, 3].each { |el| ... }          # ==> single argument in code block
+    (0...100).each { |el| ... }          # ==> single argument in code block
     {"a" => "b"}.each { |key, val| ... } # ==> two arguments in code block
   ```
 
