@@ -15,13 +15,13 @@
     odds([1,3,7]) == []
   ```
 
-0. Write a method, #triple, that accepts an array of integers as an argument. It should return a new array with every element tripled.
+0. Write a method, `#triple`, that accepts an array of integers as an argument. It should return a new array with every element tripled.
 
   ```ruby
     triple([1,2,3,4,5,6]) == [2,4,6,8,10,12]
   ```
 
-0. Write a method, #odd_value_and_position, that accepts an array of integers as an argument. It should return a new array of all the elements whose value and position (index) in the original array are odd.
+0. Write a method, `#odd_value_and_position`, that accepts an array of integers as an argument. It should return a new array of all the elements whose value and position (index) in the original array are odd.
 
   ```ruby
     odd_value_and_position([0,1,2,3,4,5]) == [1,3,5]
