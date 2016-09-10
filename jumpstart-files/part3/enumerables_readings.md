@@ -19,6 +19,14 @@ For example, let's say you have an array of integers and you want to double each
 
 You should take a minute to review the [documentation][documentation] for the `Enumerable` module. Glance over the list of methods in the grey box on the left-hand side of the page. Try to guess what these methods might do!
 
+Note: code blocks used with `Array` and `Range` `Enumerable` methods use a single argument, but code blocks used with `Hash` `Enumerable` methods use two arguments: one for keys and 1 for values.
+
+  ```ruby
+    [1, 2, 3].each { |el| ... } # ==> single argument in code block
+    (0...100).each { |el| ... } # ==> single argument in code block
+    {"a" => "b"}.each { |key, val| ... } # ==> two arguments in code block
+  ```
+
 ---
 
 ## Useful Methods
