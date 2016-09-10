@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Iterators are loops of a fixed length. With while loops, we do something while some condition is met. With iterators, we'll just do something N times. These methods can be useful when we know beforehand the number of necessary iterations.
+Iterators are loops of a fixed length. Using while loops, we do something while some condition is met. With iterators, we'll just do something N times. These methods can be useful when we know beforehand the number of necessary iterations.
 
 ---
 ## `#times`
@@ -28,7 +28,7 @@ We can also use code blocks to determine which iteration we're on.
 ---
 ### `#upto` and `#downto`
 
-Let's count from 10 up to 20
+Let's count from 10 up to 20.
 
   ```ruby
     10.upto(20) do |n|
@@ -39,7 +39,7 @@ Let's count from 10 up to 20
 Now, let's count down from 10 to 1.
 
   ```ruby
-    10.upto(1) do |n|
+    10.downto(1) do |n|
       puts n
     end
   ```
@@ -52,7 +52,7 @@ Now, let's count down from 10 to 1.
 Lastly, let's count from 0 to 100, but in increments of 5.
 
   ```ruby
-    0.upto(100, 5) do |n|
+    0.step(100, 5) do |n|
       puts n
     end
   ```
