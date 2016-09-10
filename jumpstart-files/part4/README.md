@@ -14,3 +14,5 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 * Code Style [Readings](./code_style_readings.md)
   * Code Style [Exercises](./code_style_exercises.md)
+* Debugging [Readings](./debugging_readings.md)
+  * Debugging [Exercises](./debugging_exercises.md)

@@ -112,64 +112,7 @@ Codecademy link (complete this first if you haven't yet):
   * Now take that array and `puts` the subarray of only the first 10 elements (don't over-index!)
   * Then `puts` the last 10 elements.
 
----
 
-### Ranges
-* Defined in parentheses, just like subarrays: `(0..4)` or `(20...100)`
-* Ranges can only go up
-* Use `#to_a` to convert to an array
-* Can also use characters! Watch your quotation marks though.
-* Can `#each` over a range
-
-Readings link with Examples (in case you get stuck or need help):
-* [Ranges Reading](./ranges.md)
-
----
-
-#### `Exercises`
-  * `puts` an array of all of the numbers between 30 and 50, inclusive.
-  * Write a function called `letters_before(character)` that given a character in the alphabet, returns all of the characters that go before it in the alphabet.
-  * Write a function called `to_range(array)` that given an ordered array of every value from `start_number` to `end_number`, returns the corresponding range.
-    * For example, the `to_range([4, 5, 6, 7]` should return `(4..7)` as a range.
-
----
-
-### Boolean enumerable methods
-* How to implement with `#each`
-* `#any?`
-* `#all?`
-* `#none?`
-* Based on the **return value** of the block! Think of it like a function.
-
-Readings link with Examples (in case you get stuck or need help):
-* [Boolean Enumerable Methods Reading](boolean-enumerable-methods.md)
-
----
-
-#### `Exercises`
-  * Write a one-line function that checks if all the numbers in an array are greater than 3.
-
----
-
-### Advanced enumerables
-* `#times`
-* `#map`
-
-Readings link with Examples (in case you get stuck or need help):
-* [Advanced Enumerables Reading](advanced-enumerables.md)
-
----
-
-#### `Exercises`
-
-* Print every number from 1 to 30 using `each` and a range.
-* Write a function called `triplify(array)` which given an array of integers, returns a new array with all of the values multiplied by three.
-* Write a boolean function called `zeroes?(array)` that checks whether an array of integers contains at least one `0`.
-    * First implement this with `#each`, then use a more advanced enumerable boolean method.
-* Write a function called `all_odd?(array)` that returns whether all of the integers in an array are odd.
-* Write a function called `squares(array)` that, given an array of integers, returns a new array of each number squared.
-
----
 
 ### Function decomposition
 * Break down your functions into as small pieces as possible!
@@ -233,15 +176,6 @@ Readings link with Examples (in case you get stuck or need help):
 Codecademy link (complete this first if you haven't yet):
   * [Hash Maps] (https://www.codecademy.com/en/courses/ruby-beginner-en-F3loB/1/1?curriculum_id=5059f8619189a5000201fbcb)
 
----
-
-#### `Exercises`
-  * Write a function called `word_lengths(string)` that given a sentence, returns a hash of each of the words and their lengths.
-    * E.g., `word_lengths("hello my good good pal")` should return `{ 'hello' => 5, 'my' => 2, 'good' => 4, 'pal' => 3 }`
-    * Using comments, write out an approach in pseudocode first.
-  * Write a function called `uniq(array)` that returns an array with only the unique values in the array. (Hint: use a hash!)
-  * Write a function called `greatest_val_key(hash)` that takes in a hash with any keys but only integers for values, and returns the key with the largest value.
-    * E.g., `greatest_val_key({ "a" => 5, "b" => 6, "c" => 3 })` should return `"b"`
 
 ---
 
