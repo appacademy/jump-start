@@ -1,4 +1,4 @@
-# Code Style exercises
+# Code Style Exercises
 
 0. The methods below contain valid Ruby code. However, the styling could use some work. See how many style problems you can fix (including variable/method naming).
 

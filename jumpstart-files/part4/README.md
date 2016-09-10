@@ -12,6 +12,5 @@ You will not learn by simply reading about code. **You must write it too.** Do t
 
 ## Sections
 
-* Read me! [Principles of Good Programming][article]
-
-[article]: https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
+* Code Style [Readings](./code_style_readings.md)
+  * Code Style [Exercises](./code_style_exercises.md)
