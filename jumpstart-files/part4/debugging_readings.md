@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**"Be" the debugger**. You should be able to look at code you wrote and walk through that code from beginning to end, knowing exactly what every variable is at every point in time. If you're watching The Godfather and you pause an hour in, you should know the names of all the characters onscreen.
+**"Be" the debugger**. You should be able to look at the code you wrote and walk through that code from beginning to end, knowing exactly what every variable is at every point in time. (Following Rubyisms and the single responsibility principle will make this easier.)
 
 ## Debugging with `byebug`
 
