@@ -4,7 +4,7 @@
 
 Complete the [Codecademy Arrays][Arrays] section if you haven't yet.
 
-Arrays are useful for maintaining *ordered* collections. They are one of the most useful data structures in ruby; learn to use them well!
+Arrays are useful for maintaining *ordered* collections. They are one of the most useful data structures in ruby; learn to use them wisely!
 
  [Arrays]: https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb
 
@@ -32,6 +32,10 @@ Method    | Action
 `#unshift`| Add element to left
 `#shift`  | Remove element from left
 
+Watch the video!
+
+[![Slice](../video_link.png)](https://vimeo.com/182440643)
+
 **Test these in pry!**
 
 ### The Shovel Operator
@@ -45,6 +49,14 @@ Since `#push` is such a common method, ruby provides us a shorthand for using it
   ```
 
 You will rarely see the `#push` method written out; use the shovel operator instead!
+
+---
+
+## `#slice`
+
+The `#slice` method for arrays works similarly to the `#slice` method for strings. Let's recap:
+
+[![Slice](../video_link.png)](https://vimeo.com/182448670)
 
 ---
 
@@ -63,6 +75,10 @@ You will rarely see the `#push` method written out; use the shovel operator inst
 ### Code Blocks
 
   In the above code snippet, we use a *code block*. To put it simply, a *code block* is anything between a `do .. end` statement or a `{ .. }`. **Code blocks are not ruby objects**. *Code blocks* are simply a name that we use to identify specific pieces of code -- kind of like 'script' or 'function'.
+
+  Watch the video!
+
+  [![Slice](../video_link.png)](https://vimeo.com/?)
 
   **Try using each with different code blocks in pry!**
 
