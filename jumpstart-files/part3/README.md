@@ -1,6 +1,13 @@
 # Ruby Objects
 
-In this section we'll talk about the different types of objects in ruby.
+In this section we'll talk about the different types of collections in ruby:
+  * Arrays
+  * Ranges
+  * Hashes
+
+We'll also talk about some more looping constructs, in particular:
+  * Enumerables
+  * Iterators
 
 ## Instructions
 

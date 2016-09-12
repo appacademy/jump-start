@@ -1,4 +1,4 @@
-# Scripts and Methods exercises
+# Scripts and Methods Exercises
 
 0. Create a new file, `methods_exercises.rb`. Define the following methods in this script:
 
