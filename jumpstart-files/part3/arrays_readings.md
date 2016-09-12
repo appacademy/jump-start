@@ -86,6 +86,38 @@ The `#slice` method for arrays works similarly to the `#slice` method for string
 
   **Try using each with different code blocks in pry!**
 
+
+### `#each_index` and `#each_with_index`
+
+  Arrays have to additional methods that allow us to iterate through the contents of the array. `#each_index` passes the index of each element to the code block, and `#each_with_index` passes *both* the element and the index to the code block.
+
+  ```ruby
+    [1, 2, 3].each { |el| ... }
+    [1, 2, 3].each_index { |idx| ... }
+    [1, 2, 3].each_with_index { |el, idx| ... }
+  ```
+
+---
+
+### Array literals
+
+Let's say we want to construct an array of words:
+
+  ```ruby
+    words = ["apple", "banana", "carrot", "zucchini"]
+  ```
+
+This can take forever if the list is long... Luckily we have the ability to construct arrays of words using "array literals":
+
+  ```ruby
+    words = %w(apply banana carrot zucchini)
+    p words  # ==> ["apple", "banana", "carrot", "zucchini"]
+  ```
+
+Much cleaner! **Note:** we don't need any quotes or commas! Words are separated by spaces!
+
+**Test this in pry!**
+
 ---
 
 ## Other Useful Methods

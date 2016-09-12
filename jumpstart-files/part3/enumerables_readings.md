@@ -4,12 +4,12 @@
 
 The `Enumerable` module contains a set of methods that are 'mixed in' to various other classes. You don't have to understand how this works, but you need to know where and how to use `Enumerable` methods.
 
-The `Enumerable` methods are *extremely* useful methods that can be used with ruby collections. All of the following can use `Enumerable` methods.
+The `Enumerable` methods are *extremely* useful methods that can be used with ruby collections. All of the following can use `Enumerable` methods:
   * Arrays
   * Ranges
   * Hashes
 
-Generally, if the object has an `#each` method, then it probably has the `Enumerable` module.
+Generally, if the object has an `#each` method, then it probably has access to the `Enumerable` module.
 
 For example, let's say you have an array of integers and you want to double each value. There's a handy `Enumerable` method we can use, called `#map`:
 
@@ -24,9 +24,9 @@ You should take a minute to review the [documentation][documentation] for the `E
 Code blocks used with `Array` and `Range` `Enumerable` methods use a single argument, but code blocks used with `Hash` `Enumerable` methods use two arguments: one for keys and 1 for values.
 
   ```ruby
-    [1, 2, 3].each { |el| ... }          # ==> single argument in code block
-    (0...100).each { |el| ... }          # ==> single argument in code block
-    {"a" => "b"}.each { |key, val| ... } # ==> two arguments in code block
+    [1, 2, 3].select { |el| ... }          # ==> single argument in code block
+    (0...100).select { |el| ... }          # ==> single argument in code block
+    {"a" => "b"}.select { |key, val| ... } # ==> two arguments in code block
   ```
 
 ---
@@ -34,7 +34,7 @@ Code blocks used with `Array` and `Range` `Enumerable` methods use a single argu
 ## Useful Methods
 
 #### `#map`
-  Returns an array with each element in the original collection "mapped" by the given code block
+  Returns an array with each element in the original collection is "mapped" by the given code block
 
   ```ruby
     squares = (1..5).map { |el| el ** 2 } # ==> [1, 4, 9, 16, 25]
