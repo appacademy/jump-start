@@ -8,16 +8,16 @@ We've already used variables a number of times so far, but let's talk about them
 
 Similar to variables in algebra, we can create variables in ruby that will provide a name to certain objects so that we can access them later. As an example:
 
-```ruby
-x = 5
-```
+  ```ruby
+    x = 5
+  ```
 
 This code stores the number 5 into a variable called `x`. Later on, we can use this variable to retrieve the value:
 
-```ruby
-x = 5
-puts x
-```
+  ```ruby
+    x = 5
+    puts x
+  ```
 
 In ruby, the equal sign, `=`, is known as the **assignment operator**.  Ruby first evaluates everything to the right of the `=`, and then stores the result into the variable on the left-hand side.
 
@@ -27,18 +27,18 @@ In ruby, the equal sign, `=`, is known as the **assignment operator**.  Ruby fir
 
 **Any object** in Ruby can be stored in a variable. Some types of objects we're already familiar with:
 
-```ruby
-  a = 5
-  b = "string"
-```
+  ```ruby
+    a = 5
+    b = "string"
+  ```
 
 And some objects we'll learn about later, but we can still store them in variables!
 
-```ruby
-  arr = [1, 2, 3]
-  t = true
-  n = nil
-```
+  ```ruby
+    arr = [1, 2, 3]
+    t = true
+    n = nil
+  ```
 
 ---
 
@@ -46,29 +46,29 @@ And some objects we'll learn about later, but we can still store them in variabl
 
 You can also re-assign a variable so that it refers to a different value:
 
-```ruby
-# Assignment
-my_favorite_author = "Franz Kafka"
-puts my_favorite_author
+  ```ruby
+    # Assignment
+    my_favorite_author = "Franz Kafka"
+    puts my_favorite_author
 
-# Re-assignment
-my_favorite_author = "Aldous Huxley"
-puts my_favorite_author
-```
+    # Re-assignment
+    my_favorite_author = "Aldous Huxley"
+    puts my_favorite_author
+  ```
 
 This means that the value assigned to a variable can change over time. Let's look at another example:
 
-```ruby
-a = 5
-b = a
-c = b
+  ```ruby
+    a = 5
+    b = a
+    c = b
 
-a = 7
+    a = 7
 
-puts a # ==> 7
-puts b # ==> 5
-puts c # ==> 5
-```
+    puts a # ==> 7
+    puts b # ==> 5
+    puts c # ==> 5
+  ```
 
 Run this example in the pry and confirm the output!
 

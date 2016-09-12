@@ -2,6 +2,9 @@
 
 ## Introduction
 
+Complete the [CodeAcademy Loops][Loops] section if you haven't yet.
+
+
 A common saying in computer science suggests that humans are good at performing tasks that are hard to describe but easy to accomplish, such as: "make a sandwich".
 
 Computers, on the other hand, are good at performing tasks that are easy to describe, but hard to accomplish, such as: "write 'oo-la-la' 1000 times". That task might take you a while.. but introduce 5 lines of code:
@@ -15,6 +18,10 @@ Computers, on the other hand, are good at performing tasks that are easy to desc
   ```
 
 And you're done! Copy and paste the above loop into pry. Remember to use the `clear` command to clear your terminal afterwards!
+
+
+[Loops]: https://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb
+---
 
 ## The `while` loop
 

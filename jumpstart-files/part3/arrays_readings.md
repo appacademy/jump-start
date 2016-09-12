@@ -6,7 +6,7 @@ Complete the [CodeAcademy Arrays][Arrays] section if you haven't yet.
 
 Arrays are useful for maintaining *ordered* collections. They are one of the most useful data structures in ruby; learn to use them wisely!
 
- [Arrays]: https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb
+[Arrays]: https://www.codecademy.com/courses/ruby-beginner-en-F3loB/0/1?curriculum_id=5059f8619189a5000201fbcb
 
 ---
 ## Creating Arrays
