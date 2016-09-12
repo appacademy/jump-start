@@ -62,3 +62,40 @@ or...
 ```
 
 All three approaches are perfectly valid! You should use whichever makes more lexical sense -- whichever reads more like natural English.
+
+## `break` and `next`
+
+`break` and `next` are two keywords that we can use inside of any ruby loop. So far, we only know `while` and `until`, but we'll learn more later and `break` and `next` will apply to them as well!
+
+`break` allows us to exit a loop early, similar to how `return` exits a method early.
+`next` will tell our loop to jump to the next iteration.
+
+
+We could re-write our first `while` loop like so:
+
+  ```ruby
+    i = 1
+    while true
+      break if i > 1000
+      puts "oo-la-la"
+      i += 1
+    end
+  ```
+
+The `next` command is good for skipping over irrelevant iterations. Let's say we have the following problem statement:
+
+  *Define a method, sum_odds(n), that accepts an integer, n, as an argument. Sum all the odd integers between 0 and n.*
+
+  ```ruby
+    def sum_odds(n)
+      i = 0
+      sum = 0
+
+      while i <= n
+        next if i.even?
+        sum += i
+      end
+
+      sum
+    end
+  ```
