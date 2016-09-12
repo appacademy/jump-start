@@ -48,7 +48,11 @@ Since `#push` is such a common method, ruby provides us a shorthand for using it
     p array # ==> [5]
   ```
 
-You will rarely see the `#push` method written out; use the shovel operator instead!
+You will rarely see the `#push` method written out; **use the shovel operator instead!**
+
+### `p` vs `puts`
+
+You will likely find it useful to switch from using `puts` to using `p` to print out arrays. Open `pry` and compare the result of `puts [1, 2, 3]` versus `p [1, 2, 3]`.
 
 ---
 
@@ -78,7 +82,7 @@ The `#slice` method for arrays works similarly to the `#slice` method for string
 
   Watch the video!
 
-  [![Slice](../video_link.png)](https://vimeo.com/?)
+  [![Slice](../video_link.png)](https://vimeo.com/182464455)
 
   **Try using each with different code blocks in pry!**
 
