@@ -99,7 +99,7 @@ The table above specifies the order in which mathematical operations are carried
 
 ---
 
-## Useful methods
+## Other Useful Methods
 
 Class    | Method      | Definition
 ---------|-------------|-----------

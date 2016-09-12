@@ -95,7 +95,7 @@ Range      | `"string".slice(2..3)` | `"string"[2..3]` | `"ri"`
 
 **Try this in pry!**
 
-### Other useful methods
+### Other Useful Methods
 
  Method        | Definition
 ---------------|-----------
