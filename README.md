@@ -27,7 +27,7 @@ Start by going through parts 1-4.  **Do not do the problem sets** until after yo
 ##### [Part 2 - Ruby Basics](./jumpstart-files/part2/README.md)
 ##### [Part 3 - Collections](./jumpstart-files/part3/README.md)
 ##### [Part 4 - Code Style & Debugging](./jumpstart-files/part4/README.md)
-##### [Part 5 - Advanced Topics](./jumpstart-files/part5/README.md)
+<!-- ##### [Part 5 - Advanced Topics](./jumpstart-files/part5/README.md) -->
 
 ### Problem Sets
 
