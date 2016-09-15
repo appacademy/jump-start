@@ -98,62 +98,6 @@ puts products_except_me([1, 2, 3, 5]) == [30, 15, 10, 6]
 puts products_except_me([7, 2, 1, 4]) == [8, 28, 56, 14]
 
 
-# Fall and Winter Birthdays
-# ------------------------------------------------------------------------------
-# Given a list of students and what month their birthday is, return all the pairs
-# of students whose birthdays both fall in the second half of the year.  Months
-# are numbers, and assume that July (month 7) and later is the second half of
-# the year.
-#
-# Only count pairs once, and work from the beginning of the list to the end.
-#
-
-def fall_and_winter_birthdays(students_with_birthdays)
-  #
-  # your code goes here
-  #
-end
-
-students_with_birthdays_1 = [
-  ["Asher", 6],
-  ["Bertie", 11],
-  ["Dottie", 8],
-  ["Warren", 9]
-]
-
-second_half_birthday_pairs_1 = [
-  ["Bertie", "Dottie"],
-  ["Bertie", "Warren"],
-  ["Dottie", "Warren"]
-]
-
-students_with_birthdays_2 = [
-  ["Asher", 6],
-  ["Bertie", 11],
-  ["Dottie", 8],
-  ["Warren", 9],
-  ["Charlie", 7],
-  ["Nassim", 4],
-  ["Ajit", 10],
-]
-
-second_half_birthday_pairs_2 = [
-  ["Bertie", "Dottie"],
-  ["Bertie", "Warren"],
-  ["Bertie", "Charlie"],
-  ["Bertie", "Ajit"],
-  ["Dottie", "Warren"],
-  ["Dottie", "Charlie"],
-  ["Dottie", "Ajit"],
-  ["Warren", "Charlie"],
-  ["Warren", "Ajit"],
-  ["Charlie", "Ajit"],
-]
-
-puts "-------Fall and Winter Birthdays-------"
-puts fall_and_winter_birthdays(students_with_birthdays_1) == second_half_birthday_pairs_1
-puts fall_and_winter_birthdays(students_with_birthdays_2) == second_half_birthday_pairs_2
-
 
 # More than N Factors
 # ------------------------------------------------------------------------------
@@ -208,34 +152,3 @@ puts one_week_wonders(top_hits_2) == one_week_wonders_2
 # Given a perfectly respectable business sign, determine if pranksters George
 # and Harold can make a vandalized sign out of it using the same or fewer letters.
 # Ignore capitalization and punctuation.
-
-def can_tweak_sign?(normal_sign, vandalized_sign)
-  #
-  # your code goes here
-  #
-end
-
-puts "-------Sign Tweakers-------"
-puts can_tweak_sign?("Come in and see our pretty armchairs", "Come and see our hairy armpits") == true
-puts can_tweak_sign?("Student and teacher art fair starts Wed.", "Teacher farts stain underwear") == true
-puts can_tweak_sign?("Choose the bread of life or you are toast", "Teacher farts stain underwear") == false
-
-
-# Repeated Number Ranges
-# ------------------------------------------------------------------------------
-# Given a list of numbers, give the start and end indices each time a number shows
-# up multiple times in a row.
-#
-
-def repeated_number_ranges(numbers)
-  #
-  # your code goes here
-  #
-end
-
-puts "-------Repeated Number Ranges-------"
-puts repeated_number_ranges([1, 1, 2]) == [[0, 1]]
-puts repeated_number_ranges([1, 2, 3, 3, 4]) == [[2, 3]]
-puts repeated_number_ranges([1, 2, 3, 3, 4, 4]) == [[2, 3], [4, 5]]
-puts repeated_number_ranges([1, 1, 1, 2, 3, 3, 4]) == [[0, 2], [4, 5]]
-puts repeated_number_ranges([8, 7, 7, 14, 12, 12, 12, 12, 21]) == [[1, 2], [4, 7]]

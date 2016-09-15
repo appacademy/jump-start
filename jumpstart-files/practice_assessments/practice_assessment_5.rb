@@ -119,10 +119,30 @@ puts save_the_prisoner(94431605, 679262176, 5284458) == 23525398
 # For example:
 # build_power_plants(3, 2) means that there are three cities, and each powerplant
 # will have a range of two cities. Therefore your function should output the array
-# { 0, 1, 0 ]
+# [ 0, 1, 0 ]
 
 
 def build_power_plants(number_of_cities, plant_range)
+  cities = Array.new(number_of_cities, 0)
+
+  return [] if number_of_cities == 0
+
+  if number_of_cities <= (plant_range * 2) + 1
+    half = number_of_cities / 2
+    cities[half] = 1
+    return cities
+  end
+
+  plant_range.step(number_of_cities - 1, plant_range * 2 + 1) do |city_idx|
+    cities[city_idx] = 1
+  end
+
+  last_cities = cities[-plant_range - 1..-1]
+  if last_cities.all?{ |el| el == 0 }
+    cities[-1] = 1
+  end
+
+  cities
 end
 
 puts "-------Power Plants-------"
@@ -141,3 +161,4 @@ puts build_power_plants(5,1) == [0, 1, 0, 1, 0] ||
   build_power_plants(5,1) == [0, 1, 0, 0, 1]
 puts build_power_plants(5,2) == [0, 0, 1, 0, 0]
 puts build_power_plants(10, 2) == [0, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+puts build_power_plants(8, 3).count(1) == 2

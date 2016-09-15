@@ -75,66 +75,6 @@ puts word_with_most_repeats('what if there is a tie betwixt words') == 'there'
 puts word_with_most_repeats('ooooooooooh tutu') == 'tutu'
 
 
-# Even Splitters
-# ------------------------------------------------------------------------------
-# Return an array of characters on which we can split an input string to produce
-# substrings of the same length.
-
-# Don't count empty strings after the split.
-
-# Here's an example for "banana":
-#
-# "banana".split("a") # => ["b", "n", "n"] (all elements same length)
-# "banana".split("b") # => ["", anana"] (all elements same length - there's only
-# one element "anana" because the empty string doesn't count)
-# "banana".split("n") # => ["ba", "a", "a"] (all elements NOT same length)
-#
-# result: ["b", "a"]
-#
-# ------------------------------------------------------------------------------
-
-def even_splitters(string)
-  splittable_letters = []
-
-  string.each_char do |letter|
-    split_string = string.split(letter)
-    length = get_length_of_first_actual_letter(split_string)
-
-    splittable_letters.push(letter) if can_split_string?(split_string, length) && !splittable_letters.include?(letter)
-  end
-
-  splittable_letters
-end
-
-def get_length_of_first_actual_letter(split_string)
-  split_string.each do |split_chunk|
-    if split_chunk != ""
-      return split_chunk.length
-    end
-  end
-
-  0
-end
-
-def can_split_string?(split_string, length)
-  can_split_evenly = true
-
-  split_string.each do |split_chunk|
-    if split_chunk != "" && split_chunk.length != length
-      can_split_evenly = false
-    end
-  end
-
-  can_split_evenly
-end
-
-puts "-----Even Splitters----"
-puts even_splitters("") == []
-puts even_splitters("t") == ["t"]
-puts even_splitters("jk") == ["j", "k"]
-puts even_splitters("xoxo") == ["x", "o"]
-puts even_splitters("banana") == ["b","a"]
-puts even_splitters("mishmash") == ["m","h"]
 
 
 # Isogram Matcher

@@ -83,25 +83,6 @@ puts for_fs_sake("fat friars fly fish") == "fat"
 puts for_fs_sake("the French call him David Plouffe") == "Plouffe"
 puts for_fs_sake("pikachu! i choose you!") == ""
 
-# Time Sums
-# ------------------------------------------------------------------------------
-# Return an array of all the minutes of the day whose digits sum to N.
-#
-# Use military time, so 1:00 PM is really 13:00 PM.
-# ------------------------------------------------------------------------------
-
-def time_sums(n)
-  #
-  # your code goes here
-  #
-end
-
-puts "------Tens Time------"
-
-puts time_sums(0) == ["00:00"]
-puts time_sums(1) == ["00:01", "00:10", "01:00", "10:00"]
-puts time_sums(23) == ["09:59", "18:59", "19:49", "19:58"]
-puts time_sums(24) == ["19:59"]
 
 
 # Censor
