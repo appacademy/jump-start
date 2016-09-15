@@ -52,7 +52,7 @@ Code blocks used with `Array` and `Range` `Enumerable` methods use a single argu
     }
 
     a_words = dictionary.select do |key, val|
-      key.starts_with?("a")
+      key.start_with?("a")
     end
 
     p a_words # ==> { "apple" => "fruit", "ant" => "a bug"}
