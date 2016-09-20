@@ -132,15 +132,18 @@ end
 
 
 def build_power_plants(number_of_cities, plant_range)
-  return Array.new(number_of_cities, 1) if plant_range < 1 || number_of_cities < 2
+ return Array.new(number_of_cities, 1) if plant_range < 1 || number_of_cities < 2
+ cities = Array.new(number_of_cities, 0)
 
-  cities = Array.new(number_of_cities, 0)
+ curr_idx = plant_range
+ until curr_idx > cities.length
+   cities[curr_idx] = 1
+   if (curr_idx + plant_range * 2 + 1) > (number_of_cities - 1) && cities[(-1 - plant_range)..-1].all? {|el| el == 0}
+     curr_idx = number_of_cities - 1
+   else
+     curr_idx += plant_range * 2 + 1
+   end
+ end
 
-  curr_idx = plant_range
-  until curr_idx > cities.length
-    cities[curr_idx] = 1
-    curr_idx += plant_range * 2 + 1
-  end
-
-  cities
+ cities
 end
