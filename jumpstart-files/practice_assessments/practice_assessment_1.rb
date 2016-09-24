@@ -24,7 +24,7 @@
 # For example, "I took the road less traveled and that has made all the difference"
 # should return "difference" because it has two repeated letters (f and e).
 #
-# All words will be separated by spaces and there will be no punctuation or
+# All words will be separated by spaces and there will be no punctuataion or
 # capitalization.  If there is a tie return the first word.  It doesn't matter
 # how many times individual letters repeat, just that they repeat (see the third test
 # case).
@@ -69,14 +69,14 @@ puts isogram_matcher("unpredictably", "hydromagnetic") == [1, 8]
 # ------------------------------------------------------------------------------
 
 # Write a Xbonacci function that works similarly to the fibonacci sequence.
-# The fibonacci sequence takes the last two numbers in the sequence and adds
+# The fibonacci sequence takes the previous two numbers in the sequence and adds
 # them together to create the next number.
 #
 # First five fibonacci numbers = [1, 1, 2, 3, 5]
 # The fourth fibonacci number (3) is the sum of the two numbers before it
 # (1 and 2).
 #
-# In Xbonacci, the sum of the last X numbers (instead of the last 2 numbers)
+# In Xbonacci, the sum of the previous X numbers (instead of the previous 2 numbers)
 # of the sequence becomes the next number in the sequence.
 #
 # The method will take two inputs: the starting sequence with X number of
