@@ -24,7 +24,7 @@
 # For example, "I took the road less traveled and that has made all the difference"
 # should return "difference" because it has two repeated letters (f and e).
 #
-# All words will be separated by spaces and there will be no punctuataion or
+# All words will be separated by spaces and there will be no punctuation or
 # capitalization.  If there is a tie return the first word.  It doesn't matter
 # how many times individual letters repeat, just that they repeat (see the third test
 # case).
