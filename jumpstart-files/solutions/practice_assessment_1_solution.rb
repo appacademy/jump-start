@@ -176,14 +176,14 @@ puts isogram_matcher("unpredictably", "hydromagnetic") == [1, 8]
 # ------------------------------------------------------------------------------
 
 # Write a Xbonacci function that works similarly to the fibonacci sequence.
-# The fibonacci sequence takes the last two numbers in the sequence and adds
+# The fibonacci sequence takes the previous two numbers in the sequence and adds
 # them together to create the next number.
 #
 # First five fibonacci numbers = [1, 1, 2, 3, 5]
 # The fourth fibonacci number (3) is the sum of the two numbers before it
 # (1 and 2).
 #
-# In Xbonacci, the sum of the last X numbers (instead of the last 2 numbers)
+# In Xbonacci, the sum of the previous X numbers (instead of the previous 2 numbers)
 # of the sequence becomes the next number in the sequence.
 #
 # The method will take two inputs: the starting sequence with X number of
