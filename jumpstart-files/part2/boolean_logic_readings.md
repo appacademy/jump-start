@@ -72,7 +72,7 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
 
 ## Comparators
 
-Ruby has several comparator methods that allow us to compare two objets. Remember, the return value of a comparator method is either `true` or `false`!
+Ruby has several comparator methods that allow us to compare two objects. Remember, the return value of a comparator method is either `true` or `false`!
 
 Method| Example        | Result  
 ------|----------------|---------
