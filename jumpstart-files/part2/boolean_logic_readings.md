@@ -64,7 +64,7 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
   ```ruby
     5.even?                    # ==> false
     5.odd?                     # ==> true
-    "abc".starts_with?("ab")   # ==> true
+    "abc".start_with?("ab")   # ==> true
     "abc".is_a?(String)        # ==> true
   ```
 
