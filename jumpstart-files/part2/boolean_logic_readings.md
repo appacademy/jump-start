@@ -155,7 +155,7 @@ The *truthiness* of an object will come into play when using logical operators a
   ```ruby
     true && nil   # ==> false
     true && "abc" # ==> true
-    5 & "abc"     # ==> true
+    5 && "abc"     # ==> true
 
     true || nil   # ==> true
     nil || false  # ==> false
