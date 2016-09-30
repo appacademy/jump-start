@@ -33,7 +33,7 @@ When        | What
 
 ## Assessments
 
-You will have an assessment on both Thursdays during JumpStart. If you receive a passing score on either, your application will be forwarded to our admissions team for a final review. You do not need to attend week 2 if you pass assessment 1.
+You will have an assessment on the second Monday and Thursday during JumpStart (W2D1 and W2D4). If you receive a passing score on either, your application will be forwarded to our admissions team for a final review. You do not need to attend week 2 if you pass assessment 1.
 
 ## How to approach JumpStart
 
