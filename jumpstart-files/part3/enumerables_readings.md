@@ -21,7 +21,7 @@ You should take a minute to review the [documentation][documentation] for the `E
 
 ### Code Blocks
 
-Code blocks used with `Array` and `Range` `Enumerable` methods use a single argument, but code blocks used with `Hash` `Enumerable` methods use two arguments: one for keys and 1 for values.
+Code blocks used with `Array` and `Range` `Enumerable` methods use a single argument, but code blocks used with `Hash` `Enumerable` methods use two arguments: one for keys and one for values.
 
   ```ruby
     [1, 2, 3].select { |el| ... }          # ==> single argument in code block
