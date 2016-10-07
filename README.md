@@ -20,16 +20,16 @@ Before the course starts, you must:
 
 # Curriculum
 
-Start by going through parts 1-4.  **Do not do the problem sets** until after you're done with part 4. Try to finish the readings by the end of week 1.
+Start by going through parts 1-4.  **Do not do the problem sets** until after you're done with part 4.
 
-### Readings
+### Readings (week 1)
 ##### [Part 1 - Coding Basics](./jumpstart-files/part1/README.md)
 ##### [Part 2 - Ruby Basics](./jumpstart-files/part2/README.md)
 ##### [Part 3 - Collections](./jumpstart-files/part3/README.md)
 ##### [Part 4 - Code Style & Debugging](./jumpstart-files/part4/README.md)
 <!-- ##### [Part 5 - Advanced Topics](./jumpstart-files/part5/README.md) -->
 
-### Problem Sets
+### Problem Sets (week 2)
 
 **Read the [solutions][solutions]** after you finish each problem, but **not beforehand!** Try to finish all the problem sets by the end of week 2.
 
