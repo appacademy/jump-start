@@ -49,23 +49,17 @@ end
 def get_number_of_repeats_in(word)
   repeats = 0
   current_index = 0
-  repeated_letters = Hash.new(0)
+  letter_counts = Hash.new(0)
   last_letter = nil
 
   until current_index == word.length
     current_letter = word[current_index]
-
-    if current_letter != last_letter
-      repeated_letters[current_letter] += 1
-      last_letter = current_letter
-    end
+    letter_counts[current_letter] += 1
 
     current_index += 1
   end
 
-  max_letter_and_count = repeated_letters.max_by {|letter, count| count}
-
-  max_letter_and_count[1]
+  letter_counts.count {|letter, num_occurrences| num_occurrences > 1}
 end
 
 
@@ -73,6 +67,7 @@ puts "-------Word With Most Repeats-------"
 puts word_with_most_repeats('good luck') == 'good'
 puts word_with_most_repeats('what if there is a tie betwixt words') == 'there'
 puts word_with_most_repeats('ooooooooooh tutu') == 'tutu'
+puts word_with_most_repeats('bookkeeping tutu') == 'bookkeeping'
 
 
 # Even Splitters
