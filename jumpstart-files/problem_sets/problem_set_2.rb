@@ -141,9 +141,7 @@ end
 puts "\nLongest word:\n" + "*" * 15 + "\n"
 puts longest_word("lets go warriors") == ("warriors")
 puts longest_word("warriors are the best") == ("warriors")
-phrase = "go steph go"
-longest_word(phrase)
-puts phrase == "go steph go"
+puts longest_word("go steph go") == "steph"
 
 # *********************************************
 
