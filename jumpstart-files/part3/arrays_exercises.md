@@ -7,7 +7,7 @@
     first_n_evens(3) # ==> [0, 2, 4]
   ```
 
-0. Write a method, `#reverse(array)` that reverses an array in-place; don't create any new arrays!
+0. Write a method, `#reverse(array)` that reverses an array in-place; don't create any new arrays, and don't use `array.reverse`!
 
   ```ruby
     reverse([1])          # ==> [1]

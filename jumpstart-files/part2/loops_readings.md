@@ -92,8 +92,8 @@ The `next` command is good for skipping over irrelevant iterations. Let's say we
       sum = 0
 
       while i <= n
-        next if i.even?
-        sum += i
+        sum += i if i.odd?
+        i += 1
       end
 
       sum

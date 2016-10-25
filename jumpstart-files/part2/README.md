@@ -1,6 +1,6 @@
 # Ruby Basics
 
-In this section we'll talk about some of the fundamental objets in ruby:
+In this section we'll talk about some of the fundamental objects in ruby:
   * `Fixnums` and `Floats`
   * `Strings`
   * Booleans and `nil`

@@ -64,7 +64,7 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
   ```ruby
     5.even?                    # ==> false
     5.odd?                     # ==> true
-    "abc".starts_with?("ab")   # ==> true
+    "abc".start_with?("ab")   # ==> true
     "abc".is_a?(String)        # ==> true
   ```
 
@@ -72,7 +72,7 @@ Rubyists customarily name "boolean methods" with a question mark at the end. A "
 
 ## Comparators
 
-Ruby has several comparator methods that allow us to compare two objets. Remember, the return value of a comparator method is either `true` or `false`!
+Ruby has several comparator methods that allow us to compare two objects. Remember, the return value of a comparator method is either `true` or `false`!
 
 Method| Example        | Result  
 ------|----------------|---------
@@ -153,9 +153,9 @@ We can determine the truthiness of an object by using a "double-bang"
 The *truthiness* of an object will come into play when using logical operators as well:
 
   ```ruby
-    true && nil   # ==> false
-    true && "abc" # ==> true
-    5 & "abc"     # ==> true
+    true && nil   # ==> nil
+    true && "abc" # ==> 'abc'
+    5 && "abc"     # ==> 'abc'
 
     true || nil   # ==> true
     nil || false  # ==> false
@@ -164,5 +164,4 @@ The *truthiness* of an object will come into play when using logical operators a
   ```
 
 **Try these in pry!**
-
-Note that the `&&` operator **always** return `true` or `false`.. nothing else. The `||` operator, however, will return *the first truthy value* or false.
+Note that the `&&` operator returns the **last** truthy value if both values are truthy, and the **first** falsey value if either element is falsey. The `||` operator will return *the first truthy value* if either value is true, or the first falsey value if both values are false.

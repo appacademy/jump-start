@@ -16,7 +16,7 @@
 0. Define a method, `#accurate_division`, that accepts two **integers** as arguments. Your method should return the quotient of the two integers (rounding to 3 decimal places).
 
   ```ruby
-    accurate_division(3, 4) == 0.750
+    accurate_division(3, 4) == 0.75
     accurate_division(1, 3) == 0.333
     accurate_division(7, 6) == 1.167
   ```

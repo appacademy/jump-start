@@ -1,4 +1,4 @@
-# Ruby Objects
+# Rubyisms & Debugging
 
 In this section we'll talk about Rubyisms and what it means to write "good code". We'll also go over using the `byebug` gem and give you some debugging tips.
 
