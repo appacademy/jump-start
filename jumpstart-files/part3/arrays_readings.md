@@ -118,7 +118,7 @@ In the next section, we'll learn about another method, `#each` that will allow u
 
 ### `#each_index` and `#each_with_index`
 
-  Arrays have to additional methods that allow us to iterate through the contents of the array. `#each_index` passes the index of each element to the code block, and `#each_with_index` passes *both* the element and the index to the code block.
+  Arrays have two additional methods that allow us to iterate through the contents of the array. `#each_index` passes the index of each element to the code block, and `#each_with_index` passes *both* the element and the index to the code block.
 
   ```ruby
     [1, 2, 3].each { |el| ... }
