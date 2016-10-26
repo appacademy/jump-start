@@ -28,3 +28,5 @@
     to_range([1, 8, 11, 5, 6])  # ==> (1..11)
     to_range([6, 15, 2, 12])    # ==> (2..15)
   ```
+
+0. Read the [solutions](../solutions/part3/range_solutions.md)

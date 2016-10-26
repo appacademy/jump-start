@@ -49,3 +49,5 @@ To aid you in solving this problem, you can use the `#class` method, which tells
     5.class     # ==> Fixnum
     "abc".class # ==> String
   ```
+
+0. Read the [solutions](../solutions/part2/boolean_logic_solutions.md)

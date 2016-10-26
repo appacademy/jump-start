@@ -20,3 +20,5 @@
     collect_thirds([3, 4, 5, 7, 6, 4, 2])       # ==> [5, 4]
     collect_thirds([3, 4, 5, 7, 6, 4, 2, 1, 1]) # ==> [5, 4, 1]
   ```
+
+0. Read the [solutions](../solutions/part3/iterator_solutions.md)

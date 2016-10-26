@@ -14,3 +14,5 @@
   ```
 
 0. Write a method called `#even_or_odd`, that accepts an integer as an argument. Your method should return the string "even" if the integer is even, and return "odd" if the integer is odd. Follow the pattern used in the `#is_billy?` method from the reading. Also, use the `#even?` and `#odd?` methods we explored in the previous step.
+
+0. Read the [solutions](../solutions/part1/return_solutions.md)

@@ -35,3 +35,5 @@
   ```ruby
     hyphenify("I am a sentence!") == "I-am-a-sentence!"
   ```
+
+0. Read the [solutions](../solutions/part2/string_solutions.md)

@@ -27,3 +27,5 @@
     odd_value_and_position([0,1,2,3,4,5]) == [1,3,5]
     odd_value_and_position([1,2,3,4,5]) == []
   ```
+
+0. Read the [solutions](../solutions/part3/enumerable_solutions.md)

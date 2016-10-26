@@ -22,3 +22,5 @@
 
 
 0. Test your methods by invoking them in your script and running your script from the terminal.
+
+0. Read the [solutions](../solutions/part1/scripts_and_methods_solutions.md)

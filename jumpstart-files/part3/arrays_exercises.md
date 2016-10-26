@@ -30,3 +30,5 @@
     all_uniqs([1, 2, 3], [1, 2, 4]) # ==> [3, 4]
     all_uniqs([1, 2, 7], [1, 3, 8]) # ==> [2, 7, 3, 8]
   ```
+
+0. Read the [solutions](../solutions/part3/array_solutions.md)

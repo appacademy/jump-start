@@ -19,3 +19,5 @@
   ```ruby
     greatest_key_by_val({ "a" => 5, "b" => 6, "c" => 3 }) # ==> "b"
   ```
+
+0. Read the [solutions](../solutions/part3/hash_solutions.md)

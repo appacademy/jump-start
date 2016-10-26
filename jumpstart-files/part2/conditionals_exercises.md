@@ -14,3 +14,5 @@
     pos_or_neg?(-23)  # ==> "negative"
     pos_or_neg?(0)    # ==> "your number is rather passive"
   ```
+
+0. Read the [solutions](../solutions/part2/conditionals_solutions.md)

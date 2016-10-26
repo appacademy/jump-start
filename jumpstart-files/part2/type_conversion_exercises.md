@@ -40,3 +40,5 @@
     time_string(12, 1, 3) == "12:01:03"
     time_string(1, 10, 6) == "01:10:06"
   ```
+
+0. Read the [solutions](../solutions/part2/type_conversion_solutions.md)

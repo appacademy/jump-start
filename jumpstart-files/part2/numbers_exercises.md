@@ -1,4 +1,4 @@
-# Numbers Exercises
+# Number Exercises
 
 0. Write a method, `#division_plus_remainder`, that accepts two integers, `big_int` and `small_int`, as arguments. Your method should find the number of times `small_int` completely divides into `big_int`, and then add the remainder that's left over. For example, `divisor_plus_remainder(7, 2)` should equal `4`.
 
@@ -9,3 +9,5 @@
   ```
     5 + 3 * 3 ** 2 + ( 9 - 2 ** 2 ) ** 2
   ```
+
+0. Read the [solutions](../solutions/part2/number_solutions.md)
