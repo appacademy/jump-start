@@ -55,7 +55,6 @@ You will rarely see the `#push` method written out; **use the shovel operator in
 You will likely find it useful to switch from using `puts` to using `p` to print out arrays. Open `pry` and compare the result of `puts [1, 2, 3]` versus `p [1, 2, 3]`.
 
 ---
-
 ## `#slice`
 
 The `#slice` method for arrays works similarly to the `#slice` method for strings. Let's recap:
@@ -63,7 +62,37 @@ The `#slice` method for arrays works similarly to the `#slice` method for string
 [![Slice](../video_link.png)](https://vimeo.com/182448670)
 
 ---
+## Iterating over an array
 
+One of the most common bits of code you will write is a `while` loop that iterates through all the elements of an array. Practice this concept!
+
+For starters, let's learn a new method called `#length`. This method returns the number of elements in an array:
+
+  ```ruby
+    [1, "b", 17].length # ==> 3
+  ```
+
+Let's also remember that an array's indices range from 0 to array.length - 1. Using this knowledge we can setup a while loop to do something for every element in an array. Here are the steps:
+
+  * Create an index and set it's value to 0: `idx = 0`
+  * Create a while loop that runs while `idx < array.length`
+  * Inside the while loop:
+    * Access each element by using `array[idx]``
+    * Increment the idx by 1 each time: `idx += 1`
+
+  ```ruby
+    array = ["banana", "blueberry", "mango", "apple"]
+    idx = 0
+
+    while idx < array.length
+      puts array[idx]
+      idx += 1
+    end
+  ```
+
+In the next section, we'll learn about another method, `#each` that will allow us to do something similar. However, the `#each` method will not work for more complex problems. Make sure you know how to use the while loop with arrays!
+
+---
 ## `#each`
 
   The `#each` method is a must-know method when working with collections. `#each` is a looping method, which allowing us to evaluate some *code block* for *each* element in the array. Let's see an example of this:
