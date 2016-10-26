@@ -15,7 +15,7 @@
     reverse([4, 5, 6, 7]) # ==> [7, 6, 5, 4]
   ```
 
-0. Write a method, `#rotate(array, shift)` that, given an array and integer, shift, rotates the array in-place by the shift amount.
+0. Write a method, `#rotate(array, shift)` that, given an array and an integer (shift), rotates the array in-place by the shift amount.
   * Hint: some combination of `#shift`/`#push` or `#unshift`/`#pop` should come in handy here.
 
   ```ruby

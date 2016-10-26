@@ -13,7 +13,7 @@
 ![Capitalize Demo](./assets/repl/demo_capitalize.png)
 
 0. Type `Integer.instance_methods`, notice that this returns an `Array` of method names that are available for `Integers`. This output is *really* long. We could use the down arrow to scroll down to the bottom, but that would take forever...
-  * Press `Q` to truncate the list get a new pry prompt
+  * Press `Q` to truncate the list and get a new pry prompt
 
 ![Long List Demo](./assets/repl/demo_list.png)
 ![Truncated List Demo](./assets/repl/demo_truncated_list.png)
