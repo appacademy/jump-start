@@ -5,7 +5,7 @@ In this section we'll talk about the different types of collections in ruby:
   * Ranges
   * Hashes
 
-We'll also talk about some more looping constructs, in particular:
+We'll also talk about some more looping constructs:
   * Enumerables
   * Iterators
 
