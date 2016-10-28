@@ -1,7 +1,6 @@
-# App Academy Jump Start Course
+# App Academy JumpStart
 
-Welcome to the Jump Start course!
-(You can find this URL again at: http://tinyurl.com/aa-jump-start)
+Welcome to JumpStart!
 
 # Pre-Curriculum
 

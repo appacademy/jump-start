@@ -1,18 +1,3 @@
-#Write a function summation that takes a number and returns the summation of all positive
-#integers upto and including that number.
-
-def summation(number)
-
-end
-
-puts "\nSummation:\n" + "*" * 15 + "\n"
-puts summation(0) == 0
-puts summation(1) == 1
-puts summation(2) == 3
-puts summation(15) == 120
-
-
-
 
 #write a function that takes a number n and returns the highest prime factor of
 #that number. Hint: Helper function.
