@@ -1,3 +1,8 @@
+# Sign Tweakers
+# ------------------------------------------------------------------------------
+# Given a perfectly respectable business sign, determine if pranksters George
+# and Harold can make a vandalized sign out of it using the same or fewer letters.
+# Ignore capitalization and punctuation.
 
 def can_tweak_sign?(normal_sign, vandalized_sign)
   #
