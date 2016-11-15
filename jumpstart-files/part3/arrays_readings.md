@@ -139,7 +139,7 @@ Let's say we want to construct an array of words:
 This can take forever if the list is long... Luckily we have the ability to construct arrays of words using "array literals":
 
   ```ruby
-    words = %w(apply banana carrot zucchini)
+    words = %w(apple banana carrot zucchini)
     p words  # ==> ["apple", "banana", "carrot", "zucchini"]
   ```
 
