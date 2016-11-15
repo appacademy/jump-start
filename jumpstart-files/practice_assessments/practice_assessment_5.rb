@@ -123,26 +123,6 @@ puts save_the_prisoner(94431605, 679262176, 5284458) == 23525398
 
 
 def build_power_plants(number_of_cities, plant_range)
-  cities = Array.new(number_of_cities, 0)
-
-  return [] if number_of_cities == 0
-
-  if number_of_cities <= (plant_range * 2) + 1
-    half = number_of_cities / 2
-    cities[half] = 1
-    return cities
-  end
-
-  plant_range.step(number_of_cities - 1, plant_range * 2 + 1) do |city_idx|
-    cities[city_idx] = 1
-  end
-
-  last_cities = cities[-plant_range - 1..-1]
-  if last_cities.all?{ |el| el == 0 }
-    cities[-1] = 1
-  end
-
-  cities
 end
 
 puts "-------Power Plants-------"
