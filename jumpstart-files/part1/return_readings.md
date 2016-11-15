@@ -124,5 +124,3 @@ Compare the script above to the following:
   answer = multiply(2, 3)
   puts answer
 ```
-
-**Mandatory TA Checkpoint!** Call over a TA and explain what the two values of `answer` will be in the above scripts.

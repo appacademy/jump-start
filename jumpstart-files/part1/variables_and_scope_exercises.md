@@ -27,5 +27,3 @@
 
     puts b
   ```
-
-0. **Mandatory TA Checkpoint!** Call over a TA and show them your diagrams. Explain how the pointers change throughout your scripts.

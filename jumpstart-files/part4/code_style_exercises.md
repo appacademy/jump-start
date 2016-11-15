@@ -19,5 +19,3 @@
       return true
     end
   ```
-
-**Mandatory TA Checkpoint!** Call over a TA and ask them to review your code for style.
