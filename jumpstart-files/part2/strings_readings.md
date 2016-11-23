@@ -102,7 +102,7 @@ Range      | `"string".slice(2..3)` | `"string"[2..3]` | `"ri"`
  `#length`     | Returns the number of characters in a string (including spaces!)
  `#upcase`     | Converts all letters to uppercase
  `#downcase`   | Converts all letters to lowercase
- `#delete`     | Returns a copy of the string will characters deleted
+ `#delete`     | Returns a copy of the string with the characters deleted
  `#count`      | Counts the number of times a particular substring occurs
  `#gsub`       | Replaces all occurrences of one substring with another
  `#start_with?`| Returns true/false if the string starts with a particular sub-string
