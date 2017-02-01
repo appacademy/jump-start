@@ -1,3 +1,15 @@
+# This curriculum is deprecated. Please use [Prep Step 1][prep1] and [Prep Step 2][prep2] instead!
+
+[prep1]: https://app-academy.gitbooks.io/prep-step-1/content/
+[prep2]: https://app-academy.gitbooks.io/prep-step-2/content/
+
+
+
+
+
+<br>
+<br>
+<br>
 # App Academy JumpStart
 
 Welcome to JumpStart!
