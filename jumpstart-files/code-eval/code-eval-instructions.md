@@ -18,7 +18,7 @@ turns into
 
 Do the same with your challenges.
 
-Create new files like the [example file](./code-eval-instructions.md) as you pick challenges to do.  Translate the sample inputs and outputs like we did above.
+Create new files like the [example file](./sample-code-eval-file.rb) as you pick challenges to do.  Translate the sample inputs and outputs like we did above.
 
 Feel free to work through the example file first.
 
